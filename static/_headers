@@ -14,7 +14,7 @@
   Cache-Control: max-age=7884000, public
 # preloading
 /*
-  Link: </css/bundle.css>; rel=preload; as=stylesheet; nopush
+  Link: </css/bundle.css>; rel=preload; as=stylesheet
 #  Link: </js/service-worker-registration.js>; rel=preload; as=script
 #  Link: </js/instantclick.min.js>; rel=preload; as=script
 #  Link: </js/fittext.js>; rel=preload; as=script
