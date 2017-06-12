@@ -42,7 +42,7 @@ var globs = {
 
 gulp.task("hugo", (cb) => buildSite(cb));
 
-gulp.task("build", ["css", "hugo", "img:build", "svg"]);
+gulp.task("build", ["css", "hugo", "img:build", "svg", "generate-service-worker"]);
 
 gulp.task("img", () =>
   gulp.src("./src/images/**.*")
