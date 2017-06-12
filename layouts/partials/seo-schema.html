@@ -1,0 +1,89 @@
+{{ "<!-- ENTERING partial seo-schema.html -->" | safeHTML }}
+{{ if .IsPage }}
+{{ if eq .Type "post" }}
+<script type="application/ld+json">
+{
+    "@context" : "http://schema.org",
+    "@type" : "BlogPosting",
+    "articleSection" : "{{ .Section }}",
+    "name" : "{{ .Title }}{{ if ne .Title .Site.Title }} : {{ .Site.Title }}{{ end }}",
+    "headline" : "{{ .Title }}{{ if ne .Title .Site.Title }} : {{ .Site.Title }}{{ end }}",
+    "description" : "{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }}",
+    "mainEntityOfPage": {
+        "@type": "BlogPosting",
+        "@id": "{{ .Permalink }}"
+    },
+    "inLanguage" : "de",
+    "license" : "/license",
+    "author" : "{{ .Site.Params.author }}",
+    "creator" : "{{ .Site.Params.author }}",
+    "accountablePerson" : "{{ .Site.Params.author }}",
+    "copyrightHolder" : "{{ .Site.Params.author }}",
+    "copyrightYear" : "{{ .Date.Format "2006" }}",
+    "datePublished": "{{ .Date.Format $.Site.Params.ISO8601 }}",
+    "dateModified" : "{{ .Date.Format $.Site.Params.ISO8601 }}",
+    "url" : "{{ .Permalink }}",
+    "wordCount" : "{{ .WordCount }}",
+    "keywords" : [ {{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e | jsonify }}{{ end }} ]
+}
+</script>
+{{ else if eq .Title "About" }}
+<script type="application/ld+json">
+{
+    "@context" : "http://schema.org",
+    "@type" : "Person",
+    "name" : "René Meister",
+    "image" : {
+        "@type" : "ImageObject",
+        "author" : "{{ .Site.Params.author }}",
+        "contentLocation" : "Augsburg, Germany",
+        "contentUrl" : "/assets/renem_profile.png",
+        "thumbnailUrl" : "/assets/renem_profile.png"
+        "datePublished" : "2011-08-20",
+        "description" : "Photo ReneM",
+        "name" : "René Meister Summer 2011"
+    },
+    "description" : "René Meister: |Tech|Mobile|Fitness|Running Father, P90X grad & coffee (#Aeropress) addicted"
+    "nationality" : "Germany"
+    "email" : "rene@renem.net",
+    "gender" : "Male",
+    "url" : "{{ .Site.BaseURL }}",
+    "sameAs" : [ "https://plus.google.com/+RenéMeister",
+        "http://twitter.com/rretsiem",
+        "https://instagram.com/rene.meister/",
+        "https://github.com/rretsiem"]
+}
+</script>
+<script type="application/ld+json">
+{
+    "@context" : "http://schema.org",
+    "@type" : "AboutPage",
+    "name" : "René Meister About Page",
+    "author" : "{{ .Site.Params.author }}",
+    "datePublished": "{{ .Date.Format $.Site.Params.ISO8601 }}",
+    "dateModified" : "{{ .Date.Format $.Site.Params.ISO8601 }}",
+    "lastReviewed" : "{{ .Date.Format $.Site.Params.ISO8601 }}",
+    "reviewedBy" : "{{ .Site.Params.author }}",
+    "description" : "{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }}",
+    "inLanguage" : "de",
+    "copyrightHolder" : "{{ .Site.Params.author }}",
+    "copyrightYear" : "{{ .Date.Format "2006" }}",
+    "accountablePerson" : "{{ .Site.Params.author }}",
+    "license" : "/license",
+    "url" : "{{ .Permalink }}",
+    "primaryImageOfPage" : {
+        "@type" : "ImageObject",
+        "author" : "{{ .Site.Params.author }}",
+        "contentLocation" : "Augsburg, Germany",
+        "contentUrl" : "/assets/renem_profile.png",
+        "thumbnailUrl" : "/assets/renem_profile.png"
+        "datePublished" : "2011-08-20",
+        "description" : "Photo ReneM",
+        "name" : "René Meister Summer 2011"
+    },
+    "keywords" : [ {{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e | jsonify }}{{ end }} ]
+}
+</script>
+{{ end }}
+{{ end }}
+{{ "<!-- LEAVING partial seo-schema.html -->" | safeHTML }}

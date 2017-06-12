@@ -1,0 +1,57 @@
+baseURL = "https://renem.net/"
+languageCode = "de"
+title = "René"
+theme = "Detox"
+description = "Just my 2 cents…"
+MetaDataFormat = "yaml"
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+[Author]
+  name = "René"
+  email = "rene@renem.net"
+[Params]
+  description = "Just my 2 cents…"
+  Paginate = 15
+  RSSLink = "/post/index.xml"
+  RSSLimit = 20
+  author = "ReneM" # add your company name
+  license = "CC-BY-NC-SA"
+  github = "rretsiem" # add your github profile name
+  twitter_name = "rretsiem" # add your twitter profile
+  email = "rene@renem.net"
+  ISO8601 = "2006-01-02T15:04:05+02:00"
+  webSub = "https://renem.superfeedr.com/"
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+  series = "series"
+[[menu.main]]
+        name = "About"
+        url = "/about"
+        pre = "About ReneM"
+        identifier = "mainabout"
+        weight = "1"
+[[menu.main]]
+        name = "Artikel"
+        weight = 2
+        pre = "Archive List of Blog Articles"
+        identifier = "mainarticles"
+        url = "/post"
+[[menu.main]]
+        name = "Microblog"
+        weight = 3
+        pre = "Short posts and social interactions"
+        identifier = "mainmicroblog"
+        url = "/microblog"
+[[menu.main]]
+        name = "PGP"
+        weight = 4
+        identifier = "mainpgp"
+        url = "/pgp"
+[[menu.main]]
+        name = "Tags"
+        url = "/tags"
+        pre = "All Tags"
+        post = "xs-hide"
+        identifier = "mainalltags"
+        weight = "4"

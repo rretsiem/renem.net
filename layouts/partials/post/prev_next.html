@@ -1,0 +1,10 @@
+<nav>
+  <ul>
+    {{ if .Prev }}
+    <li class="prev"><a rel="prev" href="{{.Prev.Permalink}}"><span>‹ Previous</span></a></li>
+    {{ end }}
+    {{ if .Next }}
+    <li class="next"><a rel="next" href="{{.Next.Permalink}}"><span>Next ›</span></a></li>
+    {{ end }}
+  </ul>
+</nav>

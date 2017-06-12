@@ -1,0 +1,14 @@
+    <header id="site-header">
+        <div class="container">
+            <a class="heading" href="{{ .Site.BaseURL }}" alt="{{ .Site.Title }}"><h1 id="heading" class="blog-title heading">{{ .Site.Title }}</h1></a>
+            <p class="blog-description">{{ .Site.Params.description }}</p>
+
+          <nav class="sidebar-nav">
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+        <a class="sidebar-nav-item{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{end}}" href="{{.URL}}">{{ .Name }}</a>&nbsp;&nbsp;&nbsp;
+        {{ end }}
+        <hr>
+    </nav>
+        </div>
+    </header>

@@ -1,0 +1,33 @@
+---
+tags:
+- twitter
+- tent.io
+- comment
+- tech
+- app.net
+date: 2012-10-14T00:00:00+02:00
+title: Tent.io
+url: /2012/10/14/tent-io/
+---
+
+Mit den kürzlich [durchgeführten Änderungen](https://dev.twitter.com/blog/changes-coming-to-twitter-api) von Twitter besteht, denke ich, Interesse eine Alternative zu finden bei der die sozialen Aktivitäten auch wirklich vom Benutzer selbst gesteuert werden.   
+Wir haben mittlerweile realisiert das es wichtig ist, dass unsere Statusnachrichten uns gehören und nicht "Eigentum" einer Firma oder Organisation sind, die mehr Interesse an unserem "Wohlbefinden" zu haben scheint und uns dadurch einschränkt wie wir etwas teilen. Es ist ein Teil unserer Identität. Es ist sogar so wichtig, das viele von uns sich bereits nach Alternativen umsehen.
+
+Die Alternative die im Moment von vielen bevorzugt wird ist [App.net](http://app.net). Das liegt daran das App.net eigentlich das gleiche Problem hat wie Twitter. Die Statusnachrichten dort gehören auch weiterhin App.net und wir hoffen einfach darauf das wir den Machern dort mehr vertrauen können als Twitter. Aber das kann nicht die Lösung sein.
+
+Meiner Meinung nach benötigen wir einen dezentralen offenen Standard, wie E-Mail oder RSS das sind.
+
+## Tent.io ist nicht Twitter
+
+[Tent.io](http://tent.io) ist die Umsetzung einer solchen Möglichkeit. Ich kann damit meinen eigenen Tent Server betreiben und meine eigenen Statusnachrichten veröffentlichen so wie ich das für richtig halte. Jeder kann dies auf diesen Weg tun. Und unsere Freunde die nicht so technikbegeistert sind oder einfach nur ihren Status in die Welt hinaus posaunen wollen können einen Provider dafür nutzen. Diese gibt es bereits und sind entweder kostenlos dafür mit Werbung oder aber mit einer monatlichen Gebühr zu nutzen. Wir können unsere Accounts anschließend gegenseitig abonnieren und dadurch den Status jedes anderen Nutzers sehen, genauso wie auf Twitter im Moment.
+
+Der erste Service der so etwas anbietet ist [Tent.is](http://tent.is) und dort wird das ganze [so beschrieben](https://github.com/tent/tent.io/wiki/Explaining-Tent):
+
+> Tent.io is a decentralized protocol (like email), and Tent.is is a particular hosted service (like gmail).
+
+Jeder kann im Moment einen Account auf tent.is erstellen und benutzen. Ich kann später wenn ich möchte meinen eigenen Tent Server aufsetzen unter einer beliebigen Domain und meine Follower auf tent.is folgen weiterhin nahtlos meinem Account. Das ist ein großer Vorteil und der Weg wohin es eigentlich gehen sollte.
+
+Hier mal an einem Beispiel an Hand eines Blogs erklärt wie es heute schon existiert:   
+Ein Bekannter kann einen Blog aufsetzen auf z.B. wordpress.com oder Tumblr und ich kann durch RSS die Änderungen dort abonnieren in z.B. Google Reader. Gleichzeitig kann ich meinen eigenen Blog erstellen und meine Bekannten können per RSS diesen ebenfalls abonnieren in Google Reader oder einem RSS Client den diese bevorzugen. Das ist genau das was Tent.io kann aber deutlich einfacher und zusätzlich noch mit Möglichkeiten der Privatsphäre weil ich vielleicht nicht alle Statusnachrichten mit allen Teilen möchte. Tent.io ist dadurch ganz klar deutlich mehr als nur ein Twitter Klon.
+
+Man kann genauso gut App.net benutzen, sollte sich aber darüber im Klaren sein das Tent.io eigentlich die bessere Lösung ist. Denn hier gehören unsere Statusnachrichten und unsere Identität nicht alle ein und derselben Firma.

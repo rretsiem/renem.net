@@ -1,0 +1,19 @@
+{
+  "name": "HugoWebMentions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "getWebmentions.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node getWebmentions.js"
+  },
+  "author": "René Meister <rene@renem.net>",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "emoji-data": "^0.2.0",
+    "lodash": "^4.17.4",
+    "md5": "^2.2.1",
+    "request": "^2.81.0"
+  }
+}

@@ -1,0 +1,17 @@
+{{- if .Params.title -}}
+  <h2 id="post-header" class="p-post-title p-name">
+  {{- if .Params.mfbookmark -}}
+  <svg class="icon"><use xlink:href="#link" /></svg>
+    <a class="u-bookmark-of" href="{{ .Params.mfbookmark }}">{{ .Title }}</a>
+  {{- else if .Params.mfbookmarkof -}}
+  <svg class="icon"><use xlink:href="#link" /></svg>
+    <a class="u-bookmark-of" href="{{ .Params.mfbookmarkof }}">{{ .Title }}</a>
+  {{- else if .Params.mfrepostof -}}
+  <svg class="icon"><use xlink:href="#link" /></svg>
+    <a class="u-repost-of" href="{{ .Params.mfrepostof }}">{{ .Title }}</a>
+  {{- else -}}
+    <a class="u-url" href="{{ .Permalink }}"></a>
+    {{ .Title }}
+  {{- end -}}
+  </h2>
+{{- end -}}

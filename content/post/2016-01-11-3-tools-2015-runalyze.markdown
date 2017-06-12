@@ -1,0 +1,48 @@
+---
+title: Meine 3 beliebtesten Tools & Gadgets 2015 — 1. Runalyze
+tags:
+- series
+- sport
+date: 2016-01-11T22:45:38+02:00
+description: Runalyze ist das Tool für Läufer die Statistiken lieben.
+keywords:
+- runalyze
+- statistics
+- data
+- gadgets
+- tools
+series:
+- "Meine 3 beliebtesten Tools & Gadgets 2015"
+aliases:
+- /meine-3-beliebtesten-tools-gadgets-2015-1-runalyze-e5aac620837a
+- /blog/2016/1/11/meine-3-beliebtesten-tools-gadgets-2015-1-runalyze
+twit: https://twitter.com/rretsiem/statuses/686853969109450752
+---
+
+Es gibt sicherlich mehr Dinge die mir 2015 positiv in Erinnerung geblieben und erwähnenswert wären, in den folgenden Beiträgen werde ich mich aber auf 3 Dinge beschränken die am meisten herausgestochen sind; die mir 2015 am ehesten in den Sinn kamen zu diesem Thema.
+
+Ich beschränke mich dabei auf Dinge aus der Technik und dem Sport, ganz einfach deshalb weil ich hier im Blog hauptsächlich davon berichte. Außerdem musste ich das irgendwie eingrenzen denn sonst werden es einfach zu viele.
+
+Die folgenden 3 Beiträge — ja, so eine Menge ist ungewöhnlich für mich, ich weiß — kommen alle in den nächsten Tagen und die Reihenfolge hat nichts mit der "Beliebtheit" des Tools oder Gadgets zu tun, mit einem davon muss ich ja anfangen.
+
+Weltfrieden gehört übrigens nicht dazu, denn den gab ews 2015 ja leider wieder nicht.
+
+## Runalyze
+
+{{< figure src="https://cdn-images-1.medium.com/max/1600/0*Qjbmb1VagZJ2myrm.png" caption="">}}
+
+Den Anfang macht [Runalyze](https://runalyze.com/), ein Tool welches ich dieses Jahr erst kennen gelernt habe. Nach kurzer Zeit wurde dies bereits meine Hauptanlaufstelle zum Thema Datenauswertung meiner Läufe. Ich hatte dazu ja schon [ein]({{< relref "post/2015-06-03-runalyze-laufstatistiken-soweit-man-laufen-kann.markdown" >}}) [wenig]({{< relref "post/2015-12-07-adieu-strava-premium-runalyze-kann-statistiken-einfach-besser.markdown" >}}) geschrieben und das Tool genauer vorgestellt. Trotzdem möchte ich mit diesem Beitrag noch einmal einen kurzen Überblick geben.
+
+Runalyze ist ein Lauftagebuch was von Läufern entwickelt wurde und das merkt man an vielen Stellen; im positiven. Es gibt ja eine Menge Seiten und Tools mit denen man seine Läufe und andere Sportarten wie Radfahren oder Schwimmen aufzeichnen kann. Mir ist aber bis zur Entdeckung von Runalyze kein Tool untergekommen was so viele Statistiken für das Laufen zur Verfügung stellt.
+
+Das beginnt mit der aktuellen Form über die Ermüdung bis hin zu Wettkampfprognosen von anerkannten Formeln für verschiedenen Distanzen; Jack Daniels und Herbert Steffny sagen den meisten Läufern etwas.
+
+Für jeden Lauf kann man sehr detailliert in Diagrammen und Tabellen sehen wie hoch die Herzfrequenz bei welcher Pace war; zugegeben, dass können auch die meisten anderen Tools. Hat man aber eine Laufuhr die auch Schrittfrequenz, Schrittweite, HRV-Daten aufzeichnet während eines Trainings dann wird das Angebot an Tools welche diese Daten alle auswerten und darstellen schon kleiner. Bei Garmin gibt es Connect, bei Suunto sicherlich auch etwas vergleichbares aber eben immer für jeden Hersteller ein eigenes Tool. In Runalyze wird alles zentral für jeden Lauf an einer Stelle sichtbar.
+
+Equipment-Verwaltung ist ein weiterer Punkt, den auch andere mittlerweile unterstützen. Runalyze geht hier aber noch einen Schritt weiter. Es lassen sich neben Schuhen — ein Equipment welches die meisten Anbieter auch unterstützen —auch Hosen, Jacken, Einlagen usw. eintragen und die Laufleistung dazu aufzeichnen.
+
+Man sieht also das Runalyze ein sehr mächtiges Werkzeug ist, welches auch ich noch nicht vollständig beherrsche. Für die Daten die mir persönlich wichtig sind nutze ich es aber beinahe täglich und lade die FIT Dateien meiner Forerunner 620 Laufuhr nach einem Lauf hoch um zu sehen wie meine Form sich entwickelt.
+
+Beim Thema Datenschutz ist Runalyze ebenfalls weit vorn, da man die Möglichkeit hat eine eigene Instanz auf seinem eigenen Server aufzusetzen.
+
+Probiert es einfach einmal aus falls noch nicht geschehen und berichtet doch mal was ihr als Lauftagebuch benutzt oder was euch an Runalyze am besten gefällt, denn alle Funktionen kenne ich wie weiter oben erwähnt eben auch noch nicht.

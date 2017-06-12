@@ -1,0 +1,5 @@
+.DS_Store
+firebase.json
+.firebaserc
+.git/
+public/

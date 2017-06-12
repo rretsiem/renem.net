@@ -1,0 +1,9 @@
+<div class="mention-form">
+	<form action="https://webmention.io/renem.net/webmention" method="post">
+	Have you written a <a href="https://indieweb.org/responses">response</a> to this? Let me know the <abbr title="Uniform Resource Locator">URL</abbr>:
+		<input type="url" name="source" class="url" placeholder="https://example.com/my-awesome-response">
+		<input type="hidden" name="target" value="{{ .Permalink }}">
+    <input type="submit" class="button" value="Send Webmention">
+	</form>
+</div>
+<hr>

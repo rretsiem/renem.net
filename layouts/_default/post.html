@@ -1,0 +1,27 @@
+<article class="{{ .Type }} h-entry">
+	<header class="post-header">
+		{{- partial "post/post-header" . -}}
+  </header>
+
+<!--  {{ partial "indieweb/webmentions.html" . }} -->
+	{{- partial "indieweb/mfreplyto" . -}}
+
+    <section class="post-content e-content">
+        {{ .Content }}
+				<span class="article-end">&amp;</span>
+    </section>
+    <footer class="post-footer">
+        {{- partial "post/author" . -}}
+				{{- partial "post/share" . -}}
+				{{- partial "post/prev_next" . -}}
+
+        {{- partial "disqus.html" . -}}
+    </footer>
+</article>
+<section>
+{{- partial "webmention.html" . -}}
+</section>
+<hr>
+<section>
+	{{-  partial "mention.html" . -}}
+</section>

@@ -1,0 +1,15 @@
+        <section class="f-1">
+            {{ if isset .Params "author" }}
+            <section class="author">
+                <p>Words by {{ index .Params "author" }}</p>
+            </section>
+            {{ else if isset .Site.Params "author" }}
+            <section class="author p-author h-card" rel="author">
+                <p>Words by <a href="{{ .Site.BaseURL }}about" class="metatag" title="{{ index .Site.Params "author" }}">{{ index .Site.Params "author" }}</a></p>
+            </section>
+            {{ end }}
+            <p class="f-post-time">
+              {{- partial "indieweb/mfsyndication" . -}}
+                <a href="{{ .Permalink }}" class="metatag u-url u-uid"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "January 2, 2006" }}</time></a>
+            </p>
+        </section>

@@ -1,0 +1,75 @@
+---
+tags:
+- backup
+- tech
+date: 2012-10-16T00:00:00+02:00
+title: Datensicherung
+aliases:
+- /2012/10/16/backup/
+---
+
+Es ist immer noch unverständlich für mich weshalb so viele Menschen erst dann anfangen über eine Datensicherung nachzudenken wenn es zu spät ist. Ich möchte mir gar nicht vorstellen wie verheerend es wohl sein könnte wenn ich Wochen, Monate oder Jahre an Arbeit mit meinen wichtigen Dokumenten, Familien-Fotos und Projekten verlieren würde.
+
+Externe Festplatten werden immer günstiger, so genannte "Off-site Backup Services" immer bezahlbarer und immer einfacher zu benutzen. OS X wird sogar seit Jahren mit einer tollen Backup-Lösung ausgeliefert.
+
+Mit relativ wenig Aufwand und Kosten kann man sich heute eine automatisierte und sichere Lösung konfigurieren. Weshalb Leute in diesen Tag kein Backup machen kann ich mir eigentlich nur dadurch erklären das sie entweder zu bequem sind, nicht sicher sind wo sie beginnen sollen oder sie sehen keinen Grund in einem Datensicherung. Oder aber alles auf einmal.
+
+Daher möchte ich hier einmal mit ein par Tipps Lösungsmöglichkeiten aufzeigen wie man ganz einfach ein sicheres Backup-System aufsetzen kann.
+
+Eine gute Datensicherung sollte ungefähr so aussehen:
+
+* **Lokal:** Eine externe Festplatte am Rechner, die eine Kopie der selben Daten wie auf dem Computer hält. Hier kann wirklich alles gesichert werden.
+* **Außer Haus:** Die wichtigsten Daten gesichert in der "Cloud".
+* **Automatisiert:** Alles wird vollkommen selbständig gesichert ohne das irgendetwas manuell gestartet werden muss, denn das wird in der Regel vergessen.
+
+## Lokale Backups
+Ein regelmäßiges Backup auf einer externen Festplatte ist die beste und einfachste Lösung seine Daten zu sichern. Außerdem ist es auch der einfachste Weg seine Daten im Notfall wiederherstellen zu können.
+
+Der einfachste Weg seinen Mac zu sichern ist ganz einfach eine externe Festplatte anzuschließen und Time Machine einzuschalten.
+
+Seit OS X _Mountain Lion_ können sogar mehrere Festplatten für das Backup von Time Machine verwendet werden. Ich habe bei mir 2 konfiguriert auf die immer abwechselnd gesichert wird.
+
+Zusätzlich dazu kann man auch mit Carbon Copy Cloner oder SuperDuper ein startbares Backup seines Macs erstellen, so das man im Notfall seinen Mac von einer externen Festplatte starten kann.
+
+## Außer Haus
+Der Grund für eine Sicherung außer Haus ist z.B. ein Diebstahl des Laptop aus dem Haus oder weitere Komponenten wie Festplatten, ein Brand oder ähnliches. Denn wenn es schon schlimm kommt, dann doch bitte nicht auch noch die wichtigsten Dateien oder Fotos von Kindern, der Hochzeit usw.
+
+Dafür muss man auch keine exakte Kopie des kompletten Computers in der Cloud speichern. Man sollte jedoch sicherstellen das die wirklich wichtigen Dateien an irgendeinem Ort ausserhalb der eigenen Wohnung gesichert sind.
+
+Bisher habe ich für die wichtigen Dokumente Dropbox verwendet. Die 2GB kostenloser Speicher reichen am Anfang erst einmal aus um wichtige Unterlagen dort zu speichern und auch direkt von dort bearbeiten zu können. Später kann man dann für etwas Geld auch deutlich mehr Speicherplatz dazu kaufen. Für alles andere, wie Fotos, Videos usw. hatte ich bis vor kurzem auch noch keine wirklich gute Lösung gefunden.
+
+Nun habe ich mich aber doch für einen Anbieter entschieden und meine Datensicherung ist eine Kombination aus 2 verschiedenen Diensten: Dropbox und Backblaze.
+
+### Backblaze
+Für all meine Dokumente, Musik, Fotos und alle anderen Daten nutze ich [Backblaze](http://www.backblaze.com/).
+
+Backblaze ist ziemlich günstig für das was geboten wird. Unbegrenzt viele Dateien für ca. $5 pro Monat oder ca. $50 pro Jahr. Man kann damit auch externe Festplatten sichern, wenn man z.B. wie ich alle Fotos und Musik auf einer anderen Platte als der internen SSD hat.
+
+Das Backblaze Programm läuft als native Mac-Anwendung, wird über die Systemeinstellungen gesteuert und erlaubt eine ausreichende Kontrolle über Dinge wie Häufigkeit, Transfer-Geschwindigkeit und welche Daten denn gesichert werden sollen. Die Daten werden vor dem Transfer in die Cloud auf dem lokalen Mac verschlüsselt. Wenn man noch etwas mehr Sicherheit möchte, kann man auch noch einen eigenen Schlüssel definieren, so das zusätzlich zu Benutzername und Passwort auch noch der Schlüssel bekannt sein muss um wieder an die Daten zu kommen.
+
+Worüber man sich bei Backblaze im Klaren sein sollte ist, das es nicht den kompletten Mac sichert. Es werden keine Systemverzeichnisse und auch keine Applikationen gesichert. Die _Application Support Ordner_ werden aber mitversichert so das man im Falle der Wiederherstellung zwar das System und die Programme noch einmal installieren/herunterladen muss, aber die Einstellungen zu den Programmen bleiben erhalten.   
+Für mich ist das vollkommen ausreichend[^1],  denn so spart man auch einiges an Megabyte für den Transfer des initialen Backups auf die Backblaze Server und hat im Notfall trotzdem alle wichtigen Daten und Einstellung griffbereit.
+
+### Dropbox
+Ob ich [Dropbox](http://db.tt/k8VCXx1) wirklich noch vorstellen muss, glaube ich nicht, die meisten werden diesen Service bereits kennen und vielleicht auch nutzen.
+
+Ich verwende Dropbox für all meine Projekte und Dokumente. Sobald ich eine Datei speichere wird diese direkt zu Dropbox synchronisiert und ist somit doppelt gesichert. Somit verliere ich keine Dateien die ich erst kürzlich geändert habe.
+
+Außerdem funktioniert die Sicherung mit Dropbox und Backblaze auch überall dort wo ich eine Internetverbindung zur Verfügung habe. Ich muss also nicht daran denken vor dem Verlassen der Wohnung noch einmal ein Backup anzustoßen, es wird immer mit gesichert.
+
+## Sicher und einfach muss es sein
+Für nicht einmal 5€ im Monat und nur einen minimalen Aufwand habe ich somit ein System welches meine Daten sicher und redundant bereithält. Ich muss dafür nicht einmal irgendetwas manuell aktivieren.
+
+Vielleicht klingt das alles etwas kompliziert am Anfang oder vielleicht auch zu teuer für einige, aber wenn es einmal eingerichtet ist, läuft alles wie von selbst. Ich habe einfach ein besseres Gefühl, wenn ich weiß das selbst bei einem Ausfall der SSD in meinem Laptop keine Daten verloren gehen die mir wichtig sind. Wenn es in der Wohnung einmal brennt, verliere ich auch keine Daten.[^2] Wenn mein Computer gestohlen wird, verliere ich ebenfalls keine Daten.
+
+Wem das alles schon zu viel ist, der sollte zumindest die folgenden Schritte in Erwägung ziehen um eine gute Datensicherung aufzusetzen:
+
+* Eine große günstige Festplatte kaufen und damit Time Machine auf dem Mac einrichten. Evtl. auch eine [Time Capsule](http://www.apple.com/de/timecapsule/) in Erwägung ziehen um das Ganze kabellos zu realisieren.
+
+* Einen [Backblaze](http://backblaze.com) Account erstellen.
+
+Damit hat man alles wichtige um eine gute Datensicherung zu erstellen: Lokales Backup und die Sicherung außerhalb der Wohnung ohne darüber nachdenken zu müssen.
+
+[^1]: Wem das nicht ausreicht oder wer ein komplettes Backup des Rechners in der Cloud bevorzugt, sollte sich z.B. einmal [CrashPlan](http://crashplan.com) ansehen. CrashPlan war meine 2. Option direkt nach Backblaze.
+
+[^2]: Um ehrlich zu sein ist das der größte Vorteil, wenn ich im Notfall nicht noch an irgendetwas denken muss um Familienfotos oder ähnliches in Sicherheit bringen zu müssen. Ich muss mir darüber einfach keinen Kopf mehr machen. Ich kann mich voll darauf konzentrieren meine Frau sicher aus dem Haus zu bringen. Alles andere ist nämlich ersetzbar.

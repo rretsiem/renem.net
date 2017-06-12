@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+{{ `<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->` | safeHTML }}
+{{ `<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->` | safeHTML }}
+{{ `<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->` | safeHTML }}
+{{ `<!--[if gt IE 8]><!-->` | safeHTML }}<html class="no-js" prefix="og: http://ogp.me/ns#" xmlns:og="http://ogp.me/ns#">{{ `<!--<![endif]-->` | safeHTML }}
+
+{{ partial "head.html" . }}
+<body>
+{{ `<!--[if lt IE 7]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chrome/‎">install Google Chrome</a> to experience this site.</p><![endif]-->` | safeHTML }}
+
+{{ partial "header.html" . }}
+<main class="content" role="main">
+	<div class="container">
+    <article role="article" class="{{ .Type }} h-entry">
+            <header>
+              <h3 class="entry-title">
+                {{ .Title }}  <!-- title, in this case it will be "Archive page" -->
+              </h3>
+            </header>
+            <div id="blog-archives" class="category">
+              {{ .Content }}
+              {{ range (where .Site.Pages "Type" "post") }}
+              <!-- <h3>
+                {{ .Date | dateFormat "2006"}}
+              </h3> -->
+              <article class="archive-article">
+                <header class="post-header">
+
+                  <!-- <p class="post-time"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">{{ .Date.Format "January 2" }}</time></p> -->
+                  <h4 class="post-title p-name"><time class="post-time dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">{{ .Date.Format "2006 Jan 2" }}&nbsp;&nbsp;</time><a class="metatag u-url u-uid" href="{{ .Permalink }}">{{ .Title }}</a></h4>
+                    <!-- <p class="post-time"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">{{ .Date.Format "January 2, 2006" }}</time></p>-->
+                </header>
+              </article>
+              {{ end }}
+
+            </div>
+          </article>
+		<hr>
+	</div>
+</main>
+{{ partial "footer.html" . }}
+{{ partial "google_analytics.html" . }}
+
+<script type="text/javascript">
+  fitText(document.getElementsByClassName('post-title'), 1.2, { minFontSize: '16px', maxFontSize: '20px' })
+</script>
+
+</body>
+</html>

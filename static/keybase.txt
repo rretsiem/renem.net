@@ -1,0 +1,77 @@
+==================================================================
+https://keybase.io/renem
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://renem.net
+  * I am renem (https://keybase.io/renem) on keybase.
+  * I have a public key with fingerprint 2F38 99DD B4EC 5C77 0AD8  CB56 4C0F 570A 8D0A C384
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "client": {
+            "name": "keybase.io node.js client",
+            "version": "0.3.2"
+        },
+        "key": {
+            "fingerprint": "2f3899ddb4ec5c770ad8cb564c0f570a8d0ac384",
+            "host": "keybase.io",
+            "key_id": "4C0F570A8D0AC384",
+            "uid": "e7586831337923c50e5ee7bf056ce900",
+            "username": "renem"
+        },
+        "merkle_root": {
+            "ctime": 1399885707,
+            "hash": "6c3b8b2bf766bcd5676f687895054e2e7874b1ca57bd71b1ed0fbfbf7b6047730d918760972f14260027f772b95d79d9b8c4d9a84ab7cbd2caedeb48c91e1b5f",
+            "seqno": 7166
+        },
+        "service": {
+            "hostname": "renem.net",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1399886191,
+    "expire_in": 157680000,
+    "prev": "f9dbd5d639f691e8faf1fbc268cd55e95d700d1e93e6dcda51c39e5679f285b7",
+    "seqno": 3,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: GnuPG v1.4.6 (Darwin)
+Comment: GPGTools - http://gpgtools.org
+
+owFVUl1oXEUU3t3EWBWDUJQmGAy32BoatnN/5m+r4jYaWxEibV4itZs7M+cmN5vc
+u957G7PUXcUgWolk+1JBodiC7UsrNNAiQh9KEK2Vtj7Un4oQZNsSG0te/KlFdG6M
+2M68zJzzzXe+75xp3N+SyWXv6+qZrhe7T2TPLYrMzsr+2l5DhKpqFPYactyHIElP
+gTsBRsEoQ1W4MeT9sDsIFeTH4u5VTK8xCVHsh4FGobydt4xabwpPH3t+MAJRJfJT
+LsPybMa5UsIBiSWlyFVMCkwciTysb0whV9rM0ZSjYZzcUdVY4Sz5SkedPtSv8UX2
+NCr2/Yvfs5IAihlhtmnblFu2xAgwABUewkQCRygFxhCtWooggIlU7ARE5XEoRWG4
+4lgmfpo3bc4Z03WoluPGo/oFkbZgwhIeJURIhQklHmGUcYywAxZQRh1hShdToagp
+TFDIE3pTQZBDqY0UNxkliFPLMx2LIGRRj1JLcKwoV1ww6SjuMscVVAplSRcUCIdJ
+boIpsKf1x/ByEBoFahJSS2/RpC8hVZ127HZj+QDS2VSiMAllOK7Do0lSKaR+k2ol
+hb0CorRKUPpI+IHSw7p9mqaG3tELYnKz14Cpih9ByU8RmBKG9ErrwKTm9LgSCiti
+c49o0cxzPdMT0iJMtwtD6hMhZQK3gSipXGxKm4NuJPcshgX936GtdbojmjL2RwI3
+2ROBUduXfbg1k81l2u7Kpd81c+89D/z3hwfeufvvHZcPPth4feahU9Mtzv7fnmi2
+PrK8Nde68aktHc0X6xfM/JnTueMft68buzr19WF70duGvqrtnj2/+bUfzw5dHPju
+1tH5P43mD4Wxbx/t7r2589LcqcPn64cWh5a+2TH/WHH78JuXm8/miy+9eu39qzcW
+rswsJrvOLFdl8vbcpoUBtHF5V1+9/cNPnsl9caWzsTS2ofnc7PCmo+T34z+vWR50
+P+j6dKCzfff6pX7ZVv7jyWvxIeqv/8tfOL2h0fHG5ulMZ7OtceDdzz4/23fyWI84
+sT06cv3X4PFB3jVczd748q1LM/O3thwYfP6nm1PXZ78/+F5H/4We+rZzW1tm5jqP
+XRza90vuhbVlXP4H
+=qWZI
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/renem
+
+==================================================================

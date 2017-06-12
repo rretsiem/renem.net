@@ -1,0 +1,28 @@
+{{ with .Params.mfreplyto }}
+<div class="context">
+	<h5>Dieser Beitrag ist eine Antwort auf:</h5>
+	{{- if in . "twitter.com" -}}
+			<span><a class="u-in-reply-to" rel="in-reply-to" href="{{ . }}">
+					<svg class="icon"><use xlink:href="#twitter" /></svg>&nbsp;&nbsp;{{ . }}
+				</a>
+			</span>
+			{{- $tweetId := replaceRE `https?:\/\/twitter.com\/[a-zA-Z0-9_]{1,20}\/status\/([0-9]*)` `$1` . -}}
+			{{- $urlPre := "https://publish.twitter.com/oembed" -}}
+			{{- $embedParams := "?cards=none&conversation=none&link_color=%23d40d0a&url=" -}}
+			{{- $tweetReply := . -}}
+			{{- $tweetJ := getJSON $urlPre $embedParams $tweetReply -}}
+				{{- if $tweetJ.html -}}
+				<span>
+					<blockquote>
+						{{- $tweetJ.html | safeHTML -}}
+					</blockquote>
+				</span>
+				{{- end -}}
+	{{- else -}}
+		<span><a class="u-in-reply-to" rel="in-reply-to" href="{{ . }}">
+      <svg class="icon"><use xlink:href="#reply" /></svg>&nbsp;&nbsp;{{ . }}
+      </a>
+    </span>
+	{{- end -}}
+</div>
+{{- end -}}

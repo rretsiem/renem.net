@@ -1,0 +1,48 @@
+    <head>
+        {{ partial "meta.html" . }}
+        <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
+        <!-- <link rel="canonical" href="{{ .Site.BaseURL }}" /> -->
+        <link rel="canonical" href="{{ .Permalink }}">
+        <!-- custom css here -->
+        <link href="{{ .Site.BaseURL }}css/bundle.css" rel="stylesheet" type="text/css">
+        <!-- <link href="{{ .Site.BaseURL }}css/main.css" rel="stylesheet" type="text/css"/> -->
+        <!-- Site verification -->
+        {{ if .IsHome }} {{ partial "site-verification" . }} {{ end }}
+        <!-- site RSS feeds -->
+      {{ if .RSSLink }}
+        <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+        <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+        <link href="{{ .Site.BaseURL }}feed.json" rel="alternate" type="application/json" title="{{ .Site.Title }} JSON feed" />
+      {{ end }}
+        <!-- <link rel="hub" href="https://switchboard.p3k.io/"> -->
+        <link rel="hub" href="https://renem.superfeedr.com/" />
+        <link rel="self" href="{{ .Site.BaseURL }}" />
+ {{ if .Site.Params.email }}
+         <link rel="me" href="mailto:{{ .Site.Params.email }}" />
+ {{ end }}
+ {{ if .Site.Params.github }}
+         <link href="https://github.com/rretsiem" rel="me">
+{{ end }}
+        <!-- GPG, security -->
+        <link rel="pgpkey" type="application/pgp-keys" href="/assets/ACC2B4B2.asc">
+        <link href="https://instagram.com/rene.meister/" rel="me">
+        <link href="https://keybase.io/renem" rel="me">
+        <link href="https://www.flickr.com/people/renene26/" rel="me">
+        <!-- micro.blog -->
+        <link href="https://micro.blog/renem" rel="me" />
+        <link href="https://runalyze.com/athlete/renem" rel="me" />
+        <!-- indieweb -->
+        <link href="http://microformats.org/profile/hcard" rel="profile" />
+        <link rel="authorization_endpoint" href="https://indieauth.com/auth">
+        <link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
+        <!-- Webmentions -->
+        <link rel="pingback" href="https://webmention.io/renem.net/xmlrpc" />
+        <link rel="webmention" href="https://webmention.io/renem.net/webmention" />
+        <!-- <link rel="webmention" href="https://webmention.herokuapp.com/api/webmention" /> -->
+        <!-- <link rel="micropub" href="https://micro.blog/micropub/" /> -->
+
+        {{ partial "seo-og.html" . }}
+        {{ partial "seo-schema.html" . }}
+        {{ partial "seo-twittercard.html" . }}
+        {{ partial "seo-googlenews.html" . }}
+    </head>

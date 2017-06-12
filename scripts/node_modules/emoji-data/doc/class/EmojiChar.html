@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset='UTF-8'>
+  <title>CoffeeScript API Documentation</title>
+  <script src='../javascript/application.js'></script>
+  <script src='../javascript/search.js'></script>
+  <link rel='stylesheet' href='../stylesheets/application.css' type='text/css'>
+</head>
+  <body>
+    <div id='base' data-path='../'></div>
+<div id='header'>
+  <div id='menu'>
+    <a href='../extra/README.md.html' title='Emoji-data'>
+      Emoji-data
+    </a>
+    &raquo;
+    <a href='../alphabetical_index.html' title='Index'>
+      Index
+    </a>
+    &raquo;
+    <span class='title'>EmojiChar</span>
+  </div>
+</div>
+    <div id='content'>
+      <h1>
+        Class:
+        EmojiChar
+      </h1>
+      <table class='box'>
+        <tr>
+          <td>Defined in:</td>
+          <td>src&#47;emoji_char.coffee</td>
+        </tr>
+      </table>
+      <h2>Overview</h2>
+      <div class='docstring'>
+  <p>EmojiChar represents a single Emoji character and its associated metadata.</p><h2 id="properties">Properties</h2>
+<ul>
+<li><code>name</code> - The standardized name used in the Unicode specification to represent this emoji character.</li>
+<li><code>unified</code> - The primary unified codepoint ID for the emoji.</li>
+<li><code>variations</code> - A list of all variant codepoints that may also represent this emoji.</li>
+<li><code>short_name</code> - The canonical &quot;short name&quot; or keyword used in many systems to refer to this emoji. Often surrounded by <code>:colons:</code> in systems like GitHub &amp; Campfire.</li>
+<li><code>short_names</code> - A full list of possible keywords for the emoji.</li>
+<li><code>text</code> - An alternate textual representation of the emoji, for example a smiley face emoji may be represented with an ASCII alternative. Most emoji do not have a text alternative. This is typically used when building an automatic translation from typed emoticons.</li>
+</ul><p>It also contains a few helper functions to deal with this data type.</p>
+</div>
+<div class='tags'>
+</div>
+      <h2>Class Method Summary</h2>
+      <ul class='summary'>
+  <li>
+    <span class='signature'>
+      <a href='#_unified_to_char-static'>
+        .
+(String)
+<b>_unified_to_char</b><span>(uid)</span>
+      </a>
+    </span>
+    <span class='note private title'>Private</span>
+    <span class='desc'>
+      Convert a unified codepoint ID to the UCS-2 string representation. 
+    </span>
+  </li>
+</ul>
+      <h2>Instance Method Summary</h2>
+      <ul class='summary'>
+  <li>
+    <span class='signature'>
+      <a href='#is_doublebyte-dynamic'>
+        #
+(Boolean)
+<b>is_doublebyte</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      Is the <code>EmojiChar</code> represented by a doublebyte codepoint in Unicode? 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#has_variants-dynamic'>
+        #
+(Boolean)
+<b>has_variants</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      Does the <code>EmojiChar</code> have an alternate Unicode variant encoding? 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#variant-dynamic'>
+        #
+(String, null)
+<b>variant</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      Returns the most likely variant-encoding codepoint ID for an <code>EmojiChar</code>. 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#render-dynamic'>
+        #
+(String)
+<b>render</b><span>({variant_encoding} = {
+  variant_encoding: true
+})</span>
+      </a>
+    </span>
+    <span class='desc'>
+      Renders a UCS-2 string representation of the glyph for writing to screen. 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#chars-dynamic'>
+        #
+(Array&lt;String&gt;)
+<b>chars</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+      Returns a list of all possible UTF-8 string renderings of an <code>EmojiChar</code>. 
+    </span>
+  </li>
+  <li>
+    <span class='signature'>
+      <a href='#toString-dynamic'>
+        #
+(String)
+<b>toString</b><span>()</span>
+      </a>
+    </span>
+    <span class='desc'>
+    </span>
+  </li>
+</ul>
+      <h2>Class Method Details</h2>
+      <div class='methods'>
+  <div class='method_details'>
+    <p class='signature' id='_unified_to_char-static'>
+      .
+(String)
+<b>_unified_to_char</b><span>(uid)</span>
+      <span class='note private'>Private</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>Convert a unified codepoint ID to the UCS-2 string representation.</p>
+</div>
+<div class='tags'>
+  <h3>Parameters:</h3>
+  <ul class='param'>
+    <li>
+      <span class='name'>uid</span>
+      <span class='type'>
+        (
+          <tt>String</tt>
+        )
+      </span>
+      &mdash;
+      <span class='desc'>the unified codepoint ID for an emoji </span>
+    </li>
+  </ul>
+  <h3>Returns:</h3>
+  <ul class='return'>
+    <li>
+      <span class='type'></span>
+      (
+        <tt>String</tt>
+      )
+      &mdash;
+      <span class='desc'>UCS-2 string representation of the emoji glyph </span>
+    </li>
+  </ul>
+</div>
+  </div>
+</div>
+      <h2>Constructor Details</h2>
+      <div class='methods'>
+  <div class='method_details'>
+    <p class='signature' id='constructor-dynamic'>
+      #
+(EmojiChar)
+<b>constructor</b><span>(blob)</span>
+      <br>
+    </p>
+    <div class='tags'>
+  <h3>Parameters:</h3>
+  <ul class='param'>
+    <li>
+      <span class='name'>blob</span>
+      <span class='type'>
+        (
+          <tt>Object</tt>
+        )
+      </span>
+      &mdash;
+      <span class='desc'>the JSON blob entry from emoji-data </span>
+    </li>
+  </ul>
+  <h3>Returns:</h3>
+  <ul class='return'>
+    <li>
+      <span class='type'></span>
+      <tt><a href='../class/EmojiChar.html'>EmojiChar</a></tt>
+    </li>
+  </ul>
+</div>
+  </div>
+</div>
+      <h2>Instance Method Details</h2>
+      <div class='methods'>
+  <div class='method_details'>
+    <p class='signature' id='is_doublebyte-dynamic'>
+      #
+(Boolean)
+<b>is_doublebyte</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>Is the <code>EmojiChar</code> represented by a doublebyte codepoint in Unicode?</p>
+</div>
+<div class='tags'>
+  <h3>Returns:</h3>
+  <ul class='return'>
+    <li>
+      <span class='type'></span>
+      <tt>Boolean</tt>
+    </li>
+  </ul>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='has_variants-dynamic'>
+      #
+(Boolean)
+<b>has_variants</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>Does the <code>EmojiChar</code> have an alternate Unicode variant encoding?</p>
+</div>
+<div class='tags'>
+  <h3>Returns:</h3>
+  <ul class='return'>
+    <li>
+      <span class='type'></span>
+      (
+        <tt>Boolean</tt>
+      )
+      &mdash;
+      <span class='desc'>true when the EmojiChar has at least one variant encoding </span>
+    </li>
+  </ul>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='variant-dynamic'>
+      #
+(String, null)
+<b>variant</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>Returns the most likely variant-encoding codepoint ID for an <code>EmojiChar</code>.</p><p>For now we only know of one possible variant encoding for certain
+characters, but there could be others in the future.</p><p>This is typically used to force Emoji rendering for characters that could
+be represented in standard font glyphs on certain operating systems.</p><p>The resulting encoded string will be two codepoints, or three codepoints
+for doublebyte Emoji characters.</p>
+</div>
+<div class='tags'>
+  <h3>Returns:</h3>
+  <ul class='return'>
+    <li>
+      <span class='type'></span>
+      (
+        <tt>String, null</tt>
+      )
+      &mdash;
+      <span class='desc'>The most likely variant-encoding codepoint ID. If there is no variant-encoding for a character, returns null. </span>
+    </li>
+  </ul>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='render-dynamic'>
+      #
+(String)
+<b>render</b><span>({variant_encoding} = {
+  variant_encoding: true
+})</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>Renders a UCS-2 string representation of the glyph for writing to screen.</p><p>If you want to specify whether or not to use variant encoding, pass an
+options hash such as:</p><pre><code>foo.char({variant_encoding: true})
+</code></pre><p>By default this will use the variant encoding if it exists.</p><p>variant encoding.</p>
+</div>
+<div class='tags'>
+  <h3>Parameters:</h3>
+  <ul class='param'>
+    <li>
+      <span class='name'>options</span>
+      <span class='type'>
+        (
+          <tt>Object</tt>
+        )
+      </span>
+      &mdash;
+      <span class='desc'>the encoding options </span>
+    </li>
+  </ul>
+  <h3>
+    Options Hash:
+    (options):
+  </h3>
+  <ul class='options'>
+    <li>
+      <span class='name'>variant_encoding</span>
+      <span class='type'>
+        (
+          <tt>Boolean</tt>
+        )
+      </span>
+      &mdash;
+      <span class='desc'>true if you want to render with </span>
+    </li>
+  </ul>
+  <h3>Returns:</h3>
+  <ul class='return'>
+    <li>
+      <span class='type'></span>
+      (
+        <tt>String</tt>
+      )
+      &mdash;
+      <span class='desc'>the emoji character rendered to a UCS-2 string </span>
+    </li>
+  </ul>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='chars-dynamic'>
+      #
+(Array&lt;String&gt;)
+<b>chars</b><span>()</span>
+      <br>
+    </p>
+    <div class='docstring'>
+  <p>Returns a list of all possible UTF-8 string renderings of an <code>EmojiChar</code>.</p><p>E.g., normal, with variant selectors, etc. This is useful if you want to
+have all possible values to match against when searching for the emoji in
+a string representation.</p>
+</div>
+<div class='tags'>
+  <h3>Returns:</h3>
+  <ul class='return'>
+    <li>
+      <span class='type'></span>
+      (
+        <tt>Array&lt;String&gt;</tt>
+      )
+      &mdash;
+      <span class='desc'>all possible UCS-2 string renderings </span>
+    </li>
+  </ul>
+</div>
+  </div>
+  <div class='method_details'>
+    <p class='signature' id='toString-dynamic'>
+      #
+(String)
+<b>toString</b><span>()</span>
+      <br>
+    </p>
+    <div class='tags'>
+  <h3>Returns:</h3>
+  <ul class='return'>
+    <li>
+      <span class='type'></span>
+      <tt>String</tt>
+    </li>
+  </ul>
+  <h3>See also:</h3>
+  <ul class='see'>
+    <li>
+      <a href='`#render()`'>`#render()`</a>
+    </li>
+  </ul>
+</div>
+  </div>
+</div>
+    </div>
+    <div id='footer'>
+  September 02, 14 22:28:50 by
+  <a href='https://github.com/coffeedoc/codo' title='CoffeeScript API documentation generator'>
+    Codo
+  </a>
+  2.0.9
+  &#10034;
+  Press H to see the keyboard shortcuts
+  &#10034;
+  <a href='http://twitter.com/netzpirat' target='_parent'>@netzpirat</a>
+  &#10034;
+  <a href='http://twitter.com/_inossidabile' target='_parent'>@_inossidabile</a>
+</div>
+<iframe id='search_frame'></iframe>
+<div id='fuzzySearch'>
+  <input type='text'>
+  <ol></ol>
+</div>
+<div id='help'>
+  <p>
+    Quickly fuzzy find classes, mixins, methods, file:
+  </p>
+  <ul>
+    <li>
+      <span>T</span>
+      Open fuzzy finder dialog
+    </li>
+  </ul>
+  <p>
+    Control the navigation frame:
+  </p>
+  <ul>
+    <li>
+      <span>L</span>
+      Toggle list view
+    </li>
+    <li>
+      <span>C</span>
+      Show class list
+    </li>
+    <li>
+      <span>I</span>
+      Show mixin list
+    </li>
+    <li>
+      <span>F</span>
+      Show file list
+    </li>
+    <li>
+      <span>M</span>
+      Show method list
+    </li>
+    <li>
+      <span>E</span>
+      Show extras list
+    </li>
+  </ul>
+  <p>
+    You can focus and blur the search input:
+  </p>
+  <ul>
+    <li>
+      <span>S</span>
+      Focus search input
+    </li>
+    <li>
+      <span>Esc</span>
+      Blur search input
+    </li>
+  </ul>
+</div>
+  </body>
+</html>

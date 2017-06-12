@@ -1,0 +1,24 @@
+<section class="f-2">
+    <section class="share" style="align-content: center;">
+        <span>Share:
+        <a class="icon-twitter" href="http://twitter.com/share?text={{ .Title }}&url={{ .Permalink }}"
+            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+            <svg class="icon"><use xlink:href="#twitter" /></svg>
+        </a>
+        <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}"
+            onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+            <svg class="icon"><use xlink:href="#facebook" /></svg>
+        </a>
+        <a class="icon-google-plus" href="https://plus.google.com/share?url={{ .Permalink }}"
+           onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+            <svg class="icon"><use xlink:href="#google-plus" /></svg>
+        </a>
+        <a href="https://brid.gy/publish/twitter"></a>
+        </span>
+    </section>
+      {{ with .Params.tags }}
+        <span class="f-post-tags"><svg class="icon"><use xlink:href="#tags" /></svg>
+        {{ delimit (apply (apply (sort .) "partial" "post/tag-link" ".") "chomp" ".") ", " " and " }}
+        </span>
+      {{ end }}
+</section>

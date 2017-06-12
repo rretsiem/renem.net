@@ -1,0 +1,29 @@
+<article class="li h-entry {{ .Type }}">
+    <header class="post-header">
+        <h2 class="post-title p-name"><a class="metatag u-url u-uid" href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <p class="post-time"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">{{ .Date.Format "January 2, 2006" }}</time></p>
+    </header>
+
+    <section class="post-excerpt p-summary">
+        <p>
+        {{ if .Params.description }}
+          {{ .Params.description }}
+        {{ else }}
+          {{ .Summary }}
+        {{ end }}
+        </p>
+    </section>
+
+    <footer class="post-footer">
+        <span>
+            {{ if .Site.Params.disqusShortname }}
+            <a href="{{ .Permalink }}#comments"><svg class="icon"><use xlink:href="#comments" /></svg> Comments</a>
+            {{ end }}
+            {{ with .Params.tags }}
+                &nbsp;&nbsp;<svg class="icon"><use xlink:href="#tags" /></svg>
+                    {{ delimit (apply (apply (sort .) "partial" "post/tag-link" ".") "chomp" ".") ", " }}
+          {{ end }}
+
+        </span>
+    </footer>
+</article>

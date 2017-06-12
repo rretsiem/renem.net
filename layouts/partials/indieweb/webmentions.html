@@ -1,0 +1,18 @@
+{{ $Permalink := .Permalink }}
+<ul>
+
+{{ if isset $.Site.Data.webmentions $Permalink }}
+  <hr>
+
+    {{ with (index $.Site.Data.webmentions $Permalink).likes }}
+    <h1>{{ (index $.Site.Data.webmentions $Permalink).likes | len }}</h1>
+      {{ range . }}
+<h4>{{ .display }}</h4>
+      {{ end }}
+
+    {{ end }}
+  <hr>
+TEST
+{{ end }}
+
+</ul>
