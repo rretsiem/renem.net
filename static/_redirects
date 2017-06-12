@@ -1,0 +1,5 @@
+# redirects
+/blog/*   /post/:splat    301
+/tag=*    /tags/:splat    301
+/archives /post           301
+# /**        /index.html
