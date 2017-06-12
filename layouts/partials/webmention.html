@@ -9,15 +9,4 @@
 
 <script src="{{ .Site.BaseURL }}js/webmentions.js" data-no-instant></script>
 
-<script>
-(function () {
-  var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
-  url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
-  url = url && url[0] ? url[0].href : false;
-  sn.type = "text/javascript";
-  sn.defer = true;
-  sn.src = "https://webmention.io/api/mentions?jsonp=displayMentions&target=" + encodeURIComponent(url);
-  s.parentNode.insertBefore(sn, s);
-}());
-</script>
 {{ end }}
