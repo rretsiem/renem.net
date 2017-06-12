@@ -23,7 +23,7 @@
                 {{ if eq .Title "About" }}
                 <img src="{{ .Site.BaseURL }}assets/renem_profile.png" class="u-photo" style="display: none">
                 {{ end }}
-                <a class="p-nickname u-email email metatag" rel="me" href="mailto:{{ .Site.Params.email}}">{{ .Site.Author.nick }}</a>
+                <a class="p-nickname u-email email metatag" alt="Mail senden" rel="me" href="mailto:{{ .Site.Params.email}}">{{ .Site.Author.nick }}</a>
           </section>
           <setion class="footer-info">
             This site is built with <a href="https://gohugo.io">Hugo</a> and hosted on <a href="https://netlify.com">Netlify</a>. The source code is hosted on <a href="https://github.com">Github</a>.
