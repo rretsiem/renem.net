@@ -1,0 +1,17 @@
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  X-UA-Compatible: ie=edge
+  X-Content-Type-Options: nosniff
+  Content-Security-Policy: default-src https:; script-src https: 'unsafe-inline' 'unsafe-eval'; style-src https: 'unsafe-inline'; img-src https: http://renem.micro.blog/;
+# fonts
+/*.@(eot|otf|ttf|ttc|woff|woff2|font.css)
+  Access-Control-Allow-Origin: *
+  Cache-Control: max-age=31536000, public
+# images
+/*.@(jpg|jpeg|gif|png|json)
+  Cache-Control: max-age=7884000, public
+# preloading
+/*
+  Link: </css/bundle.css>; rel=preload; as=stylesheet; nopush
+  Link: </js/*.js>; rel=preload; as=script; nopush
