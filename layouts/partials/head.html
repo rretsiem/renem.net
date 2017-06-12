@@ -45,4 +45,7 @@
         {{ partial "seo-schema.html" . }}
         {{ partial "seo-twittercard.html" . }}
         {{ partial "seo-googlenews.html" . }}
+
+        <!-- DNS prefetching in the header for external sources -->
+        <link rel="dns-prefetch" href="//webmention.io">
     </head>
