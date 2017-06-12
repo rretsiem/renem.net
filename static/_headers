@@ -5,6 +5,7 @@
   X-Content-Type-Options: nosniff
   Content-Security-Policy: default-src https:; script-src https: 'unsafe-inline' 'unsafe-eval'; style-src https: 'unsafe-inline'; img-src https: http://renem.micro.blog/;
   Referrer-Policy: no-referrer-when-downgrade
+  Cache-Control: max-age=7200, public
 # fonts
 /*.@(eot|otf|ttf|ttc|woff|woff2|font.css)
   Access-Control-Allow-Origin: *
@@ -14,7 +15,7 @@
   Cache-Control: max-age=7884000, public
 # preloading
 /*
-  Link: </css/bundle.css>; rel=preload; as=stylesheet
+  Link: </css/bundle.css>; rel=preload; as=style; nopush
 #  Link: </js/service-worker-registration.js>; rel=preload; as=script
 #  Link: </js/instantclick.min.js>; rel=preload; as=script
 #  Link: </js/fittext.js>; rel=preload; as=script
