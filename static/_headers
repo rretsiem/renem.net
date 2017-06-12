@@ -4,6 +4,7 @@
   X-UA-Compatible: ie=edge
   X-Content-Type-Options: nosniff
   Content-Security-Policy: default-src https:; script-src https: 'unsafe-inline' 'unsafe-eval'; style-src https: 'unsafe-inline'; img-src https: http://renem.micro.blog/;
+  Referrer-Policy: no-referrer-when-downgrade
 # fonts
 /*.@(eot|otf|ttf|ttc|woff|woff2|font.css)
   Access-Control-Allow-Origin: *
