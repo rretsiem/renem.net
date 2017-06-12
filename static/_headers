@@ -15,4 +15,8 @@
 # preloading
 /*
   Link: </css/bundle.css>; rel=preload; as=stylesheet; nopush
-  Link: </js/*.js>; rel=preload; as=script; nopush
+  Link: </js/service-worker-registration.js>; rel=preload; as=script; nopush
+  Link: </js/instantclick.min.js>; rel=preload; as=script;
+  Link: </js/fittext.js>; rel=preload; as=script;
+  Link: </js/lazyload.transpiled.min.js>; rel=preload; as=script;
+  
