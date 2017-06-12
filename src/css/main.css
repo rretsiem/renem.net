@@ -719,6 +719,12 @@ article p.intro p:first-child:first-letter, .drop_cap {
 
 }
 
+#site-footer .footer-info {
+  margin: 20px;
+  padding: 20px;
+  font-size: smaller;
+}
+
 .m-logo {
     display: none !important;
     visibility: hidden
@@ -1042,6 +1048,10 @@ nav {
 .post-footer nav ul li a {
   display: block;
   width: 100%;
+}
+
+.hideen {
+  display: none;
 }
 
 #mentionList {
