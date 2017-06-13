@@ -16,4 +16,3 @@
 # preloading
 /*
   Link: </css/bundle.css>; rel=preload; as=style; nopush
-  Link: </js/instantclick.min.js>; rel=preload; as=script; nopush
