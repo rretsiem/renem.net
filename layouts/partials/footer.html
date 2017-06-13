@@ -33,7 +33,7 @@
 -->
         </div>
     </footer>
-    <script src="{{ .Site.BaseURL }}js/fittext.js"></script>
+<!--    <script src="{{ .Site.BaseURL }}js/fittext.js"></script> -->
     <script src="{{ .Site.BaseURL }}js/instantclick.min.js" data-no-instant></script>
     <script data-no-instant>InstantClick.init('mousedown');</script>
     <script>
@@ -41,7 +41,8 @@
           /* your lazyload options */
       };
     </script>
-    <script asnyc src="{{ .Site.BaseURL }}js/lazyload.transpiled.min.js"></script>
+<!--     <script asnyc src="{{ .Site.BaseURL }}js/lazyload.transpiled.min.js"></script> -->
+
     <div class="sprite">
       {{ `<!-- SVG loading -->` | safeHTML }}
       {{ partial "symbol/svg/sprite.symbol.svg" . }}
