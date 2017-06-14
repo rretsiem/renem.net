@@ -13,9 +13,9 @@ html {
 
 body {
   font-family: "system";
-  font-size: calc(16px + .25vw);
+  font-size: 18px;
+  line-height: 28px;
   font-weight: 400;
-  line-height: 1.5;
   color: #585858;
   background-color: #fff;
   display: -webkit-flex;
@@ -44,16 +44,58 @@ tt, var, xmp {
 }
 
 .h1, h1 {
-    font-size: 42px;
-    margin-bottom: .495em;
+    /* font-size: 42px; */
+    font-size: 2.618em;
+    /* font-size: calc(1.1em + 3vw); */
+    margin-bottom: .761em;
 }
 
+.h2, h2 {
+    font-size: 1.618em;
+    /*font-size: calc(1.1em + 1vw);*/
+    margin-bottom: .47em;
+}
+
+.h3, h3 {
+    font-size: 1.231em;
+    /*font-size: calc(1.1em + 1vw);*/
+    margin-bottom: .382em;
+}
+
+.h4, h4 {
+    font-size: 1em;
+    /*font-size: calc(1.1em + 1vw);*/
+    margin-bottom: .291em;
+}
+
+
+
+/*@media (min-width: 50em) {
+  .h1, h1 {
+    font-size: 50px;
+  }
+  .h2, h2 {
+    font-size: 26px;
+  }
+  .h3, h3 {
+    font-size: 20px;
+  }
+  .h4, h4 {
+    font-size: 16px;
+  }
+  .h5, h5 {
+    font-size: 14px;
+  }
+
+}*/
+/*
 @media (max-width:550px) {
     .h1, h1 {
-        font-size: 26px;
+        font-size: 54px;
     }
 }
-
+*/
+/*
 .h2, h2 {
     font-size: 26px;
     margin-bottom: .61875em;
@@ -86,7 +128,7 @@ tt, var, xmp {
         font-size: 13px;
     }
 }
-
+*/
 /*
 .h5, h5 {
     font-size: 1.25rem;
@@ -115,7 +157,6 @@ p {
     margin-top: 0;
     margin-bottom: 1rem;
 }
-
 
 a {
     color: #d40d0a;
@@ -216,19 +257,20 @@ html {
     padding: 0;
     font-family: "system";
     font-size: 100%;
-    line-height: 1.65;
+    line-height: 1.618;
     font-weight: 400;
 /*    overflow-y: scroll; */
     min-height: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 }
 
+/*
 @media (max-width:550px) {
     html {
         font-size: 15px
     }
 }
-
+*/
 body {
     background-color: #fff !important;
     padding: 0;
@@ -252,16 +294,17 @@ body:after, body:before {
 body:after {
     clear: both
 }
-
+/*
 @media (max-width:550px) {
     body {
         font-size: 14px;
     }
 }
-
+*/
 .container {
-    width: 90%;
-    max-width: 800px;
+    min-width: 497.406px;
+    width: 50vw;
+    max-width: 696px;
     margin: auto;
 }
 
@@ -581,22 +624,23 @@ hr {
 
 #site-header {
     text-align: center;
-    padding-top: 4rem;
+    padding-top: calc(2em + .25vw);
     min-height: 10rem;
-    margin-bottom: 3rem;
+    margin-bottom: calc(2em + .25vw);
 }
 
-@media (max-width:800px) {
+/*@media (max-width:800px) {
     #site-header {
-        padding-top: 4em !important;
-        margin-bottom: 4em !important
+        padding-top: 2em !important;
+        margin-bottom: 2em !important
     }
-}
+}*/
 
 .blog-title {
     text-transform: uppercase;
     letter-spacing: 6px;
-    font-size: 54px;
+    font-size: calc(3.222em + 1.681vw);
+    margin-bottom: 0.382rem;
 }
 
 .heading {
@@ -612,7 +656,7 @@ hr {
 .blog-description {
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: #999;
+    color: #777;
     font-size: 80%
 }
 
@@ -640,7 +684,7 @@ article.li {
 article footer {
     margin-top: 4rem;
     padding-top: 1rem;
-    border-top: 1px solid #0d0d0a;
+    border-top: 1px solid rgba(13, 13, 10, .1);
     font-style: italic;
 }
 
@@ -691,13 +735,14 @@ article p.intro p:first-child:first-letter, .drop_cap {
 
 .post-footer {
     text-align: center;
-    margin-top: 30px
+    margin-top: 1.618em;
+    margin-bottom: 2.492em;
 }
 
 .pagination {
     text-align: center;
     margin: 3rem 0 3em 0;
-    color: #999;
+    color: #777;
 }
 
 @media (max-width:800px) {
@@ -975,20 +1020,20 @@ main {
 }
 
 .content>.container {
-    max-width: 40rem;
-    margin: 0 auto;
-    font-size: 16px;
-    line-height: 26px;
+  min-width: 497.406px;
+  width: 50vw;
+  max-width: 696px;
+  margin: auto;
 }
 
+/*
 @media (max-width:550px) {
     .content>.container {
         font-size: 14px;
         line-height: 22px;
     }
 }
-
-
+*/
 
 .picture + .picture {
     margin-top: 4rem
@@ -1024,8 +1069,8 @@ nav {
 
 .sidebar-nav a {
   text-decoration: none;
-  font-size: 18px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .sidebar-nav a:hover {

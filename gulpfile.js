@@ -117,7 +117,7 @@ gulp.task("server", ["hugo", "css", "img"], () => {
       baseDir: DIST_DIR
     }
   });
-  gulp.watch("./src/css/**/*.css", ["css"]);
+  gulp.watch("./src/css/**/*.css", ["css", "hugo"]);
 //  gulp.watch("./src/scss/**/*.scss", ["css"]);
   gulp.watch("./content/**/*", ["hugo"]);
   gulp.watch("./layouts/**/*", ["hugo"]);
