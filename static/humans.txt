@@ -1,0 +1,9 @@
+/* René */
+	Author: René Meister
+	Contact: rene [at] renem.net
+	Twitter: @rretsiem
+	From:Augsburg, Bavaria, Germany
+/* SITE */
+	Language: Deutsch
+	Doctype:HTML5
+	IDE: Atom

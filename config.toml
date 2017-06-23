@@ -4,8 +4,19 @@ title = "René"
 theme = "Detox"
 description = "Just my 2 cents…"
 MetaDataFormat = "yaml"
+disableAliases = true
 [outputs]
-home = [ "HTML", "RSS", "JSON"]
+home = [ "HTML", "RSS", "JSON", "REDIR"]
+[mediaTypes]
+[mediaTypes."text/netlify"]
+suffix = ""
+delimiter = ""
+[outputFormats]
+[outputFormats.REDIR]
+mediatype = "text/netlify"
+baseName = "_redirects"
+isPlainText = true
+notAlternative = true
 [Author]
   name = "René"
   email = "rene@renem.net"
