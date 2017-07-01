@@ -9,6 +9,8 @@ tags:
 keywords:
 - laufen
 - sport
+syndication:
+- https://twitter.com/rretsiem/status/881249028188581890
 ---
 
 Mit einem Beitrag muss ich ja mal wieder anfangen und da es meistens leichter ist über die schlechten Dinge zu reden/schreiben habe ich nicht so wirklich ein passendes Thema gefunden. Also dachte ich mir, warum nicht mal einen Beitrag der absolut positiv ist. Der Grund dafür, es läuft im Moment sehr gut was das Thema Laufen angeht. Hier kommt also ein buntes Kauderwelsch an Themen aus den letzten Monaten zum Thema Laufen von mir.
