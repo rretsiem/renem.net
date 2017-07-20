@@ -18,3 +18,4 @@
 #   Link: </css/bundle.css>; rel=preload; as=style; nopush
 /*
   Link: </css/bundle.css>; rel=preload; as=stylesheet
+  Link: </js/service-worker-registration.js>; rel=preload; as=script
