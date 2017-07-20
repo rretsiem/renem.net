@@ -14,5 +14,7 @@
 /*.@(jpg|jpeg|gif|png|json)
   Cache-Control: max-age=7884000, public
 # preloading
+# /*
+#   Link: </css/bundle.css>; rel=preload; as=style; nopush
 /*
-  Link: </css/bundle.css>; rel=preload; as=style; nopush
+  Link: </css/bundle.css>; rel=preload; as=stylesheet
