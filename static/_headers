@@ -16,4 +16,4 @@
 # preloading
 /*
   Link: </js/service-worker-registration.js>; rel=preload; as=script; nopush
-  Link: </css/bundle.css>; rel=preload; as=stylesheet
+  Link: </css/bundle.css>; rel=preload; as=style
