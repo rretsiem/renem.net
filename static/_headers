@@ -7,6 +7,7 @@
   Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src *; child-src 'self';
   Referrer-Policy: no-referrer-when-downgrade
   Cache-Control: max-age=7200, public
+  Strict-Transport-Security: max-age=180
 # fonts
 /*.@(eot|otf|ttf|ttc|woff|woff2|font.css)
   Access-Control-Allow-Origin: *
