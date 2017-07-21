@@ -7,7 +7,7 @@
   Content-Security-Policy: default-src 'self'; script-src *.cloudfront.net 'self' https: 'unsafe-inline' 'unsafe-eval'; style-src *.cloudfront.net 'self' https: 'unsafe-inline'; img-src *; child-src 'self' https:;
   Referrer-Policy: no-referrer-when-downgrade
   Cache-Control: max-age=7200, public
-  Strict-Transport-Security: max-age=180
+  Strict-Transport-Security: max-age=2592000
 # fonts
 /*.@(eot|otf|ttf|ttc|woff|woff2|font.css)
   Access-Control-Allow-Origin: *
