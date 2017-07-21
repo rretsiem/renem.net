@@ -4,7 +4,7 @@
   X-UA-Compatible: ie=edge
   X-Content-Type-Options: nosniff
 #  Content-Security-Policy: default-src https:; script-src https: 'unsafe-inline' 'unsafe-eval'; style-src https: 'unsafe-inline'; img-src https: http://renem.micro.blog/;
-  Content-Security-Policy: default-src 'self'; script-src *.cloudfront.net https://www.google-analytics.com 'self' 'unsafe-inline' 'unsafe-eval'; style-src *.cloudfront.net 'self' 'unsafe-inline'; img-src *; child-src 'self';
+  Content-Security-Policy: default-src 'self'; script-src *.cloudfront.net 'self' https: 'unsafe-inline' 'unsafe-eval'; style-src *.cloudfront.net 'self' https: 'unsafe-inline'; img-src *; child-src 'self';
   Referrer-Policy: no-referrer-when-downgrade
   Cache-Control: max-age=7200, public
   Strict-Transport-Security: max-age=180
@@ -16,6 +16,7 @@
 /*.@(jpg|jpeg|gif|png|json)
   Cache-Control: max-age=7884000, public
 # preloading
-#/*
-#  Link: </js/service-worker-registration.js>; rel=preload; as=script; nopush
-#  Link: </css/bundle.css>; rel=preload; as=style
+/*
+  Link: </js/service-worker-registration.js>; rel=preload; as=script; nopush
+  Link: </service-worker.js>; rel=preload; as=script; nopush
+  Link: </css/bundle.css>; rel=preload; as=style
