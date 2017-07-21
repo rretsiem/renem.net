@@ -4,7 +4,7 @@
   X-UA-Compatible: ie=edge
   X-Content-Type-Options: nosniff
 #  Content-Security-Policy: default-src https:; script-src https: 'unsafe-inline' 'unsafe-eval'; style-src https: 'unsafe-inline'; img-src https: http://renem.micro.blog/;
-  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src *; child-src 'self';
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src *.cloudfront.net 'self' 'unsafe-inline'; img-src *; child-src 'self';
   Referrer-Policy: no-referrer-when-downgrade
   Cache-Control: max-age=7200, public
   Strict-Transport-Security: max-age=180
