@@ -6,7 +6,7 @@ description = "Just my 2 cents…"
 MetaDataFormat = "yaml"
 disableAliases = true
 [outputs]
-home = [ "HTML", "RSS", "JSON", "REDIR"]
+home = [ "HTML", "RSS", "JSON", "REDIR", "HEADERS"]
 [mediaTypes]
 [mediaTypes."text/netlify"]
 suffix = ""
@@ -15,6 +15,11 @@ delimiter = ""
 [outputFormats.REDIR]
 mediatype = "text/netlify"
 baseName = "_redirects"
+isPlainText = true
+notAlternative = true
+[outputFormats.HEADERS]
+mediatype = "text/netlify"
+baseName = "_headers"
 isPlainText = true
 notAlternative = true
 [Author]

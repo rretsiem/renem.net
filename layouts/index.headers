@@ -1,0 +1,26 @@
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  X-UA-Compatible: ie=edge
+  X-Content-Type-Options: nosniff
+#  Content-Security-Policy: default-src https:; script-src https: 'unsafe-inline' 'unsafe-eval'; style-src https: 'unsafe-inline'; img-src https: http://renem.micro.blog/;
+#  Content-Security-Policy: default-src 'self'; script-src *.cloudfront.net 'self' https: 'unsafe-inline' 'unsafe-eval'; style-src *.cloudfront.net 'self' https: 'unsafe-inline'; img-src *; child-src 'self' https:;
+#  Referrer-Policy: no-referrer-when-downgrade
+  Referrer-Policy: origin-when-cross-origin
+  Cache-Control: max-age=7200, public
+  Strict-Transport-Security: max-age=2592000
+# fonts
+#/*.@(eot|otf|ttf|ttc|woff|woff2|font.css)
+#  Access-Control-Allow-Origin: *
+#  Cache-Control: max-age=31536000, public
+# images
+/*.@(jpg|jpeg|gif|png|json)
+  Cache-Control: max-age=7884000, public
+# preloading
+#/*
+#  Link: </js/service-worker-registration.js>; rel=preload; as=script; nopush
+#  Link: </service-worker.js>; rel=preload; as=script; nopush
+#  Link: </css/bundle.css>; rel=preload; as=style
+Link: <{{ "service-worker.js" | relURL }}>; rel=preload; as=script
+Link: <{{ "js/service-worker-registration.js" | relURL }}>; rel=preload; as=script
+Link: <{{ "css/bundle.css" | relURL }}>; rel=preload; as=style
