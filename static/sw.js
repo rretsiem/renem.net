@@ -2,18 +2,12 @@ const CACHE_VERSION = 1;
 
 const BASE_CACHE_FILES = [
     '/css/bundle.css',
-    '/js/fittext.js',
-    '/js/instantclick.min.js',
-    '/js/lazyload.transpiled.min.js',
     '/manifest.json',
     '/favicon-16x16.png'
 ];
 
 const OFFLINE_CACHE_FILES = [
   '/css/bundle.css',
-  '/js/fittext.js',
-  '/js/instantclick.min.js',
-  '/js/lazyload.transpiled.min.js',
   '/manifest.json',
   '/favicon-16x16.png',
   '/offline/index.html',
@@ -21,9 +15,6 @@ const OFFLINE_CACHE_FILES = [
 
 const NOT_FOUND_CACHE_FILES = [
   '/css/bundle.css',
-  '/js/fittext.js',
-  '/js/instantclick.min.js',
-  '/js/lazyload.transpiled.min.js',
   '/manifest.json',
   '/favicon-16x16.png',
   '/index.html',
