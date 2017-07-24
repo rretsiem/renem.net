@@ -166,7 +166,8 @@ gulp.task('generate-service-worker', function(callback) {
 
   swPrecache.write(path.join(rootDir, 'service-worker.js'), {
     /** This is the place where you could change / make the patterns on which files should be going into precache **/
-    staticFileGlobs: [rootDir + '/**/*.{js,html,css,svg}'],
+    // staticFileGlobs: [rootDir + '/**/*.{js,html,css,svg}'],
+    staticFileGlobs: [rootDir + '/**/*.{html,css,svg}'],
     stripPrefix: rootDir
   }, callback);
 });
