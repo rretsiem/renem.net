@@ -3,7 +3,7 @@
   X-XSS-Protection: 1; mode=block
   X-UA-Compatible: ie=edge
   X-Content-Type-Options: nosniff
-  Content-Security-Policy: default-src https:; script-src https: 'unsafe-inline' 'unsafe-eval'; style-src https: 'unsafe-inline'; img-src https: http://renem.micro.blog/;
+  Content-Security-Policy: default-src https:; script-src 'self' https: *.cloudfront.net 'unsafe-inline' 'unsafe-eval'; style-src https: 'unsafe-inline'; img-src https: http://renem.micro.blog/;
 #  Content-Security-Policy: default-src https:; script-src https: 'unsafe-inline' 'unsafe-eval'; style-src https: 'unsafe-inline'; img-src https: http://renem.micro.blog/;
 #  Content-Security-Policy: default-src 'self'; script-src *.cloudfront.net 'self' https: 'unsafe-inline' 'unsafe-eval'; style-src *.cloudfront.net 'self' https: 'unsafe-inline'; img-src *; child-src 'self' https:;
 #  Referrer-Policy: no-referrer-when-downgrade
