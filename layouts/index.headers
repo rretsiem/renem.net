@@ -15,8 +15,8 @@
   Cache-Control: max-age=7884000, public
 # preloading
 /*
-  Link: <{{ "service-worker.js" | relURL }}>; rel=preload; as=script; nopush
-  Link: <{{ "js/service-worker-registration.js" | relURL }}>; rel=preload; as=script
-  Link: <{{ "js/webmention_io.js" | relURL }}>; rel=preload; as=script
-  Link: <{{ "js/webmentions.js" | relURL }}>; rel=preload; as=script
+#  Link: <{{ "service-worker.js" | relURL }}>; rel=preload; as=script; nopush
+#  Link: <{{ "js/service-worker-registration.js" | relURL }}>; rel=preload; as=script
+#  Link: <{{ "js/webmention_io.js" | relURL }}>; rel=preload; as=script
+#  Link: <{{ "js/webmentions.js" | relURL }}>; rel=preload; as=script
   Link: <{{ "css/bundle.css" | relURL }}>; rel=preload; as=style
