@@ -9,13 +9,12 @@ slug: about
 
 Ich schreibe über Technologie, Kaffee, Fitness und alles was mir sonst noch einfällt.
 
-## Twitter, E-Mail & Co
+## Kontakt
 
-Auf Twitter folgen: [@rretsiem](https://twitter.com/intent/user?screen_name=rretsiem)
-
-[Threema](http://threema.ch/) ID: [URDS4FNM](threema://add?id=URDS4FNM)
-
-Oder E-Mail an [rene@renem.net](mailto:rene@renem.net) — mein PGP [Public-Key](/pgp)
+- E-Mail: [rene@renem.net](mailto:rene@renem.net) — mein PGP [Public-Key](/pgp)
+- Threema: [URDS4FNM](threema://add?id=URDS4FNM)
+- Keybase: [renem](https://keybase.io/renem)
+- Twitter: [@rretsiem](https://twitter.com/rretsiem)
 
 ## Kontakt direkt
 
