@@ -7,7 +7,13 @@ type: "page"
 slug: about
 ---
 
-Ich schreibe über Technologie, Kaffee, Fitness und alles was mir sonst noch einfällt.
+Bewusst kurz gehalten:
+
+> Ich schreibe über Technologie, Kaffee, Fitness und alles was mir sonst noch einfällt.
+
+Sehr sporadisch und nur was mir wichtig ist, kurze Infos und Meldungen die für einen Beitrag
+hier zu kurz sind schreibe ich dank [Micro.blog](https://micro.blog) auf meinem selbigen unter
+https://microblog.renem.net
 
 ## Kontakt
 
@@ -15,12 +21,3 @@ Ich schreibe über Technologie, Kaffee, Fitness und alles was mir sonst noch ein
 - Threema: [URDS4FNM](threema://add?id=URDS4FNM)
 - Keybase: [renem](https://keybase.io/renem)
 - Twitter: [@rretsiem](https://twitter.com/rretsiem)
-
-## Kontakt direkt
-
-<form name="contact" netlify netlify-honeypot="bot-field">
-  <p><label>Email: <input name="email"></label></p>
-  <p class="hidden"><label>Bot field: <input name="bot-field"></label></p>
-  <p><label>Nachricht: <textarea name="message"></textarea></label></p>
-  <p><button>Send</button></p>
-</form>

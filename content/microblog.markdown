@@ -4,7 +4,7 @@ type = "microblog"
 +++
 
 ## Mein Micro.blog
-Kurze Status-Updates und Fotos von unterwegs, die ich auf meinem [Micro.blog](https://renem.micro.blog) poste.
+Kurze Status-Updates und Fotos von unterwegs, die ich auf meinem [Micro.blog](https://microblog.renem.net) poste.
 
 <hr>
 
