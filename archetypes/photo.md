@@ -1,20 +1,13 @@
 ---
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
 date: {{ .Date }}
-categories:
--
-description: ""
-draft: false
 tags:
 -
-keywords:
--
+categories:
+- photo
+draft: false
 images:
 -
-mfbookmark: ""
-mfbookmarkof: ""
-mfrepostof: ""
-mfreplyto: ""
 syndication:
 -
 ---

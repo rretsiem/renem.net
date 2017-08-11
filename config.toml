@@ -1,10 +1,13 @@
-baseURL = "https://www.renem.net/"
+baseURL = "https://www.renem.net"
 languageCode = "de"
 title = "René"
 theme = "Detox"
 description = "Just my 2 cents…"
 MetaDataFormat = "yaml"
 disableAliases = true
+[blackfriday]
+angledQuotes = true
+smartypantsQuotesNBSP = true
 [outputs]
 home = [ "HTML", "RSS", "JSON", "REDIR", "HEADERS"]
 [mediaTypes]
@@ -42,17 +45,17 @@ notAlternative = true
   category = "categories"
   series = "series"
 [[menu.main]]
-        name = "About"
-        url = "/about"
-        pre = "About ReneM"
-        identifier = "mainabout"
-        weight = "1"
-[[menu.main]]
         name = "Artikel"
-        weight = 2
+        weight = 1
         pre = "Archive List of Blog Articles"
         identifier = "mainarticles"
         url = "/post"
+[[menu.main]]
+        name = "Photos"
+        weight = 2
+        pre = "Photo Beiträge"
+        identifier = "mainphotos"
+        url = "/photo"
 [[menu.main]]
         name = "Microblog"
         weight = 3
@@ -65,9 +68,15 @@ notAlternative = true
         identifier = "mainpgp"
         url = "/pgp"
 [[menu.main]]
-        name = "Tags"
-        url = "/tags"
-        pre = "All Tags"
-        post = "xs-hide"
-        identifier = "mainalltags"
-        weight = "4"
+        name = "About"
+        url = "/about"
+        pre = "About ReneM"
+        identifier = "mainabout"
+        weight = 5
+#[[menu.main]]
+#        name = "Tags"
+#        url = "/tags"
+#        pre = "All Tags"
+#        post = "xs-hide"
+#        identifier = "mainalltags"
+#        weight = 5
