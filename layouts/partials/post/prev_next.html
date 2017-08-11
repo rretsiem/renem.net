@@ -1,10 +1,10 @@
 <nav>
   <ul>
-    {{ if .Prev }}
-    <li class="prev"><a rel="prev" href="{{.Prev.Permalink}}"><span>‹ Previous</span></a></li>
+    {{ if .PrevInSection }}
+    <li class="prev"><a rel="prev" href="{{.PrevInSection.Permalink}}"><span>‹ Previous</span></a></li>
     {{ end }}
-    {{ if .Next }}
-    <li class="next"><a rel="next" href="{{.Next.Permalink}}"><span>Next ›</span></a></li>
+    {{ if .NextInSection }}
+    <li class="next"><a rel="next" href="{{.NextInSection.Permalink}}"><span>Next ›</span></a></li>
     {{ end }}
   </ul>
 </nav>

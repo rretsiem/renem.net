@@ -1,6 +1,6 @@
 {{ "<!-- ENTERING partial seo-twittercard.html -->" | safeHTML }}
 {{ $baseurl := .Site.BaseURL }}
-{{ if eq .Type "post"}}
+{{ if or (eq .Type "post") (eq .Type "photo")}}
 <!-- Twitter Card data -->
 <meta name="twitter:title" content="{{ .Title }}{{ if ne .Title .Site.Title }} : {{ .Site.Title }}{{ end }}"/>
 <meta name="twitter:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }}"/>

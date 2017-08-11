@@ -45,7 +45,7 @@ gulp.task("hugo", (cb) => buildSite(cb));
 gulp.task("build", ["css", "hugo", "img:build", "svg", "generate-service-worker"]);
 
 gulp.task("img", () =>
-  gulp.src("./src/images/**.*")
+  gulp.src("./src/images/*.{jpg,png}")
     .pipe(responsive({
       "*": [
       {
@@ -74,7 +74,7 @@ gulp.task("img:build", ["img"], () =>
       imagemin.gifsicle(),
       imagemin.optipng(),
       imagemin.svgo(),
-      jpegtran(),
+      imagemin.jpegtran({progressive: true}),
     ]))
     .pipe(gulp.dest("./static/images"))
 );

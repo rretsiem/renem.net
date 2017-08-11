@@ -3,7 +3,9 @@
 {{ $caption := .Params.Caption }}
 
 {{ range .Params.images }}
-    {{ $filename := . }}
+    {{ $name :=  split . "." }}
+    {{ $extension := index $name 1 }}
+    {{ $filename := index $name 0 }}
       <a href="{{ $permalink }}" alt="{{ $title }}" title="{{ $title }}">
       {{ if $caption}}
         <figure>
@@ -12,16 +14,16 @@
         <!-- Large screens -->
         <source
           media="(min-width: 535px)"
-          srcset="{{ . }}.jpg 1x,
-                  {{ . }}@2x.jpg 2x">
+          srcset="{{ $filename }}.{{ $extension }} 1x,
+                  {{ $filename }}@2x.{{ $extension }} 2x">
         <!-- Small screens -->
         <source
           media="(max-width: 534px)"
-          srcset="{{ . }}-sm.jpg 1x,
-                  {{ . }}-sm@2x.jpg 2x">
+          srcset="{{ $filename }}-sm.{{ $extension }} 1x,
+                  {{ $filename }}-sm@2x.{{ $extension }} 2x">
         <!-- Fallback -->
         <img
-          src="{{ . }}.jpg"
+          src="{{ $filename }}.{{ $extension }}"
           alt="{{ $title }}" title="{{ $title }}" class="img-fluid figure-img u-photo post-img photo">
       </picture>
       {{ if $caption}}

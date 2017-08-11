@@ -1,6 +1,6 @@
 {{ "<!-- ENTERING partial seo-schema.html -->" | safeHTML }}
 {{ if .IsPage }}
-{{ if eq .Type "post" }}
+{{ if or (eq .Type "post") (eq .Type "photo") }}
 <script type="application/ld+json">
 {
     "@context" : "http://schema.org",
