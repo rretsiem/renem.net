@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://www.renem.net/"
 languageCode = "de"
 title = "René"
 theme = "Detox"
