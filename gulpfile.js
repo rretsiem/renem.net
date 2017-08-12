@@ -22,6 +22,7 @@ var runSequence = require('run-sequence');
 var del = require('del');
 var request = require('request');
 var httppost = require('gulp-post');
+var minify = require('gulp-minify');
 
 const size = require('gulp-size');
 
@@ -42,7 +43,20 @@ var globs = {
 
 gulp.task("hugo", (cb) => buildSite(cb));
 
-gulp.task("build", ["css", "hugo", "img:build", "svg", "generate-service-worker"]);
+gulp.task("build", ["css", "compress", "hugo", "img:build", "svg", "generate-service-worker"]);
+
+gulp.task('compress', function() {
+  gulp.src('./src/js/*.js')
+    .pipe(minify({
+        ext:{
+            src:'-debug.js',
+            min:'.js'
+        },
+        exclude: ['tasks'],
+        ignoreFiles: ['.combo.js', '-min.js']
+    }))
+    .pipe(gulp.dest('./static/js'))
+});
 
 gulp.task("img", () =>
   gulp.src("./src/images/*.{jpg,png}")
@@ -111,14 +125,16 @@ gulp.task("svg", () =>
     .pipe(gulp.dest("./layouts/partials"))
 );
 
-gulp.task("server", ["hugo", "css", "img"], () => {
+gulp.task("server", ["compress", "hugo", "css", "img"], () => {
   browserSync.init({
     server: {
       baseDir: DIST_DIR
     }
   });
   gulp.watch("./src/css/**/*.css", ["css", "hugo"]);
+  gulp.watch("./src/js/**/*.js", ["compress", "hugo"]);
 //  gulp.watch("./src/scss/**/*.scss", ["css"]);
+  gulp.watch("./config.toml", ["hugo"]);
   gulp.watch("./content/**/*", ["hugo"]);
   gulp.watch("./layouts/**/*", ["hugo"]);
   gulp.watch("./static/**/*", ["hugo"]);

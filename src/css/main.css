@@ -307,8 +307,8 @@ body:after {
 }
 */
 .container {
-    min-width: 497.406px;
-    width: 50vw;
+    /*min-width: 497.406px;
+    width: 50vw;*/
     max-width: 696px;
     margin: auto;
 }
@@ -900,8 +900,7 @@ article .footnotes {
 }
 
 .mention-form {
-  width: 80%;
-  min-width: 400px;
+  width: 90%;
   margin: 1rem auto 1rem;
 }
 
@@ -1037,8 +1036,8 @@ main {
 }
 
 .content>.container {
-  min-width: 497.406px;
-  width: 50vw;
+  /*min-width: 497.406px;
+  width: 50vw;*/
   max-width: 696px;
   margin: auto;
 }

@@ -1,0 +1,1 @@
+function sendMessage(e){return new Promise(function(r,a){if(navigator.serviceWorker.controller){var n=new MessageChannel;n.port1.onmessage=function(e){e.data.error?a(e.data.error):r(e.data)},navigator.serviceWorker.controller.postMessage(e,[n.port2])}else a("This page isn't currently controlled by a service worker. Please reload and try again.")})}
