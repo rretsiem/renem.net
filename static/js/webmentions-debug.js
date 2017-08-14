@@ -63,9 +63,9 @@ function displayMentions(json) {
 
         var mentionList = document.getElementById('mentionList');
         mentionList.insertAdjacentHTML( 'afterbegin', singleComment );
-        document.getElementById('mentionContainer').style.visibility = "visible";
-
       });
+      document.getElementById('mentionContainer').style.visibility = "visible";
+      document.getElementById('mentionContainer').style.display = "block";
     }
 }
 
