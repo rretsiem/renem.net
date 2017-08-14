@@ -69,7 +69,6 @@ function displayMentions(json) {
     }
 }
 
-/*
 (function () {
   var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
   url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
@@ -79,4 +78,3 @@ function displayMentions(json) {
   sn.src = "https://webmention.io/api/mentions?jsonp=displayMentions&target=" + encodeURIComponent(url);
   s.parentNode.insertBefore(sn, s);
 }());
-*/
