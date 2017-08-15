@@ -13,9 +13,10 @@ keywords: running, jogging, einstieg, beginn, erste Schritte
 title: Mein Einstieg ins Laufen - René
 aliases:
 - /2015/05/31/mein-einstieg-ins-laufen-rene/
+- /post/2015/05/31/mein-einstieg-ins-laufen-rene/
 ---
 
-> Viele Läufer die ich via Twitter oder Facebook verfolge habe auch mal klein angefangen. Wäre es da nicht interessant zu erfahren wie es dazu kam, inkl. kleine Tipps und Tricks aus erster Hand? 
+> Viele Läufer die ich via Twitter oder Facebook verfolge habe auch mal klein angefangen. Wäre es da nicht interessant zu erfahren wie es dazu kam, inkl. kleine Tipps und Tricks aus erster Hand?
 
 > Ziel der Aktion: jeder der mag kann seine persönliche Läufergeschichte aufschreiben, mit Tipps und Tricks spicken, gerne auch angeben ob und wie er sich vernetzen will.
 

@@ -6,7 +6,7 @@ comments: false
 date: 2013-03-06T00:00:00+02:00
 title: P90X - Plyometrics und die liebe Kondition
 aliases:
-- /2013/03/06/p90x-plyometrics-und-die-liebe-kondition/
+- /post/2013/03/06/p90x-plyometrics-und-die-liebe-kondition/
 ---
 
 In Woche 2 meiner 2. Runde von P90X geht es bisher gut voran. Nach dem ich den Muskelkater bis zum Sonntag endlich auskuriert hatte, bin ich mit viel Optimismus in Woche 2 gestartet.

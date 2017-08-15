@@ -1,6 +1,7 @@
 # redirects
 /blog/*   /post/:splat    301
 /tag=*    /tags/:splat    301
+/post/:year/:month:/:date/:slug  /post/:year-:month-:date-:slug 301
 /archives /post           301
 # /**        /index.html
 # Netlify redirects. See https://www.netlify.com/docs/redirects/

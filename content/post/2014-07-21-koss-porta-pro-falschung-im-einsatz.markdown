@@ -10,7 +10,7 @@ title: Koss Porta Pro - Fälschung im Einsatz
 twitter_card:
   image: https://files.app.net/2812tbjv4.jpg
 aliases:
-- /2014/07/21/koss-porta-pro-falschung-im-einsatz/
+- /post/2014/07/21/koss-porta-pro-falschung-im-einsatz/
 ---
 
 {{< figure class="center" src="https://files.app.net/2812tbjv4.jpg" title="Koss Porta Pro" >}}
@@ -18,7 +18,7 @@ aliases:
 Seit über 2 Jahren benutze ich jetzt die hier abgebildeten [Koss Porta Pro](http://www.koss.com/en/products/headphones/on-ear-headphones/PortaPro__Porta_Pro_On_Ear_Headphone) Kopfhörer. Empfohlen wurden mir diese damals von mehreren Quellen, auch auf Amazon kommt der Kopfhörer für seine Preisklasse sehr gut weg und es gibt fast nur positive Rezensionen.  
 
 Da ich die Kopfhörer meist beim Joggen oder Laufen zum hören von Podcasts benutze, ich weder [Audiophil](https://de.wikipedia.org/wiki/Audiophil) veranlagt bin, noch großen Wert darauf lege unterwegs jeden Ton so genau wie möglich und so detailliert und aufgelöst zu hören haben mir diese schon immer ausgereicht.  
-So wirklich verstehen konnte ich die vielen positiven Rezensionen aber nie so wirklich, denn klanglich waren sie wirklich nicht wie beschrieben, aber wie gesagt einen großen Wert habe ich darauf nie gelegt. Zu Hause auf dem Sofa habe ich dann bessere Kopfhörer um auch mal Musik schöner zu genießen. 
+So wirklich verstehen konnte ich die vielen positiven Rezensionen aber nie so wirklich, denn klanglich waren sie wirklich nicht wie beschrieben, aber wie gesagt einen großen Wert habe ich darauf nie gelegt. Zu Hause auf dem Sofa habe ich dann bessere Kopfhörer um auch mal Musik schöner zu genießen.
 
 Meine gekaufte Variante hatte aber schon immer Probleme die _Firm & Light-Schalter_ korrekt einzustellen, auch dabei habe ich mir anfangs nichts gedacht. Letzte Woche hat mich das dann aber doch gestört und da Koss ja lebenslange Garantie bietet, mich schlau gemacht was eine Reparatur denn für Aufwand erzeugen würde.
 

@@ -7,7 +7,7 @@ description: Ich hatte mich vor ca. 3 Wochn gerade frisch von einer Erkältung e
 keywords: laufen, herz, gesundheit
 title: Auch mal auf das Herz hören
 aliases:
-- /2015/11/07/auch-mal-auf-das-herz-hoeren/
+- /post/2015/11/07/auch-mal-auf-das-herz-hoeren/
 ---
 
 ![Bild von Flickr](https://cdn-images-1.medium.com/max/1600/0*osUi0BypO-5jTKX8.jpg)

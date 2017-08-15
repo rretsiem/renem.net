@@ -12,11 +12,11 @@ title: Wer liest schon Nutzungsbedingungen?
 twitter_card:
   image: null
 aliases:
-- /2014/10/10/wer-liest-schon-nutzungsbedingungen/
+- /post/2014/10/10/wer-liest-schon-nutzungsbedingungen/
 ---
 
 Nutzungsbedingungen werden ja normalerweise nicht gelesen, ein notwendiges Übel, dass man "akzeptieren" muss, da man einen Dienst (z.B. Mail, Vertrag, usw.) sonst nicht nutzen kann.
-  
+
 Den folgenden kleinen Absatz bei Google sollte man sich aber mal auf der Zunge zergehen lassen.
 
 {% blockquote Google https://www.google.com/intl/de/policies/terms/ Auszug vom 10.10.2014 %}

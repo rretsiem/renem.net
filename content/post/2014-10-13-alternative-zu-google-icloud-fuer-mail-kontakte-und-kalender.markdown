@@ -5,7 +5,7 @@ tags:
 - icloud
 date: 2014-10-13T00:00:00+02:00
 description: Nachdem ich 2013 meine Daten von Google zu iCloud umgezogen habe, möchte ich hier meine Erfahrungen dazu teilen und gleich ein Update geben.
-keywords: 
+keywords:
 - posteo
 - mail
 - kontakte
@@ -15,10 +15,10 @@ keywords:
 - fastmail
 - IMAP
 title: Alternative zu Google & iCloud für Mail, Kontakte und Kalender
-images: 
+images:
 - https://files.app.net/w15vpPHFM.jpg
 aliases:
-- /2014/10/13/alternative-zu-google-icloud-fuer-mail-kontakte-und-kalender/
+- /post/2014/10/13/alternative-zu-google-icloud-fuer-mail-kontakte-und-kalender/
 ---
 
 {{< figure src="https://files.app.net/w15vpPHFM.jpg" alt="Posteo iPhone setup" caption="Posteo iPhone Teaser" >}}
@@ -76,7 +76,7 @@ Nach dem Export, dann das löschen und leeren des Papierkorbs bei Google.
 
 Es gibt keinen Schritt 5, zugegeben die Schritte 1-4 sind auch nicht ganz ohne Aufwand, aber es hält sich in Grenzen und bleibt übersichtlich.
 
-Das ganze hat mich ingesamt ca. 2 Tage (nicht permanent!) an Zeit gekostet. Da ich die Gmail Adresse ja weiterhin zur Verfügung habe, ist also nichts verloren, wenn doch einmal eine registrierte Anmeldung vergessen wurde und erst noch umgestellt werden muss. 
+Das ganze hat mich ingesamt ca. 2 Tage (nicht permanent!) an Zeit gekostet. Da ich die Gmail Adresse ja weiterhin zur Verfügung habe, ist also nichts verloren, wenn doch einmal eine registrierte Anmeldung vergessen wurde und erst noch umgestellt werden muss.
 Das alles verlief also ziemlich stressfrei, nur ein Anfang musste gemacht werden um einen Überblick zu bekommen. Mittlerweile habe ich seit ca. 6 Monaten keine E-Mail mehr erhalten die an meine alte Gmail Adresse geschickt wurde.
 
 # Alternative E-Mail Anbieter
@@ -118,4 +118,3 @@ Zusätzlich dazu kann man über Aliase auch eine eigene Domain (begrenzte Anzahl
 
 Mit etwas zeitlichem Aufwand konnte ich meine E-Mails, Kontake und Kalender-Daten zu einem Anbieter umziehen der Wert auf Datenschutz legt und meine Daten nicht für Werbung benutzt um damit Geld zu verdienen. Das Geschäftsmodell von Posteo, Mailbox.org und auch Fastmail.fm besteht darin Dienste anzubieten für Geld und nicht für meine Daten. Das muss einem bewusst sein, kein solcher Dienst kann etwas für umsonst anbieten, wenn er das macht, dann werden meist die persönlichen Daten und Kommunikation für Auswertungen, Anzeigeschaltung usw. benutzt.  
 Wem das immer noch nicht reicht, der sollte sich mal kurz den Artikel [zum Thema Nutzungsbedingungen]({{< ref "post/2014-10-10-wer-liest-schon-nutzungsbedingungen.markdown" >}}) durchlesen.
-

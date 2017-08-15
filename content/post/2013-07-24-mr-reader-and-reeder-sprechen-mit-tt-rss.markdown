@@ -7,7 +7,7 @@ comments: false
 date: 2013-07-24T00:00:00+02:00
 title: Mr. Reader &amp; Reeder sprechen mit TT-RSS
 aliases:
-- /2013/07/24/mr-reader-and-reeder-sprechen-mit-tt-rss/
+- /post/2013/07/24/mr-reader-and-reeder-sprechen-mit-tt-rss/
 ---
 
 Was sich anhört wie der Titel einer Serie, ist in Wirklichkeit tiefste Technik und nur für Leute interessant die wissen was [TT-RSS](http://tt-rss.org/) ist und diese Software auch einsetzen oder einsetzen wollen.  
@@ -29,7 +29,7 @@ Da TT-RSS nicht direkt mit den oben genannten Applikationen kompatibel ist, müs
 
 - Zuerst einmal müsst ihr für den User mit dem ihr von einem Client zugreifen wollt, den API-Zugriff erlauben, das geht in den Einstellungen von TT-RSS wenn ihr als der entspr. Benutzer angemeldet seid.  
 - In diesem [Github-Repository](https://github.com/dasmurphy/tinytinyrss-fever-plugin) finden wir alles was wir benötigen.
-- Das Plugin muss in den Ordner _plugins_ der TT-RSS Installation kopiert werden. Sollte also dann in etwas so aussehen: _tt-rss/plugins/fever/_ 
+- Das Plugin muss in den Ordner _plugins_ der TT-RSS Installation kopiert werden. Sollte also dann in etwas so aussehen: _tt-rss/plugins/fever/_
 - In den Einstellungen der TinyTiny RSS Installation das Plugin aktivieren.  
 - Danach noch ein Passwort für die Fever-API-Emulation im Plugin eingeben, dass ist notwendig da das Plugin und die Fever Authentifizierung anders funktionieren.
 
