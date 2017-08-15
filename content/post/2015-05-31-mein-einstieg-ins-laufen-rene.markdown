@@ -14,6 +14,7 @@ title: Mein Einstieg ins Laufen - René
 aliases:
 - /2015/05/31/mein-einstieg-ins-laufen-rene/
 - /post/2015/05/31/mein-einstieg-ins-laufen-rene/
+- /post/2015-05-31-mein-einstieg-ins-laufen-rene
 ---
 
 > Viele Läufer die ich via Twitter oder Facebook verfolge habe auch mal klein angefangen. Wäre es da nicht interessant zu erfahren wie es dazu kam, inkl. kleine Tipps und Tricks aus erster Hand?
