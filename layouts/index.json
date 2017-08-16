@@ -1,6 +1,6 @@
 {
 	"version": "https://jsonfeed.org/version/1",
-	"title": "{{ .Site.Title }} JSON feed",
+	"title": "{{ .Site.Title }} Blog",
 	"home_page_url": "{{ .Site.BaseURL }}",
 	"user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL — {{ .Site.BaseURL }}index.json — and add it your reader.",
 	{{- if isset .Site.Params "description" }}

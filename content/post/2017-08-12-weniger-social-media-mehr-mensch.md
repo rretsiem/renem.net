@@ -11,7 +11,8 @@ tags:
 - twitter
 - blog
 syndication:
--
+- http://microblog.renem.net/2017/08/12/ich-habe-mal.html
+- https://twitter.com/rretsiem/status/896492627301994503
 
 ---
 
@@ -50,4 +51,3 @@ Ein weiterer Schritt, das Microblogging ist schon voll im Gange mit [Micro.blog]
 Möglicherweise erzeugt diese ganze Aktion ein klein wenig Aufmerksamkeit. Möglicherweise kann ich damit auch andere User dazu bewegen _ihr_ Internet wieder selbst zu kuratieren durch einen Menschen, sich selbst. Und Möglicherweise, hilft uns das am Ende Allen!
 
 [^1]: In den letzten Wochen ist das sogar extrem bei Instagram, bei Twitter behelfe ich mir mit einem anständigen 3rd Party-Client (Twitteriffic) der keine Werbung, Moments und sonstigen automatisch zusammengestellen Content anzeigt.
-
