@@ -1,0 +1,3 @@
+[submodule "themes/Detox"]
+	path = themes/Detox
+	url = https://github.com/allnightgrocery/hugo-theme-blueberry-detox.git
