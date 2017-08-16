@@ -14,7 +14,8 @@ tags:
 - laufen
 - watch
 syndication:
--
+- https://twitter.com/rretsiem/status/897942679689904128
+- http://microblog.renem.net/2017/08/16/neuer-blog-beitrag.html
 
 ---
 
