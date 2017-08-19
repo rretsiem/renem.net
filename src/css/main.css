@@ -750,6 +750,10 @@ article .footnotes {
     font-size: 80%
 }
 
+.post-list-time {
+  font-size: 70%;
+}
+
 .post-footer {
     text-align: center;
     margin-top: 1.618em;

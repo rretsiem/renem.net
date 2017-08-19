@@ -51,12 +51,6 @@ notAlternative = true
         pre = "Archive List of Blog Articles"
         identifier = "mainarticles"
         url = "/post"
-#[[menu.main]]
-#        name = "Photos"
-#        weight = 2
-#        pre = "Photo Beiträge"
-#        identifier = "mainphotos"
-#        url = "/photo"
 [[menu.main]]
         name = "Microblog"
         weight = 3
@@ -64,20 +58,13 @@ notAlternative = true
         identifier = "mainmicroblog"
         url = "/microblog"
 [[menu.main]]
-        name = "PGP"
+        name = "Archiv"
         weight = 4
-        identifier = "mainpgp"
-        url = "/pgp"
+        identifier = "mainarchive"
+        url = "/archive"
 [[menu.main]]
         name = "About"
         url = "/about"
         pre = "About ReneM"
         identifier = "mainabout"
         weight = 5
-[[menu.main]]
-        name = "Tags"
-        url = "/tags"
-        pre = "All Tags"
-        post = "xs-hide"
-        identifier = "mainalltags"
-        weight = 10
