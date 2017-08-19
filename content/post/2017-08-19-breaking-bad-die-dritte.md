@@ -1,5 +1,5 @@
 ---
-title: "2017 08 19 Breaking Bad – Die Dritte"
+title: "Breaking Bad – Die Dritte"
 date: 2017-08-19T21:43:48+02:00
 categories:
 - tvshow
