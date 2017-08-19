@@ -10,7 +10,8 @@ tags:
 - tv
 - show
 syndication:
--
+- https://twitter.com/rretsiem/status/899017722306207745
+- http://microblog.renem.net/2017/08/19/neuer-blog-post.html
 ---
 
 Als Netflix und Amazon Prime Abonnent hat man es schon nicht leicht. Denn eigentlich schauen wir im Sommer so gut wie nie Fernsehen, außer es ist wirklich mal schlechtes Wetter und auf dem Balkon ist es zu kühl. Somit wird die Watchlist auf den beiden von uns abonnierten Diensten auch immer länger.
