@@ -13,7 +13,7 @@ syndication:
 -
 ---
 
-Als Netflix und Amazon Prime Abonnent hat man es schon nicht leicht. Zwar schauen wir im Sommer eigentlich so gut wie nie Fernsehen, außer es ist wirklich mal schlechtes Wetter und auf dem Balkon ist es zu kühl. Somit wird die Watchlist auf den beiden von uns abonnierten Diensten auch immer länger.
+Als Netflix und Amazon Prime Abonnent hat man es schon nicht leicht. Denn eigentlich schauen wir im Sommer so gut wie nie Fernsehen, außer es ist wirklich mal schlechtes Wetter und auf dem Balkon ist es zu kühl. Somit wird die Watchlist auf den beiden von uns abonnierten Diensten auch immer länger.
 
 Eine dieser Serien auf der Watchlist seit Jahren ist "Breaking Bad", damals als noch frische Staffeln veröffentlich wurden, bereits auf der Watchliste gehabt, aber nie zu Ende gesehen. Der Medien-Rummel um die Serie war riesig und man hat sich mitreisen lassen.
 
