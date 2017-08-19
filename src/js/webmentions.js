@@ -64,8 +64,11 @@ function displayMentions(json) {
         var mentionList = document.getElementById('mentionList');
         mentionList.insertAdjacentHTML( 'afterbegin', singleComment );
       });
-      document.getElementById('mentionContainer').style.visibility = "visible";
-      document.getElementById('mentionContainer').style.display = "block";
+      // display webmention-container only if there are links from webmention.io
+      if (json["links"].length) {
+        document.getElementById('mentionContainer').style.visibility = "visible";
+        document.getElementById('mentionContainer').style.display = "block";
+      }
     }
 }
 
