@@ -1,7 +1,13 @@
 .DS_Store
+.DS_Store?
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.AppleDB
+.AppleDesktop
 firebase.json
 .firebaserc
 .git/
 node_modules/
 public/
-
+public/*
