@@ -13,7 +13,7 @@ tags:
 - new balance
 mfrepostof: "https://runomatic.de/new-balance-fresh-foam-zante-v3-im-update-test/"
 syndication:
--
+- https://twitter.com/rretsiem/status/900435298965958656
 ---
 
 Seit ein paar Wochen bereits laufe ich auch jeden zweiten Lauf im New Balance Fresh Foam Zante V3. Ich habe damals beim Laufschuhhändler meines Vertrauens leider nur farbenfrohes schwarz in meiner Größe erhalten, aber die Farbe macht keinen Unterschied, der Schuh macht in schwarz genau so viel Spaß wie in rot.
