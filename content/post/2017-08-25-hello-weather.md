@@ -11,7 +11,7 @@ tags:
 images:
 -
 syndication:
--
+- https://twitter.com/rretsiem/status/901171389977251840
 ---
 
 Auf Grund der Dikussionen um die [Datenweitergabe von AccuWeather](http://www.zdnet.com/article/accuweather-caught-sending-geo-location-data-even-when-denied-access/), suchen ja im Moment viele nach Alternativen. Mein Favorit "Hello Weather", möchte ich hier einmal vorstellen.
