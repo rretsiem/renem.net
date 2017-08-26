@@ -1,4 +1,5 @@
-<!-- The shortcode functionality - in layouts/shortcodes/img.html -->
+<!-- The shortcode functionality - in layouts/shortcodes/picture.html -->
+{{ $baseurl := .Site.BaseURL }}
 <div class="picture">
   {{ if .Get "caption"}}
   <figure>
@@ -7,16 +8,16 @@
       <!-- Large screens -->
       <source
         media="(min-width: 535px)"
-        srcset="{{ .Get "src" }}.{{ .Get "type" }} 1x,
-                {{ .Get "src" }}@2x.{{ .Get "type" }} 2x">
+        srcset="{{ $baseurl }}{{ .Get "src" }}.{{ .Get "type" }} 1x,
+                {{ $baseurl }}{{ .Get "src" }}@2x.{{ .Get "type" }} 2x">
       <!-- Small screens -->
       <source
         media="(max-width: 534px)"
-        srcset="{{ .Get "src" }}-sm.{{ .Get "type" }} 1x,
-                {{ .Get "src" }}-sm@2x.{{ .Get "type" }} 2x">
+        srcset="{{ $baseurl }}{{ .Get "src" }}-sm.{{ .Get "type" }} 1x,
+                {{ $baseurl }}{{ .Get "src" }}-sm@2x.{{ .Get "type" }} 2x">
       <!-- Fallback -->
       <img
-        src="{{ .Get "src" }}.{{ .Get "type" }}"
+        src="{{ $baseurl }}{{ .Get "src" }}.{{ .Get "type" }}"
         alt="{{ .Get "alt" }}"{{ if .Get "caption"}} class="img-fluid figure-img u-photo post-img photo"{{ end }}>
     </picture>
   {{ if .Get "caption"}}
