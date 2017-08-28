@@ -10,6 +10,7 @@ keywords:
 - data
 aliases:
 - adieu-strava-premium-runalyze-kann-statistiken-einfach-besser-c0a3349cdbfb
+- /post/2015/12/7/adieu-strava-premium-runalyze-kann-statistiken-einfach-besser/
 ---
 
 Bis zum 03.12.2015 war ich Premium Mitglied bei Strava, sehr zufrieden. Eigentlich gibt es nichts auszusetzen an dem Dienst. Im Gegenteil, durch Strava und die Community-Funktionen habe ich mittlerweile einige nette Läufer kennengelernt.

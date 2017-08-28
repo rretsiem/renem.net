@@ -6,12 +6,13 @@ description: Warum ist die AeroPress so genial für die Kaffee-Zubereitung geeig
 image:
 - https://farm9.staticflickr.com/8580/16124944883_1bd82b0bab.jpg
 - https://farm4.staticflickr.com/3832/13365230665_35a0ef8486.jpg
-keywords: 
+keywords:
 - aeropress
 - coffee
 title: Kaffee-Zubereitung mit der AeroPress
 aliases:
 - /2015/02/11/kaffee-zubereitung-mit-der-aeropress/
+- /post/2015/02/11/kaffee-zubereitung-mit-der-aeropress/
 ---
 
 {{< figure src="https://farm9.staticflickr.com/8580/16124944883_1bd82b0bab.jpg" caption="Mein AeroPress Equipment mit Timer" >}}
