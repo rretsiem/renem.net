@@ -3,7 +3,7 @@
 {{ if .IsPage }}
 <!-- Required Open Graph Info -->
 <meta property="og:title" content="{{ .Title }}{{ if ne .Title .Site.Title }} : {{ .Site.Title }}{{ end }}" />
-{{ with .Params.images }}{{ range first 6 . }}<meta property="og:image" content="{{ if in . "http" }}{{ . }}{{ else }}{{ $baseurl }}{{ . }}{{ end }}" />
+{{ with .Params.images }}{{ range first 6 . }}<meta property="og:image" content="{{ if in . "http" }}{{ . }}{{ else }}{{ . | absURL}}{{ end }}" />
 {{ end }}
 {{ end }}
 <meta property="og:url" content="{{ .Permalink }}" />

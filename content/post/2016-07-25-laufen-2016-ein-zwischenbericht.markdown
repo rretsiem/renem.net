@@ -9,7 +9,8 @@ keywords:
 - laufen
 aliases:
 - /laufen-2016-ein-zwischenbericht-32738fac45c
-twit: https://twitter.com/rretsiem/statuses/757836955094687744
+syndication: 
+- https://twitter.com/rretsiem/statuses/757836955094687744
 images:
 - /images/laufen-2016-zwischenbericht.png
 ---

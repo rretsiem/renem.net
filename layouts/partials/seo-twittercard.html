@@ -11,7 +11,7 @@
 {{ with .Params.images }}
 <!-- Twitter summary card with large image must be at least 280x150px -->
 	<meta name="twitter:card" content="summary_large_image"/>
-	<meta name="twitter:image:src" content="{{ if in (index . 0) "http" }}{{ index . 0 }}{{ else }}{{ $baseurl }}{{ index . 0 }}{{ end }}"/>
+	<meta name="twitter:image:src" content="{{ if in (index . 0) "http" }}{{ index . 0 }}{{ else }}{{ index . 0 | absURL}}{{ end }}"/>
 {{ else }}
 	<meta name="twitter:card" content="summary"/>
 {{ end }}
