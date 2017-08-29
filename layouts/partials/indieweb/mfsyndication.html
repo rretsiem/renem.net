@@ -2,7 +2,7 @@
 {{ range $syndication }}
   {{ if ne . "" }}
   {{ $domain := replaceRE "^https?://([^/]+).*" "$1" . }}
-   <a href="{{ . }}" class="metatag u-syndication" rel="syndication" title="this post was syndicated to {{ $domain }}">
+   <a href="{{ . }}" class="metatag u-syndication" rel="syndication" title="This post was syndicated to {{ $domain }}">
     {{- if in $domain "twitter.com" -}}
        <svg class="icon"><use xlink:href="#twitter" /></svg>
     {{ else }}

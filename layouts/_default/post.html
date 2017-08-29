@@ -4,6 +4,14 @@
   </header>
 
 	{{- partial "indieweb/mfreplyto" . -}}
+		<section class="post-excerpt p-summary" class="hidden">
+				{{ if .Params.description }}
+					{{ .Params.description }}
+				{{ else }}
+					{{ .Summary }}
+				{{ end }}
+		</section>
+
 
     <section class="post-content e-content">
         {{ .Content }}
