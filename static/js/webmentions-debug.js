@@ -43,10 +43,11 @@ function countActivityTypes(arr) {
 
 function buildSummaryResponse(activities, type) {
   var summaryResponse = '';
-  summaryResponse = '<span class="response-summary">\
-    <svg class="icon"><use xlink:href="#' + type + '" /></svg>&nbsp;&nbsp;' + activities[type] + ' \
-  </span>';
-
+  if (activities[type] > 0) {
+    summaryResponse = '<span class="response-summary">\
+      <svg class="icon"><use xlink:href="#' + type + '" /></svg>&nbsp;&nbsp;' + activities[type] + ' \
+    </span>';
+  }
   return summaryResponse;
 
 }
