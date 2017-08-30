@@ -16,6 +16,7 @@ syndication:
 - http://microblog.renem.net/2017/08/28/neuer-blog-post.html
 - https://twitter.com/rretsiem/status/902254188872249349
 - https://www.instagram.com/p/BYV3PrkjEwH/
+- https://www.flickr.com/photos/renene26/36065700353/
 ---
 
 Den Dienst [Komoot](https://www.komoot.de) in Form der iOS App hatte ich schon sehr lange auf meinem Telefon installiert, in den Empfehlungen zu Touren auch immer mal wieder gestöbert aber nie genauer damit beschäftigt.

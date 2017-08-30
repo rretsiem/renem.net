@@ -7,6 +7,8 @@
        <svg class="icon"><use xlink:href="#twitter" /></svg>
    {{- else if in $domain "instagram.com" -}}
       <svg class="icon"><use xlink:href="#instagram" /></svg>
+   {{- else if in $domain "flickr.com" -}}
+      <svg class="icon"><use xlink:href="#flickr" /></svg>
     {{ else }}
       <svg class="icon"><use xlink:href="#link" /></svg>
     {{ end }}

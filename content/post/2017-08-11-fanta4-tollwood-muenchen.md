@@ -12,6 +12,9 @@ images:
 - /images/2017-07_fanta4_tollwood-0.jpg
 - /images/2017-07_fanta4_tollwood-2.jpg
 - /images/2017-07_fanta4_tollwood-3.jpg
+syndication:
+- https://www.flickr.com/photos/renene26/36748692772/
+- https://www.instagram.com/p/BWgACdwjbAv/
 ---
 
 {{< picture src="/images/2017-07_fanta4_tollwood-1" type="jpg" alt="Foto der Fanta4, Yeah, Yeah, Yeah!" caption="Das war ein sehr heißes Konzert. Im Zelt waren gefühlte 80°C, aber es hat riesen Spaß gemacht!" >}}

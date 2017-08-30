@@ -32,13 +32,45 @@ function getCommentText(content, type, url, item) {
     return commentContent;
 }
 
+function countActivityTypes(arr) {
+  var counts = {};
+  for (var i = 0; i < arr.length; i++) {
+    var num = arr[i].activity.type;
+    counts[num] = counts[num] ? counts[num] + 1 : 1;
+  }
+  return counts;
+}
+
+function buildSummaryResponse(activities, type) {
+  var summaryResponse = '';
+  summaryResponse = '<span class="response-summary">\
+    <svg class="icon"><use xlink:href="#' + type + '" /></svg>&nbsp;&nbsp;' + activities[type] + ' \
+  </span>';
+
+  return summaryResponse;
+
+}
+
 function displayMentions(json) {
     // dealin wit teh jsonz
     if (json && json["links"]) {
 
+      var activityTypes = countActivityTypes(json["links"]);
+// console.log(activityTypes);
+
+      var summaryResponses = '';
+      summaryResponses += buildSummaryResponse(activityTypes, "like");
+      summaryResponses += buildSummaryResponse(activityTypes, "repost");
+      summaryResponses += '';
+
       json["links"].forEach(function(item) {
         // console.log("ITEM: " + JSON.stringify(item));
         // var commentTime = new Date(item.data.published)
+
+        if (item.activity.type == "like" || item.activity.type == "repost") {
+//          return true;
+        }
+
         var commentTime = (item.data.published) ? new Date(item.data.published) : new Date(item.verified_date);
 
         var singleComment = '<li class="comment p-comment h-entry" id="li-comment-' + item.id + '"> \
@@ -63,7 +95,12 @@ function displayMentions(json) {
 
         var mentionList = document.getElementById('mentionList');
         mentionList.insertAdjacentHTML( 'afterbegin', singleComment );
+
       });
+
+      var summaryResponsesContainer = document.getElementById('summaryResponses');
+      summaryResponsesContainer.insertAdjacentHTML( 'afterbegin', summaryResponses);
+
       // display webmention-container only if there are links from webmention.io
       if (json["links"].length) {
         document.getElementById('mentionContainer').style.visibility = "visible";
@@ -76,6 +113,8 @@ function displayMentions(json) {
   var sn = document.createElement("script"), s = document.getElementsByTagName("script")[0], url;
   url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
   url = url && url[0] ? url[0].href : false;
+  // testing
+  // url = "https://renem.net/post/2017-08-12-weniger-social-media-mehr-mensch/";
   sn.type = "text/javascript";
   sn.defer = true;
   sn.src = "https://webmention.io/api/mentions?jsonp=displayMentions&target=" + encodeURIComponent(url);

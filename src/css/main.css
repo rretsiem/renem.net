@@ -1209,3 +1209,13 @@ img.webmention-error {display: none;}
   top: 0;
   width: 100%;
 }
+
+.summary-responses {
+  padding: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.response-summary {
+  margin-left: 5px;
+}
