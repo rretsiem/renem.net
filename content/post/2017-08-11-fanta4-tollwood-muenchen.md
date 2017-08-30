@@ -15,6 +15,9 @@ images:
 syndication:
 - https://www.flickr.com/photos/renene26/36748692772/
 - https://www.instagram.com/p/BWgACdwjbAv/
+geo:
+  lat: 48.167902
+  lon: 11.547525
 ---
 
 {{< picture src="/images/2017-07_fanta4_tollwood-1" type="jpg" alt="Foto der Fanta4, Yeah, Yeah, Yeah!" caption="Das war ein sehr heißes Konzert. Im Zelt waren gefühlte 80°C, aber es hat riesen Spaß gemacht!" >}}

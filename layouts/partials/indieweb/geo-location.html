@@ -1,0 +1,11 @@
+{{ with .Params.geo }}
+<section class="f-2 share">
+  <span>Location:
+    <a class="p-location h-card" rel="noopener" href="http://www.openstreetmap.org/?mlat={{ $.Param "geo.lat" }}&mlon={{ $.Param "geo.lon" }}&zoom=12" title="Show on OpenStreetMap">
+      <svg class="icon"><use xlink:href="#map" /></svg>
+      <span class="p-latitude hidden">{{ $.Param "geo.lat" }}</span>
+      <span class="p-longitude hidden">{{ $.Param "geo.lon" }}</span>
+    </a>
+  </span>
+</section>
+{{ end }}
