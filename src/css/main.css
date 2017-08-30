@@ -1117,7 +1117,7 @@ nav {
 
 .hidden {
   display: none !important;
-  visibility: hidden
+  visibility: hidden;
 }
 
 #mentionList {
