@@ -59,10 +59,10 @@ function getIconForDomain(domain) {
     case "twitter.com":
       icon = '<svg class="icon"><use xlink:href="#twitter" /></svg>';
       break;
-    case "instagram.com":
+    case "www.instagram.com":
       icon = '<svg class="icon"><use xlink:href="#instagram" /></svg>';
       break;
-    case "flickr.com":
+    case "www.flickr.com":
       icon = '<svg class="icon"><use xlink:href="#flickr" /></svg>';
       break;
     default:
