@@ -52,6 +52,28 @@ function buildSummaryResponse(activities, type) {
 
 }
 
+function getIconForDomain(domain) {
+  var icon = '';
+
+  switch (domain) {
+    case "twitter.com":
+      icon = '<svg class="icon"><use xlink:href="#twitter" /></svg>';
+      break;
+    case "instagram.com":
+      icon = '<svg class="icon"><use xlink:href="#instagram" /></svg>';
+      break;
+    case "flickr.com":
+      icon = '<svg class="icon"><use xlink:href="#flickr" /></svg>';
+      break;
+    default:
+      // return the domain name instead
+      icon = domain;
+      break;
+    }
+
+    return icon;
+}
+
 function displayMentions(json) {
     // dealin wit teh jsonz
     if (json && json["links"]) {
@@ -68,6 +90,7 @@ function displayMentions(json) {
         // console.log("ITEM: " + JSON.stringify(item));
         // var commentTime = new Date(item.data.published)
 
+        // only count likes and reposts but didn't build a comment from it
         if (item.activity.type == "like" || item.activity.type == "repost") {
 //          return true;
         }
@@ -88,7 +111,7 @@ function displayMentions(json) {
             <div class="comment-content"> \
               <div class="e-content p-name p-summary"> \
                 <p>' + getCommentText(item.data.content, item.activity.type, item.data.url, item) + '\
-                <cite><a class="u-url" href="' +  item.data.url + '" rel="nofollow">via ' + new URL(item.data.url).hostname + '</a></cite></p> \
+                <cite><a class="u-url" href="' +  item.data.url + '" rel="nofollow noopener">via ' + getIconForDomain(new URL(item.data.url).hostname) + '</a></cite></p> \
               </div> \
             </div> \
           </article> \
