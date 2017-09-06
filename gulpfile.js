@@ -149,7 +149,7 @@ gulp.task('superfeedr', function() {
     'http://renem.superfeedr.com/',
     { json: {
       "hub.mode": "publish",
-      "hub.url": "https://renem.net/index.xml"
+      "hub.url": "https://renem.net/*"
       }
     },
     function (error, response, body) {
