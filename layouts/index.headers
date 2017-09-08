@@ -4,10 +4,7 @@
   X-UA-Compatible: ie=edge
   X-Content-Type-Options: nosniff
   Content-Security-Policy: default-src 'self' https:; script-src 'self' https: *.cloudfront.net 'unsafe-eval'; style-src 'self' https: 'unsafe-inline'; img-src *;
-#  Content-Security-Policy: default-src https:; script-src https: 'unsafe-inline' 'unsafe-eval'; style-src https: 'unsafe-inline'; img-src https: http://renem.micro.blog/;
-#  Content-Security-Policy: default-src 'self'; script-src *.cloudfront.net 'self' https: 'unsafe-inline' 'unsafe-eval'; style-src *.cloudfront.net 'self' https: 'unsafe-inline'; img-src *; child-src 'self' https:;
   Referrer-Policy: no-referrer-when-downgrade
-#  Referrer-Policy: origin-when-cross-origin
   Cache-Control: max-age=7200, public
   Strict-Transport-Security: max-age=2592000
 # images
@@ -16,7 +13,8 @@
 # preloading
 /*
 #  Link: <{{ "service-worker.js" | relURL }}>; rel=preload; as=script; nopush
-#  Link: <{{ "js/service-worker-registration.js" | relURL }}>; rel=preload; as=script
-#  Link: <{{ "js/webmention_io.js" | relURL }}>; rel=preload; as=script
-#  Link: <{{ "js/webmentions.js" | relURL }}>; rel=preload; as=script
-  Link: <{{ "css/bundle.css" | relURL }}>; rel=preload; as=style
+Link: <{{ "js/service-worker-registration.js" | relURL }}>; rel=preload; as=script; nopush
+Link: <{{ "css/bundle.css" | relURL }}>; rel=preload; as=style
+/post/*.*
+Link: <{{ "js/webmention_io.js" | relURL }}>; rel=preload; as=script
+Link: <{{ "js/webmentions.js" | relURL }}>; rel=preload; as=script
