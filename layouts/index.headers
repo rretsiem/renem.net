@@ -4,9 +4,9 @@
   X-UA-Compatible: ie=edge
   X-Content-Type-Options: nosniff
 #  Content-Security-Policy: default-src 'self' https:; script-src 'self' https: 'unsafe-eval'; style-src 'self' https: 'unsafe-inline'; img-src *;
-  Content-Security-Policy: "default-src 'self' https:; script-src 'self' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src *"
-  X-Content-Security-Policy: "default-src 'self' https:; script-src 'self' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src *"
-  X-WebKit-CSP: "default-src 'self' https:; script-src 'self' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src *"
+  Content-Security-Policy: default-src 'self' https:; script-src 'self' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src *;
+  X-Content-Security-Policy: default-src 'self' https:; script-src 'self' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src *;
+  X-WebKit-CSP: default-src 'self' https:; script-src 'self' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src *;
   Referrer-Policy: no-referrer-when-downgrade
   Cache-Control: max-age=7200, public
   Strict-Transport-Security: max-age=2592000
