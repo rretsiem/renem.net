@@ -14,8 +14,8 @@ images:
 - /images/2017-09-09-laufspass-mit-fivefingers-2.jpg
 - /images/2017-09-09-laufspass-mit-fivefingers-3.jpg
 syndication:
--
-
+- https://renem.micro.blog/2017/09/10/neuer-blog-post.html
+- https://www.instagram.com/p/BYoYT3YjFqO/
 ---
 
 
@@ -39,4 +39,3 @@ Schon nach den ersten Metern hatte ich einen viel zu schnellen Laufschritt und m
 Mit ein wenig Muskelkater in den Waden hatte ich am nächsten oder übernächsten Tag fest gerechnet. Dieser blieb zum Glück aus, allerdings hatte ich schwere Beine.
 
 Für kurze Läufe werde ich die Fivefingers nun öfter mal aus dem Regal holen und Spaß beim Laufen haben.
-
