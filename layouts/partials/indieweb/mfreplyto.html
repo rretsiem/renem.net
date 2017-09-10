@@ -3,7 +3,7 @@
 	<h5>Dieser Beitrag ist eine Antwort auf:</h5>
 	{{- if in . "twitter.com" -}}
 			<span><a class="u-in-reply-to" rel="in-reply-to" href="{{ . }}">
-					<svg class="icon"><use xlink:href="#twitter" /></svg>&nbsp;&nbsp;{{ . }}
+					<svg class="icon"><use xlink:href="#twitter" /><title>Reply to</title></svg>&nbsp;&nbsp;{{ . }}
 				</a>
 			</span>
 			{{- $tweetId := replaceRE `https?:\/\/twitter.com\/[a-zA-Z0-9_]{1,20}\/status\/([0-9]*)` `$1` . -}}
@@ -20,7 +20,7 @@
 				{{- end -}}
 	{{- else -}}
 		<span><a class="u-in-reply-to" rel="in-reply-to" href="{{ . }}">
-      <svg class="icon"><use xlink:href="#reply" /></svg>&nbsp;&nbsp;{{ . }}
+      <svg class="icon"><use xlink:href="#reply" /><title>Reply to</title></svg>&nbsp;&nbsp;{{ . }}
       </a>
     </span>
 	{{- end -}}
