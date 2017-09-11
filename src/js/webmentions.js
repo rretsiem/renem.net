@@ -99,7 +99,7 @@ function displayMentions(json) {
         if (item.activity.type == "like" || item.activity.type == "repost") {
 //          return true;
             summaryList[item.activity.type] += '<li class="p-' + item.activity.type + ' h-cite">';
-            summaryList[item.activity.type] += '<a href="' + item.data.url + '" rel="external nofollow" class="u-url url" title="via ' + new URL(item.data.url).hostname + '">';
+            summaryList[item.activity.type] += '<a href="' + item.data.url + '" rel="external nofollow" class="u-url url" title="' + item.data.author.name + ' via ' + new URL(item.data.url).hostname + '">';
             summaryList[item.activity.type] += '<span class="p-author h-card"><img alt="" src="' + item.data.author.photo + '" srcset="' + item.data.author.photo + ' 2x" class="u-photo avatar avatar-48 photo avatar-default u-photo avatar-semantic-linkbacks" height="48" width="48" scale="0"></span>';
             summaryList[item.activity.type] += '</a>';
             summaryList[item.activity.type] += '<a href="' + item.data.author.url + '" rel="external nofollow" class="p-name u-url url hidden">' + item.data.author.name + '</a>';
