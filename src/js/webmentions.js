@@ -143,8 +143,12 @@ function displayMentions(json) {
       summaryList['repost'] += '</ul><div style="clear:both;"></div>';
 
       var summaryResponsesContainer = document.getElementById('summaryResponses');
-      summaryResponsesContainer.insertAdjacentHTML( 'afterbegin', summaryList['repost']);
-      summaryResponsesContainer.insertAdjacentHTML( 'afterbegin', summaryList['like']);
+      if (activityTypes['repost'] > 0) {
+          summaryResponsesContainer.insertAdjacentHTML( 'afterbegin', summaryList['repost']);
+      }
+      if (activityTypes['like'] > 0) {
+        summaryResponsesContainer.insertAdjacentHTML( 'afterbegin', summaryList['like']);
+      }
       // summaryResponsesContainer.insertAdjacentHTML( 'afterbegin', summaryResponses);
 
       // display webmention-container only if there are links from webmention.io
