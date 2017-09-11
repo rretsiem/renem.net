@@ -160,7 +160,7 @@ function displayMentions(json) {
   url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
   url = url && url[0] ? url[0].href : false;
   // testing
-  url = "https://renem.net/post/2017-08-12-weniger-social-media-mehr-mensch/";
+  // url = "https://renem.net/post/2017-08-12-weniger-social-media-mehr-mensch/";
   sn.type = "text/javascript";
   sn.defer = true;
   sn.src = "https://webmention.io/api/mentions?jsonp=displayMentions&target=" + encodeURIComponent(url);
