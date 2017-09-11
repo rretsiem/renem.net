@@ -1,11 +1,11 @@
         <section class="f-1">
             {{ if isset .Params "author" }}
             <section class="author">
-                <p>{{ index .Params "author" }}</p>
+                <p>Words by {{ index .Params "author" }}</p>
             </section>
             {{ else if isset .Site.Params "author" }}
             <section class="author p-author h-card" rel="author">
-                <p><a href="{{ .Site.BaseURL }}about" class="metatag" title="{{ index .Site.Params "author" }}">{{ index .Site.Params "author" }}</a></p>
+                <p>Words by <a href="{{ .Site.BaseURL }}about" class="metatag" title="{{ index .Site.Params "author" }}">{{ index .Site.Params "author" }}</a></p>
             </section>
             {{ end }}
             <p class="f-post-time">

@@ -81,10 +81,15 @@ function displayMentions(json) {
       var activityTypes = countActivityTypes(json["links"]);
 // console.log(activityTypes);
 
-      var summaryResponses = '';
-      summaryResponses += buildSummaryResponse(activityTypes, "like");
-      summaryResponses += buildSummaryResponse(activityTypes, "repost");
-      summaryResponses += '';
+      var summaryList = [];
+
+      summaryList['like'] = '<ul class="facepile"><li class="group"><svg class="icon"><use xlink:href="#like" /><title>Likes</title></svg></li>';
+      summaryList['repost'] = '<ul class="facepile"><li class="group"><svg class="icon"><use xlink:href="#repost" /><title>Repost</title></svg></li>';
+
+      // var summaryResponses = '';
+      // summaryResponses += buildSummaryResponse(activityTypes, "like");
+      // summaryResponses += buildSummaryResponse(activityTypes, "repost");
+      // summaryResponses += '';
 
       json["links"].forEach(function(item) {
         // console.log("ITEM: " + JSON.stringify(item));
@@ -93,37 +98,54 @@ function displayMentions(json) {
         // only count likes and reposts but didn't build a comment from it
         if (item.activity.type == "like" || item.activity.type == "repost") {
 //          return true;
+            summaryList[item.activity.type] += '<li class="p-' + item.activity.type + ' h-cite">';
+            summaryList[item.activity.type] += '<a href="' + item.data.url + '" rel="external nofollow" class="u-url url" title="via ' + new URL(item.data.url).hostname + '">';
+            summaryList[item.activity.type] += '<span class="p-author h-card"><img alt="" src="' + item.data.author.photo + '" srcset="' + item.data.author.photo + ' 2x" class="u-photo avatar avatar-48 photo avatar-default u-photo avatar-semantic-linkbacks" height="48" width="48" scale="0"></span>';
+            summaryList[item.activity.type] += '</a>';
+            summaryList[item.activity.type] += '<a href="' + item.data.author.url + '" rel="external nofollow" class="p-name u-url url hidden">' + item.data.author.name + '</a>';
+            summaryList[item.activity.type] += '</li>';
+
+        } else {
+
+          var commentTime = (item.data.published) ? new Date(item.data.published) : new Date(item.verified_date);
+
+          var singleComment = '<li class="comment p-comment h-entry" id="li-comment-' + item.id + '"> \
+            <article id="comment-' + item.id + '" class="webmention-mention"> \
+              <div class="comment-meta commentmetadata webmention-author"> \
+                <div class="vcard h-card p-author"> \
+                <span class="webmention-author"><img alt="" src="' + item.data.author.photo + '" srcset="' + item.data.author.photo + ' 2x" class="u-photo avatar avatar-48 photo avatar-default u-photo avatar-semantic-linkbacks" height="48" width="48" scale="0"></span> \
+                  <cite class="fn"><a href="' + item.data.author.url + '" rel="external nofollow" class="u-url url">' + item.data.author.name + '</a></cite> \
+                  <a href="' + item.target + '#comment-' + item.id + '" title="' + commentTime.toLocaleTimeString() + '"> \
+                    <time class="dt-published" datetime="' +  item.data.published + '">' + commentTime.toLocaleDateString() + '</time> \
+                  </a> \
+                </div> \
+              </div> \
+              <div class="comment-content"> \
+                <div class="e-content p-name p-summary"> \
+                  <p>' + getCommentText(item.data.content, item.activity.type, item.data.url, item) + '\
+                  <cite><a class="u-url" href="' +  item.data.url + '" rel="nofollow noopener">via ' + getIconForDomain(new URL(item.data.url).hostname) + '</a></cite></p> \
+                </div> \
+              </div> \
+            </article> \
+          </li>';
+
+          var mentionList = document.getElementById('mentionList');
+          mentionList.insertAdjacentHTML( 'afterbegin', singleComment );
+
+          // end like / repost if
         }
 
-        var commentTime = (item.data.published) ? new Date(item.data.published) : new Date(item.verified_date);
 
-        var singleComment = '<li class="comment p-comment h-entry" id="li-comment-' + item.id + '"> \
-          <article id="comment-' + item.id + '" class="webmention-mention"> \
-            <div class="comment-meta commentmetadata webmention-author"> \
-              <div class="vcard h-card p-author"> \
-              <span class="webmention-author"><img alt="" src="' + item.data.author.photo + '" srcset="' + item.data.author.photo + ' 2x" class="u-photo avatar avatar-48 photo avatar-default u-photo avatar-semantic-linkbacks" height="48" width="48" scale="0"></span> \
-                <cite class="fn"><a href="' + item.data.author.url + '" rel="external nofollow" class="u-url url">' + item.data.author.name + '</a></cite> \
-                <a href="' + item.target + '#comment-' + item.id + '" title="' + commentTime.toLocaleTimeString() + '"> \
-                  <time class="dt-published" datetime="' +  item.data.published + '">' + commentTime.toLocaleDateString() + '</time> \
-                </a> \
-              </div> \
-            </div> \
-            <div class="comment-content"> \
-              <div class="e-content p-name p-summary"> \
-                <p>' + getCommentText(item.data.content, item.activity.type, item.data.url, item) + '\
-                <cite><a class="u-url" href="' +  item.data.url + '" rel="nofollow noopener">via ' + getIconForDomain(new URL(item.data.url).hostname) + '</a></cite></p> \
-              </div> \
-            </div> \
-          </article> \
-        </li>';
-
-        var mentionList = document.getElementById('mentionList');
-        mentionList.insertAdjacentHTML( 'afterbegin', singleComment );
-
+        // end for loop activities (json links)
       });
 
+      summaryList['like'] += '</ul><div style="clear:both;"></div>';
+      summaryList['repost'] += '</ul><div style="clear:both;"></div>';
+
       var summaryResponsesContainer = document.getElementById('summaryResponses');
-      summaryResponsesContainer.insertAdjacentHTML( 'afterbegin', summaryResponses);
+      summaryResponsesContainer.insertAdjacentHTML( 'afterbegin', summaryList['repost']);
+      summaryResponsesContainer.insertAdjacentHTML( 'afterbegin', summaryList['like']);
+      // summaryResponsesContainer.insertAdjacentHTML( 'afterbegin', summaryResponses);
 
       // display webmention-container only if there are links from webmention.io
       if (json["links"].length) {
@@ -138,7 +160,7 @@ function displayMentions(json) {
   url = document.querySelectorAll ? document.querySelectorAll("link[rel~=canonical]") : false;
   url = url && url[0] ? url[0].href : false;
   // testing
-  // url = "https://renem.net/post/2017-08-12-weniger-social-media-mehr-mensch/";
+  url = "https://renem.net/post/2017-08-12-weniger-social-media-mehr-mensch/";
   sn.type = "text/javascript";
   sn.defer = true;
   sn.src = "https://webmention.io/api/mentions?jsonp=displayMentions&target=" + encodeURIComponent(url);

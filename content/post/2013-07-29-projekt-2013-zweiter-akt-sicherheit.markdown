@@ -10,7 +10,7 @@ aliases:
 - /2013/07/29/projekt-2013-zweiter-akt-sicherheit/
 ---
 
-Anfang des Jahres habe ich mit einer kleinen [Serie an Beiträgen](/2013/01/22/weniger-google-projekt-2013) hier begonnen meinen Weg weg von Google hin zu anderen unabhängigen Diensten zu beschreiben.  
+Anfang des Jahres habe ich mit einer kleinen [Serie an Beiträgen]({{< relref "2013-01-22-weniger-google-projekt-2013.markdown" >}}) hier begonnen meinen Weg weg von Google hin zu anderen unabhängigen Diensten zu beschreiben.  
 Da dieses Thema durch [Prism, Tempora & Co](http://www.heise.de/thema/PRISM) in den letzten Wochen ja nicht weit genug gedacht war, möchte ich die Serie gern fortsetzen. Ich werde hierzu wieder einzelne Beiträge verfassen.
 
 Beginnen möchte ich mit einem grundlegendem Thema, der Sicherheit bzw. dem sicheren Austausch von E-Mails. Ich muss denke ich niemandem erzählen das eine E-Mail so wie wir sie fast alle kennen und verwenden wie eine Postkarte funktioniert und der Text von jedem eingesehen werden kann. Falls das bisher nicht bekannt war, dann wird es Zeit hier etwas zu unternehmen.  
@@ -30,5 +30,4 @@ Dazu kommen Aussagen von unseren Politikern die unsere Grundrechte eigentlich sc
 
 ## Fortsetzung folgt
 
-Daher werde ich die Serie hier nun fortsetzen und habe heute damit begonnen meinen [PGP Public-Key](/pgp) oben in der Navigation zur Verfügung zu stellen. So das Leser die mit mir kommunizieren, dies in Zukunft auch verschlüsselt tun können.
-
+Daher werde ich die Serie hier nun fortsetzen und habe heute damit begonnen meinen [PGP Public-Key]({{< relref "pgp.md" >}}) oben in der Navigation zur Verfügung zu stellen. So das Leser die mit mir kommunizieren, dies in Zukunft auch verschlüsselt tun können.

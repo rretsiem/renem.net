@@ -1122,6 +1122,7 @@ nav {
 
 #mentionList {
   list-style: none;
+  margin-top: 2rem;
 }
 
 .webmention-container {
@@ -1214,6 +1215,26 @@ img.webmention-error {display: none;}
   padding: 5px;
   padding-left: 10px;
   padding-right: 10px;
+}
+
+.summary-responses ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 5px;
+}
+
+.summary-responses .facepile .group {
+  width: 48px;
+  height: 48px;
+  text-align: right;
+}
+
+.summary-responses .facepile img {
+  border-radius: 4px;
+}
+.summary-responses .facepile li {
+  float: left;
+  margin-left: 3px;
 }
 
 .response-summary {

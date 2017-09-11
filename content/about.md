@@ -17,7 +17,7 @@ https://microblog.renem.net
 
 ## Kontakt
 
-- E-Mail: [rene@renem.net](mailto:rene@renem.net) — mein PGP [Public-Key](/pgp)
+- E-Mail: [rene@renem.net](mailto:rene@renem.net) — mein PGP [Public-Key]({{< relref "pgp.md" >}})
 - Threema: [URDS4FNM](threema://add?id=URDS4FNM)
 - Keybase: [renem](https://keybase.io/renem)
 - Twitter: [@rretsiem](https://twitter.com/rretsiem)
