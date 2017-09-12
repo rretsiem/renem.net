@@ -1,19 +1,22 @@
     <footer id="site-footer">
         <div class="container">
-          {{ with .Site.Params.instagram }}
-            <a href="https://www.instagram.com/{{ . }}/" title="Instagram" rel="me noopener" target="_blank"><span class="tooltip"><svg class="icon"><use xlink:href="#instagram" /></svg></span></a>
-          {{ end }}
           {{ with .Site.Params.twitter_name }}
-            <a href="https://www.twitter.com/{{ . }}" title="Twitter" rel="me noopener" target="_blank"><span class="tooltip"><svg class="icon"><use xlink:href="#twitter" /></svg></span></a>
+            <a href="https://www.twitter.com/{{ . }}" title="Twitter" rel="me noopener" target="_blank"><span class="tooltip"><svg class="icon"><use xlink:href="#twitter" /><title>Twitter</title></svg></span></a>
+          {{ end }}
+          {{ with .Site.Params.flickr_name }}
+            <a href="https://www.flickr.com/people/{{ . }}/" title="Flickr" rel="me noopener" target="_blank"><span class="tooltip"><svg class="icon"><use xlink:href="#flickr" /><title>Flickr</title></svg></span></a>
+          {{ end }}
+          {{ with .Site.Params.instagram }}
+            <a href="https://www.instagram.com/{{ . }}/" title="Instagram" rel="me noopener" target="_blank"><span class="tooltip"><svg class="icon"><use xlink:href="#instagram" /><title>Instagram</title></svg></span></a>
           {{ end }}
           {{ with .Site.Params.facebook }}
-            <a href="https://www.facebook.com/{{ . }}" title="Facebook" target="_blank"><span class="tooltip"><svg class="icon"><use xlink:href="#facebook" /></svg></span></a>
+            <a href="https://www.facebook.com/{{ . }}" title="Facebook" rel="me noopener" target="_blank"><span class="tooltip"><svg class="icon"><use xlink:href="#facebook" /><title>Facebook</title></svg></span></a>
           {{ end }}
           {{ with .Site.Params.github }}
-            <a href="https://www.github.com/{{ . }}" title="GitHub" rel="me noopener" target="_blank"><span class="tooltip"><svg class="icon"><use xlink:href="#github" /></svg></span></a>
+            <a href="https://www.github.com/{{ . }}" title="GitHub" rel="me noopener" target="_blank"><span class="tooltip"><svg class="icon"><use xlink:href="#github" /><title>Github</title></svg></span></a>
           {{ end }}
           {{ if .Site.Params.RSSLink }}
-            <a href="{{ .Site.BaseURL }}index.xml" type="application/rss+xml" rel="me noopener" target="_blank" title="Get the RSS feed"><span class="tooltip"><svg class="icon"><use xlink:href="#rss" /></svg></span></a>
+            <a href="{{ .Site.BaseURL }}index.xml" type="application/rss+xml" rel="me noopener" target="_blank" title="Get the RSS feed"><span class="tooltip"><svg class="icon"><use xlink:href="#rss" /><title>RSS Feed</title></svg></span></a>
           {{ end }}
           <section class="feet h-card vcard">&copy; <a href="{{ .Site.BaseURL }}" class="p-name u-url" rel="me">{{ .Site.Params.author }}</a> 2012-2017 | Licenced under
                 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"

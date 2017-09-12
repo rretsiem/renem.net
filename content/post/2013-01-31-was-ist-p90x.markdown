@@ -6,7 +6,7 @@ comments: false
 date: 2013-01-31T00:00:00+02:00
 title: Was ist P90X?
 aliases:
-- /2013/01/31/was-ist-p90x/
+- /post/2013/01/31/was-ist-p90x/
 ---
 
 Da ich immer wieder E-Mails erhalte, in denen Leser meiner [Blogeinträge](http://blog.renem.net/categories/p90x/) nachfragen, ob ich das mit dem P90X nicht noch einmal etwas genauer erklären kann, hier ein kurzer Überblick.  
