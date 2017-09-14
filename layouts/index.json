@@ -22,7 +22,7 @@
 			"url": "{{ $post.Permalink }}",
 			"summary": {{ $post.Summary | chomp | htmlEscape | jsonify }},
 			"content_html": {{ $post.Content | chomp | jsonify}},
-			"date_published": "{{ .Date.Format $.Site.Params.ISO8601 }}",
+			"date_published": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
 			"tags": [ {{ range $i, $e := $post.Params.tags }}{{ if $i }}, {{ end }}{{ $e | jsonify }}{{ end }} ]
 		}
 		{{- end -}}
