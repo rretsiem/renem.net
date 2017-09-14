@@ -63,7 +63,7 @@ if (isProduction) {
  * DevMode Config
  * @type {String}
  */
-const devOpts = !isProduction ? ['--buildDrafts --baseURL '+ devHost +':' + devPort + '/'] : '';
+const devOpts = !isProduction ? ["--buildDrafts", "--baseURL", devHost +':' + devPort + '/'] : '';
 
 // gulp.task("hugo", (cb) => buildSite(cb, devOpts));
 gulp.task("build", ["css", "compress", "svg", "img:build", "hugo:build", "generate-service-worker"]);
@@ -80,11 +80,12 @@ gulp.task('compress', function() {
         exclude: ['tasks'],
         ignoreFiles: ['.combo.js', '-min.js']
     }))
-    .pipe(gulp.dest('./static/js'))
+    .pipe(gulp.dest('./static/js'));
 });
 
 gulp.task("img", () =>
   gulp.src("./src/images/*.{jpg,png}")
+    // .pipe(newer("./static/images"))
     .pipe(responsive({
       "*": [
       {
@@ -108,12 +109,13 @@ gulp.task("img", () =>
 
 gulp.task("img:build", ["img"], () =>
   gulp.src(["./static/images/*.{jpg,png,gif,svg}"])
-    // .pipe(newer("./static/images"))
     .pipe(cache(imagemin({
       optimizationLevel: 7,
       progressive: true,
       svgoPlugins: [{removeViewBox: false}],
-      use: [pngquant()]
+      use: [
+        pngquant()
+      ]
     })))
     // .pipe(imagemin([
     //  imagemin.gifsicle(),
@@ -224,17 +226,30 @@ gulp.task('generate-service-worker', function(callback) {
  */
 const command = `hugo -v ${devOpts}`;
 
-gulp.task('hugo:build', done =>
-  exec(command, (err, stdout) => {
-    if (err) {
-      gulpUtil.log(gulpUtil.colors.red(err));
-      browserSync.notify("Hugo build failed :(");
-    } else {
-      browserSync.reload();
-    }
-    gutil.log(gulpUtil.colors.yellow(stdout));
-    done();
-  }));
+gulp.task("hugo:build", (cb) => buildSite(cb, devOpts));
+// gulp.task('hugo:build', done =>
+//   // exec(command, (err, stdout) => {
+//   //   if (err) {
+//   //     gulpUtil.log(gulpUtil.colors.red(err));
+//   //     browserSync.notify("Hugo build failed :(");
+//   //   } else {
+//   //     browserSync.reload();
+//   //   }
+//   //   gutil.log(gulpUtil.colors.yellow(stdout));
+//   //   done();
+//   // })
+//   // const args = options ? defaultArgs.concat(options) : defaultArgs;
+//   gulpUtil.log(gulpUtil.colors.green("Options: " + devOpts));
+//   return cp.spawn(hugoBin, devOpts, {stdio: "inherit"}).on("close", (code) => {
+//     if (code === 0) {
+//       browserSync.reload();
+//       cb(gulpUtil.log(gulpUtil.colors.yellow(stdout)));
+//     } else {
+//       browserSync.notify("Hugo build failed :(");
+//       cb(gulpUtil.log(gulpUtil.colors.red("Hugo build failed")));
+//     }
+//   });
+// );
 
 function buildSite(cb, options) {
   const args = options ? defaultArgs.concat(options) : defaultArgs;
@@ -242,7 +257,8 @@ function buildSite(cb, options) {
   return cp.spawn(hugoBin, args, {stdio: "inherit"}).on("close", (code) => {
     if (code === 0) {
       browserSync.reload();
-      cb(gulpUtil.log(gulpUtil.colors.yellow(stdout)));
+      // cb(gulpUtil.log(gulpUtil.colors.yellow(stdout)));
+      cb();
     } else {
       browserSync.notify("Hugo build failed :(");
       cb(gulpUtil.log(gulpUtil.colors.red("Hugo build failed")));

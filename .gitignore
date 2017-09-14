@@ -9,5 +9,7 @@ firebase.json
 .firebaserc
 .git/
 node_modules/
+src/images/
+src/images/*
 public/
 public/*
