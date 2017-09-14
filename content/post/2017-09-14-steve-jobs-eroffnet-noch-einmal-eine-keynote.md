@@ -10,7 +10,7 @@ tags:
 - keynote
 mfbookmarkof: "https://daringfireball.net/2017/09/welcome_to_the_steve_jobs_theater"
 syndication:
--
+- https://twitter.com/rretsiem/status/908383913869012994
 ---
 
 
