@@ -7,7 +7,6 @@ var BrowserSync = require('browser-sync');
 
 var responsive = require('gulp-responsive');
 var imagemin = require('gulp-imagemin');
-// var mozjpeg = require('imagemin-mozjpeg');
 var postcss = require('gulp-postcss');
 var concat = require('gulp-concat');
 var sourcemaps = require('gulp-sourcemaps');
@@ -23,6 +22,8 @@ var del = require('del');
 var request = require('request');
 var httppost = require('gulp-post');
 var minify = require('gulp-minify');
+var cache = require('gulp-cache');
+var pngquant = require('imagemin-pngquant');
 
 const size = require('gulp-size');
 
@@ -31,8 +32,12 @@ const hugoBin = "hugo";
 // const defaultArgs = ["-d", "../dist", "-s", "site", "-v"];
 const defaultArgs = ["-v"];
 
+const argv = require('yargs').boolean('p').argv;
+
 var DEV_DIR = './src';
 var DIST_DIR = './public';
+var devHost = 'http://localhost';
+var devPort = '3000';
 
 var globs = {
   css: [
@@ -41,9 +46,29 @@ var globs = {
   ]
 };
 
-gulp.task("hugo", (cb) => buildSite(cb));
+/**
+ * Production Mode
+ * if set, the site will be rendered without drafts and with the production URL set in `config.toml`
+ * @type {Boolean}
+ */
+const isProduction = argv.p;
 
-gulp.task("build", ["css", "compress", "hugo", "img:build", "svg", "generate-service-worker"]);
+if (isProduction) {
+  gulpUtil.log(gulpUtil.colors.bold.red('🚚  Production Mode'));
+} else {
+  gulpUtil.log(gulpUtil.colors.bold.green('🔧  Development Mode'));
+}
+
+/**
+ * DevMode Config
+ * @type {String}
+ */
+const devOpts = !isProduction ? ['--buildDrafts --baseURL '+ devHost +':' + devPort + '/'] : '';
+
+// gulp.task("hugo", (cb) => buildSite(cb, devOpts));
+gulp.task("build", ["css", "compress", "svg", "img:build", "hugo:build", "generate-service-worker"]);
+
+gulp.task("build:netlify", ["hugo:build", "generate-service-worker", "superfeedr"]);
 
 gulp.task('compress', function() {
   gulp.src('./src/js/*.js')
@@ -83,24 +108,27 @@ gulp.task("img", () =>
 
 gulp.task("img:build", ["img"], () =>
   gulp.src(["./static/images/*.{jpg,png,gif,svg}"])
-    .pipe(newer("./static/images"))
-    .pipe(imagemin([
-      imagemin.gifsicle(),
-      imagemin.optipng(),
-      imagemin.svgo(),
-      imagemin.jpegtran({progressive: true}),
-    ]))
+    // .pipe(newer("./static/images"))
+    .pipe(cache(imagemin({
+      optimizationLevel: 7,
+      progressive: true,
+      svgoPlugins: [{removeViewBox: false}],
+      use: [pngquant()]
+    })))
+    // .pipe(imagemin([
+    //  imagemin.gifsicle(),
+    //  imagemin.optipng(),
+    //  imagemin.svgo(),
+    //  imagemin.jpegtran({progressive: true}),
+    // ]))
+    // .pipe(imagemin({progressive: true}))
     .pipe(gulp.dest("./static/images"))
 );
 
 gulp.task('css', function () {
     var plugins = [
-        // autoprefixer({browsers: ['last 1 version']}),
-        // cssnext({browsers: ['last 1 version']}),
-        // cssnano()
         require("postcss-cssnext")(),
         require("cssnano")({ autoprefixer: false }),
-        // require("postcss-browser-reporter")()
     ];
     return gulp.src(globs.css)
         .pipe(sourcemaps.init())
@@ -125,23 +153,25 @@ gulp.task("svg", () =>
     .pipe(gulp.dest("./layouts/partials"))
 );
 
-gulp.task("server", ["compress", "hugo", "css", "img"], () => {
+gulp.task("server", ["compress", "css", "img", "hugo:build"], () => {
   browserSync.init({
     server: {
       baseDir: DIST_DIR
     }
   });
-  gulp.watch("./src/css/**/*.css", ["css", "hugo"]);
-  gulp.watch("./src/js/**/*.js", ["compress", "hugo"]);
-//  gulp.watch("./src/scss/**/*.scss", ["css"]);
-  gulp.watch("./config.toml", ["hugo"]);
-  gulp.watch("./content/**/*", ["hugo"]);
-  gulp.watch("./layouts/**/*", ["hugo"]);
-  gulp.watch("./static/**/*", ["hugo"]);
+  gulp.watch("./src/css/**/*.css", ["css", "hugo:build"]);
+  gulp.watch("./src/js/**/*.js", ["compress", "hugo:build"]);
+  gulp.watch("./src/images/**", ["img", "hugo:build"]);
+  gulp.watch("./src/svg/**/*.svg", ["svg", "hugo:build"]);
+  gulp.watch("./config.toml", ["hugo:build"]);
+  gulp.watch("./content/**/*", ["hugo:build"]);
+  gulp.watch("./layouts/**/*", ["hugo:build"]);
+  gulp.watch("./static/**/*", ["hugo:build"]);
 });
 
-gulp.task('clean', function() {
+gulp.task('clean', function(done) {
   del.sync([DIST_DIR]);
+  // cache.clearAll(done);
 });
 
 gulp.task('superfeedr', function() {
@@ -149,7 +179,7 @@ gulp.task('superfeedr', function() {
     'http://renem.superfeedr.com/',
     { json: {
       "hub.mode": "publish",
-      "hub.url": "https://renem.net/*"
+      "hub.url": "https://renem.net/index.xml"
       }
     },
     function (error, response, body) {
@@ -188,28 +218,34 @@ gulp.task('generate-service-worker', function(callback) {
   }, callback);
 });
 
-gulp.task('deploy:firebase', function() {
-  var result = exec("firebase deploy", {encoding: 'utf-8'});
-    return result;
-});
+/**
+ * Command that will be executed by `exec()`
+ * @type {String}
+ */
+const command = `hugo -v ${devOpts}`;
 
-gulp.task('deploy:prod', function(callback) {
-  runSequence('clean',
-              'build',
-              'generate-service-worker',
-              'deploy:firebase',
-              callback);
-});
+gulp.task('hugo:build', done =>
+  exec(command, (err, stdout) => {
+    if (err) {
+      gulpUtil.log(gulpUtil.colors.red(err));
+      browserSync.notify("Hugo build failed :(");
+    } else {
+      browserSync.reload();
+    }
+    gutil.log(gulpUtil.colors.yellow(stdout));
+    done();
+  }));
 
 function buildSite(cb, options) {
   const args = options ? defaultArgs.concat(options) : defaultArgs;
+  gulpUtil.log(gulpUtil.colors.green("Args: " + options));
   return cp.spawn(hugoBin, args, {stdio: "inherit"}).on("close", (code) => {
     if (code === 0) {
       browserSync.reload();
-      cb();
+      cb(gulpUtil.log(gulpUtil.colors.yellow(stdout)));
     } else {
       browserSync.notify("Hugo build failed :(");
-      cb("Hugo build failed");
+      cb(gulpUtil.log(gulpUtil.colors.red("Hugo build failed")));
     }
   });
 }
