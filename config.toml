@@ -43,6 +43,10 @@ notAlternative = true
   email = "rene@renem.net"
   ISO8601 = "2006-01-02T15:04:05+02:00"
   webSub = "https://renem.superfeedr.com/"
+[sitemap]
+  changefreq = "daily"
+  priority = 0.5
+  filename = "sitemap.xml"
 [taxonomies]
   tag = "tags"
   category = "categories"
