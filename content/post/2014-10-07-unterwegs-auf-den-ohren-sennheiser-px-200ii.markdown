@@ -12,7 +12,7 @@ keywords: Sennheiser, kopfhörer, mobil, unterwegs
 title: Unterwegs auf den Ohren - Sennheiser PX 200II
 twitter_card:
   image: https://files.app.net/wz9qk7k-Y.jpg
-updated: 2014-10-07
+lastmodd: 2014-10-09
 aliases:
 - /2014/10/07/unterwegs-auf-den-ohren-sennheiser-px-200ii/
 ---
@@ -35,7 +35,7 @@ in der Ausstellung hatte. Wenn ein Modell verfügbar war, dann konnte man es nic
 Der erste Eindruck nach dem Auspacken war überraschend postiiv. Sicherlich habe ich mich vorher schon erkundigt, wenn man den Kopfhörer dann aber selbst in den Händen hält ist das noch einmal etwas anderes.  
 Die Verarbeitung ist für diesen Preis wirklich sehr gut, nicht knarzt und wackelt. Der verwendete Kunststoff fühlt sich nicht billig an. Die Gelenke zum zusammenklappen machen einen guten Eindruck. Lediglich die Befestigung der Ohrmuscheln selbst am Bügel wirkt etwas "dünn". Hier wird aber erst ein Langzeittest wirklich Aufschluss bringen.
 
-Mit seinen knapp 80 Gramm (Laut Hersteller 76g) sitzt er auf meinem Kopf noch kurzem Einstellen sehr gut und drückt auch nicht auf den Ohren. Beim Koss hatte ich hier nach kurzer Zeit immer mal Probleme, welche aber wohl daran lagen das ich kein Original-Modell besitze und die Justierung nicht das Gelbe vom Ei ist. 
+Mit seinen knapp 80 Gramm (Laut Hersteller 76g) sitzt er auf meinem Kopf noch kurzem Einstellen sehr gut und drückt auch nicht auf den Ohren. Beim Koss hatte ich hier nach kurzer Zeit immer mal Probleme, welche aber wohl daran lagen das ich kein Original-Modell besitze und die Justierung nicht das Gelbe vom Ei ist.
 
 ## On-Ear halb-offen
 Der Kopfhörer liegt wie erwähnt angenehm auf den Ohren auf, schirmt aber durchaus schon ein wenig die Umgebungsgeräusche von außen ab. Ich würde nicht sagen das es schon eine Art "Noise-Cancelling" ist, aber alles hört sich gedämpfter an, das war meine größte Sorge wie sich das als Fußgänger im Strassenverkehr bemerkbar macht, aber man bekommt von seiner Umgebung noch genügend mit, mal eine Lautstärke vorausgesetzt die das nicht zulässt.

@@ -6,7 +6,8 @@
         {{- end -}}
         <a class="metatag u-url u-uid" href="{{ .Permalink }}">{{ .Title }}</a>
         </h2>
-        <p class="post-time"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">{{ .Date.Format "January 2, 2006" }}</time></p>
+        <p class="post-time"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">{{ .Date.Format "January 2, 2006" }}</time>
+        </p>
     </header>
 
     <section class="post-excerpt p-summary">

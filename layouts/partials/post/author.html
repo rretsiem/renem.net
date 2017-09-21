@@ -10,6 +10,11 @@
             {{ end }}
             <p class="f-post-time">
               {{- partial "indieweb/mfsyndication" . -}}
-                <a href="{{ .Permalink }}" class="metatag u-url u-uid"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "January 2, 2006" }}</time></a>
+                <a href="{{ .Permalink }}" class="metatag u-url u-uid">
+                  {{- partial "post/post-time" . -}}
+                <!--
+                <time class="dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ if .Lastmod }} {{ .Lastmod.Format "January 2, 2006" }} {{ else }} {{ .Date.Format "January 2, 2006" }} {{ end }}</time>
+                -->
+                </a>
             </p>
         </section>
