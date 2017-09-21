@@ -11,9 +11,9 @@ aliases:
 - /post/2013/01/30/projekt-2013-google-kalender-nach-icloud-umziehen/
 ---
 
-Diesmal geht es in meinem kleinen privaten "[Projekt](http://blog.renem.net/2013/01/22/weniger-google-projekt-2013/)" um den Kalender.
+Diesmal geht es in meinem kleinen privaten "[Projekt]({{< relref "2013-01-22-weniger-google-projekt-2013.markdown">}})" um den Kalender.
 
-Auch diesen Schritt habe ich bereits im Dezember 2012 durchgeführt und er war etwas aufwändiger als der Umzug der [Google Kontakte in die iCloud](http://blog.renem.net/2013/01/26/projekt-2013-weniger-google-dienste-kontakte/). Allerdings deshalb, weil ich mehre Kalender benutze und diese auch noch mit Freigaben versehen habe.
+Auch diesen Schritt habe ich bereits im Dezember 2012 durchgeführt und er war etwas aufwändiger als der Umzug der [Google Kontakte in die iCloud]({{< relref "2013-01-26-projekt-2013-weniger-google-dienste-kontakte.markdown">}}). Allerdings deshalb, weil ich mehre Kalender benutze und diese auch noch mit Freigaben versehen habe.
 
 ### Wahl des Services
 Die Wahl fiel definitiv einfacher aus als für die Kontakte. Da ich durch das Prüfen eines geeigneten Kontakte-Services bereits Erfahrung sammeln konnte und auch die verschiedenen Kalender zu Gesicht bekam, wurde die Auswahl indirekt bereits dort getroffen.  

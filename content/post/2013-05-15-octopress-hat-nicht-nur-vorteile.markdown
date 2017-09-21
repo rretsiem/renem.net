@@ -9,7 +9,7 @@ aliases:
 - /2013/05/15/octopress-hat-nicht-nur-vorteile/
 ---
 
-Da habe ich im Januar extra [einen Beitrag](http://blog.renem.net/2013/01/21/alles-neu-schon-wieder/) verfasst über [Octopress](http://octopress.org) als "Blog-Engine". Und nun nach nicht einmal 5 Monaten liegt der Blog hier brach.
+Da habe ich im Januar extra [einen Beitrag]({{< relref "2013-01-21-alles-neu-schon-wieder.markdown">}}) verfasst über [Octopress](http://octopress.org) als "Blog-Engine". Und nun nach nicht einmal 5 Monaten liegt der Blog hier brach.
 
 ![Dürre](http://cl.ly/image/0b263H2y3V3v/3413275962_7a9d2be63f.jpg)  
 _Bild: [Some rights reserved](http://creativecommons.org/licenses/by-sa/2.0/deed.en) von [jczart](http://www.flickr.com/photos/fatguyinalittlecoat/)_
@@ -21,7 +21,7 @@ Der Workflow um einen neuen Beitrag hier zu veröffentlichen sieht kurz gefasst 
 Da Octopress bzw. die Jekyll-Engine dahinter ja statische Seiten aus den Markdown-Dokumenten erstellt muss im Anschluss, wenn der Beitrag verfasst wurde, noch ein kurzes Skript laufen. Und genau hier liegt das Problem. Dieses Skript läuft nur auf dem MacBook und es gibt keine Möglichkeit für mich das auch vom iPad aus zu starten.  
 Durch den Kauf des iPad 4 im Dezember bin ich aber immer mehr zum reinen iPad-Nutzer geworden ohne groß am Laptop zu sitzen und dort täglich zu "konsumieren".
 
-Es gibt mittlerweile eine Fülle an Artikeln die ich rein auf dem iPad verfasst habe aber im *Drafts* Ordner liegen und nie das Licht ~~der Welt~~ des Blogs erblicken werden. Zum einen sind das Artikel die relativ tagesaktuell waren und andererseits durch mein [P90X](http://blog.renem.net/categories/p90x/) Programm auch pro Tag/Woche geschrieben wurden. Also veraltet.
+Es gibt mittlerweile eine Fülle an Artikeln die ich rein auf dem iPad verfasst habe aber im *Drafts* Ordner liegen und nie das Licht ~~der Welt~~ des Blogs erblicken werden. Zum einen sind das Artikel die relativ tagesaktuell waren und andererseits durch mein [P90X](/tags/p90x/) Programm auch pro Tag/Woche geschrieben wurden. Also veraltet.
 
 Eine Lösung zu diesem Thema habe ich noch nicht gefunden, außer mich aufzuraffen und mind. 3-4x pro Woche das MacBook anzuwerfen und das Skript auszuführen. Das versuche ich nun wieder einzuhalten.
 

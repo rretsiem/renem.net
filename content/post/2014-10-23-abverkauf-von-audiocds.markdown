@@ -9,7 +9,6 @@ keywords: amazon, cd, audio, musik, mp3, digital, download
 title: Abverkauf von AudioCDs?
 twitter_card:
   image: https://files.app.net/wghdtW0qo.jpg
-lastmod: 2014-10-25
 aliases:
 - /2014/10/23/abverkauf-von-audiocds/
 ---

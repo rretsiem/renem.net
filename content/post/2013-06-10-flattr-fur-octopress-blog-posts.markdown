@@ -9,7 +9,7 @@ aliases:
 - /2013/06/10/flattr-fur-octopress-blog-posts/
 ---
 
-Am Wochenende hatte ich mal wieder etwas Zeit um an [meiner Octopress-Installation](http://blog.renem.net/2013/01/21/alles-neu-schon-wieder/) zu basteln. Dieses Mal hatte ich mir vorgenommen einen [Flattr](https://flattr.com/) Button zu integrieren.
+Am Wochenende hatte ich mal wieder etwas Zeit um an [meiner Octopress-Installation]({{< relref "2013-01-21-alles-neu-schon-wieder.markdown" >}}) zu basteln. Dieses Mal hatte ich mir vorgenommen einen [Flattr](https://flattr.com/) Button zu integrieren.
 
 Es existiert zwar bereits ein [3rd-party Plugin](https://github.com/PartTimeLegend/octopress-flattr-donation-aside) auf der offiziellen Octopress Seite, dieses integriert sich allerdings in die Sidebar. Da ich den Blog hier  minimalistisch halte und auf eine Sidebar verzichte bringt mir das leider nicht viel. Daher habe ich mich dazu entschlossen, einen Button zum flattrn unter jeden Blog-Post zu bringen, an die selbe Stelle an der sich auch die Sharing-Buttons befinden. Am unteren Ende eines jeden Beitrages.
 

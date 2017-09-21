@@ -76,7 +76,7 @@ task :pubsubhubbub do
     require 'net/http'
     require 'uri'
     hub_url = "http://renem.superfeedr.com" ### Anpassen an eigenen Hub!!
-    atom_url = "http://blog.renem.net/atom.xml" ### Hier muss der eigenen Feed rein!
+    atom_url = "https://renem.net/index.xml" ### Hier muss der eigenen Feed rein!
     resp, data = Net::HTTP.post_form(URI.parse(hub_url), {'hub.mode' => 'publish', 'hub.url' => atom_url})
     raise "!! Pubsubhubbub error: #{resp.code} #{resp.msg}, #{data}" unless resp.code == "204"
     puts "## Notified (" + hub_url + ") that the feed #{atom_url} has been updated"
@@ -84,6 +84,6 @@ task :pubsubhubbub do
 end
 ```
 
-Das kann dann mit einem _rake pubsubhubbub_ auch gleich getestet werden. 
+Das kann dann mit einem _rake pubsubhubbub_ auch gleich getestet werden.
 
 Testen kann man das dann z.B. mit einem Jabber oder gTalk-Client (Ich verwende [Adium](http://www.adium.im/)) in dem man sich einen PuSH Bot wie z.B. [https://push-bot.appspot.com](https://push-bot.appspot.com/) in die Kontakt-Liste aufnimmt. Auf der Seite ist auch gut beschrieben wie man das dann testen kann.
