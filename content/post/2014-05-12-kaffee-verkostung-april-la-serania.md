@@ -5,13 +5,14 @@ tags:
 date: 2014-05-12T00:00:00Z
 title: Kaffee-Verkostung April - La Serania
 images:
-- https://files.app.net/24t40_Epd.jpg
+- /images/2014-05-12-kaffee-verkostung-april-la-serania-1.jpg
+- /images/2014-05-squaremile-subscription.jpg
 lastmod: 2017-09-21T20:38:00+02:00
 aliases:
 - /2014/05/12/kaffee-verkostung-april-la-serania/
 ---
 
-{{< figure src="https://files.app.net/24t40_Epd.jpg" caption="Squaremile Coffee Subscription" >}}
+{{< picture src="/images/2014-05-squaremile-subscription" type="jpg" alt="" caption="Squaremile Coffee Subscription" >}}
 
 Im April gab es den, soviel schon mal vorweg, mir bisher am besten schmeckenden Kaffee. Ich habe zwar bisher lediglich 3 versch. Sorten ausprobieren können, allerdings kann weder der [Kochere]({{< relref "2014-02-12-kaffee-verkostung-im-abo.markdown" >}}), noch der [Huila]({{< relref "2014-05-09-kaffee-verkostung-marz-huila-colombia.markdown">}}) geschmacklich mit dem La Serania mithalten.
 
@@ -20,7 +21,7 @@ Im April gab es den, soviel schon mal vorweg, mir bisher am besten schmeckenden 
 - __Region__: Palestina
 - __Farm__: Verschiedene kleine Farmer
 
-![La Serania - April 2014](https://files.app.net/24vx6y2o9.jpg)
+{{< picture src="/images/2014-05-12-kaffee-verkostung-april-la-serania-1" type="jpg" alt="" caption="La Serania - April 2014" >}}
 
 ### Eigenschaften, Röstung & Geruch
 

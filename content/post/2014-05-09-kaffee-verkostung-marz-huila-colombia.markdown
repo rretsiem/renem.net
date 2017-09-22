@@ -2,14 +2,16 @@
 tags:
 - kaffee
 - food
-comments: true
 date: 2014-05-09T00:00:00+02:00
 title: Kaffee-Verkostung März - Huila Colombia
+lastmod: 2010-09-22T18:54:23+02:00
+images:
+- /images/2014-05-09-kaffee-verkostung-marz-huila-colombia-1.jpg
 aliases:
 - /2014/05/09/kaffee-verkostung-marz-huila-colombia/
 ---
 
-{{< figure class="center" src="https://files.app.net/24t40_Epd.jpg" width="400" height="400" >}}
+{{< picture src="/images/2014-05-squaremile-subscription" type="jpg" alt="" caption="Squaremile Coffee Subscription" >}}
 
 Mit den Berichten zur aktuellen Kaffee-Verkostung hänge ich leider etwas hinterher. Ich werde aber den April auch dieses Wochenende noch beschreiben und dann direkt hier posten. Für den Mai bin ich ja noch aktuell und diese Sorte befindet sich aktuell in meiner Tasse.
 
@@ -20,7 +22,7 @@ Mit den Berichten zur aktuellen Kaffee-Verkostung hänge ich leider etwas hinter
 - __Region__: Huila
 - __Farm__: Verschiedene kleine Farmer
 
-{{< figure class="center" src="https://files.app.net/24tr3VGrp.jpg" width="400" height="400" title="HUILA Project März" >}}
+{{< picture src="/images/2014-05-09-kaffee-verkostung-marz-huila-colombia-1" type="jpg" alt="" caption="HUILA Project März" >}}
 
 ### Eigenschaften, Röstung, Geruch
 
@@ -51,4 +53,3 @@ Trotz versch. Arten der Zubereitung und Experimente mit der Ziehzeit und dem Mah
 
 Beim letzten Kaffee im Februar habe ich bereits geschrieben das sich der Kaffee nicht einfach so für eine schnelle Tasse eignet, da dieser sehr komplex im Geschmack war. Der Huila hier ist da deutlich einfacher und angenehmer zu trinken, schon fast "süffig".  
 Trotzdem bewerte ich den Kaffee im Vergleich zum Kochere (Februar) gleich, sehr angenehm zu trinken. Ich würde diesen aber nicht bewusst noch einmal bestellen, dafür ist er bei diesem Preis einfach zu "einfach".
-

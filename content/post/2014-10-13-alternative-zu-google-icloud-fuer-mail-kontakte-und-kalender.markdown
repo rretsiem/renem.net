@@ -3,27 +3,20 @@ tags:
 - tech
 - google
 - icloud
-date: 2014-10-13T00:00:00+02:00
-description: Nachdem ich 2013 meine Daten von Google zu iCloud umgezogen habe, möchte ich hier meine Erfahrungen dazu teilen und gleich ein Update geben.
-keywords:
 - posteo
-- mail
-- kontakte
-- kalender
-- datenschutz
-- sicherheit
-- fastmail
-- IMAP
+date: 2014-10-13T00:00:00+02:00
+lastmod: 2017-09-22T19:01:00+02:00
+description: Nachdem ich 2013 meine Daten von Google zu iCloud umgezogen habe, möchte ich hier meine Erfahrungen dazu teilen und gleich ein Update geben.
 title: Alternative zu Google & iCloud für Mail, Kontakte und Kalender
 images:
-- https://files.app.net/w15vpPHFM.jpg
+- /images/2014-10-13-alternative-zu-google-icloud-fuer-mail-kontakte-und-kalender-1.jpg
 aliases:
 - /post/2014/10/13/alternative-zu-google-icloud-fuer-mail-kontakte-und-kalender/
 ---
 
-{{< figure src="https://files.app.net/w15vpPHFM.jpg" alt="Posteo iPhone setup" caption="Posteo iPhone Teaser" >}}
+{{< picture src="/images/2014-10-13-alternative-zu-google-icloud-fuer-mail-kontakte-und-kalender-1" type="jpg" alt="" caption="Posteo iPhone Setup" >}}
 
-Vor einiger Zeit habe ich mit dem [2013 Projekt 2013 - Weniger Google-Dienste]({{< ref "post/2013-01-22-weniger-google-projekt-2013.markdown" >}}) ja begonnen alle oder die meisten möglichen Dienste die ich bei Google & Co nutze umzuziehen auf Dienste die meine Daten vertraulich behandeln und damit kein Geld verdienen. Es sind schließlich meine Daten, Kontakte und E-Mails.
+Vor einiger Zeit habe ich mit dem [2013 Projekt 2013 - Weniger Google-Dienste]({{< relref "post/2013-01-22-weniger-google-projekt-2013.markdown" >}}) ja begonnen alle oder die meisten möglichen Dienste die ich bei Google & Co nutze umzuziehen auf Dienste die meine Daten vertraulich behandeln und damit kein Geld verdienen. Es sind schließlich meine Daten, Kontakte und E-Mails.
 
 Nun ist mir aufgefallen, dass ich zu Kontakten und Kalendern bereits etwas geschrieben hatte, zum Thema E-Mails allerdings noch nicht. Hiermit möchte ich dies noch nachholen und kurz darüber berichten. Außerdem hat sich zum Thema iCloud etwas getan, was in alten Artikeln von mir ja noch favorisiert wurde.
 

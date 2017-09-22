@@ -4,16 +4,17 @@ tags:
 - comment
 comments: false
 date: 2014-07-21T00:00:00+02:00
+lastmod: 2017-09-22T19:25:00+02:00
 description: 2 Jahre Einsatz einer Fälschung und ein Fazit.
 keywords: headphones, kopfhörer, koss porta pro, koss, fälschung
 title: Koss Porta Pro - Fälschung im Einsatz
-twitter_card:
-  image: https://files.app.net/2812tbjv4.jpg
+images: 
+- /images/2014-07-21-koss-porta-pro-falschung-im-einsatz-1.jpg
 aliases:
 - /post/2014/07/21/koss-porta-pro-falschung-im-einsatz/
 ---
 
-{{< figure class="center" src="https://files.app.net/2812tbjv4.jpg" title="Koss Porta Pro" >}}
+{{< picture src="/images/2014-07-21-koss-porta-pro-falschung-im-einsatz-1" type="jpg" alt="" caption="Koss Porta Pro" >}}
 
 Seit über 2 Jahren benutze ich jetzt die hier abgebildeten [Koss Porta Pro](http://www.koss.com/en/products/headphones/on-ear-headphones/PortaPro__Porta_Pro_On_Ear_Headphone) Kopfhörer. Empfohlen wurden mir diese damals von mehreren Quellen, auch auf Amazon kommt der Kopfhörer für seine Preisklasse sehr gut weg und es gibt fast nur positive Rezensionen.  
 

@@ -6,13 +6,14 @@ comments: false
 date: 2014-07-17T00:00:00+02:00
 external-url: http://www.alfredforum.com/topic/713-recent-items-40-docs-folders-apps-custom-categories-favorites-interaction-with-opensave-dialogs-and-more/
 title: Alfred Workflow für zuletzt benutzte Dateien und Ordner
-twitter_card:
-  image: https://files.app.net/2ft5ml-JR.jpg
+lastmod: 2017-09-22T19:14:00+02:00
+images:
+- /images/2014-07-17-alfred-workflow-fur-zuletzt-benutzte-dateien-und-ordner-1.jpg
 aliases:
 - /2014/07/17/alfred-workflow-fur-zuletzt-benutzte-dateien-und-ordner/
 ---
 
-{{< figure class="center" src="https://files.app.net/2ft5ml-JR.jpg" title="Alfred Recent Workflow" >}}
+{{< picture src="/images/2014-07-17-alfred-workflow-fur-zuletzt-benutzte-dateien-und-ordner-1" type="jpg" alt="" caption="Alfred Recent Workflow" >}}
 
 Der kleine Helfer [Alfred](http://www.alfredapp.com/) gehört zu den OS X Programmen die ich für unverzichtbar halte. Einmal daran gewöhnt, möchte man einfach nicht mehr darauf verzichten.
 
