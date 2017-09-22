@@ -10,7 +10,7 @@ tags:
 - replies
 mfreplyto: "https://thopex.de/2017/09/castro-2-mein-neuer-podcasts-workflow/"
 syndication:
-- https://twitter.com/rretsiem/status/911346664073506816
+- https://twitter.com/rretsiem/status/911348569562583040
 ---
 
 Die Apple eigene Podcasts App ist ja seit langem mein Favorit, sie bietet saubere Apple CarPlay-Unterstützung[^1], ist zuverlässig und selbst für einen ambitionierten Podcast-Benutzer wie mich völlig ausreichend. Daher konnte ich auch nicht so recht verstehen weshalb Pocket Casts, Downcast, Overcast usw. immer als "profesionelle Podcasts Apps" bezeichnet wurden. Denn gefehlt hat mir bisher wirklich nichts.
