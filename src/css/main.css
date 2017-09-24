@@ -1044,6 +1044,18 @@ main {
   width: 50vw;*/
   max-width: 696px;
   margin: auto;
+
+}
+
+/**
+* iPhone X support for safe-area-insets in iOS11
+* see: https://webkit.org/blog/7929/designing-websites-for-iphone-x/
+*/
+@supports(padding: max(0px)) {
+    .content>.container {
+        padding-left: max(12px, constant(safe-area-inset-left));
+        padding-right: max(12px, constant(safe-area-inset-right));
+    }
 }
 
 /*
