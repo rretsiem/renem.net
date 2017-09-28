@@ -814,7 +814,11 @@ article .footnotes {
 }
 
 .author {
-    float: left
+    float: left;
+}
+
+.author:before {
+  content: "Words by ";
 }
 
 @media (max-width:550px) {
