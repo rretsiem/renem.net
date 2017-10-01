@@ -1,5 +1,6 @@
 <section class="f-2">
     <section class="share" style="align-content: center;">
+      <indie-action do="post" with="{{ .Permalink }}">
         <span>Share:
         <a class="icon-twitter" rel="me noopener" href="https://twitter.com/share?text={{ .Title }}&url={{ .Permalink }}"
             onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
@@ -13,8 +14,9 @@
            onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
             <svg class="icon"><use xlink:href="#google-plus" /></svg>
         </a>
-        <a href="https://brid.gy/publish/twitter"></a>
         </span>
+      </indie-action>
+      <a href="https://brid.gy/publish/twitter"></a>
     </section>
       {{ with .Params.tags }}
         <span class="f-post-tags"><svg class="icon"><use xlink:href="#tags" /></svg>

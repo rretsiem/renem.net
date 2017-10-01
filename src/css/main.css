@@ -1256,3 +1256,10 @@ img.webmention-error {display: none;}
 .response-summary {
   margin-left: 5px;
 }
+
+.searchContainer {
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+}

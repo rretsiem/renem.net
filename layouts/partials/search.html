@@ -1,0 +1,12 @@
+{{ "<!-- Begin search form partial -->" | safeHTML }}
+<div class="searchContainer">
+  <form id='searchForm' method="get" action="https://duckduckgo.com/">
+    <input type="search" name="q" placeholder="Suche&hellip;" />
+    <input type="hidden" name="sites" value="https://renem.net"/>
+    <input type="hidden" name="k8" value="#444444"/>
+    <input type="hidden" name="k9" value="#D51920"/>
+    <input type="hidden" name="kt" value="p"/>
+    <button type="submit" class="hidden">Search</button>
+  </form>
+</div>
+{{ "<!-- End search form partial -->" | safeHTML }}
