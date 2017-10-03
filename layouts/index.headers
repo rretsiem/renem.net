@@ -8,11 +8,14 @@
   X-Content-Security-Policy: default-src 'self' https:; script-src 'self' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src *;
   X-WebKit-CSP: default-src 'self' https:; script-src 'self' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src *;
   Referrer-Policy: no-referrer-when-downgrade
-  Cache-Control: max-age=7200, public
+#  Cache-Control: max-age=7200, public
   Strict-Transport-Security: max-age=2592000
+  Cache-Control: max-age=2628000, public
 # images
-/*.@(jpg|jpeg|gif|png|json)
-  Cache-Control: max-age=7884000, public
+#/*.@(jpg|jpeg|gif|png|json)
+#  Cache-Control: max-age=7884000, public
+#/*.@(css|js)
+#  Cache-Control max-age=2628000, public
 # preloading
 /*
 # Link: <{{ "service-worker.js" | relURL }}>; rel=preload; as=script; nopush
