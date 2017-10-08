@@ -10,7 +10,7 @@ angledQuotes = true
 smartypantsQuotesNBSP = true
 [outputs]
 home = [ "HTML", "RSS", "JSON", "REDIR", "HEADERS"]
-page = ["HTML", "JSON"]
+page = ["HTML"]
 [mediaTypes]
 [mediaTypes."text/netlify"]
 suffix = ""
