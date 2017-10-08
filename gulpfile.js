@@ -68,7 +68,7 @@ const devOpts = !isProduction ? ["--buildDrafts", "--baseURL", devHost +':' + de
 // gulp.task("hugo", (cb) => buildSite(cb, devOpts));
 gulp.task("build", ["css", "compress", "svg", "img:build", "hugo:build", "generate-service-worker"]);
 
-gulp.task("build:netlify", ["hugo:build", "generate-service-worker", "superfeedr"]);
+gulp.task("build:netlify", ["clean", "hugo:build", "generate-service-worker", "superfeedr"]);
 
 gulp.task('compress', function() {
   gulp.src('./src/js/*.js')
