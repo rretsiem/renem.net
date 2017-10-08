@@ -8,6 +8,7 @@ keywords: due, iPhone, app, todo, task, apple
 title: Due – mein Kurzzeitgedächtnis
 aliases:
 - /2015/11/02/due-mein-kurzzeitgedächtnis/
+- /due-mein-kurzzeitged%C3%A4chtnis-a2b616ccf0ab
 images:
 - https://farm1.staticflickr.com/650/22794237281_d434a7b049_o.jpg
 ---

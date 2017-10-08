@@ -14,6 +14,7 @@ images:
 - https://cdn-images-1.medium.com/max/1600/0*buLTcFnHb2AD9v0n.jpg
 aliases:
 - /sport-zusätzlich-zum-laufen-25c09bcab40a
+- /sport-zus%C3%A4tzlich-zum-laufen-25c09bcab40a
 ---
 
 {{< figure src="https://cdn-images-1.medium.com/max/1600/0*buLTcFnHb2AD9v0n.jpg" caption="Bild von FitStar">}}

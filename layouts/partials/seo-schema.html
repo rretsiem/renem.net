@@ -1,4 +1,3 @@
-{{ "<!-- ENTERING partial seo-schema.html -->" | safeHTML }}
 {{ if .IsPage }}
 {{ if or (eq .Type "post") (eq .Type "photo") }}
 <script type="application/ld+json">
@@ -10,8 +9,16 @@
     "headline" : "{{ .Title }}{{ if ne .Title .Site.Title }} : {{ .Site.Title }}{{ end }}",
     "description" : "{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }}",
     "mainEntityOfPage": {
-        "@type": "BlogPosting",
+        "@type": "WebPage",
         "@id": "{{ .Permalink }}"
+    },
+    "publisher": {
+      "@type": "Person",
+      "name": "{{ .Site.Params.author }}",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ "/assets/renem_profile.png" | absURL }}",
+      }
     },
     "inLanguage" : "de",
     "license" : "https://creativecommons.org/licenses/by-nc-sa/4.0/",
@@ -86,4 +93,3 @@
 </script>
 {{ end }}
 {{ end }}
-{{ "<!-- LEAVING partial seo-schema.html -->" | safeHTML }}

@@ -1,32 +1,24 @@
     <head>
         {{- partial "meta.html" . -}}
         <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
-        <!-- <link rel="canonical" href="{{ .Site.BaseURL }}" /> -->
         <link rel="canonical" href="{{ .Permalink }}">
         <!-- custom css here -->
         <link href="{{ .Site.BaseURL }}css/bundle.css" rel="stylesheet" type="text/css">
         <!-- Site verification -->
         {{- if .IsHome -}} {{- partial "site-verification" . -}} {{- end -}}
         <!-- site RSS feeds -->
-        {{ if .RSSLink }}
-          <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-          <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
-          <link href="{{ .Site.BaseURL }}feed.json" rel="alternate" type="application/json" title="{{ .Site.Title }} JSON feed" />
-        {{ end }}
+        <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+        <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
+        <link href="{{ .Site.BaseURL }}feed.json" rel="alternate" type="application/json" title="{{ .Site.Title }} JSON feed" />
+
         <!-- <link rel="hub" href="https://switchboard.p3k.io/"> -->
         <link rel="hub" href="https://renem.superfeedr.com/" />
         <link rel="self" href="{{ .Site.BaseURL }}" />
         <link rel="author" href="{{ .Site.BaseURL }}humans.txt" />
         <link rel="profile" href="http://gmpg.org/xfn/11">
-        {{ if .Site.Params.email }}
-          <link rel="me" href="mailto:{{ .Site.Params.email }}" />
-        {{ end }}
-        {{ with .Site.Params.twitter_name }}
-          <link href="https://www.twitter.com/{{ . }}" rel="me">
-        {{ end }}
-        {{ with .Site.Params.github }}
-          <link href="https://github.com/{{ . }}/" rel="me">
-        {{ end }}
+        <link rel="me" href="mailto:{{ .Site.Params.email }}" />
+        <link href="https://www.twitter.com/{{ .Site.Params.twitter_name }}" rel="me">
+        <link href="https://github.com/{{ .Site.Params.github }}/" rel="me">
         {{ with .Site.Params.instagram }}
         <link href="https://instagram.com/{{ . }}/" rel="me">
         {{ end }}
@@ -49,7 +41,7 @@
         {{ partial "seo-og.html" . }}
         {{ partial "seo-schema.html" . }}
         {{ partial "seo-twittercard.html" . }}
-        {{ partial "seo-googlenews.html" . }}
         <!-- DNS prefetching in the header for external sources -->
         <link rel="dns-prefetch" href="//webmention.io">
+        <link rel="dns-prefetch" href="//micro.blog">
     </head>

@@ -1,5 +1,4 @@
-{{ "<!-- ENTERING partial seo-twittercard.html -->" | safeHTML }}
-{{ $baseurl := .Site.BaseURL }}
+<!-- ENTERING partial seo-twittercard.html -->
 {{ if or (eq .Type "post") (eq .Type "photo")}}
 <!-- Twitter Card data -->
 <meta name="twitter:title" content="{{ .Title }}{{ if ne .Title .Site.Title }} : {{ .Site.Title }}{{ end }}"/>
@@ -16,4 +15,4 @@
 	<meta name="twitter:card" content="summary"/>
 {{ end }}
 {{ end }}
-{{ "<!-- LEAVING partial seo-twittercard.html -->" | safeHTML }}
+<!-- LEAVING partial seo-twittercard.html -->

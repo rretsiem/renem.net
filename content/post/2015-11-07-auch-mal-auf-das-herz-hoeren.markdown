@@ -8,6 +8,7 @@ keywords: laufen, herz, gesundheit
 title: Auch mal auf das Herz hören
 aliases:
 - /post/2015/11/7/auch-mal-auf-das-herz-hoeren/
+- /auch-mal-auf-das-herz-h%C3%B6ren-2bc553115cba
 ---
 
 ![Bild von Flickr](https://cdn-images-1.medium.com/max/1600/0*osUi0BypO-5jTKX8.jpg)

@@ -1,6 +1,6 @@
 {{ if eq .Type "post"}}
 
-<div class="webmention-container comments-area responses" id="mentionContainer" style="display:none;">
+<div class="webmention-container comments-area responses hidden" id="mentionContainer">
   <hr>
   <h3>Interaktionen</h3>
   <div class="summary-responses" id="summaryResponses"></div>
@@ -8,6 +8,6 @@
   </ol>
 </div>
 
-<script src="{{ .Site.BaseURL }}js/webmentions.js" data-no-instant></script>
+<script async src="{{ .Site.BaseURL }}js/webmentions.js" data-no-instant></script>
 
 {{ end }}

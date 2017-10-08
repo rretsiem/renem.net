@@ -13,7 +13,6 @@ html {
 }
 
 body {
-  /*font-family: "system";*/
   font-size: 18px;
   line-height: 28px;
   font-weight: 400;
@@ -760,6 +759,7 @@ article .footnotes {
     margin-bottom: 2.492em;
 }
 
+/*
 .pagination {
     text-align: center;
     margin: 3rem 0 3em 0;
@@ -771,6 +771,7 @@ article .footnotes {
         margin: 2rem 0 2rem !important
     }
 }
+*/
 
 #site-footer a, .post-content a {
     color: #111;
@@ -865,7 +866,8 @@ article .footnotes {
 }
 
 .share {
-    float: left
+    float: left;
+    align-content: center;
 }
 
 @media (max-width:550px) {

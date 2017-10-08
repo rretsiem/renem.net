@@ -25,7 +25,7 @@
                 {{ .Site.Params.license }}</a>
 
                 {{ if eq .Title "About" }}
-                <img src="{{ .Site.BaseURL }}assets/renem_profile.png" class="u-photo" style="display: none">
+                <img src="{{ .Site.BaseURL }}assets/renem_profile.png" class=" hidden u-photo">
                 {{ end }}
                 <a class="p-nickname u-email email metatag" alt="Mail senden" rel="me" href="mailto:{{ .Site.Params.email}}">{{ .Site.Author.nick }}</a>
           </section>
@@ -42,3 +42,6 @@
       {{ `<!-- SVG loading -->` | safeHTML }}
       {{ partial "symbol/svg/sprite.symbol.svg" . }}
     </div>
+    <!--  Indieweb actions -->
+    <script async type='text/javascript' src="/js/indieconfig.js"></script>
+    <script async type='text/javascript' src="/js/webaction.js"></script>

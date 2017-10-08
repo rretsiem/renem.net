@@ -1,31 +1,20 @@
-<!--{{ $paginator := .Paginate (where .Data.Pages "Section" "post") }}-->
-{{ $paginator := .Paginate (where .Pages "Type" "post") }}
 <!DOCTYPE html>
-{{ `<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->` | safeHTML }}
-{{ `<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->` | safeHTML }}
-{{ `<!--[if IE 8]><html class="no-js lt-ie9"> <![endif]-->` | safeHTML }}
-{{ `<!--[if gt IE 8]><!-->` | safeHTML }}<html lang="de" class="no-js" prefix="og: http://ogp.me/ns#" xmlns:og="http://ogp.me/ns#">{{ `<!--<![endif]-->` | safeHTML }}
-
+<html lang="de" class="no-js" prefix="og: http://ogp.me/ns#" xmlns:og="http://ogp.me/ns#">
 {{ partial "head.html" . }}
 <body class="h-feed">
-{{ `<!--[if lt IE 7]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chrome/‎">install Google Chrome</a> to experience this site.</p><![endif]-->` | safeHTML }}
-
 {{ partial "header.html" . }}
 <main class="content" role="main">
 	{{ if .IsHome }}
-	<span class="p-name" style="display: none;">{{ .Site.Title }}</span>
-	<h1 class="p-name" style="display: none;">{{ .Site.Title }}</h1>
+	<span class="p-name hidden">{{ .Site.Title }}</span>
 	{{ end }}
 	<div class="container">
-  {{ range first 15 (where .Data.Pages "Type" "in" "post") }}
+  {{ range first 10 (where .Data.Pages "Type" "in" "post") }}
 		{{ .Render "li" }}
 	{{ end }}
 
-<!--	{{ partial "pagination.html" . }} -->
-
   <h2>Weitere Beitr&auml;ge</h2>
   <ul id="list">
-    {{ range first 30 (after 15 (where .Data.Pages "Type" "in" "post")) }}
+    {{ range first 20 (after 10 (where .Data.Pages "Type" "in" "post")) }}
 		  {{ .Render "li-titles" }}
 	   {{ end }}
   </ul>
@@ -35,12 +24,9 @@
 
 </main>
 {{ partial "footer.html" . }}
-{{ partial "google_analytics.html" . }}
 
 <script async type='text/javascript' src="/js/service-worker-registration.js"></script>
 <script defer type='text/javascript' src="/js/serviceWorkerSendMessage.js"></script>
 
-<script async type='text/javascript' src="/js/indieconfig.js"></script>
-<script async type='text/javascript' src="/js/webaction.js"></script>
 </body>
 </html>

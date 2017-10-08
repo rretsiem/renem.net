@@ -31,7 +31,7 @@ notAlternative = true
   email = "rene@renem.net"
 [Params]
   description = "Just my 2 cents…"
-  Paginate = 15
+  Paginate = 20
   RSSLink = "/post/index.xml"
   RSSLimit = 20
   author = "René" # add your company name
