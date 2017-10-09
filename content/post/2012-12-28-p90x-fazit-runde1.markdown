@@ -6,6 +6,7 @@ date: 2012-12-28T00:00:00+02:00
 title: P90X - Fazit und Zusammenfassung Runde 1
 aliases:
 - /2012/12/28/p90x-fazit-runde1/
+- /p90x-fazit-und-zusammenfassung-runde-1-a69c61bb2afd
 ---
 
 Nun habe ich ja schon über einen Monat kein Update hier mehr veröffentlicht und das obwohl ich beim letzten Post nur noch 6 Tage vom Ziel der 90 Tage entfernt war.
