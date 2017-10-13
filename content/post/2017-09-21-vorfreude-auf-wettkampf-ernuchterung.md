@@ -13,6 +13,7 @@ images:
 syndication:
 - https://twitter.com/rretsiem/status/910970625736544256
 - https://medium.com/@rretsiem/vorfreude-auf-wettkampf-dann-ernüchterung-5a6a91b7ffc9
+- https://plus.google.com/u/1/+RenéMeister/posts/8K83fkxNL3G
 ---
 
 Mitte des Jahres habe ich ja bereits schon einmal kurz [beschrieben]({{< relref "post/2017-07-01-es-lauft-und-lauft.markdown" >}}) das es prima läuft. Es lief nie besser als in 2017. Bis Mitte September bin ich über 1000km gelaufen. In den letzten beiden Jahren in denen ich ebenfalls viel gelaufen bin hatte ich am Ende des Jahres die 1000km-Marke geschafft oder [knapp vor Augen]({{< relref "post/2015-12-16-laufen-road-to-1k-in-2015.markdown">}}).
