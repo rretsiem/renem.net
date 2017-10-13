@@ -16,6 +16,7 @@ series:
 aliases:
 - /meine-3-beliebtesten-tools-gadgets-2015-1-runalyze-e5aac620837a
 - /blog/2016/1/11/meine-3-beliebtesten-tools-gadgets-2015-1-runalyze
+- /post/2016/1/11/meine-3-beliebtesten-tools-gadgets-2015-1-runalyze
 twit: https://twitter.com/rretsiem/statuses/686853969109450752
 ---
 
