@@ -11,7 +11,9 @@
       <svg class="icon"><use xlink:href="#flickr" /></svg>
    {{- else if in $domain "medium.com" -}}
       <svg class="icon"><use xlink:href="#medium" /></svg>
-    {{ else }}
+   {{- else if in $domain "plus.google.com" -}}
+      <svg class="icon"><use xlink:href="#google-plus" /></svg>
+   {{ else }}
       <svg class="icon"><use xlink:href="#link" /></svg>
     {{ end }}
    </a>
