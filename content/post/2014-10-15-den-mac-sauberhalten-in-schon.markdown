@@ -13,6 +13,7 @@ twitter_card:
   type: summary_large_image
 aliases:
 - /2014/10/15/den-mac-sauberhalten-in-schon/
+- den-mac-sauber-halten-in-sch%C3%B6n-2abf188648f1
 ---
 
 {{< figure class="center" src="https://files.app.net/wd57va88L.jpg" title="Den Mac immer schön sauberhalten!" >}}
