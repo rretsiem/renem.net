@@ -6,7 +6,7 @@
 #/post/:year/:month:/:date/:slug  /post/:year-:month-:date-:slug 301
 /archives /post           301
 # search
-/search q=:query https://duckduckgo.com/?q=site:renem.net&:query
+/search q=:query https://duckduckgo.com/?q=:query%20site:renem.net
 # https://duckduckgo.com/?q=search&kp=-1&kl=us-en
 # /**        /index.html
 # Netlify redirects. See https://www.netlify.com/docs/redirects/
