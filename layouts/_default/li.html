@@ -9,6 +9,9 @@
         <p class="post-time"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ .Date.Format "January 2, 2006" }}</time>
         </p>
     </header>
+    {{ if in .Params.categories "photo"}}
+      {{ partial "photo/picture" . }}
+    {{ else }}
     <section class="post-excerpt p-summary">
         <p>
         {{ if .Params.description }}
@@ -18,6 +21,7 @@
         {{ end }}
         </p>
     </section>
+    {{ end }}
     <footer class="post-footer">
         <span>
             {{ with .Params.tags }}

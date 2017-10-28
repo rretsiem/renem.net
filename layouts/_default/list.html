@@ -1,4 +1,7 @@
-{{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
+{{$posts := where .Data.Pages "Section" "post"}}
+{{$photos := where .Data.Pages "Section" "photo"}}
+{{$pages := $posts | union (where .Data.Pages "Section" "photo")}}
+{{ $paginator := .Paginate $pages }}
 <!DOCTYPE html>
 <html lang="de" prefix="og: http://ogp.me/ns#" xmlns:og="http://ogp.me/ns#">
 

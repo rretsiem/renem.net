@@ -1,4 +1,4 @@
-{{ $title := .Title }}
+{{ $paginator := .Paginate (where .Data.Pages "Section" "photo") }}
 <!DOCTYPE html>
 {{ `<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->` | safeHTML }}
 {{ `<!--[if IE 7]><html class="no-js lt-ie9 lt-ie8"> <![endif]-->` | safeHTML }}
@@ -6,37 +6,18 @@
 {{ `<!--[if gt IE 8]><!-->` | safeHTML }}<html lang="de" class="no-js" prefix="og: http://ogp.me/ns#" xmlns:og="http://ogp.me/ns#">{{ `<!--<![endif]-->` | safeHTML }}
 
 {{ partial "head.html" . }}
-<body>
+<body {{ if .IsHome}}class="h-feed"{{ end }}>
 {{ `<!--[if lt IE 7]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chrome/‎">install Google Chrome</a> to experience this site.</p><![endif]-->` | safeHTML }}
 
-{{ partial "header.html" . }}
-
-<content>{{"<!-- from photos.single //-->" | safeHTML}}
-  <main class="content" role="main">
-	 <div class="container">
-   <article class="{{ .Type }} h-entry">
-
-    <header class="post-header">
- 		 {{- partial "post/post-header" . -}}
-    </header>
-
-    <section class="post-content e-content p-name content-type-plain">
-    <p>
-          {{ .Content }}
-    </p>
-<!--      {{- partial "photo/picture" . -}}-->
-    </section>
-
-
-   </article>
-   <section>
-   {{- partial "webmention.html" . -}}
-   </section>
-	 </div>
-  </main>
-</content>
-
-{{ partial "footer.html" . }}
-
+{{ partialCached "header.html" . }}
+<main class="content" role="main">
+	<div class="container">
+	{{ range $paginator.Pages }}
+		{{ .Render "li" }}
+	{{ end }}
+	{{ partialCached "pagination.html" . }}
+	</div>
+</main>
+{{ partialCached "footer.html" . }}
 </body>
 </html>
