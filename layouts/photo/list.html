@@ -9,15 +9,15 @@
 <body {{ if .IsHome}}class="h-feed"{{ end }}>
 {{ `<!--[if lt IE 7]><p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chrome/‎">install Google Chrome</a> to experience this site.</p><![endif]-->` | safeHTML }}
 
-{{ partial "header.html" . }}
+{{ partialCached "header.html" . }}
 <main class="content" role="main">
 	<div class="container">
 	{{ range $paginator.Pages }}
 		{{ .Render "li" }}
 	{{ end }}
-	{{ partial "pagination.html" . }}
+	{{ partialCached "pagination.html" . }}
 	</div>
 </main>
-{{ partial "footer.html" . }}
+{{ partialCached "footer.html" . }}
 </body>
 </html>

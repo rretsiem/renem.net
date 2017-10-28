@@ -1,5 +1,5 @@
     <footer id="site-footer">
-        {{ partial "search.html" }}
+        {{ partialCached "search.html" . }}
         <div class="container">
           {{ with .Site.Params.twitter_name }}
             <a href="https://www.twitter.com/{{ . }}" title="Twitter" rel="me noopener" target="_blank"><span class="tooltip"><svg class="icon"><use xlink:href="#twitter" /><title>Twitter</title></svg></span></a>
@@ -40,7 +40,7 @@
 
     <div class="sprite">
       {{ `<!-- SVG loading -->` | safeHTML }}
-      {{ partial "symbol/svg/sprite.symbol.svg" . }}
+      {{ partialCached "symbol/svg/sprite.symbol.svg" . }}
     </div>
     <!--  Indieweb actions -->
     <script async type='text/javascript' src="/js/indieconfig.js"></script>

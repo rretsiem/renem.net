@@ -28,8 +28,6 @@
         {{- partial "post/author" . -}}
 				{{- partial "post/share" . -}}
 				{{- partial "post/prev_next" . -}}
-
-				{{- partial "post/related" . -}}
     </footer>
 </article>
 <section id="comments">
@@ -37,5 +35,5 @@
 </section>
 <hr>
 <section>
-	{{-  partial "mention.html" . -}}
+	{{-  partialCached "mention.html" . -}}
 </section>

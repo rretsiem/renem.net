@@ -20,7 +20,7 @@
     </section>
       {{ with .Params.tags }}
         <span class="f-post-tags"><svg class="icon"><use xlink:href="#tags" /></svg>
-        {{ delimit (apply (apply (sort .) "partial" "post/tag-link" ".") "chomp" ".") ", " " and " }}
+        {{ delimit (apply (apply (sort .) "partial" "post/tag-link" ".") "chomp" ".") ", " " und " }}
         </span>
       {{ end }}
 </section>

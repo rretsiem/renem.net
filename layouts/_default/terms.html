@@ -2,7 +2,7 @@
 <html lang="de" class="no-js" prefix="og: http://ogp.me/ns#" xmlns:og="http://ogp.me/ns#">
 {{ partial "head.html" . }}
 <body>
-{{ partial "header.html" . }}
+{{ partialCached "header.html" . }}
 <main class="content" role="main">
 	<div class="container">
 		<header class="post-header">
@@ -20,6 +20,6 @@
 		<hr>
 	</div>
 </main>
-{{ partial "footer.html" . }}
+{{ partialCached "footer.html" . }}
 </body>
 </html>
