@@ -10,7 +10,9 @@ categories:
 images:
 - /images/2017-10-28_Autumn_Leafs.jpg
 syndication:
--
+- https://www.flickr.com/photos/renene26/37994437146/
+- https://plus.google.com/u/1/+RenéMeister/posts/79DLNSP66BP
+- https://twitter.com/rretsiem/status/925099213230395392
 caption: "Sonne und jede Menge bunte Blätter beim Waldspaziergang"
 geo:
   lat: 48.45707
