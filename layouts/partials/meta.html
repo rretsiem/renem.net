@@ -14,11 +14,4 @@
         <!-- Icons: Add to homescreen for Chrome on Android -->
         <meta name="mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
-
-        <!-- <meta name="author" content="{{ .Site.Params.author }}"> -->
-        <!-- Google disregards & Bing considers it an indicator of spam
-  {{ with .Site.Params.keywords }}
-        <meta name="keywords" content="{{ range $index, $element := $.Site.Params.keywords }}{{ if gt $index 0 }}, {{ end }}{{ . | safeHTML }}{{ else }}{{ . | safeHTML }}{{ end }}">
-  {{ end }}
-  -->
         {{ .Hugo.Generator }}

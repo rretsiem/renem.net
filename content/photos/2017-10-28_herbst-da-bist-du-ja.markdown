@@ -3,10 +3,10 @@ title: "Herbst, da bist du ja!"
 date: 2017-10-28T21:35:54+02:00
 draft: false
 tags:
--
+- herbst
+- familie
 categories:
 - photo
-draft: false
 images:
 - /images/2017-10-28_Autumn_Leafs.jpg
 syndication:
@@ -18,5 +18,7 @@ geo:
 ---
 
 {{< picture src="/images/2017-10-28_Autumn_Leafs" type="jpg" alt="" caption="Sonne und jede Menge bunte Blätter!" >}}
+
+<!--more-->
 
 Wir hatten heute tatsächlich Glück bei einem kleinen Waldspaziergang mit dem Wetter.

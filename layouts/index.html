@@ -1,20 +1,17 @@
-<!DOCTYPE html>
-<html lang="de" class="no-js" prefix="og: http://ogp.me/ns#" xmlns:og="http://ogp.me/ns#">
 {{ partial "head.html" . }}
-<body class="h-feed">
 {{ partial "header.html" . }}
 <main class="content" role="main">
 	{{ if .IsHome }}
 	<span class="p-name hidden">{{ .Site.Title }}</span>
 	{{ end }}
 	<div class="container">
-  {{ range first 10 (where .Data.Pages "Type" "in" "post") }}
+  {{ range first 10 (where .Data.Pages "Type" "!=" "page") }}
 		{{ .Render "li" }}
 	{{ end }}
 
   <h2>Weitere Beitr&auml;ge</h2>
   <ul id="list">
-    {{ range first 20 (after 10 (where .Data.Pages "Type" "in" "post")) }}
+    {{ range first 20 (after 10 (where .Data.Pages "Type" "!=" "page")) }}
 		  {{ .Render "li-titles" }}
 	   {{ end }}
   </ul>

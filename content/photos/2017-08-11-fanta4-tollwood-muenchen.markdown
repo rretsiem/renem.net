@@ -18,9 +18,13 @@ syndication:
 geo:
   lat: 48.167902
   lon: 11.547525
+aliases:
+  - /post/2017-08-11-fanta4-tollwood-muenchen/
 ---
 
 {{< picture src="/images/2017-07_fanta4_tollwood-1" type="jpg" alt="Foto der Fanta4, Yeah, Yeah, Yeah!" caption="Das war ein sehr heißes Konzert. Im Zelt waren gefühlte 80°C, aber es hat riesen Spaß gemacht!" >}}
+
+<!--more-->
 
 Am 10. Juli 2017 war ich mit Freunden auf dem Tollwood Konzert der [Fantastischen Vier](https://diefantastischenvier.de) im Musik-Zelt in München.
 Das Wetter hätte nich besser sein können, es waren ca. 30°C und gegen 19 Uhr war Einlass.

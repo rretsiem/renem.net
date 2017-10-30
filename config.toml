@@ -10,7 +10,8 @@ angledQuotes = true
 smartypantsQuotesNBSP = true
 [outputs]
 home = [ "HTML", "RSS", "JSON", "REDIR", "HEADERS"]
-page = ["HTML"]
+page = [ "HTML"]
+section = ["HTML", "RSS", "JSON"]
 [mediaTypes]
 [mediaTypes."text/netlify"]
 suffix = ""
@@ -32,7 +33,6 @@ notAlternative = true
 [Params]
   description = "Just my 2 cents…"
   Paginate = 20
-  RSSLink = "/post/index.xml"
   RSSLimit = 20
   author = "René" # add your company name
   license = "CC-BY-NC-SA"
@@ -57,6 +57,12 @@ notAlternative = true
         pre = "Archive List of Blog Articles"
         identifier = "mainarticles"
         url = "/post"
+[[menu.main]]
+        name = "Photos"
+        weight = 1
+        pre = "Photo Beiträge"
+        identifier = "mainphotos"
+        url = "/photos"
 [[menu.main]]
         name = "Microblog"
         weight = 3

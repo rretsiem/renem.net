@@ -1,12 +1,6 @@
-{{$posts := where .Data.Pages "Section" "post"}}
-{{$photos := where .Data.Pages "Section" "photo"}}
-{{$pages := $posts | union (where .Data.Pages "Section" "photo")}}
-{{ $paginator := .Paginate $pages }}
-<!DOCTYPE html>
-<html lang="de" prefix="og: http://ogp.me/ns#" xmlns:og="http://ogp.me/ns#">
+{{ $paginator := .Paginate (where .Data.Pages "Type" "!=" "page") }}
 
 {{ partial "head.html" . }}
-<body {{ if .IsHome }}class="h-feed"{{ end }}>
 {{ partialCached "header.html" . }}
 <main class="content" role="main">
 	{{ if .IsHome }}
@@ -14,7 +8,7 @@
 	{{ end }}
 	<div class="container">
 	{{ range $paginator.Pages }}
-		{{ .Render "li" }}
+			{{ .Render "li" }}
 	{{ end }}
 	{{ partialCached "pagination.html" . }}
 	</div>

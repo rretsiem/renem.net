@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="de" prefix="og: http://ogp.me/ns#" xmlns:og="http://ogp.me/ns#">
     <head>
         {{- partial "meta.html" . -}}
         <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
@@ -5,12 +7,15 @@
         <!-- custom css here -->
         <link href="{{ .Site.BaseURL }}css/bundle.css" rel="stylesheet" type="text/css">
         <!-- Site verification -->
-        {{- if .IsHome -}} {{- partial "site-verification" . -}} {{- end -}}
+        {{- if .IsHome }} {{ partial "site-verification" . }} {{ end -}}
         <!-- site RSS feeds -->
-        <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-        <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }}" />
-        <link href="{{ .Site.BaseURL }}feed.json" rel="alternate" type="application/json" title="{{ .Site.Title }} JSON feed" />
-
+        {{- if .RSSLink }}
+          <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} RSS Feed" />
+          <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }} RSS Feed "/>
+        {{ end -}}
+        {{- with .OutputFormats.Get "json" }}
+        <link href="{{ .Permalink }}" rel="alternate" type="application/json" title="René JSON feed" />
+        {{ end -}}
         <!-- <link rel="hub" href="https://switchboard.p3k.io/"> -->
         <link rel="hub" href="https://renem.superfeedr.com/" />
         <link rel="self" href="{{ .Site.BaseURL }}" />
@@ -19,13 +24,13 @@
         <link rel="me" href="mailto:{{ .Site.Params.email }}" />
         <link href="https://www.twitter.com/{{ .Site.Params.twitter_name }}" rel="me">
         <link href="https://github.com/{{ .Site.Params.github }}/" rel="me">
-        {{ with .Site.Params.instagram }}
+        {{- with .Site.Params.instagram }}
         <link href="https://instagram.com/{{ . }}/" rel="me">
-        {{ end }}
+        {{ end -}}
         <link href="https://keybase.io/renem" rel="me">
-        {{ with .Site.Params.flickr_name }}
+        {{- with .Site.Params.flickr_name }}
         <link href="https://www.flickr.com/people/{{ . }}/" rel="me">
-        {{ end }}
+        {{ end -}}
         <!-- GPG, security -->
         <link href="/assets/ACC2B4B2.asc" rel="pgpkey" type="application/pgp-keys">
         <!-- micro.blog -->
@@ -38,9 +43,9 @@
         <!-- Webmentions -->
         <link rel="pingback" href="https://webmention.io/renem.net/xmlrpc" />
         <link rel="webmention" href="https://webmention.io/renem.net/webmention" />
-        {{ partial "seo-og.html" . }}
-        {{ partial "seo-schema.html" . }}
-        {{ partial "seo-twittercard.html" . }}
+        {{- partial "seo-og.html" . -}}
+        {{- partial "seo-schema.html" . -}}
+        {{- partial "seo-twittercard.html" . -}}
         <!-- DNS prefetching in the header for external sources -->
         <link rel="dns-prefetch" href="//webmention.io">
         <link rel="dns-prefetch" href="//micro.blog">

@@ -14,13 +14,15 @@
 		"url": "{{ .Site.BaseURL }}"
 	},
 	"items": [
-		{{- range $index, $post := first 10 (where .Data.Pages "Section" "photo") -}}
+		{{- range $index, $post := first 20 (where .Data.Pages "Type" "!=" "page") -}}
 		{{ if $index }}, {{ end }}
 		{
 			"id": "{{ $post.Permalink }}",
+			{{- if ne .Type "photos" }}
 			"title": "{{ $post.Title | htmlEscape }}",
+			{{ end }}
 			"url": "{{ $post.Permalink }}",
-			"summary": {{ $post.Caption | chomp | htmlEscape | jsonify }},
+			"summary": {{ $post.Summary | chomp | htmlEscape | jsonify }},
 			"content_html": {{ $post.Content | chomp | jsonify}},
 			"date_published": "{{ .Date.Format $.Site.Params.ISO8601 }}",
 			"tags": [ {{ range $i, $e := $post.Params.tags }}{{ if $i }}, {{ end }}{{ $e | jsonify }}{{ end }} ]
