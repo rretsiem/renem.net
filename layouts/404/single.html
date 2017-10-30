@@ -1,5 +1,5 @@
 {{ partial "head.html" . }}
-{{ partial "header.html" . }}
+{{ partialCached "header.html" . }}
 
 	<content>{{"<!-- from page.single //-->" | safeHTML}}
 		<main class="content" role="main">
@@ -9,7 +9,7 @@
 		</main>
 	</content>
 
-{{ partial "footer.html" . }}
+{{ partialCached "footer.html" . }}
 
 </body>
 </html>

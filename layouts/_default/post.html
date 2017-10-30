@@ -29,9 +29,8 @@
 				{{- partial "post/prev_next" . -}}
     </footer>
 </article>
-<section id="comments">
-{{- partial "webmention.html" . -}}
-</section>
+
+{{- partialCached "webmention.html" . -}}
 <hr>
 <section>
 	{{-  partialCached "mention.html" . -}}

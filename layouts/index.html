@@ -1,5 +1,5 @@
 {{ partial "head.html" . }}
-{{ partial "header.html" . }}
+{{ partialCached "header.html" . }}
 <main class="content" role="main">
 	{{ if .IsHome }}
 	<span class="p-name hidden">{{ .Site.Title }}</span>
@@ -20,7 +20,7 @@
   </div>
 
 </main>
-{{ partial "footer.html" . }}
+{{ partialCached "footer.html" . }}
 
 <script async type='text/javascript' src="/js/service-worker-registration.js"></script>
 <script defer type='text/javascript' src="/js/serviceWorkerSendMessage.js"></script>

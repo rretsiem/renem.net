@@ -1,5 +1,5 @@
 {{ partial "head.html" . }}
-{{ partial "header.html" . }}
+{{ partialCached "header.html" . }}
 
 	<content>{{"<!-- from microblog.single //-->" | safeHTML}}
 		<main class="content" role="main">
@@ -8,6 +8,6 @@
 			</div>
 		</main>
 	</content>
-{{ partial "footer.html" . }}
+{{ partialCached "footer.html" . }}
 </body>
 </html>

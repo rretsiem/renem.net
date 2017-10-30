@@ -1,16 +1,13 @@
-{{ partial "head.html" . }}
-{{ partialCached "header.html" . }}
-
+{{- partial "head.html" . -}}
+{{- partialCached "header.html" . -}}
 	<content>{{"<!-- from page.single //-->" | safeHTML}}
 		<main class="content" role="main">
 			<div class="container">
 				{{ .Content }}
 			</div>
 		</main>
-{{ partial "webmention.html" }}
+{{- partialCached "webmention.html" . -}}
 	</content>
-
-{{ partialCached "footer.html" . }}
-
+{{- partialCached "footer.html" . -}}
 </body>
 </html>

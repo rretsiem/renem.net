@@ -1,26 +1,19 @@
-{{ $title := .Title }}
-{{ $permalink := .Permalink }}
 <article class="li h-entry {{ .Type }}">
     <header class="post-header">
         <h2 class="post-title p-name">
-          <a class="metatag u-url u-uid" href="{{ .Permalink }}">
-            <title>Photo</title></svg>{{ .Title }}
-          </a>
+          <a class="metatag u-url u-uid" href="{{ .Permalink }}">{{ .Title }}</a>
         </h2>
         <p class="post-time"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" | safeHTML }}">{{ .Date.Format "January 2, 2006" }}</time></p>
     </header>
-
     <section class="post-content post-text e-content p-name u-photo content-type-plain">
       <a href="{{ .Permalink }}">{{ .Summary }}</a>
     </section>
-
     <footer class="post-footer">
         <span>
-            {{ with .Params.categories }}
+            {{ with .Params.tags }}
                 &nbsp;&nbsp;<svg class="icon"><use xlink:href="#tags" /></svg>
-                    {{ delimit (apply (apply (sort .) "partial" "post/category-link" ".") "chomp" ".") ", " }}
+                    {{ delimit (apply (apply (sort .) "partial" "post/tag-link" ".") "chomp" ".") ", " }}
           {{ end }}
-
         </span>
     </footer>
 </article>
