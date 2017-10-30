@@ -13,6 +13,7 @@ images:
 syndication:
 - https://twitter.com/rretsiem/status/925118105352835072
 - https://plus.google.com/u/1/+RenéMeister/posts/d8aZC5JLgdr
+- https://medium.com/@rretsiem/entweder-machen-barfuß-läufer-ein-geheimnis-aus-ihrer-fußpflege-oder-dieser-wird-einfach-keine-2ec2c478384f
 ---
 
 > TL;DR Bisher nur Creme und ab und zu ein warmes Fußbad.
