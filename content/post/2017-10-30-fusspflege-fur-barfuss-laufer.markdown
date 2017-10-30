@@ -11,8 +11,8 @@ tags:
 images:
 - /images/2017-10-30-fusspflege-fur-barfuss-laufer.jpg
 syndication:
--
-
+- https://twitter.com/rretsiem/status/925118105352835072
+- https://plus.google.com/u/1/+RenéMeister/posts/d8aZC5JLgdr
 ---
 
 > TL;DR Bisher nur Creme und ab und zu ein warmes Fußbad.
