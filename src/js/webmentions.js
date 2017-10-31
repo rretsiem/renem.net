@@ -149,7 +149,7 @@ function displayMentions(json) {
       // display webmention-container only if there are links from webmention.io
       if (json["links"].length) {
         var mC = document.getElementById('mentionContainer');
-        mc.classList.remove('hidden');
+        mC.classList.remove('hidden');
         // document.getElementById('mentionContainer').style.visibility = "visible";
         // document.getElementById('mentionContainer').style.display = "block";
       }
