@@ -104,14 +104,6 @@ function displayMentions(json) {
 
         } else {
 
-          // skip empty links from Medium for now...
-          if (item.activity.type == "link" || item.activity.type == "reply") {
-            if (item.data.content === null || item.data.author === undefined || item.data.name === null || item.data.name === undefined ) {
-//              return true;
-//              processMention = false;
-            }
-          }
-
         //  if (processMention) {
         if (item.data.content !== null && item.data.author !== undefined && item.data.name !== null && item.data.name !== undefined ) {
             var commentTime = (item.data.published) ? new Date(item.data.published) : new Date(item.verified_date);
