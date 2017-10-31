@@ -90,11 +90,10 @@ function displayMentions(json) {
       // summaryResponses += buildSummaryResponse(activityTypes, "like");
       // summaryResponses += buildSummaryResponse(activityTypes, "repost");
       // summaryResponses += '';
-      var processMention = true;
+      // var processMention = true;
 
       json["links"].forEach(function(item) {
         // we expect to process every mention
-        processMention = true;
         // console.log("ITEM: " + JSON.stringify(item));
         // var commentTime = new Date(item.data.published)
         // only count likes and reposts but didn't build a comment from it
@@ -112,11 +111,12 @@ function displayMentions(json) {
           // skip empty links from Medium for now...
           if (item.activity.type == "link" || item.activity.type == "reply") {
             if (item.data.content === null || item.data.author === undefined || item.data.name === null || item.data.name === undefined ) {
-              processMention = false;
+              return true;
+//              processMention = false;
             }
           }
 
-          if (processMention) {
+        //  if (processMention) {
             var commentTime = (item.data.published) ? new Date(item.data.published) : new Date(item.verified_date);
 
             var singleComment = '<li class="comment p-comment h-entry" id="li-comment-' + item.id + '"> \
@@ -142,7 +142,7 @@ function displayMentions(json) {
             var mentionList = document.getElementById('mentionList');
             mentionList.insertAdjacentHTML( 'afterbegin', singleComment );
 
-          }
+        //  }
           // end like / repost if
         }
         // end for loop activities (json links)
