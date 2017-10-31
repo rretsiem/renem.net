@@ -86,11 +86,7 @@ function displayMentions(json) {
       summaryList['like'] = '<ul class="facepile"><li class="group"><svg class="icon"><use xlink:href="#like" /><title>Likes</title></svg></li>';
       summaryList['repost'] = '<ul class="facepile"><li class="group"><svg class="icon"><use xlink:href="#repost" /><title>Repost</title></svg></li>';
 
-      // var summaryResponses = '';
-      // summaryResponses += buildSummaryResponse(activityTypes, "like");
-      // summaryResponses += buildSummaryResponse(activityTypes, "repost");
-      // summaryResponses += '';
-      // var processMention = true;
+      var mentionList = document.getElementById('mentionList');
 
       json["links"].forEach(function(item) {
         // we expect to process every mention
@@ -111,12 +107,13 @@ function displayMentions(json) {
           // skip empty links from Medium for now...
           if (item.activity.type == "link" || item.activity.type == "reply") {
             if (item.data.content === null || item.data.author === undefined || item.data.name === null || item.data.name === undefined ) {
-              return true;
+//              return true;
 //              processMention = false;
             }
           }
 
         //  if (processMention) {
+        if (item.data.content !== null && item.data.author !== undefined && item.data.name !== null && item.data.name !== undefined ) {
             var commentTime = (item.data.published) ? new Date(item.data.published) : new Date(item.verified_date);
 
             var singleComment = '<li class="comment p-comment h-entry" id="li-comment-' + item.id + '"> \
@@ -139,10 +136,8 @@ function displayMentions(json) {
               </article> \
             </li>';
 
-            var mentionList = document.getElementById('mentionList');
             mentionList.insertAdjacentHTML( 'afterbegin', singleComment );
-
-        //  }
+          }
           // end like / repost if
         }
         // end for loop activities (json links)
