@@ -90,8 +90,11 @@ function displayMentions(json) {
       // summaryResponses += buildSummaryResponse(activityTypes, "like");
       // summaryResponses += buildSummaryResponse(activityTypes, "repost");
       // summaryResponses += '';
+      var processMention = true;
 
       json["links"].forEach(function(item) {
+        // we expect to process every mention
+        processMention = true;
         // console.log("ITEM: " + JSON.stringify(item));
         // var commentTime = new Date(item.data.published)
         // only count likes and reposts but didn't build a comment from it
@@ -107,39 +110,41 @@ function displayMentions(json) {
         } else {
 
           // skip empty links from Medium for now...
-          if (item.activity.type == "link" && (item.data.content == null || item.data.author === undefined)) {
-            return;
+          if (item.activity.type == "link" || item.activity.type == "reply") {
+            if (item.data.content === null || item.data.author === undefined || item.data.name === null || item.data.name === undefined ) {
+              processMention = false;
+            }
           }
 
-          var commentTime = (item.data.published) ? new Date(item.data.published) : new Date(item.verified_date);
+          if (processMention) {
+            var commentTime = (item.data.published) ? new Date(item.data.published) : new Date(item.verified_date);
 
-          var singleComment = '<li class="comment p-comment h-entry" id="li-comment-' + item.id + '"> \
-            <article id="comment-' + item.id + '" class="webmention-mention"> \
-              <div class="comment-meta commentmetadata webmention-author"> \
-                <div class="vcard h-card p-author"> \
-                <span class="webmention-author"><img alt="" src="' + item.data.author.photo + '" srcset="' + item.data.author.photo + ' 2x" class="u-photo avatar avatar-48 photo avatar-default u-photo avatar-semantic-linkbacks" height="48" width="48" scale="0"></span> \
-                  <cite class="fn"><a href="' + item.data.author.url + '" rel="external nofollow" class="u-url url">' + item.data.author.name + '</a></cite> \
-                  <a href="' + item.target + '#comment-' + item.id + '" title="' + commentTime.toLocaleTimeString() + '"> \
-                    <time class="dt-published" datetime="' +  item.data.published + '">' + commentTime.toLocaleDateString() + '</time> \
-                  </a> \
+            var singleComment = '<li class="comment p-comment h-entry" id="li-comment-' + item.id + '"> \
+              <article id="comment-' + item.id + '" class="webmention-mention"> \
+                <div class="comment-meta commentmetadata webmention-author"> \
+                  <div class="vcard h-card p-author"> \
+                  <span class="webmention-author"><img alt="" src="' + item.data.author.photo + '" srcset="' + item.data.author.photo + ' 2x" class="u-photo avatar avatar-48 photo avatar-default u-photo avatar-semantic-linkbacks" height="48" width="48" scale="0"></span> \
+                    <cite class="fn"><a href="' + item.data.author.url + '" rel="external nofollow" class="u-url url">' + item.data.author.name + '</a></cite> \
+                    <a href="' + item.target + '#comment-' + item.id + '" title="' + commentTime.toLocaleTimeString() + '"> \
+                      <time class="dt-published" datetime="' +  item.data.published + '">' + commentTime.toLocaleDateString() + '</time> \
+                    </a> \
+                  </div> \
                 </div> \
-              </div> \
-              <div class="comment-content"> \
-                <div class="e-content p-name p-summary"> \
-                  <p>' + getCommentText(item.data.content, item.activity.type, item.data.url, item) + '\
-                  <cite><a class="u-url" href="' +  item.data.url + '" rel="nofollow noopener">via ' + getIconForDomain(new URL(item.data.url).hostname) + '</a></cite></p> \
+                <div class="comment-content"> \
+                  <div class="e-content p-name p-summary"> \
+                    <p>' + getCommentText(item.data.content, item.activity.type, item.data.url, item) + '\
+                    <cite><a class="u-url" href="' +  item.data.url + '" rel="nofollow noopener">via ' + getIconForDomain(new URL(item.data.url).hostname) + '</a></cite></p> \
+                  </div> \
                 </div> \
-              </div> \
-            </article> \
-          </li>';
+              </article> \
+            </li>';
 
-          var mentionList = document.getElementById('mentionList');
-          mentionList.insertAdjacentHTML( 'afterbegin', singleComment );
+            var mentionList = document.getElementById('mentionList');
+            mentionList.insertAdjacentHTML( 'afterbegin', singleComment );
 
+          }
           // end like / repost if
         }
-
-
         // end for loop activities (json links)
       });
 
