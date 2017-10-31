@@ -104,8 +104,7 @@ function displayMentions(json) {
 
         } else {
 
-        //  if (processMention) {
-        if (item.data.content && item.data.author ) {
+        if (item.data.content && item.data.author) {
             var commentTime = (item.data.published) ? new Date(item.data.published) : new Date(item.verified_date);
 
             var singleComment = '<li class="comment p-comment h-entry" id="li-comment-' + item.id + '"> \
@@ -149,8 +148,10 @@ function displayMentions(json) {
 
       // display webmention-container only if there are links from webmention.io
       if (json["links"].length) {
-        document.getElementById('mentionContainer').style.visibility = "visible";
-        document.getElementById('mentionContainer').style.display = "block";
+        var mC = document.getElementById('mentionContainer');
+        mc.classList.remove('hidden');
+        // document.getElementById('mentionContainer').style.visibility = "visible";
+        // document.getElementById('mentionContainer').style.display = "block";
       }
     }
 }
