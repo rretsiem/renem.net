@@ -105,7 +105,7 @@ function displayMentions(json) {
         } else {
 
         //  if (processMention) {
-        if (item.data.content !== null && item.data.author !== undefined && item.data.name !== null && item.data.name !== undefined ) {
+        if (item.data.content && item.data.author ) {
             var commentTime = (item.data.published) ? new Date(item.data.published) : new Date(item.verified_date);
 
             var singleComment = '<li class="comment p-comment h-entry" id="li-comment-' + item.id + '"> \
