@@ -94,7 +94,6 @@ function displayMentions(json) {
       json["links"].forEach(function(item) {
         // console.log("ITEM: " + JSON.stringify(item));
         // var commentTime = new Date(item.data.published)
-
         // only count likes and reposts but didn't build a comment from it
         if (item.activity.type == "like" || item.activity.type == "repost") {
 //          return true;
@@ -106,6 +105,11 @@ function displayMentions(json) {
             summaryList[item.activity.type] += '</li>';
 
         } else {
+
+          // skip empty links from Medium for now...
+          if (item.activity.type == "link" && (item.data.content == null || item.data.author === undefined)) {
+            return;
+          }
 
           var commentTime = (item.data.published) ? new Date(item.data.published) : new Date(item.verified_date);
 
