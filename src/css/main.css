@@ -401,6 +401,7 @@ audio, canvas, img, video {
     line-height: 1.65;
     text-align: center;
     text-decoration: none;
+    text-transform: uppercase;
     color: #fff;
     border: 1px solid transparent;
     border-radius: 5px;
@@ -412,18 +413,24 @@ audio, canvas, img, video {
 .btn:focus, .btn:hover, button:focus, button:hover, input[type=button]:focus,
 input[type=button]:hover, input[type=reset]:focus, input[type=reset]:hover,
 input[type=submit]:focus, input[type=submit]:hover {
-    background-color: #3d8c38;
+  background-color: #888;
+  color: #333;
+  outline: 0;
+/*    background-color: #3d8c38;
     border: 1px solid transparent;
     color: #fff;
     text-decoration: none;
     border-bottom: none
+    */
 }
 
 .btn:active, button:active, input[type=button]:active, input[type=reset]:active,
 input[type=submit]:active {
     outline: none;
+/*
     background-image: none;
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, .15)
+    */
 }
 
 .btn::-moz-focus-inner {

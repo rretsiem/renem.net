@@ -16,9 +16,20 @@
           {{ with .Site.Params.github }}
             <a href="https://www.github.com/{{ . }}" title="GitHub" rel="me noopener" target="_blank"><span class="tooltip"><svg class="icon"><use xlink:href="#github" /><title>Github</title></svg></span></a>
           {{ end }}
-          {{ if .Site.Params.RSSLink }}
-            <a href="{{ .Site.BaseURL }}index.xml" type="application/rss+xml" rel="me noopener" target="_blank" title="Get the RSS feed"><span class="tooltip"><svg class="icon"><use xlink:href="#rss" /><title>RSS Feed</title></svg></span></a>
+          {{ if .RSSLink }}
+<!--            <a href="{{ .RSSLink }}" type="application/rss+xml" rel="me noopener" target="_blank" title="Get the RSS feed"><span class="tooltip"><svg class="icon"><use xlink:href="#rss" /><title>RSS Feed</title></svg></span></a>-->
+            <a href="{{ .RSSLink }}" rel="me noopener" onclick="(function(btn){var z=document.createElement('script');document.subtomeBtn=btn;z.src='https://www.subtome.com/load.js';document.body.appendChild(z);})(this);return false;" data-subtome-resource="{{ .Site.BaseURL }}" data-subtome-feeds="{{ .RSSLink }}" data-subtome-suggested-service-name="Woodwind" data-subtome-suggested-service-url="http://woodwind.xyz/subscribe?origin={feed}" title="Subscribe">
+              <span class="tooltip"><svg class="icon"><use xlink:href="#rss" /><title>Subscribe</title></svg></span>
+            </a>
+
+          {{ else }}
+<!--            <a href="{{ .Site.BaseURL }}index.xml" type="application/rss+xml" rel="me noopener" target="_blank" title="Get the RSS feed"><span class="tooltip"><svg class="icon"><use xlink:href="#rss" /><title>RSS Feed</title></svg></span></a> -->
+<a href="{{ .Site.BaseURL }}index.xml" rel="me noopener" onclick="(function(btn){var z=document.createElement('script');document.subtomeBtn=btn;z.src='https://www.subtome.com/load.js';document.body.appendChild(z);})(this);return false;" data-subtome-resource="{{ .Site.BaseURL }}" data-subtome-feeds="{{ .Site.BaseURL }}" data-subtome-suggested-service-name="Woodwind" data-subtome-suggested-service-url="http://woodwind.xyz/subscribe?origin={feed}" title="Subscribe">
+  <span class="tooltip"><svg class="icon"><use xlink:href="#rss" /><title>Subscribe</title></svg></span>
+</a>
+
           {{ end }}
+
           <section class="feet h-card vcard">&copy; <a href="{{ .Site.BaseURL }}" class="p-name u-url" rel="me">{{ .Site.Params.author }}</a> 2012-2017 | Licenced under
                 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
                 class="metatag" rel="license">
