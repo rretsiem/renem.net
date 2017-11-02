@@ -15,6 +15,7 @@ syndication:
 - https://plus.google.com/u/1/+RenéMeister/posts/g1T9hUGQgLC
 - https://twitter.com/rretsiem/status/925405439503884288
 - https://medium.com/@rretsiem/bye-bye-sommer-rené-69b4c6a50981
+- https://www.instagram.com/p/Ba_bZlSD8Z5/
 ---
 
 {{< picture src="/images/2017-10-31-bye-bye-sommer-1" type="jpg" alt="" caption="Die letzte Ausfahrt der Saison ist immer etwas besonderes" >}}
