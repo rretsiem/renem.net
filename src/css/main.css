@@ -1273,3 +1273,25 @@ img.webmention-error {display: none;}
   margin-right: auto;
   padding: 1rem;
 }
+
+/* Micro.blog adjustments */
+.microblog_post {
+    padding: 1rem;
+    margin-bottom: 0.1rem;
+    background: transparent;
+}
+.microblog_text > p > img {
+  margin: auto;
+}
+
+.microblog_post:nth-child(odd) {
+  background: #eee;
+}
+
+.microblog_time {
+    font-style: italic;
+    font-size: smaller;
+}
+.microblog_timeline {
+  padding-bottom: 2rem;
+}
