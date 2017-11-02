@@ -11,7 +11,7 @@ tags:
 images:
 -
 syndication:
--
+- https://twitter.com/rretsiem/status/926036748131557376
 ---
 
 Nun ist es endlich so weit, ich habe mich mit dem Thema bis jetzt sehr bedeckt gehalten, aber die Vorfreude auf den morgigen Tag ist so groß, dass ich doch noch einen Beitrag hier darüber verfasse und womöglich auch die nächsten Monate unseren Hausbau dokumentieren werde.

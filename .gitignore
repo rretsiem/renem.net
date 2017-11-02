@@ -10,6 +10,7 @@ firebase.json
 .git/
 node_modules/
 src/images/
+src/images/_resize
 src/images/*
 public/
 public/*

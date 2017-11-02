@@ -10,7 +10,7 @@ var imagemin = require('gulp-imagemin');
 var postcss = require('gulp-postcss');
 var concat = require('gulp-concat');
 var sourcemaps = require('gulp-sourcemaps');
-var newer = require('gulp-newer');
+var changed = require('gulp-changed');
 var jpegtran = require('imagemin-jpegtran');
 var svgSprite = require('gulp-svg-sprite');
 var htmlmin = require('gulp-htmlmin');
@@ -22,8 +22,8 @@ var del = require('del');
 var request = require('request');
 var httppost = require('gulp-post');
 var minify = require('gulp-minify');
-var cache = require('gulp-cache');
 var pngquant = require('imagemin-pngquant');
+var debug = require('gulp-debug');
 
 const size = require('gulp-size');
 
@@ -85,7 +85,10 @@ gulp.task('compress', function() {
 
 gulp.task("img", () =>
   gulp.src("./src/images/*.{jpg,png}")
-    // .pipe(newer("./static/images"))
+    //.pipe(debug({title: 'sources:'}))
+    .pipe(changed("./src/images/_resize"))
+    .pipe( gulp.dest("./src/images/_resize"))
+    //.pipe(debug({title: 'before gulp-responsive:'}))
     .pipe(responsive({
       "*": [
       {
@@ -103,9 +106,11 @@ gulp.task("img", () =>
     }, {
       silent: true,      // Don't spam the console
       withoutEnlargement: false,
+      errorOnUnusedConfig: false
     }))
-    .pipe(gulp.dest("./static/images")
-));
+    .pipe(debug({title: 'after gulp-responsive:'}))
+    .pipe(gulp.dest("./static/images"))
+);
 
 gulp.task("img:build", ["img"], () =>
   gulp.src(["./static/images/*.{jpg,png,gif,svg}"])
@@ -173,7 +178,6 @@ gulp.task("server", ["compress", "css", "img", "hugo:build"], () => {
 
 gulp.task('clean', function(done) {
   del.sync([DIST_DIR]);
-  cache.clearAll(done);
 });
 
 gulp.task('superfeedr', function() {
