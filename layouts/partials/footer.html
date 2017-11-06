@@ -2,19 +2,19 @@
         {{ partialCached "search.html" . }}
         <div class="container">
           {{ with .Site.Params.twitter_name }}
-            <a href="https://www.twitter.com/{{ . }}" title="Twitter" rel="me noopener" target="_blank"><span class="tooltip"><svg class="icon"><use xlink:href="#twitter" /><title>Twitter</title></svg></span></a>
+            <a href="https://www.twitter.com/{{ . }}" title="Twitter" rel="me noopener noreferrer" target="_blank"><span class="tooltip"><svg class="icon"><use xlink:href="#twitter" /><title>Twitter</title></svg></span></a>
           {{ end }}
           {{ with .Site.Params.flickr_name }}
-            <a href="https://www.flickr.com/people/{{ . }}/" title="Flickr" rel="me noopener" target="_blank"><span class="tooltip"><svg class="icon"><use xlink:href="#flickr" /><title>Flickr</title></svg></span></a>
+            <a href="https://www.flickr.com/people/{{ . }}/" title="Flickr" rel="me noopener noreferrer" target="_blank"><span class="tooltip"><svg class="icon"><use xlink:href="#flickr" /><title>Flickr</title></svg></span></a>
           {{ end }}
           {{ with .Site.Params.instagram }}
-            <a href="https://www.instagram.com/{{ . }}/" title="Instagram" rel="me noopener" target="_blank"><span class="tooltip"><svg class="icon"><use xlink:href="#instagram" /><title>Instagram</title></svg></span></a>
+            <a href="https://www.instagram.com/{{ . }}/" title="Instagram" rel="me noopener noreferrer" target="_blank"><span class="tooltip"><svg class="icon"><use xlink:href="#instagram" /><title>Instagram</title></svg></span></a>
           {{ end }}
           {{ with .Site.Params.facebook }}
-            <a href="https://www.facebook.com/{{ . }}" title="Facebook" rel="me noopener" target="_blank"><span class="tooltip"><svg class="icon"><use xlink:href="#facebook" /><title>Facebook</title></svg></span></a>
+            <a href="https://www.facebook.com/{{ . }}" title="Facebook" rel="me noopener noreferrer" target="_blank"><span class="tooltip"><svg class="icon"><use xlink:href="#facebook" /><title>Facebook</title></svg></span></a>
           {{ end }}
           {{ with .Site.Params.github }}
-            <a href="https://www.github.com/{{ . }}" title="GitHub" rel="me noopener" target="_blank"><span class="tooltip"><svg class="icon"><use xlink:href="#github" /><title>Github</title></svg></span></a>
+            <a href="https://www.github.com/{{ . }}" title="GitHub" rel="me noopener noreferrer" target="_blank"><span class="tooltip"><svg class="icon"><use xlink:href="#github" /><title>Github</title></svg></span></a>
           {{ end }}
           {{ if .RSSLink }}
           <!--
@@ -23,7 +23,7 @@
               <span class="tooltip"><svg class="icon"><use xlink:href="#rss" /><title>Subscribe</title></svg></span>
             </a>
 -->
-<a href="{{ .RSSLink }}" rel="me noopener" id="subToMeLink" data-subtome-resource="{{ .Site.BaseURL }}" data-subtome-feeds="{{ .RSSLink }}" data-subtome-suggested-service-name="Woodwind" data-subtome-suggested-service-url="http://woodwind.xyz/subscribe?origin={feed}" title="Subscribe">
+<a href="{{ .RSSLink }}" rel="me noopener noreferrer" id="subToMeLink" data-subtome-resource="{{ .Site.BaseURL }}" data-subtome-feeds="{{ .RSSLink }}" data-subtome-suggested-service-name="Woodwind" data-subtome-suggested-service-url="http://woodwind.xyz/subscribe?origin={feed}" title="Subscribe">
   <span class="tooltip"><svg class="icon"><use xlink:href="#rss" /><title>Subscribe</title></svg></span>
 </a>
 
@@ -47,7 +47,7 @@
                 {{ .Site.Params.license }}</a>
 
                 {{ if eq .Title "About" }}
-                <img src="{{ .Site.BaseURL }}assets/renem_profile.png" class=" hidden u-photo">
+                <img src="{{ .Site.BaseURL }}assets/renem_profile.png" alt="René profile photo" class=" hidden u-photo">
                 {{ end }}
                 <a class="p-nickname u-email email metatag" alt="Mail senden" rel="me" href="mailto:{{ .Site.Params.email}}">{{ .Site.Author.nick }}</a>
           </section>

@@ -9,7 +9,7 @@
   X-WebKit-CSP: default-src 'self' https:; script-src 'self' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src *;
   Referrer-Policy: no-referrer-when-downgrade
 #  Cache-Control: max-age=7200, public
-  Strict-Transport-Security: max-age=2592000
+  Strict-Transport-Security: max-age=10886400
   Cache-Control: max-age=2628000, public
 # images
 #/*.@(jpg|jpeg|gif|png|json)
