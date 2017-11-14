@@ -5,6 +5,7 @@
 /tagged/* /tags/:splat    301
 #/post/:year/:month:/:date/:slug  /post/:year-:month-:date-:slug 301
 /archives /post           301
+/all      /post           301
 # search
 /search q=:query https://duckduckgo.com/?q=:query%20site:renem.net
 # https://duckduckgo.com/?q=search&kp=-1&kl=us-en
