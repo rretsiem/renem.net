@@ -5,6 +5,9 @@ weight: -110
 title: "About"
 type: "page"
 slug: about
+aliases:
+- /@rretsiem
+- /&#64;rretsiem
 ---
 
 Bewusst kurz gehalten:
