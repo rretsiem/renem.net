@@ -8,6 +8,7 @@ date: 2013-07-24T00:00:00+02:00
 title: Mr. Reader &amp; Reeder sprechen mit TT-RSS
 aliases:
 - /post/2013/07/24/mr-reader-and-reeder-sprechen-mit-tt-rss/
+- /mr-reader-reeder-sprechen-mit-tt-rss-9a0cc742c46b
 ---
 
 Was sich anhört wie der Titel einer Serie, ist in Wirklichkeit tiefste Technik und nur für Leute interessant die wissen was [TT-RSS](http://tt-rss.org/) ist und diese Software auch einsetzen oder einsetzen wollen.  

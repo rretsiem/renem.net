@@ -20,6 +20,7 @@ title: Runalyze - Laufstatistiken soweit man Laufen kann
 aliases:
 - /2015/06/03/runalyze-laufstatistiken-soweit-man-laufen-kann/
 - /post/2015/06/03/runalyze-laufstatistiken-soweit-man-laufen-kann/
+- /runalyze-laufstatistiken-soweit-man-laufen-kann-72238234731a
 ---
 
 Ich bin vor ca. 3 Tagen auf ein mir bis dato unbekanntes Tool Namens [Runalyze](https://runalyze.com/) gestoßen. Zugegeben der Titel es Beitrages trifft nicht auf jeden zu, einige können sicherlich deutlich weiter Laufen als es Statistiken gibt.

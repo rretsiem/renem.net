@@ -16,6 +16,7 @@ keywords:
 - Wordpress
 aliases:
 - /nächster-akt-medium-com-53b405c40891
+- /n%C3%A4chster-akt-medium-com-53b405c40891
 twit: https://twitter.com/rretsiem/statuses/756826889663184896
 ---
 
@@ -33,8 +34,8 @@ Ein paar Beispiele:
 * Die Blog-Post Administration ist bei mehreren Posts bereits nicht mehr einfach zu handhaben.
 * Meta-Tags und auch Twitter-Cards werden nicht sauber unterstützt.
 * Ein Bug zum Thema Lokation an Blog-Posts der immer das Squarespace HQ setzt wenn man versehentlich den Lokations-Schalter einschaltet dann aber die Lokation wieder entfernt besteht seit über 8 Monaten.
-*
-Alles in Allem kam also die Ernüchterung ziemlich schnell. Im Oktober 2016 würde nun das erste Jahr vollendet sein und die nächste Zahlung steht an. Squarespace will dafür dann $114 sehen, was mir der Service nicht Wert ist bei den oben genannten Einschränkungen.
+  *
+  Alles in Allem kam also die Ernüchterung ziemlich schnell. Im Oktober 2016 würde nun das erste Jahr vollendet sein und die nächste Zahlung steht an. Squarespace will dafür dann $114 sehen, was mir der Service nicht Wert ist bei den oben genannten Einschränkungen.
 
 Die Suche nach einer Alternative ging also vor ein paar Wochen los. Als erste und eigentlich auch fast einzige Alternative stößt man unweigerlich auch Wordpress bzw. Wordpress.com. Ich hatte alle meine Posts auch bereits in einen Wordpress.com Blog importiert — Squarespace bietet hier zumindest einen super Export dafür an — da kam mir die Idee mit Medium. Immer mehr Posts die ich in den letzten Wochen und Monaten gelesen habe waren auf Medium, also damit mal etwas probiert und für gut befunden. Das Medium mittlerweile auch eigene Domains unterstützt und ebenso alle Posts als Export anbietet war ich nicht abgeneigt. Ein Import aus Wordpress heraus existiert ebenfalls für die Posts (alles andere geht nicht).
 

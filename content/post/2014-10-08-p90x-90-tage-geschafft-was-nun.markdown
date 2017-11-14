@@ -11,6 +11,7 @@ twitter_card:
   image: https://files.app.net/w0pn8J0vh.jpg
 aliases:
 - /2014/10/08/p90x-90-tage-geschafft-was-nun/
+- /p90x-90-tage-geschafft-was-nun-6a6d33c796b7
 ---
 
 {{< figure class="center" src="https://files.app.net/w0pn8J0vh.jpg" >}}

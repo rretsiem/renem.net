@@ -17,6 +17,8 @@ caption: "Sonne und jede Menge bunte Blätter beim Waldspaziergang"
 geo:
   lat: 48.45707
   lon: 11.10057
+aliases:
+- /post/2017-10-28_herbst-da-bist-du-ja/
 ---
 
 {{< picture src="/images/2017-10-28_Autumn_Leafs" type="jpg" alt="" caption="Sonne und jede Menge bunte Blätter!" >}}

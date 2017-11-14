@@ -12,6 +12,7 @@ images:
 - /images/2014-10-13-alternative-zu-google-icloud-fuer-mail-kontakte-und-kalender-1.jpg
 aliases:
 - /post/2014/10/13/alternative-zu-google-icloud-fuer-mail-kontakte-und-kalender/
+- /2014/10/13/alternative-zu-google-icloud-fuer-mail-kontakte-und-kalender/
 ---
 
 {{< picture src="/images/2014-10-13-alternative-zu-google-icloud-fuer-mail-kontakte-und-kalender-1" type="jpg" alt="" caption="Posteo iPhone Setup" >}}

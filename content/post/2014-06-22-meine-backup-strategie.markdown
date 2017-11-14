@@ -7,6 +7,7 @@ date: 2014-06-22T00:00:00+02:00
 title: Meine Backup-Strategie
 aliases:
 - /2014/06/22/meine-backup-strategie/
+- /post/2015/06/22/meine-backup-strategie
 ---
 
 {{< figure src="https://files.app.net/2lvwlFJHT.jpg" caption="Backup Strategie" >}}
@@ -68,4 +69,4 @@ Sollte aber jemand eine bessere Lösung oder weitere Tipps haben, kann er dies g
 
 [^1]: Der Link ist ein Invite-Link. Wer sich einen Account bei Backblaze damit erstellt erhält automatisch 1 Monate umsonst. Auch ich erhalte dadurch einen extra Monat.
 
- [^2]: Wenn man Backblaze installiert ist die Verschlüsselung nicht automatisch eingeschaltet. Man muss hier in den Einstellungen der App am Mac eine sichere Passphrase definieren. Damit werden dann alle Backups verschlüsselt und können auch nur mit dieser Passphrase wiederhergestellt werden.
+[^2]: Wenn man Backblaze installiert ist die Verschlüsselung nicht automatisch eingeschaltet. Man muss hier in den Einstellungen der App am Mac eine sichere Passphrase definieren. Damit werden dann alle Backups verschlüsselt und können auch nur mit dieser Passphrase wiederhergestellt werden.

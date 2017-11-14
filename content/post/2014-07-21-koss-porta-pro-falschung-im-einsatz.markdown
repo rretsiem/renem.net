@@ -12,6 +12,7 @@ images:
 - /images/2014-07-21-koss-porta-pro-falschung-im-einsatz-1.jpg
 aliases:
 - /post/2014/07/21/koss-porta-pro-falschung-im-einsatz/
+- /koss-porta-pro-f%C3%A4lschung-im-einsatz-39ecd0915e04
 ---
 
 {{< picture src="/images/2014-07-21-koss-porta-pro-falschung-im-einsatz-1" type="jpg" alt="" caption="Koss Porta Pro" >}}

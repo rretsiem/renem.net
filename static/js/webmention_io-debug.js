@@ -277,7 +277,7 @@
         //         html_source = `curl -s --location "#{url}"`
         //
         //         if ! html_source.valid_encoding?
-        //             html_source = html_source.encode('UTF-16be', :invalid=>:replace, :replace=>"?").encode('UTF-8')
+        //             html_source = html_source.encode('UTF-16be', :invalid=>:replace, :replace=>"?").encode('utf-8')
         //         end
         //
         //         matches = /class="u-url" href=".+">(https:.+)</.match( html_source )

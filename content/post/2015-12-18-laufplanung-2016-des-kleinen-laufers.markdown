@@ -15,6 +15,7 @@ images:
 aliases:
 - /laufen-road-to-1k-in-2015-aa4f1d2895c4
 - /blog/2015/12/18/laufplanung-2016-des-kleinen-laeufers
+- /laufplanung-2016-des-kleinen-l%C3%A4ufers-88c97571711b
 twit: https://twitter.com/rretsiem/statuses/677836162250182656
 ---
 
