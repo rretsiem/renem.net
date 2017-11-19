@@ -6,6 +6,9 @@
 #/post/:year/:month:/:date/:slug  /post/:year-:month-:date-:slug 301
 /archives /post           301
 /all      /post           301
+# https://fed.brid.gy redirects
+/.well-known/host-meta* https://fed.brid.gy/.well-known/host-meta* 302
+/.well-known/webfinger* https://fed.brid.gy/.well-known/webfinger* 302
 # search
 /search q=:query https://duckduckgo.com/?q=:query%20site:renem.net
 # https://duckduckgo.com/?q=search&kp=-1&kl=us-en
