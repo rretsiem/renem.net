@@ -7,8 +7,9 @@
 /archives /post           301
 /all      /post           301
 # https://fed.brid.gy redirects
-/.well-known/host-meta* https://fed.brid.gy/.well-known/host-meta* 200
-/.well-known/webfinger* https://fed.brid.gy/.well-known/webfinger* 200
+/.well-known/* https://fed.brid.gy/.well-known/:splat 200
+#/.well-known/host-meta* https://fed.brid.gy/.well-known/host-meta* 200
+#/.well-known/webfinger* https://fed.brid.gy/.well-known/webfinger* 200
 # /api/*  https://api.example.com/:splat  200
 # search
 /search q=:query https://duckduckgo.com/?q=:query%20site:renem.net
