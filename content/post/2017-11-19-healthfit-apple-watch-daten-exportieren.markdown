@@ -10,7 +10,7 @@ tags:
 - tech
 - apple
 syndication:
--
+- https://twitter.com/rretsiem/status/932366159705493504
 
 ---
 
