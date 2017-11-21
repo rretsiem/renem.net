@@ -8,6 +8,7 @@ categories:
 draft: false
 images:
 - /images/2017-11-21-frischer-kaffee-von-coffeecircle.jpg
+caption: "Drei für mich neue Sorten warten darauf verkostet zu werden."
 syndication:
 -
 
@@ -17,6 +18,4 @@ syndication:
 
 <!--more-->
 
-Am Sonntag bestellt – heute eingetroffen. Mit einem Röstdatum vom 16. November, absolut frisch! Danke für die schnelle Lieferung [Coffeecircle](https://www.coffeecircle.com/)!
-
-Morgen wird der "Michiti" aus der AeroPress verkostet.
+Am Sonntag bestellt – heute eingetroffen. Röstdatum vom 16. November, absolut frisch! Danke für die schnelle Lieferung [Coffeecircle](https://www.coffeecircle.com/)!
