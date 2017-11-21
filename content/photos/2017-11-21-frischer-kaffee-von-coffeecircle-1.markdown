@@ -10,7 +10,9 @@ images:
 - /images/2017-11-21-frischer-kaffee-von-coffeecircle.jpg
 caption: "Drei für mich neue Sorten warten darauf verkostet zu werden."
 syndication:
--
+- https://twitter.com/rretsiem/status/933077543481237506
+- https://www.instagram.com/p/BbxYxLDDxVA/
+- https://www.flickr.com/photos/renene26/38512240066/
 
 ---
 
