@@ -12,6 +12,7 @@ twitter_card:
   type: summary
 aliases:
 - /2015/06/29/vorfreude-nach-7-tagen-pause/
+- /vorfreude-nach-7-tagen-pause-d29ba6d09d56
 ---
 
 Nach meinem Beitrag wegen der [Laufpause - Schmerzen im Fuß]({{< ref "post/2015-06-29-vorfreude-nach-7-tagen-pause.markdown" >}}) von letzter Woche, war klar das ich mit dem Laufen wohl erst einmal eine kleine Pause einlegen muss. Daher wird dieser Beitrag hier ungewöhnlich kurz für meine Verhältnisse. Der Post soll ein wenig meine Vorfreude ausdrücken, dass ich morgen früh nach dann 7 Tagen Pause endlich wieder meine Laufschuhe schnüren kann.

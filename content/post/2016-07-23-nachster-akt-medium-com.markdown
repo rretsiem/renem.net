@@ -17,7 +17,9 @@ keywords:
 aliases:
 - /nächster-akt-medium-com-53b405c40891
 - /n%C3%A4chster-akt-medium-com-53b405c40891
-twit: https://twitter.com/rretsiem/statuses/756826889663184896
+- /n&auml;chster-akt-medium-com-53b405c40891
+syndication:
+- https://twitter.com/rretsiem/statuses/756826889663184896
 ---
 
 {{< figure src="https://cdn-images-1.medium.com/max/2000/1*mBRkfEBkjWd-IneAeROfxA.jpeg" attr="Daniel Roizer" attrlink="https://unsplash.com/@danny159">}}
