@@ -105,7 +105,7 @@ Da unser Rohbauer diese Woche die Baugrube auffüllen wollte, hatten wir Zeitdru
 
 Das positive daran ist aber, dass wir gutes Wetter (für einen Januar!!) hatten. Es regnete nicht und hat esa uch schon ein paar Tage davor schon nicht. Es war trotz des Bodens eine ordentliche Schlammschlacht.
 
-{{< picture src="/images/2018-01-31-ringgrabenkollektor00008" type="jpg" alt="" caption="Die Hälfte ist schon verfüllt." >}}
+{{< picture src="/images/2018-01-31-ringgrabenkollektor00009" type="jpg" alt="" caption="Die Hälfte ist schon verfüllt." >}}
 
 Der Boden ist bei uns sehr lehmig, was gut ist für den Kollektor, da immer schön feucht. Wir kommen aber bei der Baugrube auf Grund der leichten Hanglage nicht drum herum das mit Drainage und Sand auffüllen zu lassen. Mir wäre da zwar komplett in Lehm lieber gewesen aber dann hätten wir vor dem Haus vermutlich immer schön Pfützen.
 
