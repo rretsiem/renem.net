@@ -19,7 +19,8 @@ images:
 - /images/2018-01-31-ringgrabenkollektor00008.jpg
 - /images/2018-01-31-ringgrabenkollektor00009.jpg
 syndication:
--
+- http://www.haustechnikdialog.de/Forum/p/2605338
+- https://twitter.com/rretsiem/status/958647841467006976
 ---
 
 
@@ -44,7 +45,7 @@ Nach weiteren Recherchen bin ich dann auf die Lösung mit dem Ringgrabenkollekto
 
 Die Planung zu unserer Lösung mit dem RGK kann man im Detail im [Trenchplaner](https://grabenkollektor.waermepumpen-verbrauchsdatenbank.de/trenchplanner.html?id=de5PHZlf3Ij8m3AUcuGF) betrachten.
 
-Am vergangenen Wochenende nun ging es um den Teil _F, G & H_ (siehe Trenchplaner.) Vorbereitungen dazu wurden bereits vor dem setzen der Bodenplatte unter dem Keller getroffen. Denn hier wurden 2x 120mm KG-Rohre in ca. 1,2m Tiefe verlegt, noch bevor Isolierung, Drainage und Beton der Bodenplatte erstellt wurden. In Summe haben wir somit ca. 1,6m unter dieser die KG-Rohre liegen.
+Am vergangenen Wochenende nun ging es um den Teil _F, G & H_ (siehe Trenchplaner) Vorbereitungen dazu wurden bereits vor dem setzen der Bodenplatte unter dem Keller getroffen. Denn hier wurden 2x 120mm KG-Rohre in ca. 1,2m Tiefe verlegt, noch bevor Isolierung, Drainage und Beton der Bodenplatte erstellt wurden. In Summe haben wir somit ca. 1,6m unter dieser die KG-Rohre liegen.
 
 Das Wetter spielte mit und wir konnten den Teil am Freitag Abend, sowie am Samstag verlegen. Nach der ersten Soleleitung, bei der wir aus unseren Fehlern gelernt hatten, ging das einziehen der zweiten Leitung deutlich schneller. In Summe könnte man sagen, dass wir für die erste Leitung 6-8 Stunden benötigt haben. Für das Einziehen der zweiten Leitung ca. 2 Stunden.
 
@@ -90,7 +91,7 @@ Probleme machten uns dann die Bögen im späteren Technikraum noch einmal. Denn 
 
 {{< picture src="/images/2018-01-31-ringgrabenkollektor00008" type="jpg" alt="" caption="Geschafft! Beide Leitungen im Technikraum angekommen." >}}
 
-####Abwarten und Tee trinken
+#### Abwarten und Tee trinken
 
 Nun liegen die restlichen ca. 210m auf dem Grundstück etwas entfernt von der Hauptbaustelle und warten darauf im Garten verlegt zu werden.
 
