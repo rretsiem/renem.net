@@ -168,14 +168,17 @@ a {
     line-height: inherit;
     outline: 0;
     -webkit-transition: color .1s ease-out;
-    -webkit-transition-property: color;
+/*    -webkit-transition-property: color;
     -webkit-transition-duration: .1s;
     -webkit-transition-timing-function: ease-out;
+*/
     -webkit-transition-delay: initial;
     transition: color .1s ease-out;
+/*
     transition-property: color;
     transition-duration: .1s;
     transition-timing-function: ease-out;
+*/
     transition-delay: 0s
 }
 
@@ -538,14 +541,17 @@ input, textarea {
     background-image: none;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
     -webkit-transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-    -webkit-transition-property: border-color, box-shadow;
+/*    -webkit-transition-property: border-color, box-shadow;
     -webkit-transition-duration: .15s, .15s;
     -webkit-transition-timing-function: ease-in-out, ease-in-out;
+*/
     -webkit-transition-delay: initial, initial;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+/*
     transition-property: border-color, box-shadow;
     transition-duration: .15s, .15s;
     transition-timing-function: ease-in-out, ease-in-out;
+*/
     transition-delay: 0s, 0s;
     transition-delay: initial, initial
 }

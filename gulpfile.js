@@ -1,28 +1,34 @@
 var gulp = require('gulp');
 var $ = require('gulp-load-plugins')();
-var gulpUtil = require('gulp-util');
 
 var cp = require('child_process');
 var BrowserSync = require('browser-sync');
 
 var responsive = require('gulp-responsive');
-var imagemin = require('gulp-imagemin');
 var postcss = require('gulp-postcss');
 var concat = require('gulp-concat');
 var sourcemaps = require('gulp-sourcemaps');
 var changed = require('gulp-changed');
-var jpegtran = require('imagemin-jpegtran');
 var svgSprite = require('gulp-svg-sprite');
-var htmlmin = require('gulp-htmlmin');
 var swPrecache = require('sw-precache');
 var exec = require('child_process').execSync;
 var path = require('path');
+// gulp-util replacements
+// https://medium.com/gulpjs/gulp-util-ca3b1f9f9ac5
+// ## var gulpUtil = require('gulp-util');
+// ## var imagemin = require('gulp-imagemin');
+// ## var jpegtran = require('imagemin-jpegtran');
+// ## var htmlmin = require('gulp-htmlmin');
+// ## var httppost = require('gulp-post');
+// ## var pngquant = require('imagemin-pngquant');
+var log = require('fancy-log');
+var colors = require('ansi-colors');
+// end gulp-util replacements
+
 var runSequence = require('run-sequence');
 var del = require('del');
 var request = require('request');
-var httppost = require('gulp-post');
 var minify = require('gulp-minify');
-var pngquant = require('imagemin-pngquant');
 var debug = require('gulp-debug');
 
 const size = require('gulp-size');
@@ -54,9 +60,9 @@ var globs = {
 const isProduction = argv.p;
 
 if (isProduction) {
-  gulpUtil.log(gulpUtil.colors.bold.red('🚚  Production Mode'));
+  log(colors.bold(colors.red('🚚  Production Mode')));
 } else {
-  gulpUtil.log(gulpUtil.colors.bold.green('🔧  Development Mode'));
+  log(colors.bold(colors.green('🔧  Development Mode')));
 }
 
 /**
@@ -190,8 +196,8 @@ gulp.task('superfeedr', function() {
     },
     function (error, response, body) {
         if (!error && response.statusCode == 204) {
-          gulpUtil.log("pinged Superfeedr");
-          //  gulpUtil.log(body);
+          log("pinged Superfeedr");
+          //  log(body);
         }
     }
   );
@@ -203,8 +209,8 @@ gulp.task('sitemap', function() {
     'http://www.google.com/webmasters/sitemaps/ping?sitemap=https://renem.net/sitemap.xml',
     function (error, response, body) {
         if (!error && response.statusCode == 200) {
-          gulpUtil.log("pinged Google Sitemap");
-          //  gulpUtil.log(body);
+          log("pinged Google Sitemap");
+          //  log(body);
         }
     }
   );
@@ -234,38 +240,38 @@ gulp.task("hugo:build", (cb) => buildSite(cb, devOpts));
 // gulp.task('hugo:build', done =>
 //   // exec(command, (err, stdout) => {
 //   //   if (err) {
-//   //     gulpUtil.log(gulpUtil.colors.red(err));
+//   //     log(colors.red(err));
 //   //     browserSync.notify("Hugo build failed :(");
 //   //   } else {
 //   //     browserSync.reload();
 //   //   }
-//   //   gutil.log(gulpUtil.colors.yellow(stdout));
+//   //   gutil.log(colors.yellow(stdout));
 //   //   done();
 //   // })
 //   // const args = options ? defaultArgs.concat(options) : defaultArgs;
-//   gulpUtil.log(gulpUtil.colors.green("Options: " + devOpts));
+//   log(colors.green("Options: " + devOpts));
 //   return cp.spawn(hugoBin, devOpts, {stdio: "inherit"}).on("close", (code) => {
 //     if (code === 0) {
 //       browserSync.reload();
-//       cb(gulpUtil.log(gulpUtil.colors.yellow(stdout)));
+//       cb(log(colors.yellow(stdout)));
 //     } else {
 //       browserSync.notify("Hugo build failed :(");
-//       cb(gulpUtil.log(gulpUtil.colors.red("Hugo build failed")));
+//       cb(log(colors.red("Hugo build failed")));
 //     }
 //   });
 // );
 
 function buildSite(cb, options) {
   const args = options ? defaultArgs.concat(options) : defaultArgs;
-  gulpUtil.log(gulpUtil.colors.green("Args: " + options));
+  log(colors.green("Args: " + options));
   return cp.spawn(hugoBin, args, {stdio: "inherit"}).on("close", (code) => {
     if (code === 0) {
       browserSync.reload();
-      // cb(gulpUtil.log(gulpUtil.colors.yellow(stdout)));
+      // cb(log(colors.yellow(stdout)));
       cb();
     } else {
       browserSync.notify("Hugo build failed :(");
-      cb(gulpUtil.log(gulpUtil.colors.red("Hugo build failed")));
+      cb(log(colors.red("Hugo build failed")));
     }
   });
 }

@@ -1,7 +1,9 @@
 +++
 date = "2017-03-03"
-title = "Oops, you are offline."
+title = "Offline."
 type = "offline"
 +++
 
-You should try to find some internet connection to browse here.
+# Offline
+
+Scheinbar besteht im Moment keine Internetverbindung und die angeforderte Seite wurde noch nicht gespeichert.
