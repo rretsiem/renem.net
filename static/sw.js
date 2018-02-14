@@ -101,7 +101,7 @@ if (navigator.serviceWorker) {
     const request = event.request;
     const url = new URL(request.url);
 
-    if (url.href.indexOf('https://renem.net') !== 0 || url.href.indexOf('https://www.renem.net') !== 0) {
+    if (url.href.indexOf('https://renem.net') !== 0) {
       return;
     }
 
