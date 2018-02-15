@@ -1,2 +1,8 @@
+[build]
+  functions = "lambda"
+
+[context.branch-deploy.environment]
+  LAMBDA_ENDPOINT = "netlify-lambda"
+
 [context.production.environment]
-  HUGO_VERSION = "0.36"
+  HUGO_VERSION = "0.36.1"
