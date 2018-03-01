@@ -7,7 +7,7 @@ categories:
 tags:
 - laufen
 syndication:
--
+- https://twitter.com/rretsiem/status/969314164530442240
 ---
 
 Nun ist der Winter doch noch angekommen hier in Bayern und wir haben bereits seit 2 Wochen leichte bis tiefere Minusgrade, auch tagsüber

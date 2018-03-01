@@ -11,10 +11,8 @@ tags:
 images:
 - /images/2018-03-01-iPhone-Batterietausch-1.png
 syndication:
--
+- https://twitter.com/rretsiem/status/969314481586262018
 ---
-
-
 
 Nachdem man viel negatives über das aktuelle Batterietausch-Programm für ältere iPhones hört, kommt hier einmal mein Bericht und wie das ganze abgelaufen ist.
 
@@ -55,4 +53,3 @@ Nagelneuer Akku, der mich jetzt hoffentlich noch bis zum Herbst ohne Probleme be
 ### Fazit
 
 Wie man oben lesen kann, alles ohne Probleme und wirklich schnell. Merkwürdig ist nur, das man den halben Tag ohne ein Telefon in der Tasche, sich ein wenig "nackt" vorkommt.
-
