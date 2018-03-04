@@ -10,6 +10,8 @@ images:
 - /images/2018-03-04-fruhlingslauf-1.jpg
 syndication:
 - https://www.instagram.com/p/Bf6ljjhDCzI
+- https://runalyze.com/shared/20xpe
+- https://twitter.com/rretsiem/status/970410057929289741
 ---
 
 {{< picture src="/images/2018-03-04-fruhlingslauf-1" type="jpg" alt="" caption="Endlich wird es Frühling." >}}
