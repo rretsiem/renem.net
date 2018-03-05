@@ -13,6 +13,7 @@ syndication:
 - https://runalyze.com/shared/20xpe
 - https://twitter.com/rretsiem/status/970410057929289741
 - https://www.flickr.com/photos/renene26/40578546262/
+- https://plus.google.com/+Ren%C3%A9Meister/posts/A7m67kJP3DL
 ---
 
 {{< picture src="/images/2018-03-04-fruhlingslauf-1" type="jpg" alt="" caption="Endlich wird es Frühling." >}}
