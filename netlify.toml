@@ -1,5 +1,5 @@
 [build]
-  functions = "./functions/"
+  functions = "./functions"
 
 [context.branch-deploy.environment]
   LAMBDA_ENDPOINT = "netlify-lambda"
