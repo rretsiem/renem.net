@@ -1,4 +1,4 @@
-const request = require('request');
+const request = require('request').post;
 
 exports.handler = function(event, context, callback) {
   var e = JSON.parse(event.body);
