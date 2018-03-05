@@ -9,10 +9,9 @@ firebase.json
 .firebaserc
 .git/
 node_modules/
-src/images/
-src/images/_resize
-src/images/*
-public/
-public/*
-functions/
-functions/*
+/src/images/
+/src/images/_resize
+/src/images/*
+/public/
+/public/*
+/functions/
