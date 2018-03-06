@@ -70,7 +70,7 @@ categories:
 - instagram
 date: ${date.toISOString().slice(0,-14)}
 images:
-- images/instagram/${time}.jpg
+- /images/instagram/${time}.jpg
 originalURL: ${url}
 syndication:
 - ${url}
