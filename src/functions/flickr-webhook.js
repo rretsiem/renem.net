@@ -9,8 +9,6 @@ exports.handler = function(event, context, callback) {
   const { caption, url, image, key } = JSON.parse(event.body);
   const { IG_GIT_USER: user, IG_GIT_TOKEN: token, IG_GIT_REPO: repo, IG_SECRET_KEY } = process.env;
 
-console.log("Flickr webhook initiated!");
-
   if (key !== IG_SECRET_KEY) return callback(null, { statusCode: 401, body: 'Incorrect key supplied' });
   if (!image || !caption || !url) return callback(null, { statusCode: 400, body: 'Params not supplied' });
 
@@ -28,19 +26,16 @@ console.log("Flickr webhook initiated!");
       console.log("Flickr url: " + url);
       console.log("Flickr image: " + image);
       console.log("Flickr title: " + caption);
-    },
-/*
-    function scrape_image_from_instagram(callback){
-      const imageSplit = image.split('/');
-      const imageURL = 'https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s1080x1080/e15/' + imageSplit[imageSplit.length - 1];
+
+      // const imageURL = 'https://scontent.cdninstagram.com/hphotos-xaf1/t51.2885-15/s1080x1080/e15/' + imageSplit[imageSplit.length - 1];
       let imageData = '';
-      https.get(imageURL, (resp) => {
+      https.get(image, (resp) => {
         resp.setEncoding('base64');
         resp.on('data', (data) => { imageData += data});
         resp.on('end', () => callback(null, imageData));
       }).on('error', (e) => new Error(`Error scraping image: ${e.message}`));
-    },
 
+    },
 
     function upload_image_blob(image, callback) {
       github.gitdata.createBlob({
@@ -71,25 +66,25 @@ console.log("Flickr webhook initiated!");
     // Create a tree ready to commit
     function create_tree(result, callback){
       const content = `---
-title: Instagram - ${date.toString()}
+title: Flickr - ${date.toString()}
 categories:
 - photo
-- instagram
+- flickr
 date: ${date.toISOString().slice(0,-14)}
 images:
-- /images/instagram/${time}.jpg
+- /images/flickr/${time}.jpg
 originalURL: ${url}
 syndication:
 - ${url}
 ---
 
-{{< picture src="/images/instagram/${time}" type="jpg" alt="" caption="${caption}" >}}
+{{< picture src="/images/flickr/${time}" type="jpg" alt="" caption="${caption}" >}}
 
 <!--more-->
 
 `;
       const files = [{
-        path: `static/images/instagram/${time}.jpg`,
+        path: `static/images/flickr/${time}.jpg`,
         mode: '100644',
         type: 'blob',
         sha: result.image
@@ -120,7 +115,7 @@ syndication:
         owner: user,
         user: user,
         repo: repo,
-        message: `New instagram image: ${date.toString()}`,
+        message: `New Flickr image: ${date.toString()}`,
         tree: result.tree,
         parents: [result.commit]
       }, function(err, data){
@@ -129,9 +124,9 @@ syndication:
         result.new = data.data.sha;
         callback(null, result);
       });
-    },
+    }//,
 
-
+/*
     function update_git_reference(result, callback){
       github.gitdata.updateReference({
         owner: user,
