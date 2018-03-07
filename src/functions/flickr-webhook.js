@@ -22,7 +22,7 @@ exports.handler = function(event, context, callback) {
   });
 
   async.waterfall([
-    function scrape_image_from_flickr(calbback) {
+    function scrape_image_from_flickr(callback) {
       console.log("Flickr url: " + url);
       console.log("Flickr image: " + image);
       console.log("Flickr title: " + caption);
@@ -124,7 +124,7 @@ syndication:
         result.new = data.data.sha;
         callback(null, result);
       });
-    }//,
+    },
 
 /*
     function update_git_reference(result, callback){
