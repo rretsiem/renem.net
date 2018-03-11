@@ -63,8 +63,9 @@ exports.handler = function(event, context, callback) {
 
     // Create a tree ready to commit
     function create_tree(result, callback){
+      // const postDate = new Date().toISOString().replace('T', ' ').substr(0, 19);
       const content = `---
-title: Instagram - ${date.toString()}
+title: Instagram - ${date.toISOString().slice(0,-14)}
 categories:
 - photo
 - instagram
@@ -76,7 +77,7 @@ syndication:
 - ${url}
 ---
 
-{{< picture src="/images/instagram/${time}" type="jpg" alt="" caption="${caption}" >}}
+![${caption}](/images/instagram/${time}.jpg)
 
 <!--more-->
 
