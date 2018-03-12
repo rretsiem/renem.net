@@ -69,7 +69,7 @@ if (isProduction) {
  * DevMode Config
  * @type {String}
  */
-const devOpts = !isProduction ? ["--buildDrafts", "--baseURL", devHost +':' + devPort + '/'] : '';
+const devOpts = !isProduction ? ["--buildDrafts", "--baseURL", devHost +':' + devPort + '/'] : ["--cleanDestinationDir"];
 
 // gulp.task("hugo", (cb) => buildSite(cb, devOpts));
 gulp.task("build", ["css", "compress", "svg", "img:build", "hugo:build", "generate-service-worker"]);
@@ -237,29 +237,6 @@ gulp.task('generate-service-worker', function(callback) {
 const command = `hugo -v ${devOpts}`;
 
 gulp.task("hugo:build", (cb) => buildSite(cb, devOpts));
-// gulp.task('hugo:build', done =>
-//   // exec(command, (err, stdout) => {
-//   //   if (err) {
-//   //     log(colors.red(err));
-//   //     browserSync.notify("Hugo build failed :(");
-//   //   } else {
-//   //     browserSync.reload();
-//   //   }
-//   //   gutil.log(colors.yellow(stdout));
-//   //   done();
-//   // })
-//   // const args = options ? defaultArgs.concat(options) : defaultArgs;
-//   log(colors.green("Options: " + devOpts));
-//   return cp.spawn(hugoBin, devOpts, {stdio: "inherit"}).on("close", (code) => {
-//     if (code === 0) {
-//       browserSync.reload();
-//       cb(log(colors.yellow(stdout)));
-//     } else {
-//       browserSync.notify("Hugo build failed :(");
-//       cb(log(colors.red("Hugo build failed")));
-//     }
-//   });
-// );
 
 function buildSite(cb, options) {
   const args = options ? defaultArgs.concat(options) : defaultArgs;
