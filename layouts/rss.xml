@@ -8,15 +8,16 @@
     <managingEditor>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</managingEditor>{{end}}{{ with .Site.Author.email }}
     <webMaster>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</webMaster>{{end}}{{ with .Site.Copyright }}
     <copyright>{{.}}</copyright>{{end}}{{ if not .Date.IsZero }}
-    <lastBuildDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</lastBuildDate>{{ end }}
-    <atom:link href="{{.Permalink}}" rel="self" type="application/rss+xml" />
-    {{ range (where .Data.Pages "Type" "!=" "page") }}
+    <lastBuildDate>{{ .Site.LastChange.Format "Mon, 02 Jan 2006 15:04:05 GMT" | safeHTML }}</lastBuildDate>{{ end }}
+    <link rel="self" href="{{.Permalink}}index.xml" type="application/rss+xml" xmlns="http://www.w3.org/2005/Atom" />
+    <link rel="hub"  href="https://renem.superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
+    {{ range first (sub .Site.Params.RSSLimit 0) (where .Site.Pages "Type" "!=" "page") }}
     <item>
       {{- if ne .Type "photos" }}
       <title>{{ .Title }}</title>
       {{- end }}
       <link>{{ .Permalink }}</link>
-      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 +02:00" | safeHTML }}</pubDate>
+      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 +0200" | safeHTML }}</pubDate>
       {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
       <guid>{{ .Permalink }}</guid>
       <description>{{ .Content | html }}</description>

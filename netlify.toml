@@ -5,4 +5,4 @@
   LAMBDA_ENDPOINT = "netlify-lambda"
 
 [context.production.environment]
-  HUGO_VERSION = "0.37"
+  HUGO_VERSION = "0.37.1"

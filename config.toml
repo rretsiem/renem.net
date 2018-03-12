@@ -33,7 +33,7 @@ notAlternative = true
 [Params]
   description = "Just my 2 cents…"
   Paginate = 20
-  RSSLimit = 20
+  RSSLimit = 25
   author = "René" # add your company name
   license = "CC-BY-NC-SA"
   github = "rretsiem" # add your github profile name
