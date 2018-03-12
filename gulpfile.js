@@ -72,9 +72,9 @@ if (isProduction) {
 const devOpts = !isProduction ? ["--buildDrafts", "--baseURL", devHost +':' + devPort + '/'] : ["--cleanDestinationDir"];
 
 // gulp.task("hugo", (cb) => buildSite(cb, devOpts));
-gulp.task("build", ["css", "compress", "svg", "img:build", "hugo:build", "generate-service-worker"]);
+gulp.task("build", ["css", "compress", "svg", "img:build", "hugo:build"]);
 
-gulp.task("build:netlify", ["clean", "hugo:build", "generate-service-worker"]);
+gulp.task("build:netlify", ["clean", "hugo:build"]);
 
 gulp.task('compress', function() {
   gulp.src('./src/js/*.js')

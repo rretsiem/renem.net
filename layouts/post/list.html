@@ -11,11 +11,15 @@
 			{{ .Render "li" }}
 	{{ end }}
 	{{ partialCached "pagination.html" . }}
+	<div class="comment">Alle Beiträge findet man auch via <a href="/categories/">Kategorien</a> oder <a href="/tags/">Tags</a>, oder im <a href="/archive/">Archiv</a>.</div>
+
 	</div>
 </main>
 {{ partialCached "footer.html" . }}
 
+<!--
 <script async type='text/javascript' charset="utf-8" src="/js/service-worker-registration.js"></script>
 <script defer type='text/javascript' charset="utf-8" src="/js/serviceWorkerSendMessage.js"></script>
+-->
 </body>
 </html>
