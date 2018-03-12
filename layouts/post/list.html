@@ -1,0 +1,21 @@
+{{ $paginator := .Paginate (where .Data.Pages "Type" "!=" "page") }}
+
+{{ partial "head.html" . }}
+{{ partialCached "header.html" . }}
+<main class="content" role="main">
+	{{ if .IsHome }}
+	<span class="p-name hidden">{{ .Site.Title }}</span>
+	{{ end }}
+	<div class="container">
+	{{ range $paginator.Pages }}
+			{{ .Render "li" }}
+	{{ end }}
+	{{ partialCached "pagination.html" . }}
+	</div>
+</main>
+{{ partialCached "footer.html" . }}
+
+<script async type='text/javascript' charset="utf-8" src="/js/service-worker-registration.js"></script>
+<script defer type='text/javascript' charset="utf-8" src="/js/serviceWorkerSendMessage.js"></script>
+</body>
+</html>
