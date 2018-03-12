@@ -2,7 +2,7 @@
 title: "iPhone Batterietausch – Ein Bericht"
 date: 2018-03-01T16:42:41+01:00
 categories:
--
+- blog
 description: "Nachdem man viel negatives über das aktuelle Batterietausch-Programm für ältere iPhones hört, kommt hier einmal mein Bericht und wie das ganze abgelaufen ist."
 draft: false
 tags:
