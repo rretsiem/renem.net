@@ -2,7 +2,7 @@
 
 {{ partial "head.html" . }}
 {{ partialCached "header.html" . }}
-<main class="content" role="main">
+<main class="content h-feed" role="main">
 	{{ if .IsHome }}
 	<span class="p-name hidden">{{ .Site.Title }}</span>
 	{{ end }}
