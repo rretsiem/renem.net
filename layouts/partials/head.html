@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="de" prefix="og: http://ogp.me/ns#" xmlns:og="http://ogp.me/ns#">
     <head>
-        {{- partial "meta.html" . -}}
+        {{- partialCached "meta.html" . -}}
         <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
         <link rel="canonical" href="{{ .Permalink }}">
         <!-- custom css here -->
