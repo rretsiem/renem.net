@@ -13,6 +13,7 @@ syndication:
 - https://www.instagram.com/p/BgeEcx5DX3l/
 - https://runalyze.com/shared/22cuf
 - https://www.strava.com/activities/1459479547
+- https://twitter.com/rretsiem/status/975482804501958656
 ---
 
 
@@ -50,4 +51,3 @@ Der längste Lauf seit [September 2017](https://runalyze.com/shared/1mooi) und i
 Ab nächster Woche ist mein Resturlaub vorbei und ich muss unter der Woche wieder in den Abendstunden laufen, was es nicht ganz einfach macht 1-1,5 Stunden noch zu laufen bei Dunkelheit. Ich versuche auf jeden Fall 4 Läufe einzuplanen und auch nächsten Sonntag wieder ca. 50km erreicht zu haben.
 
 Da ich mich aber weiterhin für den Halbmarathon Ende April nicht angemeldet habe – mein Plan ist eine Nachmeldung – kommt erst einmal kein Stress auf unbedingt etwas zu erreichen. Vielleicht läuft es sich deshalb gerade so gut.
-
