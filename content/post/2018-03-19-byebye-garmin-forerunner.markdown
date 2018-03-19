@@ -12,7 +12,7 @@ images:
 - /images/2018-03-19-byebye-garmin-1.jpg
 - /images/2018-03-19-byebye-garmin-2.jpg
 syndication:
--
+- https://twitter.com/rretsiem/status/975859286168522752
 ---
 
 
