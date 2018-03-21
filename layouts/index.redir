@@ -12,7 +12,7 @@
 #/.well-known/webfinger* https://fed.brid.gy/.well-known/webfinger* 200
 # /api/*  https://api.example.com/:splat  200
 # search
-/search q=:query https://duckduckgo.com/?q=:query%20site:renem.net
+/search q=:query https://duckduckgo.com/?q=:query&site:renem.net
 # https://duckduckgo.com/?q=search&kp=-1&kl=us-en
 # /**        /index.html
 # Netlify redirects. See https://www.netlify.com/docs/redirects/
