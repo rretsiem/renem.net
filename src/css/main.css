@@ -405,8 +405,8 @@ audio, canvas, img, video {
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    color: #fff;
-    border: 1px solid transparent;
+    /* color: #fff; */
+    /* border: 1px solid transparent; */
     border-radius: 5px;
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;

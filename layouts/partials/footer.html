@@ -49,7 +49,10 @@
                 {{ if eq .Title "About" }}
                 <img src="{{ .Site.BaseURL }}assets/renem_profile.png" alt="René profile photo" class=" hidden u-photo">
                 {{ end }}
-                <a class="p-nickname u-email email metatag" alt="Mail senden" rel="me" href="mailto:{{ .Site.Params.email}}">{{ .Site.Author.nick }}</a>
+                <a class="p-nickname u-email email metatag" alt="Mail senden" rel="me" href="mailto:{{ .Site.Params.email}}">
+                  <span class="tooltip"><svg class="icon"><use xlink:href="#mail" /><title>Mail senden</title></svg></span>
+                </a>
+
           </section>
           <setion class="footer-info">
             This site is built with <a href="https://gohugo.io">Hugo</a> and hosted on <a href="https://netlify.com">Netlify</a>. The source code is hosted on <a href="https://github.com">Github</a>.

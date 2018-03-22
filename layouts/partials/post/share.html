@@ -2,15 +2,15 @@
     <section class="share">
       <indie-action do="post" with="{{ .Permalink }}">
         <span>Share:
-        <a class="icon-twitter" rel="me noopener" href="https://twitter.com/share?text={{ .Title }}&url={{ .Permalink }}"
+        <a class="icon-twitter" alt="Share on Twitter" rel="me noopener" href="https://twitter.com/share?text={{ .Title }}&url={{ .Permalink }}"
             onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
             <svg class="icon"><use xlink:href="#twitter" /></svg>
         </a>
-        <a class="icon-facebook" rel="me noopener" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}"
+        <a class="icon-facebook" alt="Share on Facebook " rel="me noopener" href="https://www.facebook.com/sharer/sharer.php?u={{ .Permalink }}"
             onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
             <svg class="icon"><use xlink:href="#facebook" /></svg>
         </a>
-        <a class="icon-google-plus" rel="me noopener" href="https://plus.google.com/share?url={{ .Permalink }}"
+        <a class="icon-google-plus" alt="Share on Google+" rel="me noopener" href="https://plus.google.com/share?url={{ .Permalink }}"
            onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
             <svg class="icon"><use xlink:href="#google-plus" /></svg>
         </a>
