@@ -17,30 +17,14 @@
             <a href="https://www.github.com/{{ . }}" title="GitHub" rel="me noopener noreferrer" target="_blank"><span class="tooltip"><svg class="icon"><use xlink:href="#github" /><title>Github</title></svg></span></a>
           {{ end }}
           {{ if .RSSLink }}
-          <!--
-
-            <a href="{{ .RSSLink }}" rel="me noopener" onclick="(function(btn){var z=document.createElement('script');document.subtomeBtn=btn;z.src='https://www.subtome.com/load.js';document.body.appendChild(z);})(this);return false;" data-subtome-resource="{{ .Site.BaseURL }}" data-subtome-feeds="{{ .RSSLink }}" data-subtome-suggested-service-name="Woodwind" data-subtome-suggested-service-url="http://woodwind.xyz/subscribe?origin={feed}" title="Subscribe">
+            <a href="{{ .RSSLink }}" rel="me noopener noreferrer" id="subToMeLink" data-subtome-resource="{{ .Site.BaseURL }}" data-subtome-feeds="{{ .RSSLink }}" data-subtome-suggested-service-name="Woodwind" data-subtome-suggested-service-url="http://woodwind.xyz/subscribe?origin={feed}" title="Subscribe">
               <span class="tooltip"><svg class="icon"><use xlink:href="#rss" /><title>Subscribe</title></svg></span>
             </a>
--->
-<a href="{{ .RSSLink }}" rel="me noopener noreferrer" id="subToMeLink" data-subtome-resource="{{ .Site.BaseURL }}" data-subtome-feeds="{{ .RSSLink }}" data-subtome-suggested-service-name="Woodwind" data-subtome-suggested-service-url="http://woodwind.xyz/subscribe?origin={feed}" title="Subscribe">
-  <span class="tooltip"><svg class="icon"><use xlink:href="#rss" /><title>Subscribe</title></svg></span>
-</a>
-
-
           {{ else }}
-<!--
-<a href="{{ .Site.BaseURL }}index.xml" rel="me noopener" onclick="(function(btn){var z=document.createElement('script');document.subtomeBtn=btn;z.src='https://www.subtome.com/load.js';document.body.appendChild(z);})(this);return false;" data-subtome-resource="{{ .Site.BaseURL }}" data-subtome-feeds="{{ .Site.BaseURL }}" data-subtome-suggested-service-name="Woodwind" data-subtome-suggested-service-url="http://woodwind.xyz/subscribe?origin={feed}" title="Subscribe">
-  <span class="tooltip"><svg class="icon"><use xlink:href="#rss" /><title>Subscribe</title></svg></span>
-</a>
--->
             <a href="{{ .Site.BaseURL }}index.xml" rel="me noopener" id="subToMeLink" data-subtome-resource="{{ .Site.BaseURL }}" data-subtome-feeds="{{ .Site.BaseURL }}" data-subtome-suggested-service-name="Woodwind" data-subtome-suggested-service-url="http://woodwind.xyz/subscribe?origin={feed}" title="Subscribe">
               <span class="tooltip"><svg class="icon"><use xlink:href="#rss" /><title>Subscribe</title></svg></span>
             </a>
-
           {{ end }}
-
-
           <section class="feet h-card vcard">&copy; <a href="{{ .Site.BaseURL }}" class="p-name u-url fn" rel="me">{{ .Site.Params.author }}</a> {{ now.Format "2006"}} | Licenced under
                 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
                 class="metatag" rel="license">
@@ -57,9 +41,6 @@
           <setion class="footer-info">
             This site is built with <a href="https://gohugo.io">Hugo</a> and hosted on <a href="https://netlify.com">Netlify</a>. The source code is hosted on <a href="https://github.com">Github</a>.
           </section>
-          <!--
-          <section>Theme by <a href="http://www.jrdnbwmn.com">Jordan Bowman</a>. Generated with <a href="http://gohugo.io/">Hugo</a>.</section>
--->
         </div>
     </footer>
 
