@@ -3,7 +3,7 @@ title: "Informiert sein"
 date: 2018-03-26T21:43:46+02:00
 categories:
 - reply
-description: "Woher beziehe ich eigentlich meine Informationen zum täglichen Geschehen?"
+description: "Auf den Beitrag von Thopex musste ich natürlich auch direkt antworten, da mir das Thema auch unter den Nägeln brennt hier einen objektiveren Blick auf das Tagesgeschehen zu bekommen. Daher hier mal mein Senf.?"
 draft: false
 tags:
 - news
