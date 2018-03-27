@@ -11,7 +11,7 @@ tags:
 images:
 - /images/2018-03-27-apple-podcasts-app-warteliste-anzeigen-1.jpg
 syndication:
--
+- https://twitter.com/rretsiem/status/978723228729389056
 ---
 
 Weshalb nur sind solche relevanten Funktionen in Apples eigener Podcast so schwer zu finden?
