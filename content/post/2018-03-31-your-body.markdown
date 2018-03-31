@@ -1,0 +1,27 @@
+---
+title: "Your Body"
+date: 2018-03-31T21:25:04+02:00
+categories:
+- quote
+- sport
+description: ""
+draft: false
+tags:
+- comment
+- quote
+syndication:
+-
+---
+
+Das folgende Zitat mit gerade einmal 18 Wörter trifft genau meine Einstellung.
+
+> _Your body is a temple; treat it like one. If you don’t have your health, you’ve got nothing._
+
+_Unknown Source_
+
+Als ich diesen Satz gelesen habe, habe ich mich damit sofort identifizieren können und daher muss er einfach hier stehen.
+
+Leider weiß ich nicht mehr wo ich dieses Zitat gelesen habe, vielleicht ist es schon uralt und gar nicht aktuell geschrieben worden. Ich ergäne aber gern eine valide Quelle wenn mir jemand eine nennen kann. 
+
+<!--more-->
+
