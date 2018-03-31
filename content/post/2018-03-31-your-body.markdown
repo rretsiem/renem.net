@@ -10,10 +10,10 @@ tags:
 - comment
 - quote
 syndication:
--
+- https://twitter.com/rretsiem/status/980171852961189890
 ---
 
-Das folgende Zitat mit gerade einmal 18 Wörter trifft genau meine Einstellung.
+Das folgende Zitat mit gerade einmal 18 Wörtern trifft genau meine Einstellung.
 
 > _Your body is a temple; treat it like one. If you don’t have your health, you’ve got nothing._
 
@@ -21,7 +21,6 @@ _Unknown Source_
 
 Als ich diesen Satz gelesen habe, habe ich mich damit sofort identifizieren können und daher muss er einfach hier stehen.
 
-Leider weiß ich nicht mehr wo ich dieses Zitat gelesen habe, vielleicht ist es schon uralt und gar nicht aktuell geschrieben worden. Ich ergäne aber gern eine valide Quelle wenn mir jemand eine nennen kann. 
+Leider weiß ich nicht mehr wo ich dieses Zitat gelesen habe, vielleicht ist es schon uralt und gar nicht aktuell geschrieben worden. Ich ergäne aber gern eine valide Quelle wenn mir jemand eine nennen kann.
 
 <!--more-->
-

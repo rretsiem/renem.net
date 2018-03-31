@@ -10,7 +10,6 @@ var concat = require('gulp-concat');
 var sourcemaps = require('gulp-sourcemaps');
 var changed = require('gulp-changed');
 var svgSprite = require('gulp-svg-sprite');
-var swPrecache = require('sw-precache');
 var exec = require('child_process').execSync;
 var path = require('path');
 // gulp-util replacements
@@ -214,20 +213,6 @@ gulp.task('sitemap', function() {
         }
     }
   );
-});
-
-
-gulp.task('generate-service-worker', function(callback) {
-  var path = require('path');
-  var swPrecache = require('sw-precache');
-  var rootDir = 'public';
-
-  swPrecache.write(path.join(rootDir, 'service-worker.js'), {
-    /** This is the place where you could change / make the patterns on which files should be going into precache **/
-    // staticFileGlobs: [rootDir + '/**/*.{js,html,css,svg}'],
-    staticFileGlobs: [rootDir + '/**/*.{html,css,svg}'],
-    stripPrefix: rootDir
-  }, callback);
 });
 
 /**
