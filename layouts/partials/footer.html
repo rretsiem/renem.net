@@ -1,6 +1,9 @@
     <footer id="site-footer">
         {{ partialCached "search.html" . }}
         <div class="container">
+          {{ with .Site.Params.microblog_name }}
+            <a href="https://micro.blog/{{ . }}" title="Micro.blog" rel="me noopener noreferrer" target="_blank"><span class="tooltip"><svg class="icon"><use xlink:href="#microblog" /><title>Micro.blog</title></svg></span></a>
+          {{ end }}
           {{ with .Site.Params.twitter_name }}
             <a href="https://www.twitter.com/{{ . }}" title="Twitter" rel="me noopener noreferrer" target="_blank"><span class="tooltip"><svg class="icon"><use xlink:href="#twitter" /><title>Twitter</title></svg></span></a>
           {{ end }}
@@ -17,11 +20,11 @@
             <a href="https://www.github.com/{{ . }}" title="GitHub" rel="me noopener noreferrer" target="_blank"><span class="tooltip"><svg class="icon"><use xlink:href="#github" /><title>Github</title></svg></span></a>
           {{ end }}
           {{ if .RSSLink }}
-            <a href="{{ .RSSLink }}" rel="me noopener noreferrer" id="subToMeLink" data-subtome-resource="{{ .Site.BaseURL }}" data-subtome-feeds="{{ .RSSLink }}" data-subtome-suggested-service-name="Woodwind" data-subtome-suggested-service-url="http://woodwind.xyz/subscribe?origin={feed}" title="Subscribe">
+            <a href="{{ .RSSLink }}" rel="me noopener noreferrer" title="Subscribe">
               <span class="tooltip"><svg class="icon"><use xlink:href="#rss" /><title>Subscribe</title></svg></span>
             </a>
           {{ else }}
-            <a href="{{ .Site.BaseURL }}index.xml" rel="me noopener" id="subToMeLink" data-subtome-resource="{{ .Site.BaseURL }}" data-subtome-feeds="{{ .Site.BaseURL }}" data-subtome-suggested-service-name="Woodwind" data-subtome-suggested-service-url="http://woodwind.xyz/subscribe?origin={feed}" title="Subscribe">
+            <a href="{{ .Site.BaseURL }}index.xml" rel="me noopener" title="Subscribe">
               <span class="tooltip"><svg class="icon"><use xlink:href="#rss" /><title>Subscribe</title></svg></span>
             </a>
           {{ end }}
@@ -52,5 +55,5 @@
     <script async type='text/javascript' charset="utf-8" src="/js/indieconfig.js"></script>
     <script async type='text/javascript' charset="utf-8" src="/js/webaction.js"></script>
     <!-- helpers -->
-    <script async type='text/javascript' charset="utf-8" src="/js/helpers.js"></script>
+    <!-- <script async type='text/javascript' charset="utf-8" src="/js/helpers.js"></script> -->
     <script async type='text/javascript' charset="utf-8" src="/js/service-worker-registration.js"></script>

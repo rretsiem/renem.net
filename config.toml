@@ -27,6 +27,7 @@ mediatype = "text/netlify"
 baseName = "_headers"
 isPlainText = true
 notAlternative = true
+sectionPagesMenu = "main"
 [Author]
   name = "René"
   email = "rene@renem.net"
@@ -40,6 +41,7 @@ notAlternative = true
   twitter_name = "rretsiem" # add your twitter profile
   flickr_name = "renene26" # add your flickr username
   instagram = "rene.meister" # add your instagram username
+  microblog_name = "renem"
   email = "rene@renem.net"
   ISO8601 = "2006-01-02T15:04:05+02:00"
   webSub = "https://renem.superfeedr.com/"
@@ -54,31 +56,27 @@ notAlternative = true
 [[menu.main]]
         name = "Artikel"
         weight = 1
-        pre = "Archive List of Blog Articles"
-        identifier = "mainarticles"
-        url = "/post"
+        identifier = "post"
+        url = "/post/"
 [[menu.main]]
         name = "Photos"
-        weight = 1
-        pre = "Photo Beiträge"
-        identifier = "mainphotos"
-        url = "/photos"
+        weight = 2
+        identifier = "photos"
+        url = "/photos/"
 [[menu.main]]
         name = "Microblog"
         weight = 3
-        pre = "Short posts and social interactions"
-        identifier = "mainmicroblog"
-        url = "/microblog"
+        identifier = "microblog"
+        url = "/microblog/"
 [[menu.main]]
         name = "Archiv"
         weight = 4
-        identifier = "mainarchive"
-        url = "/archive"
+        identifier = "archive"
+        url = "/archive/"
 [[menu.main]]
         name = "About"
-        url = "/about"
-        pre = "About ReneM"
-        identifier = "mainabout"
+        url = "/about/"
+        identifier = "about"
         weight = 5
 #[related]
 # Only include matches with rank >= threshold. This is a normalized rank between 0 and 100.

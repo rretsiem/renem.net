@@ -163,7 +163,8 @@ p {
 }
 
 a {
-    color: #d40d0a;
+    /* color: #d40d0a; */
+    color: rgba(235, 59, 90,1.0);
     text-decoration: none;
     line-height: inherit;
     outline: 0;
@@ -183,12 +184,9 @@ a {
 }
 
 a:hover {
-    color: #b3b3b3;
-    text-decoration: underline
-}
-
-a:visited {
-  color: #b5170c;
+    /* color: #b3b3b3; */
+    color: rgba(165, 177, 194,1.0);
+    text-decoration: underline;
 }
 
 p a, p a:visited {
@@ -238,13 +236,14 @@ blockquote:after, blockquote:before, q:after, q:before {
 
 blockquote {
     max-width: 100%;
-    border-left: 5px solid #e6e6e6;
+    border-left: 1px solid rgba(235, 59, 90, 1);
     margin: 0 0 1rem;
 }
 
 blockquote, q {
     quotes: none;
-    font-size: 100%
+    font-size: 100%;
+    color: rgba(75, 101, 132,1.0);
 }
 
 blockquote > p {
@@ -624,7 +623,8 @@ hr {
     padding: 0;
     margin-top: 1rem;
     margin-bottom: 1rem;
-    border-top: 1px solid rgba(13, 13, 10, .1)
+    /* border-top: 1px solid rgba(13, 13, 10, .1) */
+    border-top: 1px solid rgba(75, 101, 132, 0.4);
 }
 
 ::-moz-selection {
@@ -669,18 +669,20 @@ hr {
 
 .heading {
   text-decoration: none !important;
-  color: #555 !important;
+  /* color: #555 !important; */
+  color: rgba(75, 101, 132,1.0);
 }
 
 .heading a:hover {
-  text-decoration: none;
-  color: #555;
+  /* text-decoration: none; */
+  /* color: #555; */
 }
 
 .blog-description {
     text-transform: uppercase;
     letter-spacing: 4px;
-    color: #777;
+    /* color: #777; */
+    color: rgba(119, 140, 163, 0.9);
     font-size: 80%
 }
 
@@ -708,7 +710,7 @@ article.li {
 article footer {
     margin-top: 4rem;
     padding-top: 1rem;
-    border-top: 1px solid rgba(13, 13, 10, .1);
+    border-top: 1px solid rgba(75, 101, 132, 0.4);
     font-style: italic;
 }
 
@@ -759,7 +761,8 @@ article .footnotes {
 .post-footer, .post-time {
     text-transform: uppercase;
     letter-spacing: 4px;
-    font-size: 80%
+    font-size: 80%;
+    color: rgba(75, 101, 132, 0.9)
 }
 
 .post-list-time {
@@ -898,10 +901,6 @@ article .footnotes {
     #comments {
         margin-top: 1em
     }
-}
-
-.m-page a {
-    color: #333 !important
 }
 
 #site-footer {
@@ -1116,19 +1115,27 @@ nav {
 }
 .sidebar-nav hr {
   margin: 1em auto;
-  width: 75%;
+  border-top: 1px solid rgba(75, 101, 132, 0.4);
 }
 
 .sidebar-nav a {
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
+  padding: 1em;
 }
 
 .sidebar-nav a:hover {
-  background: #d40d0a;
+  /* background: #d40d0a; */
   /* border-bottom: 1px solid;*/
-  color: #fafafa;
+  /* color: #fafafa; */
+  background: rgba(252, 92, 101,1.0);
+  color: rgba(209, 216, 224,1.0)
+}
+
+.sidebar-nav a.active {
+  background: rgba(235, 59, 90,1.0);
+  color: rgba(209, 216, 224,1.0);
 }
 
 .post-footer nav ul {
@@ -1285,13 +1292,20 @@ img.webmention-error {display: none;}
     padding: 1rem;
     margin-bottom: 0.1rem;
     background: transparent;
+    border-top: 1px solid rgba(75, 101, 132, 0.2);
 }
+
+/*
+.microblog_post:before {
+  border-top: 3px solid rgba(75, 101, 132, 0.4);
+}
+*/
 .microblog_text > p > img {
   margin: auto;
 }
 
 .microblog_post:nth-child(odd) {
-  background: #eee;
+  /* background: #eee; */
 }
 
 .microblog_time {
