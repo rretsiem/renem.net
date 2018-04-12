@@ -7,17 +7,17 @@
       <!-- Large screens -->
       <source
         media="(min-width: 535px)"
-        srcset="{{ .Get "src" | absURL }}.{{ .Get "type" }} 1x,
-                {{ .Get "src" | absURL }}@2x.{{ .Get "type" }} 2x">
+        data-srcset="{{ .Get "src" | absURL }}.{{ .Get "type" }} 1x,
+                {{ .Get "src" | absURL }}@2x.{{ .Get "type" }} 2x" type="image/{{ .Get "type" }}">
       <!-- Small screens -->
       <source
         media="(max-width: 534px)"
-        srcset="{{ .Get "src" | absURL }}-sm.{{ .Get "type" }} 1x,
-                {{ .Get "src" | absURL }}-sm@2x.{{ .Get "type" }} 2x">
+        data-srcset="{{ .Get "src" | absURL }}-sm.{{ .Get "type" }} 1x,
+                {{ .Get "src" | absURL }}-sm@2x.{{ .Get "type" }} 2x" type="image/{{ .Get "type" }}">
       <!-- Fallback -->
       <img
-        src="{{ .Get "src" | absURL }}.{{ .Get "type" }}"
-        alt="{{ .Get "alt" }}"{{ if .Get "caption"}} class="img-fluid figure-img u-photo post-img photo"{{ end }}>
+        data-src="{{ .Get "src" | absURL }}.{{ .Get "type" }}"
+        alt="{{ .Get "alt" }}"{{ if .Get "caption"}} class="img-fluid figure-img u-photo post-img photo lazy"{{ end }}>
     </picture>
   {{ if .Get "caption"}}
     <figcaption>{{ .Get "caption" }}</figcaption>

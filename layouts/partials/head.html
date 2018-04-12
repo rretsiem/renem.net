@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="de" prefix="og: http://ogp.me/ns#" xmlns:og="http://ogp.me/ns#">
+<html class="no-js" lang="de" prefix="og: http://ogp.me/ns#" xmlns:og="http://ogp.me/ns#">
     <head>
         {{- partial "meta.html" . -}}
         <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
@@ -49,4 +49,7 @@
         <!-- DNS prefetching in the header for external sources -->
         <link rel="dns-prefetch" href="https://webmention.io">
         <link rel="dns-prefetch" href="https://micro.blog">
+
+        <script type='text/javascript' charset="utf-8" src="/js/remove-no.js"></script>
+
     </head>

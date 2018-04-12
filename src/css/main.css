@@ -1154,6 +1154,10 @@ nav {
   width: 100%;
 }
 
+.no-js .lazy{
+  display: none;
+}
+
 .hidden {
   display: none !important;
   visibility: hidden;
