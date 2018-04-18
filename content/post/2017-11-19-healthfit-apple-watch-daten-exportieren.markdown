@@ -11,8 +11,15 @@ tags:
 - apple
 syndication:
 - https://twitter.com/rretsiem/status/932366159705493504
+lastmod: 2018-04-18
 
 ---
+
+
+
+*UPDATE 18.04.2018: Mit Version 3.0.0 von HealthFit ist nun auch ein direkter Export nach Runalyze möglich. Mein Beitrag dazu beschreibt das kurz.*
+
+
 
 > Stillstand ist Rückschritt
 
