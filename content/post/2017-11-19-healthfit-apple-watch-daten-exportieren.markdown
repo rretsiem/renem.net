@@ -17,9 +17,11 @@ lastmod: 2018-04-18
 
 
 
-*UPDATE 18.04.2018: Mit Version 3.0.0 von HealthFit ist nun auch ein direkter Export nach Runalyze möglich. Mein Beitrag dazu beschreibt das kurz.*
+<hr>
 
+*UPDATE 18.04.2018: Mit Version 3.0.0 von HealthFit ist nun auch ein direkter Export nach Runalyze möglich. [Mein Beitrag dazu vom 18.04.2018](https://renem.net/post/2018-04-18-apple-watch-runalyze-healthfit/) beschreibt das kurz.*
 
+<hr>
 
 > Stillstand ist Rückschritt
 
