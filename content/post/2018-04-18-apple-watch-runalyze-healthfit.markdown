@@ -12,6 +12,7 @@ images:
 - /images/2018-04-18-apple-watch-runalyze-healthfit-2.jpg
 syndication:
 - https://twitter.com/rretsiem/status/986566603784511488
+- https://twitter.com/rretsiem/status/986359234177781762
 ---
 
 
