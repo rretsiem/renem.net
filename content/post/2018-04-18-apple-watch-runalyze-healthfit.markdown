@@ -25,7 +25,7 @@ Die Jungs von [Runalyze](https://runalyze.com/) schrauben aber schon seit einer 
 
 > Integration mit Runalyze, einer erstaunlichen Fitness-Plattform, die in Deutschland von Michael Pohl und Hannes Christiansen liebevoll gestaltet wurde
 
-Keine Ankündigung im Blog von Runalyze oder auf Twitter, einfach da! Geich aktualisiert und mit einem Training probiert.
+~~Keine Ankündigung im Blog von Runalyze oder auf Twitter, einfach da!~~ Mittlerweile ist auch ein [Post im Runalyze Blog](https://blog.runalyze.com/features/external-apps-can-push-activities-to-runalyze-now/) dazu erschienen. Geich aktualisiert und mit einem Training probiert.
 
 {{< picture src="/images/2018-04-18-apple-watch-runalyze-healthfit-1" type="jpg" alt="Vom iPhone direkt nach Runalyze exportieren" caption="Vom iPhone direkt nach Runalyze" >}}
 
