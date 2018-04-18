@@ -11,6 +11,7 @@ tags:
 - apple
 syndication:
 - https://twitter.com/rretsiem/status/932366159705493504
+- https://twitter.com/rretsiem/status/986566603784511488
 lastmod: 2018-04-18
 
 ---
