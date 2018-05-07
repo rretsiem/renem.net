@@ -11,7 +11,7 @@ images:
 - /images/2018-05-07-eigenleistung-dachanstrich-1.jpg
 - /images/2018-05-07-eigenleistung-dachanstrich-2.jpg
 syndication:
--
+- https://twitter.com/rretsiem/status/993452583212802048
 ---
 
 Nachdem das Dach nun fast eingedeckt ist, konnten wir in den letzten beiden Wochen einen Teil in Eigenleistung erbringen. Dabei ging es dieses Mal um das Dach, spezieller um das Streichen der Dachsparren sowie des sichtbaren Dachstuhls außen und an den Seiten (Ortgang, wenn ich das richtig verstanden habe.)
