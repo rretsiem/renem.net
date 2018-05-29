@@ -1,25 +1,14 @@
 /*
-  X-Frame-Options: DENY
   X-XSS-Protection: 1; mode=block
-  X-UA-Compatible: ie=edge
   X-Content-Type-Options: nosniff
-#  Content-Security-Policy: default-src 'self' https:; script-src 'self' https: 'unsafe-eval'; style-src 'self' https: 'unsafe-inline'; img-src *;
-  Content-Security-Policy: default-src 'self' https:; script-src 'self' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src *;
-  X-Content-Security-Policy: default-src 'self' https:; script-src 'self' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src *;
-  X-WebKit-CSP: default-src 'self' https:; script-src 'self' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src *;
+  Content-Security-Policy: default-src 'self' https:; script-src 'self' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src *; frame-ancestors 'self';
+  X-Content-Security-Policy: default-src 'self' https:; script-src 'self' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src *; frame-ancestors 'self';
+  X-WebKit-CSP: default-src 'self' https:; script-src 'self' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src *; frame-ancestors 'self';
   Referrer-Policy: no-referrer-when-downgrade
-#  Cache-Control: max-age=7200, public
   Strict-Transport-Security: max-age=10886400
   Cache-Control: max-age=2628000, public
-# images
-#/*.@(jpg|jpeg|gif|png|json)
-#  Cache-Control: max-age=7884000, public
-#/*.@(css|js)
-#  Cache-Control max-age=2628000, public
 # preloading
 /*
-# Link: <{{ "service-worker.js" | relURL }}>; rel=preload; as=script; nopush
-# Link: <{{ "js/service-worker-registration.js" | relURL }}>; rel=preload; as=script; nopush
 Link: <{{ "css/bundle.css" | relURL }}>; rel=preload; as=style
 /post/*.*
 Link: <{{ "js/webmention_io.js" | relURL }}>; rel=preload; as=script; nopush

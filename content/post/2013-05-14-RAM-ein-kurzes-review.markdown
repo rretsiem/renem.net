@@ -9,11 +9,11 @@ aliases:
 - /2013/05/14/RAM-ein-kurzes-review/
 ---
 
-Seit ein paar Stunden steht das neue [Daft Punk](http://clkde.Tradedoubler.com/click?p=23761&a=2217627&url=https://itunes.apple.com/de/artist/daft-punk/id5468295?partnerId=2003) Album "[Random Access Memories](http://clkde.Tradedoubler.com/click?p=23761&a=2217627&url=https://itunes.apple.com/de/album/random-access-memories/id617154241?partnerId=2003)" als Stream in iTunes zum anhören bereit, bevor es offiziell am Freitag zum Verkauf angeboten wird.
+Seit ein paar Stunden steht das neue [Daft Punk](https://itunes.apple.com/de/artist/daft-punk/id5468295) Album "[Random Access Memories](https://itunes.apple.com/de/album/random-access-memories/id617154241)" als Stream in iTunes zum anhören bereit, bevor es offiziell am Freitag zum Verkauf angeboten wird.
 
-Als Daft Punk Fan konnte ich natürlich nicht widerstehen und habe die kompletten 114 Minuten im Stream durch gehört. Hier möchte ich nun eine kurze Bewertung dazu schreiben. Das Album wurde ja lange erwartet und ist, abgesehen vom [Tron Soundtrack](http://clkde.Tradedoubler.com/click?p=23761&a=2217627&url=https://itunes.apple.com/de/album/tron-legacy/id404391362?partnerId=2003), das Erste Studioalbum der 2 Franzosen seit 2005.
+Als Daft Punk Fan konnte ich natürlich nicht widerstehen und habe die kompletten 114 Minuten im Stream durch gehört. Hier möchte ich nun eine kurze Bewertung dazu schreiben. Das Album wurde ja lange erwartet und ist, abgesehen vom [Tron Soundtrack](https://itunes.apple.com/de/album/tron-legacy/id404391362), das Erste Studioalbum der 2 Franzosen seit 2005.
 
-*Random Access Memories* (R.A.M.) stellt einen kompletten Kontrast zum ersten Album *[Homework](http://clkde.Tradedoubler.com/click?p=23761&a=2217627&url=https://itunes.apple.com/de/album/homework/id17523648?partnerId=2003)* dar. Homework und die früheren Alben kann man eher als einen Kommentar zur Disco/Funk Bewegung sehen welche aber deutlich moderner klangen. R.A.M. hingegen sehe ich eher als Teil dieser Bewegung. Die vielen Anteile von Funk, Disco, Italo-Disco, Jazz und den elektronischen Klängen verleihen dem Album eher etwas "menschliches". Das Album wirkt realer, nicht so sehr aus dem Computer.
+*Random Access Memories* (R.A.M.) stellt einen kompletten Kontrast zum ersten Album *[Homework](https://itunes.apple.com/de/album/homework/id17523648)* dar. Homework und die früheren Alben kann man eher als einen Kommentar zur Disco/Funk Bewegung sehen welche aber deutlich moderner klangen. R.A.M. hingegen sehe ich eher als Teil dieser Bewegung. Die vielen Anteile von Funk, Disco, Italo-Disco, Jazz und den elektronischen Klängen verleihen dem Album eher etwas "menschliches". Das Album wirkt realer, nicht so sehr aus dem Computer.
 
 Daft Punk hat mit den verschiedensten Künstlern auf dem Album zusammen gearbeitet um einen komplett anderen Sound ihrer Musik darstellen zu können.
 

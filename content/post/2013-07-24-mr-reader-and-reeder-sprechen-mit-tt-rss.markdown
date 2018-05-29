@@ -21,7 +21,7 @@ Und genau der letzte Teil dieses Satzes läset mich schaudern. Wer sich dazu noc
 In diesem Blog-Post hier möchte ich aber auf die Integration von TT-RSS mit meinen präferierten RSS-Clients auf dem iPad und dem iPhone eingehen. Ich konsumiere nunmal am liebsten auf diesen Geräten meine täglichen Nachrichten. Dank der Abschaltung von Google Reader hat sich hier ja einiges getan. Und das ist bis zum heutigen Tag, alles positiv.
 
 ### Fever heißt das Zauberwort
-Die Integration funktioniert, da [Mr. Reader](http://clkde.Tradedoubler.com/click?p=23761&amp;a=2217627&amp;url=https://itunes.apple.com/de/app/mr.-reader/id412874834?partnerId=2003) und auch [Reeder](http://clkde.Tradedoubler.com/click?p=23761&amp;a=2217627&amp;url=https://itunes.apple.com/de/app/reeder/id325502379?partnerId=2003) mit dem [Fever-Service](http://feedafever.com) sprechen können. Gegen Fever spricht für mich allerdings das die Registrierung an eine feste Domain gebunden ist und die Entwicklung im Moment wohl auch mehr vor sich hin vegetiert als aktiv zu sein. Dafür dann aber Geld zu zahlen sehe ich nicht ein.
+Die Integration funktioniert, da [Mr. Reader](https://itunes.apple.com/de/app/reeder/id325502379) mit dem [Fever-Service](http://feedafever.com) sprechen können. Gegen Fever spricht für mich allerdings das die Registrierung an eine feste Domain gebunden ist und die Entwicklung im Moment wohl auch mehr vor sich hin vegetiert als aktiv zu sein. Dafür dann aber Geld zu zahlen sehe ich nicht ein.
 Daher gibt es etliche Alternativen, die nur sehr selten benutzt werden, oder eben keine guten Clients besitzen mit denen man relaxed auf der Couch liegen kann und Nachrichten konsumiert.
 
 ### Los geht's
@@ -46,11 +46,11 @@ Wenn ihr einen Client gefunden habt, dann wählt als Service "Fever" aus und als
 
 Als Clients kann ich persönlich die folgenden iOS Clients empfehlen:
 
-- [Reeder](http://clkde.Tradedoubler.com/click?p=23761&amp;a=2217627&amp;url=https://itunes.apple.com/de/app/reeder/id325502379?partnerId=2003) für's iPhone mein bevorzugter Client
-- [Mr. Reader](http://clkde.Tradedoubler.com/click?p=23761&amp;a=2217627&amp;url=https://itunes.apple.com/de/app/mr.-reader/id412874834?partnerId=2003) ist einfach der beste Client für iPad
-- [Sunstroke](http://clkde.Tradedoubler.com/click?p=23761&amp;a=2217627&amp;url=https://itunes.apple.com/de/app/sunstroke/id488564806?partnerId=2003) nutze ich selbst nicht, soll aber auch mit dem Fever-Plugin funktionieren.
+- [Reeder](https://itunes.apple.com/de/app/reeder/id325502379) für's iPhone mein bevorzugter Client
+- [Mr. Reader](https://itunes.apple.com/de/app/mr.-reader/id412874834) ist einfach der beste Client für iPad
+- [Sunstroke](https://itunes.apple.com/de/app/sunstroke/id488564806) nutze ich selbst nicht, soll aber auch mit dem Fever-Plugin funktionieren.
 
-Am Mac benutze ich persönlich [ReadKit](http://clkde.Tradedoubler.com/click?p=23761&amp;a=2217627&amp;url=https://itunes.apple.com/de/app/readkit/id588726889?partnerId=2003), welcher deutlich mehr Komfort bietet als die TT-RSS Weboberfläche.
+Am Mac benutze ich persönlich [ReadKit](https://itunes.apple.com/de/app/readkit/id588726889), welcher deutlich mehr Komfort bietet als die TT-RSS Weboberfläche.
 Mit Tipps zu Applikationen für Android und die anderen mobilen Betriebssystem kann ich allerdings nicht helfen, da ich hier keine Erfahrungen habe.
 
 Es gibt einen [Thread](http://tt-rss.org/forum/viewtopic.php?f=22&amp;t=1981) im offiziellen TT-RSS Forum welcher auch noch weitere Hinweise auf die Verwendung des Plugins gibt. Allerdings ist es **wichtig zu erwähnen, dass das im Forum-Post enthaltene Plugin fehlerhaft ist!** Daher bitte unbedingt die aktuelle Version vom o.g. [Github-Repository](https://github.com/dasmurphy/tinytinyrss-fever-plugin) verwenden.

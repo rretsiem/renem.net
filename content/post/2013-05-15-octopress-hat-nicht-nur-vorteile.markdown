@@ -25,7 +25,7 @@ Es gibt mittlerweile eine Fülle an Artikeln die ich rein auf dem iPad verfasst 
 
 Eine Lösung zu diesem Thema habe ich noch nicht gefunden, außer mich aufzuraffen und mind. 3-4x pro Woche das MacBook anzuwerfen und das Skript auszuführen. Das versuche ich nun wieder einzuhalten.
 
-[WritingKit]: http://clkde.Tradedoubler.com/click?p=23761&a=2217627&url=https://itunes.apple.com/us/app/writing-kit-research-write/id426208994?partnerId=2003 "Writing Kit - Research & Write Markdown/Fountain Documents"
+[WritingKit]: https://itunes.apple.com/us/app/writing-kit-research-write/id426208994 "Writing Kit - Research & Write Markdown/Fountain Documents"
 [mouapp]: http://mouapp.com/ "Mou - Markdown editor for web developers, on Mac OS X"
-[0630-001]: http://clkde.Tradedoubler.com/click?p=23761&a=2217627&url=https://itunes.apple.com/us/app/ia-writer/id392502056?partnerId=2003 "iA Writer"
+[0630-001]: https://itunes.apple.com/us/app/ia-writer/id392502056 "iA Writer"
 [0630-002]: http://www.sublimetext.com/2 "Sublime Text - Download"

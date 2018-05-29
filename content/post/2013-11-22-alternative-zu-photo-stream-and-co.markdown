@@ -47,7 +47,7 @@ Yahoo bietet mit [Flickr](http://www.flickr.com/) einen kostenlosen Dienst an be
 Flickr bietet eine iOS App an die den automatischen Upload im Hintergrund von Fotos erlaubt.   Allerdings gibt es am Desktop keine vernünftige Art viele Fotos hochzuladen und auch das Web-Interface ist trotz Überarbeitung immer noch nicht wirklich gut. Alles wirkt ziemlich chaotisch und viele Optionen sind versteckt bzw. schwer zu finden. Um ein Foto-Set mit anderen zu teilen wird z.B. ein sogenannter "Guest-Pass" benötigt damit User ohne Yahoo-Account das Album ansehen können.
 Eine iPad App wird auch nicht angeboten, es gibt zwar Alternativen von anderen Entwicklern aber hier verschenkt Yahoo sicherlich einiges an Potenzial.
 
-[Flickr im AppStore](http://clkde.Tradedoubler.com/click?p=23761&amp;a=2217627&amp;url=https://itunes.apple.com/de/app/flickr/id328407587?partnerId=2003)
+[Flickr im AppStore](https://itunes.apple.com/de/app/flickr/id328407587)
 
 ## Loom
 
@@ -61,7 +61,7 @@ Ich hatte ja eben schon erwähnt das Loom bei mir die Wahl gewonnen hat, daher n
 
 Was für ambitionierte Fotografen sicherlich erwähnenswert ist, Loom wie auch Picturelife unterstützen Fotos im [RAW-Format](https://de.wikipedia.org/wiki/Rohdatenformat_%28Fotografie%29). Der Download in selbigem klappt ebenfalls wieder wunderbar.
 
-[Loom im AppStore](http://clkde.Tradedoubler.com/click?p=23761&amp;a=2217627&amp;url=https://itunes.apple.com/de/app/loom/id655641185?partnerId=2003)
+[Loom im AppStore](https://itunes.apple.com/de/app/loom/id655641185)
 Für Android hat Loom bereits eine Ankündigung gebracht, allerdings mit keiner Zeitangabe. Wer also Android nutzt, sollte vielleicht eher bei Picturelife schauen, denn dort gibt es bereits Unterstützung dafür.
 
 ##  Picturelife
@@ -72,7 +72,7 @@ Wer allerdings viele Fotos hat und diese dort speichern will kommt vielleicht mi
 Ein Vorteil für Android Nutzer ist sicherlich, dass es Picturelife bereits für Android gibt.
 Die Optionen und Möglichkeiten von Picturelife sind aber ansonsten identisch zu Loom.
 
-[Picturelife im AppStore](http://clkde.Tradedoubler.com/click?p=23761&amp;a=2217627&amp;url=https://itunes.apple.com/de/app/picturelife-photo-video-backup/id487233339?partnerId=2003)
+[Picturelife im AppStore](https://itunes.apple.com/de/app/picturelife-photo-video-backup/id487233339)
 [Picturelife bei Google Play](https://play.google.com/store/apps/details?id=com.picturelife.android&amp;hl=de)
 
 # Backup

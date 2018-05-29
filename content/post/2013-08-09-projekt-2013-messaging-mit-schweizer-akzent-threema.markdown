@@ -27,7 +27,7 @@ Es ist an der Zeit sich ein Stück Privatsphäre zurück zu holen, das versucht 
 Threema versucht hier einen sichereren Ansatz und verspricht das sämtliche Kommunikation [Ende-zu-Ende verschlüsselt](https://de.wikipedia.org/wiki/Ende-zu-Ende-Verschl%C3%BCsselung) ist, es kann also nicht einmal die Firma hinter Threema die Nachichten mitlesen. Auch dem Thema Abgleich des Adressbuches und meiner Kontakte hat man sich gut überlegt. Die Telefonnummer und E-Mail-Adresse wird nur auf meinen Wunsch hin übertragen und dann auch nicht im Klartext gespeichert, sondern lediglich die [Prüfsumme](https://de.wikipedia.org/wiki/Pr%C3%BCfsumme).  
 Was dem Dienst im Moment noch fehlt ist die Gruppenchat-Funktion, alles andere macht bereits einen guten Eindruck und funktioniert zuverlässig.
 
-Es ist also an der Zeit auch hier Initiative zu ergreifen und sich ein Stück Privatsphäre zurück zu holen. Die App kostet 1,79€ und ist für [iOS](http://clkde.Tradedoubler.com/click?p=23761&amp;a=2217627&amp;url=https://itunes.apple.com/de/app/threema/id578665578?partnerId=2003) und [Android](https://play.google.com/store/apps/details?id=ch.threema.app) erhältlich.
+Es ist also an der Zeit auch hier Initiative zu ergreifen und sich ein Stück Privatsphäre zurück zu holen. Die App kostet 1,79€ und ist für [iOS](https://play.google.com/store/apps/details?id=ch.threema.app) erhältlich.
 
 Die Ausrede das ja niemand bei Threema ist und man immer alle bei WhatsApp findet trifft nur deshalb zu, weil keiner beginnt! Es ist also Zeit den ersten Schritt zu tun!
 

@@ -43,9 +43,9 @@ Der klare Vorteil ist, das man selbst bei einem Wechsel des Betriebssystems imme
 Ich habe den Punkt Mobil extra an das Ende gepackt, denn hier kommt der großes Nachteil. Es gibt zwar Lösungen die PGP/GPG auf dem iPhone anbieten, leider aber eher kompliziert und nicht so einfach wie auf dem Desktop. Wie es bei Android aussieht, kann ich nicht sagen, wenn hier aber jemand von euch einen Tipp hat werde ich den Artikel gern aktualisieren.  
 Grundsätzlich funktioniert Verschlüsselung auf dem Mobiltelefon, aber eben nicht so komfortabel.
 
-- [iPGMail](http://clkde.Tradedoubler.com/click?p=23761&amp;a=2217627&amp;url=https://itunes.apple.com/de/app/ipgmail/id430780873?partnerId=2003) (iOS)
-- [oPenGP](http://clkde.Tradedoubler.com/click?p=23761&amp;a=2217627&amp;url=https://itunes.apple.com/de/app/opengp/id414003727?partnerId=2003) (iOS)
-- [SecuMail](http://clkde.Tradedoubler.com/click?p=23761&amp;a=2217627&amp;url=https://itunes.apple.com/de/app/secumail/id414328661?partnerId=2003) (iOS) - keine Erfahrung, da mir das Programm dann doch etwas zu teuer ist, Test-Version gibt es keine.
+- [iPGMail](https://itunes.apple.com/de/app/ipgmail/id430780873) (iOS)
+- [oPenGP](https://itunes.apple.com/de/app/opengp/id414003727) (iOS)
+- [SecuMail](https://itunes.apple.com/de/app/secumail/id414328661) (iOS) - keine Erfahrung, da mir das Programm dann doch etwas zu teuer ist, Test-Version gibt es keine.
 - [K-9 Mail](https://play.google.com/store/apps/details?id=com.fsck.k9) (Android) - keine Erfahrung da kein Android-Gerät verfügbar
 
 ### Weitere Infos
