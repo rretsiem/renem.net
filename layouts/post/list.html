@@ -10,7 +10,7 @@
 	{{ range $paginator.Pages }}
 			{{ .Render "li" }}
 	{{ end }}
-	{{ partialCached "pagination.html" . }}
+	{{ partial "pagination.html" . }}
 	<div class="comment">Alle Beiträge findet man auch via <a href="/categories/">Kategorien</a> oder <a href="/tags/">Tags</a>, oder im <a href="/archive/">Archiv</a>.</div>
 
 	</div>

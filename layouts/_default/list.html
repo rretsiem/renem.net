@@ -7,10 +7,10 @@
 	<span class="p-name hidden">{{ .Site.Title }}</span>
 	{{ end }}
 	<div class="container">
-	{{ range $paginator.Pages }}
+	{{- range $paginator.Pages }}
 			{{ .Render "li" }}
-	{{ end }}
-	{{ partialCached "pagination.html" . }}
+	{{ end -}}
+	{{- partial "pagination.html" . -}}
 	</div>
 </main>
 {{ partial "footer.html" . }}
