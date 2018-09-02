@@ -8,10 +8,10 @@
         <link href="{{ .Site.BaseURL }}css/bundle.css" rel="stylesheet" type="text/css">
         <!-- Site verification -->
         {{- if .IsHome }} {{ partial "site-verification" . }} {{ end -}}
-        <!-- site RSS feeds -->
-        {{- if .RSSLink }}
-          <link href="{{ .RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }} RSS Feed" />
-          <link href="{{ .RSSLink }}" rel="feed" type="application/rss+xml" title="{{ .Site.Title }} RSS Feed "/>
+        <!-- site feeds -->
+        {{- with .OutputFormats.Get "atom" }}
+        <link href="{{ .Permalink }}" rel="feed" type="application/atom+xml" title="René Atom feed" />
+        <link href="{{ .Permalink }}" rel="alternate" type="application/atom+xml" title="René Atom feed" />
         {{ end -}}
         {{- with .OutputFormats.Get "json" }}
         <link href="{{ .Permalink }}" rel="alternate" type="application/json" title="René JSON feed" />

@@ -18,7 +18,7 @@ syndication:
 
 Gestern Abend war es soweit und ich habe die letzten 4 Folgen der Staffel 5 von [Breaking Bad](http://www.imdb.com/title/tt0903747/) auf Netflix geschaut. Geplant waren 2 Folgen, aber diese Staffel 5 fesselt einen so sehr, dass ich mehrmals Abends nicht nur 2 Folgen angesehen habe, ergo Schlaf kam etwas zu kurz die letzten Tage.
 
-Vor ca. 4 Wochen [schrieb]({{< relref "post/2017-08-19-breaking-bad-die-dritte.markdown">}}) ich ja, dass ich mir endlich vorgenommen habe die Serie ab Staffel 3 zu Ende zu schauen. Das Wetter war leider bei uns nicht immer so prima am Abend, somit ging das schneller als geplant mit allen Staffeln bis zum Ende.
+Vor ca. 4 Wochen [schrieb]({{< relref "/post/2017-08-19-breaking-bad-die-dritte.markdown">}}) ich ja, dass ich mir endlich vorgenommen habe die Serie ab Staffel 3 zu Ende zu schauen. Das Wetter war leider bei uns nicht immer so prima am Abend, somit ging das schneller als geplant mit allen Staffeln bis zum Ende.
 
 Nach den letzten Minuten der letzten Folge gestern Abend, merke ich immer noch wie fesselnd, spannend und perfekt geschrieben diese komplette Staffel ist. Obwohl ich das Ende aus Erzählungen bereits kannte, war es etwas komplett anderes das selbst zu sehen.
 

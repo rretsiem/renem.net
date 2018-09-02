@@ -22,7 +22,7 @@ aliases:
 {{< figure src="https://c1.staticflickr.com/1/290/18676403272_f1a9149acf_b.jpg" caption="Erholung" attr="Flickr" attrlink="https://c1.staticflickr.com/1/290/18676403272_f1a9149acf_b.jpg">}}
 
 Es sind nun 3 Tage vergangen seit meinem ersten
-[richtigen Laufwettbewerb]({{< relref "post/2015-06-07-der-erste-richtige-wettbewerb.markdown" >}}). Zugegeben ich bin noch unerfahren und die Profis unter euch lächeln sicherlich über meinen Bericht, trotzdem möchte ich nach dem 10km Lauf einen ersten Bericht abgeben.  
+[richtigen Laufwettbewerb]({{< relref "/post/2015-06-07-der-erste-richtige-wettbewerb.markdown" >}}). Zugegeben ich bin noch unerfahren und die Profis unter euch lächeln sicherlich über meinen Bericht, trotzdem möchte ich nach dem 10km Lauf einen ersten Bericht abgeben.  
 Denn was ich so gar nicht im Netz gefunden habe, sind Informationen über Pausen und Erholung nach einem Wettkampf.  
 Es finden sich zwar allgemeine Formeln wie, Anzahl der Kilometer eines Wettkampfes in Tagen. Wieder auf anderen Seiten heißt es "Die Anzahl der Kilometer geteilt durch 2", aber mal ehrlich, ich will keine 10 Tage warten und denke das dies auch eine zu lange Pause ist. Ihr könnt mich aber gern korrigieren.
 

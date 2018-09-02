@@ -12,7 +12,7 @@ aliases:
 
 {{< figure src="https://files.app.net/2lvwlFJHT.jpg" caption="Backup Strategie" >}}
 
-Ich hatte dazu bereits vor einiger Zeit schon einmal einen [Post geschrieben]({{< ref "post/2012-10-16-backup.markdown" >}}), aber etwas Auffrischung kann bei so einem wichtigen Thema nicht schaden.
+Ich hatte dazu bereits vor einiger Zeit schon einmal einen [Post geschrieben]({{< relref "/post/2012-10-16-backup.markdown" >}}), aber etwas Auffrischung kann bei so einem wichtigen Thema nicht schaden.
 
 Da ich gerade wieder einen Fall von Datenverlust im entfernten Bekanntenkreis hatte, denke ich ist es mal wieder an der Zeit meine persönliche Backup-Strategie vorzustellen. Diese ist sicherlich nicht perfekt und es gibt wie immer viele Lösungen, aber vielleicht ist es ja ein guter Denkanstoß für jene die das bisher komplett vernachlässigt haben.  
 

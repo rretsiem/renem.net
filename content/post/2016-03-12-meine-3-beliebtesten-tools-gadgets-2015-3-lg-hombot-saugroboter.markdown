@@ -19,7 +19,7 @@ twit: https://twitter.com/rretsiem/statuses/709009853642100737
 
 Mittlerweile ist 2016 bereits ein paar Tage alt und ich komme hier noch mit alten Kamellen von 20115, ich weiß nicht gerade zeitnah. Einen Beitrag dazu bin ich aber noch schuldig, das möchte ich hiermit nun nachholen.
 
-In den ersten beiden Beiträgen habe ich ja bereits die sportliche Seite abgehandelt mit [Runalyze]({{< relref "post/2016-01-11-3-tools-2015-runalyze.markdown" >}}), sowie in Beitrag Nummer 2 die [Apple Watch]({{< relref "post/2016-02-13-meine-3-beliebtesten-tools-gadgets-2015-2-apple-watch.markdown" >}}). In diesem Beitrag hier geht es nun um eine ganz andere Kategorie, den Haushalt.
+In den ersten beiden Beiträgen habe ich ja bereits die sportliche Seite abgehandelt mit [Runalyze]({{< relref "/post/2016-01-11-3-tools-2015-runalyze.markdown" >}}), sowie in Beitrag Nummer 2 die [Apple Watch]({{< relref "/post/2016-02-13-meine-3-beliebtesten-tools-gadgets-2015-2-apple-watch.markdown" >}}). In diesem Beitrag hier geht es nun um eine ganz andere Kategorie, den Haushalt.
 
 Seit ca. September 2015 besitzen wir in unserer Wohnung einen Saugroboter. Ich hatte mich dazu vor circa 3 Jahren schon einmal erkundigt, die Idee aber damals wieder verworfen, weil die Geräte entweder alle Mängel hatten oder eher weniger zufriedenstellend gereinigt haben. Auch preislich war das damals dadurch dann weniger interessant.
 

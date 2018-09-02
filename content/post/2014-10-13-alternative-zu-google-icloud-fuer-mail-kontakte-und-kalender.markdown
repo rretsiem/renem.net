@@ -17,7 +17,7 @@ aliases:
 
 {{< picture src="/images/2014-10-13-alternative-zu-google-icloud-fuer-mail-kontakte-und-kalender-1" type="jpg" alt="" caption="Posteo iPhone Setup" >}}
 
-Vor einiger Zeit habe ich mit dem [2013 Projekt 2013 - Weniger Google-Dienste]({{< relref "post/2013-01-22-weniger-google-projekt-2013.markdown" >}}) ja begonnen alle oder die meisten möglichen Dienste die ich bei Google & Co nutze umzuziehen auf Dienste die meine Daten vertraulich behandeln und damit kein Geld verdienen. Es sind schließlich meine Daten, Kontakte und E-Mails.
+Vor einiger Zeit habe ich mit dem [2013 Projekt 2013 - Weniger Google-Dienste]({{< relref "/post/2013-01-22-weniger-google-projekt-2013.markdown" >}}) ja begonnen alle oder die meisten möglichen Dienste die ich bei Google & Co nutze umzuziehen auf Dienste die meine Daten vertraulich behandeln und damit kein Geld verdienen. Es sind schließlich meine Daten, Kontakte und E-Mails.
 
 Nun ist mir aufgefallen, dass ich zu Kontakten und Kalendern bereits etwas geschrieben hatte, zum Thema E-Mails allerdings noch nicht. Hiermit möchte ich dies noch nachholen und kurz darüber berichten. Außerdem hat sich zum Thema iCloud etwas getan, was in alten Artikeln von mir ja noch favorisiert wurde.
 
@@ -111,4 +111,4 @@ Zusätzlich dazu kann man über Aliase auch eine eigene Domain (begrenzte Anzahl
 # Fazit
 
 Mit etwas zeitlichem Aufwand konnte ich meine E-Mails, Kontake und Kalender-Daten zu einem Anbieter umziehen der Wert auf Datenschutz legt und meine Daten nicht für Werbung benutzt um damit Geld zu verdienen. Das Geschäftsmodell von Posteo, Mailbox.org und auch Fastmail.fm besteht darin Dienste anzubieten für Geld und nicht für meine Daten. Das muss einem bewusst sein, kein solcher Dienst kann etwas für umsonst anbieten, wenn er das macht, dann werden meist die persönlichen Daten und Kommunikation für Auswertungen, Anzeigeschaltung usw. benutzt.  
-Wem das immer noch nicht reicht, der sollte sich mal kurz den Artikel [zum Thema Nutzungsbedingungen]({{< ref "post/2014-10-10-wer-liest-schon-nutzungsbedingungen.markdown" >}}) durchlesen.
+Wem das immer noch nicht reicht, der sollte sich mal kurz den Artikel [zum Thema Nutzungsbedingungen]({{< relref "/post/2014-10-10-wer-liest-schon-nutzungsbedingungen.markdown" >}}) durchlesen.

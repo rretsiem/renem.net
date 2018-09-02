@@ -15,7 +15,7 @@ aliases:
 {{< figure class="center" src="https://files.app.net/2gcrzAt73.png" >}}
 
 Seit ein paar Monaten gibt es einen neuen Service der versucht, Verschlüsselung leichter für die Masse zugänglich zu machen – [Keybase.io](https://keybase.io/). Im Detail geht es im PGP/GPG Verschlüsselung welche seit Jahren verfügbar ist, aber leider nur von technik-affinen Menschen genutzt wird, weil es eben nicht so einfach ist mal eben eine verschlüsselte E-Mail an jemanden zu schreiben.  
-Ich habe dazu bereits vor einiger Zeit einmal einen [Beitrag verfasst]({{< ref "post/2013-08-02-projekt-2013-sichere-e-mails.markdown" >}}) um einen kurzen Einblick zu geben.
+Ich habe dazu bereits vor einiger Zeit einmal einen [Beitrag verfasst]({{< relref "/post/2013-08-02-projekt-2013-sichere-e-mails.markdown" >}}) um einen kurzen Einblick zu geben.
 
 Keybase.io schickt sich an, hier einen etwas moderneren Ansatz zu gehen und verbindet das tauschen von Schlüsseln mit einer sozialen Komponente. Denn Schlüssel-Server die das Auffinden von öffentlichen Schlüsseln erlauben gibt es schon lang, aber sind eben nicht so einfach zu benutzen.
 
@@ -38,4 +38,4 @@ Es besteht die Möglichkeit die kompl. Kommunikation über die Webseite von Keyb
 Der Keybase client kann aber auch von der Kommandozeile benutzt werden und bietet auf dem Mac mit dem GPG-Schlüsselbund sogar die Möglichkeit den Schlüssel einmal getreckte Nutzer in den lokalen Schlüsselbund zu importieren. Damit kann man dann z.B. mit den [GPG Tools](https://gpgtools.org/) und Apple Mail verschlüsseln.
 
 Da sich Keybase.io aber im Moment in einer frühen Alpha-Phase befindet kann noch nicht jeder ein Profil erstellen. Das geht nur mit einer Einladung eines anderen Benutzers. Die Einladungen sind limitiert.  
-Ich habe aber ein paar Einladungen übrig, wer also Interesse hat, [schreibt mir]({{< relref "about.md" >}}) am besten eine Nachricht mit einem kurzen Kommentar. Auch hier kann ein Kommentar hinterlassen werden, die E-Mail Adresse an die ich die Einladung dann verschicken soll, muss ich dazu aber wissen.
+Ich habe aber ein paar Einladungen übrig, wer also Interesse hat, [schreibt mir]({{< relref "/about.md" >}}) am besten eine Nachricht mit einem kurzen Kommentar. Auch hier kann ein Kommentar hinterlassen werden, die E-Mail Adresse an die ich die Einladung dann verschicken soll, muss ich dazu aber wissen.

@@ -21,7 +21,7 @@ aliases:
 - /2015/03/09/laufen-laufen-laufen-ein-update/
 ---
 
-Vor ca. 5 Monaten hatte ich mich ja dazu entschlossen [wieder mit dem Laufen anzufangen]({{< relref "post/2014-10-29-jogging-mein-neues-fitnessstudio-draussen.markdown" >}}). Gründe dafür gab es viele, wie es aktuell darum steht soll dieser Beitrag ans Tageslicht bringen.
+Vor ca. 5 Monaten hatte ich mich ja dazu entschlossen [wieder mit dem Laufen anzufangen]({{< relref "/post/2014-10-29-jogging-mein-neues-fitnessstudio-draussen.markdown" >}}). Gründe dafür gab es viele, wie es aktuell darum steht soll dieser Beitrag ans Tageslicht bringen.
 
 {{< figure src="https://farm9.staticflickr.com/8691/16741568196_a8f1b82605.jpg" caption="Übersicht meiner Aktivitäten auf Strava" alt="Strava Lauf-Statistik" >}}
 

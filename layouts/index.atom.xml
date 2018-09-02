@@ -1,0 +1,35 @@
+{{ print "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>"| safeHTML }}
+{{ print "<!-- index.atom.xml -->"| safeHTML }}
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ .Site.Title }} Blog</title>
+  <link href="{{ .Permalink }}index.xml" rel="self" type="application/atom+xml"/>
+  <link rel="hub" href="https://renem.superfeedr.com/" />
+  <link href="{{ .Permalink }}"/>{{ if not .Date.IsZero }}
+  <updated>{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</updated>{{ end }}
+  <id>{{ .Permalink }}</id>{{ with .Site.Author.name }}
+  <author>
+    <name>{{.}}</name>{{ with $.Site.Author.email }}
+    <email>{{.}}</email>{{end}}
+  </author>{{end}}
+  <generator>Hugo -- gohugo.io</generator>
+  {{ $uuid := sha1 $.Site.BaseURL }}<id>urn:uuid:{{substr $uuid 0 8}}-{{substr $uuid 8 4}}-5{{substr $uuid 13 3}}-{{substr $uuid 16 1}}9{{substr $uuid 17 2}}-{{substr $uuid 21 12}}</id>
+  {{- range first (sub .Site.Params.RSSLimit 0) (where .Site.Pages "Type" "!=" "page") }}
+  <entry>{{ $url := .Permalink }}{{ $uuid := sha1 .Permalink }}{{ $page := .}}
+    {{- if ne .Type "photos" }}
+      {{- if .Title }}
+    <title type="text">{{ .Title | plainify }}</title>
+      {{- end }}
+    {{- end }}
+    <category term="{{$page.Section}}" />
+    <link href="{{ .Permalink }}"/>
+    <id>urn:uuid:{{substr $uuid 0 8}}-{{substr $uuid 8 4}}-5{{substr $uuid 13 3}}-{{substr $uuid 16 1}}9{{substr $uuid 17 2}}-{{substr $uuid 21 12}}</id>
+    {{- with .Site.Params.Author }}
+    <author>
+      <name>{{.}}</name>
+    </author>
+    {{- end}}
+    <published>{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</published>
+    <updated>{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</updated>
+    {{ `<content type="html"><![CDATA[` | safeHTML }}{{ .Content }}]]></content>
+  </entry>{{ end }}
+</feed>

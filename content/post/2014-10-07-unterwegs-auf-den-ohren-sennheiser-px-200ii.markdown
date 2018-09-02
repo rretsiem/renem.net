@@ -19,7 +19,7 @@ aliases:
 
 {{< figure class="center" src="https://files.app.net/wz9qk7k-Y.jpg" title="Sennheiser PX 200 IIi" >}}
 
-Da ist er also, der Kopfhörer den ich [nach langer Suche]({{< relref "post/2014-07-21-koss-porta-pro-falschung-im-einsatz.markdown" >}}) nun unterwegs verwende.  
+Da ist er also, der Kopfhörer den ich [nach langer Suche]({{< relref "/post/2014-07-21-koss-porta-pro-falschung-im-einsatz.markdown" >}}) nun unterwegs verwende.  
 Eines gleich vorweg, ich nutze die ["i"-Version](http://www.amazon.de/gp/product/B003WV7890/ref=as_li_ss_tl?ie=UTF8&camp=1638&creative=19454&creativeASIN=B003WV7890&linkCode=as2&tag=renblo07-21), welche eine Steuerung für das iPhone und ein Mikrofon mitbringt und somit auch mein bisher verwendetes iPhone-Headset von Apple ablöst.
 
 Wie so oft, musste ich den Kopfhörer im Internet bestellen, da keiner der Elektro-Märkte in näherer Umgebung keinen meiner Favoriten:

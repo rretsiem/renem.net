@@ -32,7 +32,7 @@ Weltfrieden gehört übrigens nicht dazu, denn den gab ews 2015 ja leider wieder
 
 {{< figure src="https://cdn-images-1.medium.com/max/1600/0*Qjbmb1VagZJ2myrm.png" caption="">}}
 
-Den Anfang macht [Runalyze](https://runalyze.com/), ein Tool welches ich dieses Jahr erst kennen gelernt habe. Nach kurzer Zeit wurde dies bereits meine Hauptanlaufstelle zum Thema Datenauswertung meiner Läufe. Ich hatte dazu ja schon [ein]({{< relref "post/2015-06-03-runalyze-laufstatistiken-soweit-man-laufen-kann.markdown" >}}) [wenig]({{< relref "post/2015-12-07-adieu-strava-premium-runalyze-kann-statistiken-einfach-besser.markdown" >}}) geschrieben und das Tool genauer vorgestellt. Trotzdem möchte ich mit diesem Beitrag noch einmal einen kurzen Überblick geben.
+Den Anfang macht [Runalyze](https://runalyze.com/), ein Tool welches ich dieses Jahr erst kennen gelernt habe. Nach kurzer Zeit wurde dies bereits meine Hauptanlaufstelle zum Thema Datenauswertung meiner Läufe. Ich hatte dazu ja schon [ein]({{< relref "/post/2015-06-03-runalyze-laufstatistiken-soweit-man-laufen-kann.markdown" >}}) [wenig]({{< relref "/post/2015-12-07-adieu-strava-premium-runalyze-kann-statistiken-einfach-besser.markdown" >}}) geschrieben und das Tool genauer vorgestellt. Trotzdem möchte ich mit diesem Beitrag noch einmal einen kurzen Überblick geben.
 
 Runalyze ist ein Lauftagebuch was von Läufern entwickelt wurde und das merkt man an vielen Stellen; im positiven. Es gibt ja eine Menge Seiten und Tools mit denen man seine Läufe und andere Sportarten wie Radfahren oder Schwimmen aufzeichnen kann. Mir ist aber bis zur Entdeckung von Runalyze kein Tool untergekommen was so viele Statistiken für das Laufen zur Verfügung stellt.
 

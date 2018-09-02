@@ -18,7 +18,7 @@ Bis zum 03.12.2015 war ich Premium Mitglied bei Strava, sehr zufrieden. Eigentli
 Ich habe aber im September diesen Jahres entschieden, dass ich die Premium-Mitgliedschaft bei Strava — den Betrag von 55€ halte ich meiner Meinung nach für sehr hoch — nicht mehr verlängern werde. Die Funktionen die mir Premium bietet, sind für mich im Moment einfach diesen Betrag nicht wert. Die Community, die ich oben angesprochen habe, zumindest die Funktionen welche ich nutze sind auch in der kostenfreien Variante verfügbar. Erweiterte Statistiken und Trainingspläne nutze ich bei Strava nicht.
 
 ### Hello Runaylze
-Das Ganze wäre vielleicht anders, hätte ich im Mai nicht [Runalyze](http://blog.runalyze.com/) entdeckt. Den Service habe ich hier [bereits vorgestellt]({{< relref "post/2015-06-03-runalyze-laufstatistiken-soweit-man-laufen-kann.markdown" >}}), für Statistik-Freaks wie mich ein Eldorado!
+Das Ganze wäre vielleicht anders, hätte ich im Mai nicht [Runalyze](http://blog.runalyze.com/) entdeckt. Den Service habe ich hier [bereits vorgestellt]({{< relref "/post/2015-06-03-runalyze-laufstatistiken-soweit-man-laufen-kann.markdown" >}}), für Statistik-Freaks wie mich ein Eldorado!
 
 Die Jungs und Mädels(?) von Runalyze habe sich dieses Jahr ordentlich ins Zeug gelegt und viel neues gebracht. Der Support auf Twitter ist immer schnell, die gehostete Version ist kostenlos und lebt von Spenden. Auf [Github](http://github.com/Runalyze/Runalyze) kann man den aktuellen Entwicklungsstand einsehen und verfolgen. Wer will kann sich seine eigene Runalyze Instanz auch selbst hosten.  
 Passend dazu sind die Entwickler und Initiatoren von diesem Projekt selbst engagierte Läufer und das merkt man dem Projekt auch an.

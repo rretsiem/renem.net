@@ -15,7 +15,7 @@ aliases:
 - /vorfreude-nach-7-tagen-pause-d29ba6d09d56
 ---
 
-Nach meinem Beitrag wegen der [Laufpause - Schmerzen im Fuß]({{< ref "post/2015-06-29-vorfreude-nach-7-tagen-pause.markdown" >}}) von letzter Woche, war klar das ich mit dem Laufen wohl erst einmal eine kleine Pause einlegen muss. Daher wird dieser Beitrag hier ungewöhnlich kurz für meine Verhältnisse. Der Post soll ein wenig meine Vorfreude ausdrücken, dass ich morgen früh nach dann 7 Tagen Pause endlich wieder meine Laufschuhe schnüren kann.
+Nach meinem Beitrag wegen der [Laufpause - Schmerzen im Fuß]({{< relref "/post/2015-06-29-vorfreude-nach-7-tagen-pause.markdown" >}}) von letzter Woche, war klar das ich mit dem Laufen wohl erst einmal eine kleine Pause einlegen muss. Daher wird dieser Beitrag hier ungewöhnlich kurz für meine Verhältnisse. Der Post soll ein wenig meine Vorfreude ausdrücken, dass ich morgen früh nach dann 7 Tagen Pause endlich wieder meine Laufschuhe schnüren kann.
 
 Seit Mittwoch habe ich meinen Fuß regelmäßig mit Voltaren sowie einem Igelball behandelt. Bis Samstag hatte ich beim Auftreten auch noch weiterhin ein krampfartiges Gefühl im Außenrist. Jedoch deutlich weniger ausgeprägt als noch am Dienstag oder Mittwoch direkt nach der Misere.
 

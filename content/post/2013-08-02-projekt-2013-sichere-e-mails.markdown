@@ -10,13 +10,13 @@ aliases:
 - /2013/08/02/projekt-2013-sichere-e-mails/
 ---
 
-Wie im [letzten Post]({{< relref "2013-07-29-projekt-2013-zweiter-akt-sicherheit.markdown">}}) angekündigt, möchte ich meine E-Mails in Zukunft verschlüsselt versenden und empfangen. Das ist nicht so einfach, denn dazu gehört ja auch immer der Kommunikationspartner mit dem man E-Mails austauscht. Da ich damit selbst noch etwas wenig Erfahrung habe, hilft nur "Learning by doing".
+Wie im [letzten Post]({{< relref "/post/2013-07-29-projekt-2013-zweiter-akt-sicherheit.markdown">}}) angekündigt, möchte ich meine E-Mails in Zukunft verschlüsselt versenden und empfangen. Das ist nicht so einfach, denn dazu gehört ja auch immer der Kommunikationspartner mit dem man E-Mails austauscht. Da ich damit selbst noch etwas wenig Erfahrung habe, hilft nur "Learning by doing".
 
 Was ich bisher dabei gelernt habe ist, dass es eben nicht einfach nur reicht auf den "Senden-Button" zu klicken, aber genau das macht es ja auch spanend. Erfahrungen habe ich dabei schon einige gesammelt, welche mir auch helfen sollten in Zukunft dieses Thema an nicht ganz so technik-begabte Menschen zu bringen.
 
 ### Anfangen!
 
-Da man am besten den Umgang mit neuen Lösungen lernt in dem man sie verwendet. Wer also sicher versendete Mails testen will und den Umgang damit, der kann mir gern eine Mail schreiben. Die Daten dazu stehen oben im Menü. Ihr benötigt [meinen öffentlichen Schlüssel]({{< relref "pgp.md" >}}) und [meine Mail-Adresse]({{< relref "about.md" >}}).
+Da man am besten den Umgang mit neuen Lösungen lernt in dem man sie verwendet. Wer also sicher versendete Mails testen will und den Umgang damit, der kann mir gern eine Mail schreiben. Die Daten dazu stehen oben im Menü. Ihr benötigt [meinen öffentlichen Schlüssel]({{< relref "/pgp.md" >}}) und [meine Mail-Adresse]({{< relref "/about.md" >}}).
 
 
 ### Software

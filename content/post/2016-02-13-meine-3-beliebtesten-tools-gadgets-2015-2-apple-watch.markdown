@@ -23,7 +23,7 @@ twit: https://twitter.com/rretsiem/statuses/698595674531696640
 
 Die zeitliche Abfolge in der die Beiträge zu meinen beliebtesten Tools & Gadgets hier erscheinen hatte ich mir durchaus anders vorgestellt, aber erstens kommt es anders und zweitens als man denkt.
 
-Im [ersten Beitrag]({{< relref "post/2016-01-11-3-tools-2015-runalyze.markdown" >}}) dazu der bereits vor 4 Wochen hier veröffentlicht wurde, habe ich ja Runalyze vorgestellt. Dieses Mal ist es Hardware, welche ich sicherlich nicht extra vorstellen muss, denn die Apple Watch war ja — für mich zumindest — ein Gagdet welches in allen Medien present war.
+Im [ersten Beitrag]({{< relref "/post/2016-01-11-3-tools-2015-runalyze.markdown" >}}) dazu der bereits vor 4 Wochen hier veröffentlicht wurde, habe ich ja Runalyze vorgestellt. Dieses Mal ist es Hardware, welche ich sicherlich nicht extra vorstellen muss, denn die Apple Watch war ja — für mich zumindest — ein Gagdet welches in allen Medien present war.
 
 Nach nunmehr 7 Monaten in denen ich die Uhr jeden Tag nach dem Aufstehen bis abends zum Bett gehen getragen habe, bin ich von dieser immer noch begeistert und genau deshalb hat sie auch einen Platz in einen der Beitrag hier verdient.
 

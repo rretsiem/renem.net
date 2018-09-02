@@ -8,25 +8,34 @@ disableAliases = true
 [blackfriday]
 angledQuotes = true
 smartypantsQuotesNBSP = true
-[outputs]
-home = [ "HTML", "RSS", "JSON", "REDIR", "HEADERS"]
-page = [ "HTML"]
-section = ["HTML", "RSS", "JSON"]
+disableKinds = ["RSS"]
 [mediaTypes]
 [mediaTypes."text/netlify"]
-suffix = ""
-delimiter = ""
+[mediaTypes."application/atom+xml"]
+  suffixes = ["xml"]
+[outputs]
+  home = [ "HTML", "ATOM", "JSON", "REDIR", "HEADERS"]
+  page = [ "HTML"]
+  section = ["HTML", "ATOM", "JSON"]
 [outputFormats]
-[outputFormats.REDIR]
-mediatype = "text/netlify"
-baseName = "_redirects"
-isPlainText = true
-notAlternative = true
-[outputFormats.HEADERS]
-mediatype = "text/netlify"
-baseName = "_headers"
-isPlainText = true
-notAlternative = true
+  [outputFormats.REDIR]
+   mediatype = "text/netlify"
+   baseName = "_redirects"
+   isPlainText = true
+   notAlternative = true
+  [outputFormats.ATOM]
+    mediaType = "application/atom+xml"
+    baseName = "index"
+    isPlainText = false
+    isHTML = false
+    noUgly = true
+    Rel = "alternate"
+    notAlternative = true
+  [outputFormats.HEADERS]
+    mediatype = "text/netlify"
+    baseName = "_headers"
+    isPlainText = true
+    notAlternative = true
 sectionPagesMenu = "main"
 [Author]
   name = "René"

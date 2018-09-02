@@ -14,7 +14,7 @@ aliases:
 {{< figure class="center" src="https://files.app.net/2gx33b1jg.jpg" width="400" height="400" >}}
 
 Schon bevor Google Reader eingestellt wurde, nutzte ich einen selbst gehosteten RSS-Service um Beiträge gesammelt zu lesen. Damals entschied ich mich für [TinyTiny-RSS](http://tt-rss.org/), war aber nie so richtig zufrieden.  
-Als es dann ein Plugin gab, welches [Mr. Reader auf dem iPad erlaubte auf meine TT-RSS Instanz zuzugreifen]({{< ref "post/2013-07-24-mr-reader-and-reeder-sprechen-mit-tt-rss.markdown" >}}) war vieles einfacher. Aber immer noch nicht so richtig, denn viele Dinge wie das abbestellen von RSS-Feeds oder abonnieren von eben solchen gingen nur über das wirklich nicht sehr gute gestaltete Web-Interface. Zusätzlich dazu hatte der Service bei mir manchmal einen Schluckauf und holte keine neuen Beiträge bei den abonnierten Blogs und Webseiten ab.
+Als es dann ein Plugin gab, welches [Mr. Reader auf dem iPad erlaubte auf meine TT-RSS Instanz zuzugreifen]({{< relref "/post/2013-07-24-mr-reader-and-reeder-sprechen-mit-tt-rss.markdown" >}}) war vieles einfacher. Aber immer noch nicht so richtig, denn viele Dinge wie das abbestellen von RSS-Feeds oder abonnieren von eben solchen gingen nur über das wirklich nicht sehr gute gestaltete Web-Interface. Zusätzlich dazu hatte der Service bei mir manchmal einen Schluckauf und holte keine neuen Beiträge bei den abonnierten Blogs und Webseiten ab.
 
 Anfang Mai entschied ich dann, nachdem wieder einmal keine Beträge geladen wurden, mich nach einer Alternative umzusehen, die ich nicht selbst betreibe und die Arbeit andere erledigen lasse. Dafür bin ich aber auch durchaus bereit Geld zu bezahlen.
 
