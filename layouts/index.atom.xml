@@ -12,7 +12,6 @@
     <email>{{.}}</email>{{end}}
   </author>{{end}}
   <generator>Hugo -- gohugo.io</generator>
-  {{ $uuid := sha1 $.Site.BaseURL }}<id>urn:uuid:{{substr $uuid 0 8}}-{{substr $uuid 8 4}}-5{{substr $uuid 13 3}}-{{substr $uuid 16 1}}9{{substr $uuid 17 2}}-{{substr $uuid 21 12}}</id>
   {{- range first (sub .Site.Params.RSSLimit 0) (where .Site.Pages "Type" "!=" "page") }}
   <entry>{{ $url := .Permalink }}{{ $uuid := sha1 .Permalink }}{{ $page := .}}
     {{- if ne .Type "photos" }}
