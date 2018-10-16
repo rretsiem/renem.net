@@ -19,6 +19,8 @@
     Content-Security-Policy = "default-src 'self' https:; script-src 'self' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src *; frame-ancestors 'self';"
     X-Content-Security-Policy = "default-src 'self' https:; script-src 'self' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src *; frame-ancestors 'self';"
   	X-WebKit-CSP = "default-src 'self' https:; script-src 'self' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src *; frame-ancestors 'self';"
+
+[[headers]]
   for = "/serviceworker.js"
   [headers.values]
     cache-control = "max-age=0,no-cache,no-store,must-revalidate"
