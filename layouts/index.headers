@@ -1,12 +1,3 @@
-/*
-  X-XSS-Protection: 1; mode=block
-  X-Content-Type-Options: nosniff
-  Content-Security-Policy: default-src 'self' https:; script-src 'self' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src *; frame-ancestors 'self';
-  X-Content-Security-Policy: default-src 'self' https:; script-src 'self' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src *; frame-ancestors 'self';
-  X-WebKit-CSP: default-src 'self' https:; script-src 'self' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src *; frame-ancestors 'self';
-  Referrer-Policy: no-referrer-when-downgrade
-  Strict-Transport-Security: max-age=10886400
-  Cache-Control: max-age=2628000, public
 # preloading
 /*
 Link: <{{ "css/bundle.css" | relURL }}>; rel=preload; as=style

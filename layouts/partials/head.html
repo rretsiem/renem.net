@@ -1,3 +1,8 @@
+{{ $cssOpts := (dict "targetPath" "styles/bundle.css" "enableSourceMap" true ) }}
+{{ $main := resources.Get "/css/main.css" }}
+
+{{ $style := slice $main | resources.Concat "bundle.css" | toCSS $cssOpts | resources.PostCSS | resources.Minify | resources.Fingerprint }}
+
 <!DOCTYPE html>
 <html class="no-js" lang="de" prefix="og: http://ogp.me/ns#" xmlns:og="http://ogp.me/ns#">
     <head>
@@ -5,7 +10,10 @@
         <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
         <link rel="canonical" href="{{ .Permalink }}">
         <!-- custom css here -->
-        <link href="{{ .Site.BaseURL }}css/bundle.css" rel="stylesheet" type="text/css">
+<!--        <link href="{{ .Site.BaseURL }}css/bundle.css" rel="stylesheet" type="text/css"> -->
+
+        <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" type="text/css">
+
         <!-- Site verification -->
         {{- if .IsHome }} {{ partial "site-verification" . }} {{ end -}}
         <!-- site feeds -->

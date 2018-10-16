@@ -1,1 +1,1 @@
-navigator.serviceWorker&&!navigator.serviceWorker.controller&&navigator.serviceWorker.register("/serviceworker.js");
+navigator.serviceWorker&&!navigator.serviceWorker.controller&&navigator.serviceWorker.register("/serviceworker.js",{updateViaCache:"none"});

@@ -5,9 +5,9 @@ var cp = require('child_process');
 var BrowserSync = require('browser-sync');
 
 var responsive = require('gulp-responsive');
-var postcss = require('gulp-postcss');
+// var postcss = require('gulp-postcss');
+// var sourcemaps = require('gulp-sourcemaps');
 var concat = require('gulp-concat');
-var sourcemaps = require('gulp-sourcemaps');
 var changed = require('gulp-changed');
 var svgSprite = require('gulp-svg-sprite');
 var exec = require('child_process').execSync;
@@ -71,9 +71,9 @@ if (isProduction) {
 const devOpts = !isProduction ? ["--buildDrafts", "--baseURL", devHost +':' + devPort + '/'] : ["--cleanDestinationDir"];
 
 // gulp.task("hugo", (cb) => buildSite(cb, devOpts));
-gulp.task("build", ["css", "compress", "svg", "img:build", "hugo:build"]);
+gulp.task("build", ["compress", "svg", "img:build", "hugo:build"]);
 
-gulp.task("build:netlify", ["css", "compress", "hugo:build"]);
+gulp.task("build:netlify", ["compress", "hugo:build"]);
 
 gulp.task('compress', function() {
   gulp.src('./src/js/*.js')
@@ -165,13 +165,13 @@ gulp.task("svg", () =>
     .pipe(gulp.dest("./layouts/partials"))
 );
 
-gulp.task("server", ["compress", "css", "img", "hugo:build"], () => {
+gulp.task("server", ["compress", "img", "hugo:build"], () => {
   browserSync.init({
     server: {
       baseDir: DIST_DIR
     }
   });
-  gulp.watch("./src/css/**/*.css", ["css", "hugo:build"]);
+  // gulp.watch("./src/css/**/*.css", ["css", "hugo:build"]);
   gulp.watch("./src/js/**/*.js", ["compress", "hugo:build"]);
   gulp.watch("./src/images/**", ["img", "hugo:build"]);
   gulp.watch("./src/svg/**/*.svg", ["svg", "hugo:build"]);
