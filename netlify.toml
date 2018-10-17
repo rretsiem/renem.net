@@ -8,6 +8,11 @@
   HUGO_VERSION = "0.49.2"
 
 [[headers]]
+  for = "/serviceworker.js"
+  [headers.values]
+    cache-control = "max-age=0,no-cache,no-store,must-revalidate"
+
+[[headers]]
   for = "/*"
   [headers.values]
     X-Frame-Options = "DENY"
@@ -20,7 +25,3 @@
     X-Content-Security-Policy = "default-src 'self' https:; script-src 'self' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src *; frame-ancestors 'self';"
   	X-WebKit-CSP = "default-src 'self' https:; script-src 'self' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src *; frame-ancestors 'self';"
 
-[[headers]]
-  for = "/serviceworker.js"
-  [headers.values]
-    cache-control = "max-age=0,no-cache,no-store,must-revalidate"

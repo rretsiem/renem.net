@@ -32,7 +32,7 @@ Was ich da so sehe, lässt mich schon staunen!
 
 {{< picture src="/images/2018-10-16-ausfahrt-neue-kamera-3" type="jpg" alt="Mit dem Rad in den Sonnenuntergang" caption="Selten das die Farben so aussehen auf dem Foto wie in der Realität, ohne Bearbeitung!" >}}
 
-{{< picture src="/images/2018-10-16-ausfahrt-neue-kamera-4" type="jpg" alt="Mit dem Rad in den Sonnenuntergang" caption="Und weil's so schon ist!" >}}
+{{< picture src="/images/2018-10-16-ausfahrt-neue-kamera-4" type="jpg" alt="Mit dem Rad in den Sonnenuntergang" caption="Und weil es so schön ist!" >}}
 
 Bin begeistert von den ersten Tests bei idealen Bedingungen. Mein in die Jahre gekommenens iPhone 6S macht zwar weiterhin tolle Bilder, aber das da oben ist für mich eine andere Liga.
 
