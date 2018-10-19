@@ -1,0 +1,5 @@
+window.loadIndieConfig=(function(){'use strict';var config,configFrame,configTimeout,callbacks=[],handleConfig,parseConfig;handleConfig=function(){config=config||{};configFrame.parentNode.removeChild(configFrame);configFrame=undefined;window.removeEventListener('message',parseConfig);clearTimeout(configTimeout);while(callbacks[0]){callbacks.shift()(config);}};parseConfig=function(message){var correctSource=(configFrame&&message.source===configFrame.contentWindow);if(correctSource&&config===undefined){try{config=JSON.parse(message.data);}catch(ignore){}
+handleConfig();}};if(!window.navigator.registerProtocolHandler){config={};}
+return function(callback){if(config){callback(config);return;}
+callbacks.push(callback);if(configFrame){return;}
+configFrame=document.createElement('iframe');configFrame.src='web+action:load';document.getElementsByTagName('body')[0].appendChild(configFrame);configFrame.style.display='none';window.addEventListener('message',parseConfig);configTimeout=setTimeout(handleConfig,3000);};}());

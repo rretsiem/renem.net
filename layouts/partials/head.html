@@ -10,10 +10,7 @@
         <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
         <link rel="canonical" href="{{ .Permalink }}">
         <!-- custom css here -->
-<!--        <link href="{{ .Site.BaseURL }}css/bundle.css" rel="stylesheet" type="text/css"> -->
-
         <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $style.Data.Integrity }}" type="text/css">
-
         <!-- Site verification -->
         {{- if .IsHome }} {{ partial "site-verification" . }} {{ end -}}
         <!-- site feeds -->
@@ -61,5 +58,4 @@
         <link rel="microsub" href="https://aperture.p3k.io/microsub/48">
 
         <script type='text/javascript' charset="utf-8" src="/js/remove-no.js"></script>
-
     </head>

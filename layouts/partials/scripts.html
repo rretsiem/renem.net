@@ -1,0 +1,9 @@
+{{- $indieconfig := resources.Get "js/indieconfig.js" | resources.Minify | resources.Fingerprint -}}
+{{- $webaction := resources.Get "js/webaction.js" | resources.Minify | resources.Fingerprint -}}
+{{ $swreg := resources.Get "js/service-worker-registration.js" | resources.Minify | resources.Fingerprint -}}
+<!--  Indieweb actions -->
+<script async type='text/javascript' charset="utf-8" src="{{ $indieconfig.Permalink }}" integrity="{{ $indieconfig.Data.Integrity }}"></script>
+<script async type='text/javascript' charset="utf-8" src="{{ $webaction.Permalink }}" integrity="{{ $webaction.Data.Integrity }}"></script>
+<!-- helpers -->
+<!-- <script async type='text/javascript' charset="utf-8" src="/js/helpers.js"></script> -->
+<script async type='text/javascript' charset="utf-8" src="{{ $swreg.Permalink }}" integrity="{{ $swreg.Data.Integrity }}"></script>

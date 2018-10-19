@@ -1,7 +1,7 @@
 {
 	"version": "https://jsonfeed.org/version/1",
 	"title": "{{ .Site.Title }} JSON photo feed",
-	"home_page_url": "{{ .Site.BaseURL }}photo",
+	"home_page_url": "{{ .Site.BaseURL }}",
 	"user_comment": "This feed includes the latest photos I posted to my site. To add this feed to your reader, copy the following URL — {{ .Site.BaseURL }}photo.json — and add it your reader.",
 	{{- if isset .Site.Params "description" }}
 	"description": "{{ .Site.Params.description }}",
@@ -18,7 +18,7 @@
 		{{ if $index }}, {{ end }}
 		{
 			"id": "{{ $post.Permalink }}",
-			{{- if ne .Type "photos" }}
+			{{- if .Title }}
 			"title": "{{ $post.Title | htmlEscape }}",
 			{{ end }}
 			"url": "{{ $post.Permalink }}",
