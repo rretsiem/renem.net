@@ -9,6 +9,27 @@
   src: local(".SFNSText-Light"), local(".HelveticaNeueDeskInterface-Light"), local(".LucidaGrandeUI"), local("Ubuntu Light"), local("Segoe UI Light"), local("Roboto-Light"), local("DroidSans"), local("Tahoma");
 }
 
+:root {
+    /* Use of CSS variables for colors */
+    /* LIGHT theme */
+    --text-color-normal: hsl(0, 0%, 25%);
+    --background: hsl(0, 0%, 100%);
+    --link-color: hsl(349, 81%, 58%);
+    --link-color-hover: hsl(215, 19%, 70%);
+    --border-color: hsl(213, 28%, 41%);
+    --border-color-light: hsla(213, 28%, 41%, 0.4%);
+}
+
+html[data-theme="dark"] {
+    /* DARK theme */
+    --background: hsl(0, 0%, 13%);
+    --text-color-normal: hsl(0, 0%, 72.9%);
+    --link-color: hsl(28.1, 93.2%, 53.7%);
+    --link-color-hover: hsl(28.1, 93.2%, 53.7%);
+    --border-color: hsl(0, 0%, 72.9%);
+    --border-color-light: hsl(28.1, 90%, 72%);
+}
+
 html {
     margin: 0;
     padding: 0;
@@ -22,25 +43,8 @@ html {
     font-range: 420px 1440px;
     line-height: responsive 27px 37px;
     line-height-range: 420px 1440px;
-    /* Use of CSS variables for colors */
-    /* LIGHT theme */
-    /*--text-color-normal: hsl(0, 0%, 35%);*/
-    --background: hsl(0, 0%, 100%);
-    --link-color: hsl(349, 81%, 58%);
-    --link-color-hover: hsl(215, 19%, 70%);
-    --border-color: hsl(213, 28%, 41%);
-    --border-color-light: hsla(213, 28%, 41%, 0.4);
 }
 
-html[data-theme="dark"] {
-    /* DARK theme */
-    --background: hsl(0, 0%, 13%);
-    --text-color-normal: hsl(0, 0, 72.9%);
-    --link-color: hsl(28.1, 93.2%, 53.7%);
-    --link-color-hover: hsl(28.1, 93.2%, 53.7%);
-    --border-color: hsl(0, 0, 72.9%);
-    --border-color-light: hsl(0, 0, 82%);
-}
 
 body {
 /*  font-size: 18px;*/
@@ -69,7 +73,6 @@ body:after, body:before {
 body:after {
     clear: both
 }
-
 
 abbr, acronym, blockquote, code, dir, kbd, listing, plaintext, q, samp,
 tt, var, xmp {
@@ -862,17 +865,17 @@ main {
 }
 
 .picture + .picture {
-    margin-top: 4rem
+    margin-top: 4rem;
 }
 
 .picture figcaption {
     text-align: right;
     font-style: italic;
-    font-size: 1rem
+    font-size: 1rem;
 }
 
 .picture + p {
-    margin-top: 2rem
+    margin-top: 2rem;
 }
 
 .archive-article {
@@ -902,12 +905,12 @@ nav {
 
 .sidebar-nav a:hover {
   background: var(--link-color);
-  color: var(--text-color-normal);
+  color: var(--background);
 }
 
 .sidebar-nav a.active {
-  background: var(--border-color-light);
-  color: var(--text-color-normal);
+  background: var(--text-color-normal);
+  color: var(--background);
 }
 
 .post-footer nav ul {
