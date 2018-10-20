@@ -17,7 +17,7 @@
     --link-color: hsl(349, 81%, 58%);
     --link-color-hover: hsl(215, 19%, 70%);
     --border-color: hsl(213, 28%, 41%);
-    --border-color-light: hsla(213, 28%, 41%, 0.4%);
+    --border-color-light: hsla(213, 41%, 60%);
 }
 
 html[data-theme="dark"] {
