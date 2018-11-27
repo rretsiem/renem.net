@@ -22,10 +22,8 @@ images:
 - /images/2018-11-27-ringgrabenkollektor00011.jpg
 - /images/2018-11-27-ringgrabenkollektor00012.jpg
 syndication:
-- http://www.haustechnikdialog.de/Forum/p/2605338
+- https://www.haustechnikdialog.de/Forum/p/2711962
 ---
-
-
 
 Zwischen dem Verlegen von [Teil 1]({{<  relref "2018-01-31-ringgrabenkollektor-teil-1.markdown" >}}) und dem finalen Teil 2 sind nicht nur hier im Blog einige Monate vergangen, sondern auch während der Ausführung. Im Januar haben wir den ersten Teil verlegt weil das Wetter so gut war und der Zeitpunkt zum verlegen in der Bauphase perfekt gepasst hat. Wir mussten aber für den zweiten Teil bis in den August warten. Der Bericht dazu kommt nun noch einmal später, weil wir mittlerweile durch den Umzug und viele andere Dinge die halt so anfallen fest eingebunden waren.
 
