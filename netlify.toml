@@ -5,7 +5,7 @@
   LAMBDA_ENDPOINT = "netlify-lambda"
 
 [context.production.environment]
-  HUGO_VERSION = "0.49.2"
+  HUGO_VERSION = "0.55.6"
 
 [[headers]]
   for = "/serviceworker.js"
@@ -24,4 +24,3 @@
     Content-Security-Policy = "default-src 'self' https:; script-src 'self' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src *; frame-ancestors 'self';"
     X-Content-Security-Policy = "default-src 'self' https:; script-src 'self' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src *; frame-ancestors 'self';"
   	X-WebKit-CSP = "default-src 'self' https:; script-src 'self' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src *; frame-ancestors 'self';"
-
