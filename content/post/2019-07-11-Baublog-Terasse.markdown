@@ -18,7 +18,7 @@ mfrepostof: ""
 mfreplyto: ""
 mflikeof: ""
 syndication:
--
+- https://twitter.com/rretsiem/status/1149342247382654976
 ---
 
 Kein Laufen, kein Radfahren oder sonstiger Sport. Dafür mal wieder ein Update von der Baustelle, wobei eher vom Haus, wohnen ja schon 6 Monate drin.
