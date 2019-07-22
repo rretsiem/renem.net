@@ -8,6 +8,7 @@
 firebase.json
 .firebaserc
 .git/
+.env
 node_modules/
 /src/images/
 /src/images/_resize

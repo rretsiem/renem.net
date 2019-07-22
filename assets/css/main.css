@@ -842,6 +842,7 @@ body>main {
 main {
     margin-bottom: 30px;
     max-width: 90vw;
+    min-width: 50vw;
     margin: 0 auto;
     transition: opacity .3s ease-in-out
 }

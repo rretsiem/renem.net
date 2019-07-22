@@ -2,7 +2,11 @@
 {{ partial "header.html" . }}
 <main class="content" role="main">
 	<div class="container">
-		{{ .Render "post-single" }}
+		{{ if eq .Section "notes" }}
+			{{ .Render "notes-single" }}
+		{{ else }}
+			{{ .Render "post-single" }}
+		{{ end }}
 	</div>
 </main>
 {{ partial "footer.html" . }}
