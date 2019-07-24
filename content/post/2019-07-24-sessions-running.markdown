@@ -20,6 +20,7 @@ mfreplyto: ""
 mflikeof: ""
 syndication:
 - https://twitter.com/rretsiem/status/1154056656227115009
+- https://mastodon.host/@renem/102497305376193110
 ---
 
 Die App [Sessions](https://apps.apple.com/de/app/sessions-yoga-f%C3%BCr-l%C3%A4ufer/id1282464418) hatte ich bereits im letzten Jahr entdeckt, in Version 1 war sie allerdings sehr eingeschränkt nutzbar, machte aber schon eine guten Eindruck. Nachdem ich aber die Workouts ein- bis zweimal durchgeführt hatte, verschwand die App irgendwie wieder aus meinem Fokus und ich widmete mich wieder meiner bewährten [Yoga Studio](https://apps.apple.com/de/app/yoga-studio-mind-body/id567767430) App, die ich schon sehr lange und gerne benutze.
