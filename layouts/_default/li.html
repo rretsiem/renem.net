@@ -1,10 +1,9 @@
 <article class="li h-entry {{ .Type }}">
     <header class="post-header">
         <h2 class="post-title p-name">
-        {{ partial "indieweb/indieweb-reaction" . }}
-        {{- if .Params.mflikeof -}}
-        <svg class="icon"><use xlink:href="#like" /><title>Likes</title></svg>&nbsp;&nbsp;
-        {{- end -}}
+        {{ if eq .Section "notes" }}
+            {{ partial "indieweb/indieweb-reaction" . }}
+        {{ end }}
         {{- if .Title }}
         <a class="metatag u-url u-uid" href="{{ .Permalink }}">{{ .Title }}</a>
         {{ end -}}
