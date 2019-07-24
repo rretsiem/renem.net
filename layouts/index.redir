@@ -7,7 +7,11 @@
 /archives /post           301
 /all      /post           301
 # https://fed.brid.gy redirects
-/.well-known/* https://fed.brid.gy/.well-known/:splat 200
+# /.well-known/* https://fed.brid.gy/.well-known/:splat 200
+/.well-known/host-meta https://fed.brid.gy/.well-known/host-meta 302
+/.well-known/host-meta.xrd https://fed.brid.gy/.well-known/host-meta.xrd 302
+/.well-known/host-meta.jrd https://fed.brid.gy/.well-known/host-meta.jrd 302
+/.well-known/webfinger https://fed.brid.gy/.well-known/webfinger 302
 #/.well-known/host-meta* https://fed.brid.gy/.well-known/host-meta* 200
 #/.well-known/webfinger* https://fed.brid.gy/.well-known/webfinger* 200
 # /api/*  https://api.example.com/:splat  200
