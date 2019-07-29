@@ -3,15 +3,15 @@
 /tag=*    /tags/:splat    301
 /tagged/running /tags/laufen 301
 /tagged/* /tags/:splat    301
-#/post/:year/:month:/:date/:slug  /post/:year-:month-:date-:slug 301
 /archives /post           301
 /all      /post           301
 # https://fed.brid.gy redirects
-/.well-known/host-meta		https://fed.brid.gy/.well-known/host-meta 302
-/.well-known/host-meta.xrd	https://fed.brid.gy/.well-known/host-meta.xrd 302
-/.well-known/host-meta.jrd	https://fed.brid.gy/.well-known/host-meta.jrd 302
-# /.well-known/webfinger https://fed.brid.gy/.well-known/webfinger 200
-/.well-known/webfinger resource=:res	https://fed.brid.gy/.well-known/webfinger?resource:res 302
+/.well-known/host-meta      https://fed.brid.gy/.well-known/host-meta 302
+/.well-known/host-meta.xrd  https://fed.brid.gy/.well-known/host-meta.xrd 302
+/.well-known/host-meta.jrd  https://fed.brid.gy/.well-known/host-meta.jrd 302
+### /.well-known/webfinger      /.well-known/webfinger.jrd 200
+### /.well-known/webfinger resource=:res    /.well-known/webfinger.jrd?resource=:res 200
+/.well-known/webfinger resource=:res	https://fed.brid.gy/.well-known/webfinger?resource=:res 302
 # search
 /search q=:query https://duckduckgo.com/?q=:query&site:renem.net
 # https://duckduckgo.com/?q=search&kp=-1&kl=us-en
