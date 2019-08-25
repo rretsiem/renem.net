@@ -17,6 +17,8 @@ tags:
 - blog
 - hugo
 - indieweb
+series:
+- "Microblogging & Indieweb"
 title: Alles auf Anfang, alles Meins!
 ---
 

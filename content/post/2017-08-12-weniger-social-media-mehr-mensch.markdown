@@ -10,6 +10,8 @@ tags:
 - indieweb
 - twitter
 - blog
+series:
+- "Microblogging & Indieweb"
 syndication:
 - http://microblog.renem.net/2017/08/12/ich-habe-mal.html
 - https://twitter.com/rretsiem/status/896492627301994503
