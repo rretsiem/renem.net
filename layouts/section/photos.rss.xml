@@ -11,7 +11,7 @@
     <lastBuildDate>{{ .Site.LastChange.Format "Mon, 02 Jan 2006 15:04:05 GMT" | safeHTML }}</lastBuildDate>{{ end }}
     <link rel="self" href="{{.Permalink}}photos/index.xml" type="application/rss+xml" xmlns="http://www.w3.org/2005/Atom" />
     <link rel="hub"  href="https://renem.superfeedr.com/" xmlns="http://www.w3.org/2005/Atom" />
-    {{ range first (sub .Site.Params.RSSLimit 0) (where .Data.Pages "Type" "eq" "photos") }}
+    {{ range first (sub .Site.Params.RSSLimit 0) (where .Site.RegularPages "Type" "eq" "photos") }}
     <item>
       {{- if ne .Type "photos" }}
       <title>{{ .Title }}</title>

@@ -1,6 +1,7 @@
 {{ with .Params.mfreplyto }}
 <div class="context">
-	<h5>Dieser Beitrag ist eine Antwort auf:</h5>
+	<!-- <h5>Dieser Beitrag ist eine Antwort auf:</h5>-->
+	<svg class="icon"><use xlink:href="#reply" /><title>Antwort</title></svg>
 	{{- if in . "twitter.com" -}}
 			<span><a class="u-in-reply-to" rel="in-reply-to" href="{{ . }}">
 					<svg class="icon"><use xlink:href="#twitter" /><title>Reply to</title></svg>&nbsp;&nbsp;{{ . }}
@@ -18,10 +19,13 @@
 					</blockquote>
 				</span>
 				{{- end -}}
+	{{- else if in . "mastodon" -}}
+			<span><a class="u-in-reply-to" rel="in-reply-to" href="{{ . }}"></a>
+			</span>
+			<iframe src="{{ . }}/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe><script src="https://mastodon.social/embed.js" async="async"></script>
 	{{- else -}}
 		<p><span><a class="u-in-reply-to" rel="in-reply-to" href="{{ . }}">
-      <svg class="icon"><use xlink:href="#reply" /><title>Reply to</title></svg>&nbsp;&nbsp;{{ . }}
-      </a>
+      <svg class="icon"><use xlink:href="#reply" /><title>Reply to</title></svg>&nbsp;&nbsp;{{ . }}</a>
     </span></p>
 	{{- end -}}
 </div>

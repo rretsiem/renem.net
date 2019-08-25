@@ -1,4 +1,5 @@
-{{ $paginator := .Paginate (where .Data.Pages "Type" "!=" "page") }}
+{{ $paginator := .Paginate (where .Site.RegularPages "Type" "!=" "page") }}
+{{/* $paginator := .Paginate (where .Data.Pages "Type" "!=" "page") */}}
 
 {{ partial "head.html" . }}
 {{ partial "header.html" . }}
@@ -8,7 +9,7 @@
 	{{ end }}
 	<div class="container">
 	{{- range $paginator.Pages }}
-			{{ .Render "li" }}
+		{{ .Render "li" }}
 	{{ end -}}
 	{{- partial "pagination.html" . -}}
 	</div>

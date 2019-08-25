@@ -5,13 +5,12 @@
 	<span class="p-name hidden">{{ .Site.Title }}</span>
 	{{ end }}
 	<div class="container">
-  {{ range first 10 (where .Data.Pages "Type" "!=" "page") }}
-		{{ .Render "li" }}
+	{{ range first 10 (where .Site.RegularPages "Type" "post") }}
+			{{ .Render "li" }}
 	{{ end }}
-
   <h2>Weitere Beitr&auml;ge</h2>
   <ul id="list">
-    {{ range first 20 (after 10 (where .Data.Pages "Type" "!=" "page")) }}
+    {{ range first 20 (after 10 (where .Site.RegularPages "Type" "post")) }}
 		  {{ .Render "li-titles" }}
 	   {{ end }}
   </ul>

@@ -1,18 +1,22 @@
 <article class="li h-entry {{ .Type }}">
     <header class="post-header">
         <h2 class="post-title p-name">
-        {{ if eq .Section "notes" }}
+{{/*
+       {{ if eq .Section "notes" }}
             {{ partial "indieweb/indieweb-reaction" . }}
-        {{ end }}
-        {{- if .Title }}
-        <a class="metatag u-url u-uid" href="{{ .Permalink }}">{{ .Title }}</a>
-        {{ end -}}
+		{{ end }}
+            <svg class="icon"><use xlink:href="#comment" /><title>Note</title></svg>
+            <a class="metatag u-url u-uid" href="{{ .Permalink }}">{{ .Summary }}</a>
+*/}}
+            {{- if .Title }}
+            <a class="metatag u-url u-uid" href="{{ .Permalink }}">{{ .Title }}</a>
+            {{ end -}}
         </h2>
         <p class="post-time"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
         {{- if not .Title }}
         <a href="{{ .Permalink }}" class="metatag u-url u-uid">
         {{ end -}}
-        {{ .Date.Format "January 2, 2006" }}</time>
+        {{ .Date.Format "January 02, 2006" }}</time>
         {{- if not .Title }}
         </a>
         {{ end -}}

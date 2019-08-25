@@ -14,7 +14,7 @@
 		"url": "{{ .Site.BaseURL }}"
 	},
 	"items": [
-		{{- range $index, $post := first 20 (where .Data.Pages "Type" "!=" "page") -}}
+		{{- range $index, $post := first 20 (where .Site.RegularPages "Type" "!=" "page") -}}
 		{{ if $index }}, {{ end }}
 		{
 			"id": "{{ $post.Permalink }}",

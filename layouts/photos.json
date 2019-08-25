@@ -14,7 +14,7 @@
 		"url": "{{ .Site.BaseURL }}"
 	},
 	"items": [
-		{{- range $index, $post := first 20 (where .Data.Pages "Section" "photo") -}}
+		{{- range $index, $post := first 20 (where .Site.RegularPages "Section" "photo") -}}
 		{{ if $index }}, {{ end }}
 		{
 			"id": "{{ $post.Permalink }}",
