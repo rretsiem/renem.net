@@ -18,7 +18,9 @@ mfrepostof: ""
 mfreplyto: ""
 mflikeof: ""
 syndication:
--
+- https://microblog.renem.net/2019/08/25/am-wochenende-doch.html
+- https://twitter.com/rretsiem/status/1165728747418505217
+- https://mastodon.social/@renem/102679600616622784
 ---
 
 Es geht, wie der Titel schon verrät um das Microblogging, im Speziellen um den von mir verwendeten Service von [@manton](https://micro.blog/manton) Namens [Micro.blog](https://micro.blog).
