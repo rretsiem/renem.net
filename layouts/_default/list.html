@@ -1,5 +1,5 @@
-{{ $paginator := .Paginate (where .Site.RegularPages "Type" "!=" "page") }}
-{{/* $paginator := .Paginate (where .Data.Pages "Type" "!=" "page") */}}
+{{/* $paginator := .Paginate (where .Site.RegularPages "Type" "!=" "page") */}}
+{{ $paginator := .Paginate (where .Data.Pages "Type" "!=" "page") }}
 
 {{ partial "head.html" . }}
 {{ partial "header.html" . }}
