@@ -1,0 +1,28 @@
+{
+  "subject": "acct:rene@renem.net",
+  "aliases": [
+    "https://renem.net/@rene",
+    "https://renem.net/about"
+  ],
+  "links": [
+    {
+      "rel": "http://webfinger.net/rel/profile-page",
+      "type": "text/html",
+      "href": "https://renem.net/@rene"
+    },
+    {
+      "rel": "http://schemas.google.com/g/2010#updates-from",
+      "type": "application/atom+xml",
+      "href": "https://renem.net/about.atom"
+    },
+    {
+      "rel": "self",
+      "type": "application/activity+json",
+      "href": "https://renem.net/about"
+    },
+    {
+      "rel":"http://ostatus.org/schema/1.0/subscribe",
+  	  "template":"https://ap.example.com/authorize_follow?acct={uri}"
+  	}
+  ]
+}

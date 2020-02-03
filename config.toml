@@ -52,7 +52,7 @@ sectionPagesMenu = "main"
   instagram = "rene.meister" # add your instagram username
   microblog_name = "renem"
   email = "rene@renem.net"
-  ISO8601 = "2006-01-02T15:04:05+02:00"
+  ISO8601 = "2006-01-02T15:04:05CET"
   webSub = "https://renem.superfeedr.com/"
 [sitemap]
   changefreq = "daily"
