@@ -8,6 +8,7 @@ draft: false
 tags:
 - heizung
 - diy
+- rgk
 images:
 - /images/2018-11-27-ringgrabenkollektor00001.jpg
 - /images/2018-11-27-ringgrabenkollektor00002.jpg
