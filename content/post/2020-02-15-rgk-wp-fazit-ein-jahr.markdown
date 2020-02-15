@@ -12,7 +12,9 @@ tags:
 images:
 - /images/2020-02-15-rgk-wp-fazit-ein-jahr-1.jpg
 syndication:
--
+- https://mastodon.social/@renem/103662916344980579
+- https://twitter.com/rretsiem/status/1228660951261401088
+- https://microblog.renem.net/2020/02/15/neuer-blog-post.html
 ---
 
 Nachdem das erste Jahr im neuen Haus bereits verstrichen ist, wird es Zeit einmal wieder ein Update zu geben zum Thema Heizung. Mich erreichen immer wieder mal Anfragen zum Thema Ringgrabenkollektor, bei denen ich gern bereit bin Auskunft zu geben.
