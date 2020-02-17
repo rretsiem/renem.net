@@ -4,17 +4,17 @@
 {
     "@context" : "http://schema.org",
     "@type" : "BlogPosting",
-    "articleSection" : "{{ .Section }}",
-    "name" : "{{ .Title }}{{ if ne .Title .Site.Title }} : {{ .Site.Title }}{{ end }}",
-    "headline" : "{{ .Title }}{{ if ne .Title .Site.Title }} : {{ .Site.Title }}{{ end }}",
-    "description" : "{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }}",
+    "articleSection" : {{ .Section }},
+    "name" : {{ .Title }}{{ if ne .Title .Site.Title }} : {{ .Site.Title }}{{ end }},
+    "headline" : {{ .Title }}{{ if ne .Title .Site.Title }} : {{ .Site.Title }}{{ end }},
+    "description" : {{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }},
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "{{ .Permalink }}"
     },
     "publisher": {
       "@type": "Person",
-      "name": "{{ .Site.Params.author }}",
+      "name": {{ .Site.Params.author }},
       "logo": {
         "@type": "ImageObject",
         "url": "{{ "/assets/renem_profile.png" | absURL }}"
