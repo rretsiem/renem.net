@@ -1,6 +1,6 @@
 ---
 title: "Mastodon ActivityPub Integration"
-date: 2019-08-08T14:10:02+25:00
+date: 2019-08-08T14:10:02+01:00
 categories:
 - notes
 draft: false
