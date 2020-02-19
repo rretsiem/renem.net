@@ -1,23 +1,57 @@
-{{ if .IsPage }}
+{{ if .IsHome -}}
+<script type="application/ld+json">
+{
+    "@context" : "http://schema.org",
+    "@type" : "WebSite",
+    "url": "{{ .Site.BaseURL }}",
+    "author": {
+        "@type": "Person",
+        "name": "{{ .Site.Params.author }}"
+    },
+    "description": "{{ .Site.Params.description }}",
+    "license" : "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "name": "{{ .Site.Title }}"
+}
+</script>
+{{/*
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "http://example.com/search?&q={query}",
+    "query-input": "required"
+  } */}}
+{{- else if .IsPage -}}
 {{ if or (eq .Type "post") (eq .Type "photos") }}
 <script type="application/ld+json">
 {
     "@context" : "http://schema.org",
     "@type" : "BlogPosting",
     "articleSection" : {{ .Section }},
-    "name" : {{ .Title }}{{ if ne .Title .Site.Title }} : {{ .Site.Title }}{{ end }},
-    "headline" : {{ .Title }}{{ if ne .Title .Site.Title }} : {{ .Site.Title }}{{ end }},
+    "name" : {{ .Title }},
+    "headline" : {{ .Title }},
     "description" : {{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }},
     "mainEntityOfPage": {
         "@type": "WebPage",
         "@id": "{{ .Permalink }}"
     },
+    {{ if .Params.images -}}
+        {{- with .Params.images }}{{ range first 1 . }}
+        "image": {
+            "@type": "ImageObject",
+            "url": "{{ . | absURL}} }}",
+            "width": 696,
+            "height": 696
+          },
+        {{ end }}
+    {{ end }}
+    {{- end }}
     "publisher": {
-      "@type": "Person",
+      "@type": "Organization",
       "name": {{ .Site.Params.author }},
       "logo": {
         "@type": "ImageObject",
-        "url": "{{ "/assets/renem_profile.png" | absURL }}"
+        "url": "{{ "/assets/renem_profile.png" | absURL }}",
+        "width": 170,
+        "height": 170
       }
     },
     "inLanguage" : "de",
@@ -27,13 +61,18 @@
     "accountablePerson" : "{{ .Site.Params.author }}",
     "copyrightHolder" : "{{ .Site.Params.author }}",
     "copyrightYear" : "{{ .Date.Format "2006" }}",
-    "datePublished": "{{ .Date.Format $.Site.Params.ISO8601 }}",
-    "dateModified" : "{{ .Date.Format $.Site.Params.ISO8601 }}",
+    "datePublished": "{{ .Date.Format $.Site.Params.ISO8601 | safeHTML}}",
+    {{ with .Lastmod -}}
+    "dateModified" : "{{ .Format $.Site.Params.ISO8601 | safeHTML}}",
+    {{- end }}
     "url" : "{{ .Permalink }}",
-    "wordCount" : "{{ .WordCount }}",
-    "keywords" : [ {{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e | jsonify }}{{ end }} ]
+    {{ with .Params.tags -}}
+    "keywords": "{{ delimit . ", " }}",
+    {{- end }}
+    "wordCount" : "{{ .WordCount }}"
 }
 </script>
+
 {{ else if eq .Title "About" }}
 <script type="application/ld+json">
 {
@@ -55,8 +94,7 @@
     "email" : "rene@renem.net",
     "gender" : "Male",
     "url" : "{{ .Site.BaseURL }}",
-    "sameAs" : [ "https://plus.google.com/+RenéMeister",
-        "http://twitter.com/rretsiem",
+    "sameAs" : [ "http://twitter.com/rretsiem",
         "https://instagram.com/rene.meister/",
         "https://github.com/rretsiem"]
 }
