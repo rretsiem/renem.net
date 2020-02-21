@@ -1,7 +1,7 @@
 {{ with .Params.mfreplyto }}
 <div class="context">
 	<!-- <h5>Dieser Beitrag ist eine Antwort auf:</h5>-->
-	<svg class="icon"><use xlink:href="#reply" /><title>Antwort</title></svg>
+	<!-- <svg class="icon"><use xlink:href="#reply" /><title>Antwort</title></svg> -->
 	{{- if in . "twitter.com" -}}
 			<span><a class="u-in-reply-to" rel="in-reply-to" href="{{ . }}">
 					<svg class="icon"><use xlink:href="#twitter" /><title>Reply to</title></svg>&nbsp;&nbsp;{{ . }}
