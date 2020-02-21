@@ -11,7 +11,8 @@ tags:
 - games
 mfreplyto: "https://happybuddha1975.de/was-spielst-du/"
 syndication:
--
+- https://twitter.com/rretsiem/status/1230765351475896321
+- https://mastodon.social/@renem/103695797558854373
 ---
 
 Dann übernehme ich mal das Blogstöckchen von [Jürgen](https://happybuddha1975.de/was-spielst-du/) der es von [DenkArt](https://fediverse.blog/~/DenkArt/was-spielst-du/) übernommen hat zum Thema:
