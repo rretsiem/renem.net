@@ -53,7 +53,7 @@ body {
   font-weight: 400;
   padding: 0;
   min-height: 100%;
-  width: 100%;
+  /* width: 100%; */
   zoom: 1;
   color: var(--text-color-normal);
   background-color: var(--background);
@@ -902,6 +902,7 @@ nav {
   text-align: center;
   text-transform: uppercase;
   padding: 0.4em;
+  white-space: nowrap;
 }
 
 .sidebar-nav a:hover {
