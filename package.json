@@ -21,6 +21,7 @@
     "gulp-load-plugins": "^2.0.0",
     "gulp-minify": "^3.1.0",
     "gulp-size": "^3.0.0",
+    "gulp-sourcemaps": "^2.6.5",
     "gulp-svg-sprite": "^1.5.0",
     "luxon": "^1.17.1",
     "microformat-node": "^2.0.1",

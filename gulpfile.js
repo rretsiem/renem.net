@@ -6,7 +6,7 @@ var BrowserSync = require('browser-sync');
 
 // var responsive = require('gulp-responsive');
 // var postcss = require('gulp-postcss');
-// var sourcemaps = require('gulp-sourcemaps');
+var sourcemaps = require('gulp-sourcemaps');
 var concat = require('gulp-concat');
 var changed = require('gulp-changed');
 var svgSprite = require('gulp-svg-sprite');

@@ -184,7 +184,7 @@ cite {
 
 .container {
     max-width: 748px;
-    width: calc(0% + 420px + (100vw - 420px) * ((748 - 420) / (1440 - 420)));
+    /* width: calc(0% + 420px + (100vw - 420px) * ((748 - 420) / (1440 - 420))); */
     margin: auto;
 }
 
