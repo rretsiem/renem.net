@@ -55,15 +55,15 @@
       }
     },
     "inLanguage" : "de",
-    "license" : "https://creativecommons.org/licenses/by-nc-sa/4.0/",
     "author" : "{{ .Site.Params.author }}",
+    "license" : "https://creativecommons.org/licenses/by-nc-sa/4.0/",
     "creator" : "{{ .Site.Params.author }}",
     "accountablePerson" : "{{ .Site.Params.author }}",
     "copyrightHolder" : "{{ .Site.Params.author }}",
     "copyrightYear" : "{{ .Date.Format "2006" }}",
     "datePublished": "{{ .Date.Format $.Site.Params.ISO8601 | safeHTML}}",
-    {{ with .Lastmod -}}
-    "dateModified" : "{{ .Format $.Site.Params.ISO8601 | safeHTML}}",
+    {{ if not .Lastmod.IsZero -}}
+    "dateModified" : "{{ .Lastmod.Format $.Site.Params.ISO8601 | safeHTML}}",
     {{- end }}
     "url" : "{{ .Permalink }}",
     {{ with .Params.tags -}}
@@ -106,7 +106,9 @@
     "name" : "René Meister About Page",
     "author" : "{{ .Site.Params.author }}",
     "datePublished": "{{ .Date.Format $.Site.Params.ISO8601 }}",
-    "dateModified" : "{{ .Date.Format $.Site.Params.ISO8601 }}",
+    {{ if not .Lastmod.IsZero -}}
+    "dateModified" : "{{ .Lastmod.Format $.Site.Params.ISO8601 | safeHTML}}",
+    {{- end }}
     "lastReviewed" : "{{ .Date.Format $.Site.Params.ISO8601 }}",
     "reviewedBy" : "{{ .Site.Params.author }}",
     "description" : "{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }}",
