@@ -1,6 +1,7 @@
 ---
 title: "HealthFit – Apple Watch Workouts exportieren"
 date: 2017-11-19T21:58:46+01:00
+lastmod: 2020-02-26T09:41:00+01:00
 categories:
 - sport
 description: ""

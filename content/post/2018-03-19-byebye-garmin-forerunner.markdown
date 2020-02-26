@@ -1,6 +1,7 @@
 ---
 title: "Bye bye Garmin Forerunner"
 date: 2018-03-19T22:13:11+01:00
+lastmod: 2020-02-26T09:14:00+01:00
 categories:
 - tech
 - sport
@@ -8,6 +9,9 @@ description: "Die Garmin Forerunner 620 hat ausgedient, da ich (m)einen würdige
 draft: false
 tags:
 - laufen
+- running
+- apple
+- garmin
 images:
 - /images/2018-03-19-byebye-garmin-1.jpg
 - /images/2018-03-19-byebye-garmin-2.jpg
