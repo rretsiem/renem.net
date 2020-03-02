@@ -10,7 +10,8 @@ tags:
 images:
 -
 syndication:
--
+- https://twitter.com/rretsiem/status/1234586119339114496
+- https://mastodon.social/@renem/103755497180973926
 ---
 
 
@@ -20,6 +21,10 @@ Zufälle gibt es, die kann man kaum glauben. Beim Surfen vor 14 Tagen bin ich ir
 Da ich aus der Vergangenheit das Programm noch ziemlich gut kenne und weiterhin für eines der besten Home-Fitness-Programme halte, die existieren war ich angefixt und erstaunt das in der X3 Variante die Workouts auf ca. 30 Minuten pro Tag eingedampft wurden. Das kommt mir als Vater, Hausbauer und Arbeit habe ich auch noch ganz gelegen.
 
 Die Vorbereitungen wir bei den ersten beiden Runden habe ich allerdings auf das notwendigste beschränkt und werde diesmal auf nicht das komplette Ernährungsprogramm durchziehen. Das halte ich für unmöglich mit Kind und Familie zu Hause wenn man die schönen Stunden am Esstisch gemeinsam isst und verbringt. Aber trotzdem werde ich natürlich auf die Ernährung achten und auf mehr Eiweiß, weniger Kohlenhydrate und so weiter achten.
+
+### Was ist P90X?
+
+Wer noch nicht weiß was P90X ist, von dem ich hier die ganze Zeit schreibe, der kann sich [hier in einem Beitrag aus 2013](https://renem.net/post/2013-01-31-was-ist-p90x/) von mir darüber informieren. Der Rest dann wieder aktuell hier im Jahr 2020.
 
 ### Tag 1 – Total Synergistics
 
