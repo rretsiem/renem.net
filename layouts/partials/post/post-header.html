@@ -13,8 +13,8 @@
   <svg class="icon"><use xlink:href="#like" /><title>Likes</title></svg>
     <a class="u-like-of" href="{{ .Params.mflikeof }}">{{ .Title }}</a>
   {{- else -}}
-    <a class="u-url" href="{{ .Permalink }}"></a>
-    {{ .Title }}
+    <a class="u-url" href="{{ .Permalink }}">{{ .Title }}</a>
+    
   {{- end -}}
   </h2>
 {{- end -}}

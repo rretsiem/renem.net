@@ -14,10 +14,10 @@
     /* LIGHT theme */
     --text-color-normal: hsl(0, 0%, 25%);
     --background: hsl(0, 0%, 100%);
-    --link-color: hsl(349, 81%, 58%);
-    --link-color-hover: hsl(215, 19%, 70%);
+    --link-color: hsl(349, 81%, 50%);
+    --link-color-hover: hsl(215, 19%, 50%);
     --border-color: hsl(213, 28%, 41%);
-    --border-color-light: hsla(213, 41%, 60%);
+    --border-color-light: hsla(213, 41%, 49%);
 }
 
 html[data-theme="dark"] {
