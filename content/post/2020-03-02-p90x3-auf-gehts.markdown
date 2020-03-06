@@ -12,6 +12,7 @@ images:
 syndication:
 - https://twitter.com/rretsiem/status/1234586119339114496
 - https://mastodon.social/@renem/103755497180973926
+- https://fed.brid.gy/r/https://renem.net/post/2020-03-02-p90x3-auf-gehts/
 ---
 
 
