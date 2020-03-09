@@ -1,16 +1,16 @@
 
   {{- if .Params.mfbookmark -}}
   <svg class="icon"><use xlink:href="#bookmark" /><title>Bookmark</title></svg>
-    bookmarked <a class="u-bookmark-of" href="{{ .Params.mfbookmark }}">{{ .Params.mfbookmarkof }}</a>
+    bookmark <a class="u-bookmark-of" href="{{ .Params.mfbookmark }}">{{ .Params.mfbookmarkof }}</a>
   {{- else if .Params.mfbookmarkof -}}
   <svg class="icon"><use xlink:href="#bookmark" /><title>Bookmark of</title></svg>
-    bookmarked <a class="u-bookmark-of" href="{{ .Params.mfbookmarkof }}">{{ .Params.mfbookmarkof }}</a>
+    bookmark <a class="u-bookmark-of" href="{{ .Params.mfbookmarkof }}">{{ .Params.mfbookmarkof }}</a>
   {{- else if .Params.mfrepostof -}}
-  <svg class="icon"><use xlink:href="#link" /><title>Repost of</title></svg>
-    reposted <a class="u-repost-of" href="{{ .Params.mfrepostof }}">{{ .Params.mfrepostof }}</a>
+  <svg class="icon"><use xlink:href="#repost" /><title>Repost of</title></svg>
+    &nbsp; <a class="u-repost-of" href="{{ .Params.mfrepostof }}">{{ .Params.mfrepostof }}</a>
   {{- else if .Params.mflikeof -}}
 	  <svg class="icon"><use xlink:href="#like" /><title>Like</title></svg>
-    	liked &nbsp;
+    	like &nbsp;
 		<a class="u-url u-like-of" href="{{ .Params.mflikeof }}">{{ .Params.mflikeof | truncate 45 }}
 		</a>
     {{ if .Params.cite }}

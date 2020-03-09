@@ -5,14 +5,14 @@
   <link href="{{ .Permalink }}index.xml" rel="self" type="application/atom+xml"/>
   <link rel="hub" href="https://renem.superfeedr.com/" />
   <link href="{{ .Permalink }}"/>{{ if not .Date.IsZero }}
-  <updated>{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</updated>{{ end }}
+  <updated>{{ .Date.Format $.Site.Params.ISO8601 | safeHTML }}</updated>{{ end }}
   <id>{{ .Permalink }}</id>{{ with .Site.Author.name }}
   <author>
     <name>{{.}}</name>{{ with $.Site.Author.email }}
     <email>{{.}}</email>{{end}}
   </author>{{end}}
   <generator>Hugo -- gohugo.io</generator>
-  {{- range first (sub .Site.Params.RSSLimit 0) (where .Site.RegularPages "Type" "!=" "page") }}
+  {{- range first (sub .Site.Params.RSSLimit 0) (where .Site.RegularPages "Type" "==" "post") }}
   <entry>{{ $url := .Permalink }}{{ $uuid := sha1 .Permalink }}{{ $page := .}}
       {{- if .Title }}
     <title type="text">{{ .Title | plainify }}</title>
@@ -25,8 +25,8 @@
       <name>{{.}}</name>
     </author>
     {{- end}}
-    <published>{{ .Date.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</published>
-    <updated>{{ .Lastmod.Format "2006-01-02T15:04:05-07:00" | safeHTML }}</updated>
+    <published>{{ .Date.Format $.Site.Params.ISO8601 | safeHTML }}</published>
+    <updated>{{ .Lastmod.Format $.Site.Params.ISO8601 | safeHTML }}</updated>
     {{ `<content type="html"><![CDATA[` | safeHTML }}{{ .Content }}]]></content>
   </entry>{{ end }}
 </feed>

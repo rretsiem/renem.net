@@ -1,7 +1,7 @@
+{{ $cite := .Params.cite }}
 {{ with .Params.mfreplyto }}
+<h1>REPLY</h1>
 <div class="context">
-	<!-- <h5>Dieser Beitrag ist eine Antwort auf:</h5>-->
-	<!-- <svg class="icon"><use xlink:href="#reply" /><title>Antwort</title></svg> -->
 	{{- if in . "twitter.com" -}}
 			<span><a class="u-in-reply-to" rel="in-reply-to" href="{{ . }}">
 					<svg class="icon"><use xlink:href="#twitter" /><title>Reply to</title></svg>&nbsp;&nbsp;{{ . }}
@@ -22,10 +22,17 @@
 	{{- else if in . "mastodon" -}}
 			<span><a class="u-in-reply-to" rel="in-reply-to" href="{{ . }}"></a>
 			</span>
-			<iframe src="{{ . }}/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="400" allowfullscreen="allowfullscreen"></iframe><script src="https://mastodon.social/embed.js" async="async"></script>
+			{{ $.Scratch.Set "include_mastodon" true }}
+			<iframe src="{{ . }}/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="600" allowfullscreen="allowfullscreen"></iframe>
 	{{- else -}}
 		<p><span><a class="u-in-reply-to" rel="in-reply-to" href="{{ . }}">
       <svg class="icon"><use xlink:href="#reply" /><title>Reply to</title></svg>&nbsp;&nbsp;{{ . }}</a>
+      	{{ with $cite }}
+    	<blockquote class="h-cite u-like-of e-content" cite="{{ . }}">
+    		<p>{{ $cite }}</p>
+    	</blockquote>
+    	</section>
+    {{ end }}
     </span></p>
 	{{- end -}}
 </div>

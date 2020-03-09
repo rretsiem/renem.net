@@ -2,6 +2,7 @@
 date = "2017-03-03"
 title = "Offline."
 type = "offline"
+robots = "noindex,nofollow"
 +++
 
 # Offline

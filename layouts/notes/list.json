@@ -1,28 +1,30 @@
 {
 	"version": "https://jsonfeed.org/version/1",
-	"title": "{{ .Site.Title }} Blog",
+	"title": "{{ .Site.Title }} JSON Notes feed",
 	"home_page_url": "{{ .Site.BaseURL }}",
-	"user_comment": "This feed allows you to read the posts from this site in any feed reader that supports the JSON Feed format. To add this feed to your reader, copy the following URL — {{ .Site.BaseURL }}index.json — and add it your reader.",
+	"user_comment": "This feed includes the latest short-form content aka notes of my site. To add this feed to your reader, copy the following URL — {{ .Site.BaseURL }}notes/index.json — and add it your reader.",
 	{{- if isset .Site.Params "description" }}
 	"description": "{{ .Site.Params.description }}",
 	{{ end -}}
 	"hubs": [{{ dict "type" "WebSub" "url" .Site.Params.webSub | jsonify }}],
-	"feed_url": "{{ .Site.BaseURL }}index.json",
+	"feed_url": "{{ .Site.BaseURL }}notes/index.json",
 	"favicon": "{{ .Site.BaseURL }}apple-touch-icon.png",
 	"author": {
 		"name": "{{ index .Site.Params "author" }}",
 		"url": "{{ .Site.BaseURL }}"
 	},
 	"items": [
-		{{- range $index, $post := first 20 (where .Site.RegularPages "Type" "==" "post") -}}
+		{{- range $index, $post := first 20 (where .Site.RegularPages "Type" "==" "notes") -}}
 		{{ if $index }}, {{ end }}
 		{
 			"id": "{{ $post.Permalink }}",
+			{{- if .Title }}
 			"title": "{{ $post.Title | htmlEscape }}",
+			{{ end }}
 			"url": "{{ $post.Permalink }}",
 			"summary": {{ $post.Summary | chomp | htmlEscape | jsonify }},
 			"content_html": {{ $post.Content | chomp | jsonify}},
-			"date_published": "{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}",
+			"date_published": "{{ .Date.Format $.Site.Params.ISO8601 }}",
 			"tags": [ {{ range $i, $e := $post.Params.tags }}{{ if $i }}, {{ end }}{{ $e | jsonify }}{{ end }} ]
 		}
 		{{- end -}}

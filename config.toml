@@ -73,20 +73,25 @@ sectionPagesMenu = "main"
         identifier = "photos"
         url = "/photos/"
 [[menu.main]]
-        name = "Microblog"
+        name = "Notes"
         weight = 3
+        identifier = "notes"
+        url = "/notes/"
+[[menu.main]]
+        name = "Microblog"
+        weight = 4
         identifier = "microblog"
         url = "/microblog/"
 [[menu.main]]
         name = "Archiv"
-        weight = 4
+        weight = 5
         identifier = "archive"
         url = "/archive/"
 [[menu.main]]
         name = "About"
         url = "/about/"
         identifier = "about"
-        weight = 5
+        weight = 6
 [privacy]
   [privacy.disqus]
     disable = true
@@ -97,7 +102,7 @@ sectionPagesMenu = "main"
   [privacy.speakerDeck]
     disable = true
   [privacy.twitter]
-    disable = true
+    disable = false
   [privacy.vimeo]
     disable = true
   [privacy.youtube]

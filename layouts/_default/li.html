@@ -12,7 +12,7 @@
             <a class="metatag u-url u-uid" href="{{ .Permalink }}">{{ .Title }}</a>
             {{ end -}}
         </h2>
-        <p class="post-time"><time class="dt-published" datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">
+        <p class="post-time"><time class="dt-published" datetime="{{ .Date.Format $.Site.Params.ISO8601 }}">
         {{- if not .Title }}
         <a href="{{ .Permalink }}" class="metatag u-url u-uid">
         {{ end -}}

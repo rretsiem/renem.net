@@ -54,7 +54,7 @@ body {
   padding: 0;
   min-height: 100%;
   /* width: 100%; */
-  zoom: 1;
+/*  zoom: 1; */
   color: var(--text-color-normal);
   background-color: var(--background);
   display: flex;
@@ -193,7 +193,7 @@ cite {
     margin-left: 0;
     margin-bottom: 0;
     padding-left: 0;
-    zoom: 1
+    /* zoom: 1 */
 }
 
 .nav:after, .nav:before {
@@ -207,7 +207,7 @@ cite {
 
 .nav > li, .nav > li > a {
     display: inline-block;
-    zoom: 1
+    /* zoom: 1 */
 }
 
 embed, img, object, video {
@@ -613,10 +613,11 @@ article .footnotes {
     margin-bottom: 50px
 }
 
+/*
 .f-1 {
     zoom: 1
 }
-
+*/
 .f-1:after, .f-1:before {
     content: "";
     display: table
@@ -654,10 +655,11 @@ article .footnotes {
     }
 }
 
+/*
 .f-2 {
     zoom: 1
 }
-
+*/
 .f-2:after, .f-2:before {
     content: "";
     display: table

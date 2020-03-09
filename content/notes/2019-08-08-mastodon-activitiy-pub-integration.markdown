@@ -13,7 +13,7 @@ mfbookmarkof: ""
 mfrepostof: ""
 mfreplyto: "https://mastodon.social/@renem/102570643493262794"
 mflikeof: ""
-cite: ""
+cite: "Zitat hier"
 syndication:
 - https://fed.brid.gy/
 ---

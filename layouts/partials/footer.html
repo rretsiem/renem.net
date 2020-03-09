@@ -19,21 +19,18 @@
           {{ with .Site.Params.github }}
             <a href="https://www.github.com/{{ . }}" title="GitHub" rel="me noopener noreferrer" target="_blank"><span class="tooltip"><svg class="icon"><use xlink:href="#github" /><title>Github</title></svg></span></a>
           {{ end }}
-            <a href="{{ with .OutputFormats.Get "RSS" }}{{ .RelPermalink }}{{ end }}" rel="me noopener noreferrer" title="Subscribe">
+            <a href="{{ with .OutputFormats.Get "ATOM" }}{{ .RelPermalink }}{{ end }}" rel="me noopener noreferrer" title="Subscribe">
               <span class="tooltip"><svg class="icon"><use xlink:href="#rss" /><title>Subscribe</title></svg></span>
             </a>
-          <section class="feet h-card vcard">&copy; <a href="{{ .Site.BaseURL }}" class="p-name u-url fn" rel="me">{{ .Site.Params.author }}</a> {{ now.Format "2006"}} | Licenced under
+          <section class="feet h-card vcard">&copy; <a href="{{ .Site.BaseURL }}" class="p-name p-nickname u-url fn" rel="me">{{ .Site.Params.author }}</a> {{ now.Format "2006"}} | Licenced under
                 <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
-                class="metatag" rel="license">
-                {{ .Site.Params.license }}</a>
-
+                class="metatag" rel="license">{{ .Site.Params.license }}</a>
                 {{ if eq .Title "About" }}
                 <img src="{{ .Site.BaseURL }}assets/renem_profile.png" alt="René profile photo" class=" hidden u-photo">
                 {{ end }}
-                <a class="p-nickname u-email email metatag" alt="Mail senden" rel="me" href="mailto:{{ .Site.Params.email}}">
+                <a class="u-email email metatag" alt="Mail senden" rel="me" href="mailto:{{ .Site.Params.email}}">
                   <span class="tooltip"><svg class="icon"><use xlink:href="#mail" /><title>Mail senden</title></svg></span>
                 </a>
-
           </section>
           <section class="footer-info">
             This site is built with <a href="https://gohugo.io">Hugo</a> and hosted on <a href="https://netlify.com">Netlify</a>. The source code is hosted on <a href="https://github.com">Github</a>.
@@ -48,3 +45,6 @@
     {{- partialCached "scripts.html" . -}}
 
     <script type='text/javascript' charset="utf-8" src="/js/remove-no.js"></script>
+    {{ if ($.Page.Scratch.Get "include_mastodon") "true" }}
+      <script src="https://mastodon.social/embed.js" async="async"></script>
+    {{ end }}

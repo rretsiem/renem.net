@@ -1,0 +1,33 @@
+---
+title: ""
+date: 2020-03-09T10:24:39+01:00
+slug: "2020-03-09-repost-1236718615543635968"
+categories:
+- notes
+draft: false
+tags:
+-
+images:
+-
+mfbookmark: ""
+mfbookmarkof: ""
+mfrepostof: "https://twitter.com/westphal/status/1236718615543635968"
+mfreplyto: ""
+mflikeof: ""
+mf-syndicate-to:
+- "https://twitter.com/rretsiem"
+cite: ""
+syndication:
+- https://fed.brid.gy/
+
+---
+
+Konstruktive Vorschläge um einmal all das nachzuholen, was Deutschland die letzten Jahre verschlafen hat.
+
+{{< tweet 1236718615543635968 >}}
+
+und weiter…
+
+{{< tweet 1236721530006130690 >}}
+
+Ich hoffe wirklich, das durch Corona dadurch das ein oder andere verändert wird.

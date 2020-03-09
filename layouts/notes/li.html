@@ -1,0 +1,28 @@
+<article class="li h-entry {{ .Type }}">
+    <header class="post-header">
+        {{ if .Title }}
+        <h2 class="post-title p-name">
+          <a class="metatag u-url u-uid" href="{{ .Permalink }}">{{ .Title }}</a>
+        </h2>
+        {{ end }}
+    </header>
+    <section class="post-content post-text e-content p-name u-photo content-type-plain">
+        {{ if .Title }}
+          {{ .Summary }}
+          {{ if .Truncated }}
+          <a href="{{ .Permalink }}"><em>Weiterlesen…</em></a>
+          {{ end }}
+        {{ else }}
+            {{ .Content }}
+        {{ end }}
+        <p class="post-time"><time class="dt-published" datetime="{{ .Date.Format $.Site.Params.ISO8601 | safeHTML }}"><a class="metatag u-url u-uid" href="{{ .Permalink }}">{{ .Date.Format "January 2, 2006" }}</a></time></p>
+    </section>
+    <footer class="post-footer">
+        <span>
+            {{ with .Params.tags }}
+                &nbsp;&nbsp;<svg class="icon"><use xlink:href="#tags" /></svg>
+                    {{ delimit (apply (apply (sort .) "partial" "post/tag-link" ".") "chomp" ".") ", " }}
+          {{ end }}
+        </span>
+    </footer>
+</article>

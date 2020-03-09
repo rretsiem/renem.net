@@ -1,7 +1,6 @@
 ---
 title: "Test mit Hugo für Kurznachrichten ala #Indieweb."
 date: 2019-07-12T00:00:00+02:00
-slug: "{{ lower (.Name | title )}}"
 categories:
 - notes
 draft: false
