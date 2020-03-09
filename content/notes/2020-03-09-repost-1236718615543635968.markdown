@@ -18,8 +18,7 @@ mf-syndicate-to:
 - "https://twitter.com/rretsiem"
 cite: ""
 syndication:
-- https://fed.brid.gy/
-
+- https://twitter.com/rretsiem/status/1236961057828192256
 ---
 
 Konstruktive Vorschläge um einmal all das nachzuholen, was Deutschland die letzten Jahre verschlafen hat.
