@@ -7,6 +7,8 @@
         {{ end }}
     </header>
     <section class="post-content post-text e-content p-name u-photo content-type-plain">
+{{ partial "indieweb/indieweb-reaction" . }}
+
         {{ if .Title }}
           {{ .Summary }}
           {{ if .Truncated }}
