@@ -18,7 +18,8 @@ mf-syndicate-to:
 - "https://twitter.com/rretsiem"
 cite: ""
 syndication:
--
+- https://twitter.com/rretsiem/status/1237320497408421888
+- https://fed.brid.gy
 ---
 
 Wer auf der Suche nach einem guten RSS Reader unter iOS ist… Seit gestern gibt es [NetNewsWire 5.0](https://inessential.com/2020/03/09/netnewswire_5_0_for_ios_shipping) auch für iOS offiziell erhältlich.

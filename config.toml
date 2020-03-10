@@ -24,7 +24,7 @@ defaultMarkdownHandler = "goldmark"
     [markup.goldmark.renderer]
       hardWraps = false
       unsafe = false
-      xHTML = true
+      xHTML = false
 #[blackfriday]
 #  angledQuotes = true
 #  smartypantsQuotesNBSP = true
