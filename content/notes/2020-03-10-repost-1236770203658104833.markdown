@@ -1,0 +1,30 @@
+---
+title: ""
+date: 2020-03-10T09:32:44+01:00
+slug: "2020-03-10-repost-1236770203658104833"
+categories:
+- notes
+draft: false
+tags:
+- rss
+images:
+-
+mfbookmark: ""
+mfbookmarkof: ""
+mfrepostof: ""
+mfreplyto: ""
+mflikeof: ""
+mf-syndicate-to:
+- "https://twitter.com/rretsiem"
+cite: ""
+syndication:
+-
+---
+
+Wer auf der Suche nach einem guten RSS Reader unter iOS ist… Seit gestern gibt es [NetNewsWire 5.0](https://inessential.com/2020/03/09/netnewswire_5_0_for_ios_shipping) auch für iOS offiziell erhältlich.
+
+Passend dazu folgender Tweet von Brent Simmons (Entwickler) um RSS zu beschreiben. Für alle die, denen RSS nicht direkt etwas sagt :wink:
+
+{{< tweet 1236770203658104833 >}}
+
+Auf dem Mac gibt es den Client ja schon eine Weile, allerdings lese ich lieber unterwegs am iPhone und weniger am Mac.
