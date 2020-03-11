@@ -23,4 +23,4 @@ syndication:
 - https://mastodon.social/@renem/103803914242101908
 ---
 
-Eine gute und detaillierte Berichterstattung ist hier schon angebracht. Immerhin hoffe ich dass dadurch bei mehr Leuten ein Bewusstsein geschaffen wird auf rudimentäre Dinge zu achten die eine Ausbreitung eindämmen oder verlangsamen, denn noch sind wir erst am Anfang. Wenn man Experten auf diesem Gebiet anhört, dann warnen alle und das sicherlich nicht ohne Grund.
+[@jaltek@social.tchncs.de](https://social.tchncs.de/@jaltek) Eine gute und detaillierte Berichterstattung ist hier schon angebracht. Immerhin hoffe ich dass dadurch bei mehr Leuten ein Bewusstsein geschaffen wird auf rudimentäre Dinge zu achten die eine Ausbreitung eindämmen oder verlangsamen, denn noch sind wir erst am Anfang. Wenn man Experten auf diesem Gebiet anhört, dann warnen alle und das sicherlich nicht ohne Grund.
