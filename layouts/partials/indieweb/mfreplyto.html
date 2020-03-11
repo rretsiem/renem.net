@@ -1,8 +1,8 @@
 {{ $cite := .Params.cite }}
+{{ $source := .Params.mfSource }}
 {{ with .Params.mfreplyto }}
-<h1>REPLY</h1>
 <div class="context">
-	{{- if in . "twitter.com" -}}
+	{{- if eq $source "twitter" -}}
 			<span><a class="u-in-reply-to" rel="in-reply-to" href="{{ . }}">
 					<svg class="icon"><use xlink:href="#twitter" /><title>Reply to</title></svg>&nbsp;&nbsp;{{ . }}
 				</a>
@@ -19,11 +19,10 @@
 					</blockquote>
 				</span>
 				{{- end -}}
-	{{- else if in . "mastodon" -}}
-			<span><a class="u-in-reply-to" rel="in-reply-to" href="{{ . }}"></a>
-			</span>
+	{{- else if eq $source "mastodon" -}}
 			{{ $.Scratch.Set "include_mastodon" true }}
-			<iframe src="{{ . }}/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="600" allowfullscreen="allowfullscreen"></iframe>
+			<iframe src="{{ . }}/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="600" height="auto" allowfullscreen="allowfullscreen"></iframe>
+			<span><p><a class="u-in-reply-to" rel="in-reply-to" href="{{ . }}"><svg class="icon"><use xlink:href="#mastodon" /><title>Reply to</title></svg>&nbsp;&nbsp;{{ . }}</a></p></span>
 	{{- else -}}
 		<p><span><a class="u-in-reply-to" rel="in-reply-to" href="{{ . }}">
       <svg class="icon"><use xlink:href="#reply" /><title>Reply to</title></svg>&nbsp;&nbsp;{{ . }}</a>
@@ -32,7 +31,7 @@
     		<p>{{ $cite }}</p>
     	</blockquote>
     	</section>
-    {{ end }}
+	    {{ end }}
     </span></p>
 	{{- end -}}
 </div>
