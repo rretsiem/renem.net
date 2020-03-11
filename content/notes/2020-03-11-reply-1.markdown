@@ -1,0 +1,25 @@
+---
+title: ""
+date: 2020-03-11T10:42:59+01:00
+slug: "2020-03-11-reply-1"
+categories:
+- notes
+draft: false
+tags:
+- replies
+images:
+-
+mfbookmark: ""
+mfbookmarkof: ""
+mfrepostof: ""
+mfreplyto: "https://social.tchncs.de/@jaltek/103800879144261542"
+mflikeof: ""
+mf-syndicate-to:
+- "https://twitter.com/rretsiem"
+mfSource: "mastodon"
+cite: "Bin ich der einzige, der dieser Corona Panik nichts abgewinnen kann? Bin ich zu naiv? Oder einfach vielleicht nur normal denkend?"
+syndication:
+-
+---
+
+Eine gute und detaillierte Berichterstattung ist hier schon angebracht. Immerhin hoffe ich dass dadurch bei mehr Leuten ein Bewusstsein geschaffen wird auf rudimentäre Dinge zu achten die eine Ausbreitung eindämmen oder verlangsamen, denn noch sind wir erst am Anfang. Wenn man Experten auf diesem Gebiet anhört, dann warnen alle und das sicherlich nicht ohne Grund.

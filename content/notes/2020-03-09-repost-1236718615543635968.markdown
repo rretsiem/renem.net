@@ -16,6 +16,7 @@ mfreplyto: ""
 mflikeof: ""
 mf-syndicate-to:
 - "https://twitter.com/rretsiem"
+mfSource: "twitter"
 cite: ""
 syndication:
 - https://twitter.com/rretsiem/status/1236961057828192256
