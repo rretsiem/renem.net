@@ -4,6 +4,7 @@ date: 2020-03-09T10:24:39+01:00
 slug: "2020-03-09-repost-1236718615543635968"
 categories:
 - notes
+- repost
 draft: false
 tags:
 - repost
