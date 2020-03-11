@@ -4,9 +4,6 @@
 [context.branch-deploy.environment]
   LAMBDA_ENDPOINT = "netlify-lambda"
 
-[context.production.environment]
-  HUGO_VERSION = "0.64.1"
-
 [[headers]]
   for = "/serviceworker.js"
   [headers.values]
