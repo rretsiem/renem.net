@@ -1,3 +1,6 @@
+{{ $items := (where .Site.RegularPages "Type" "==" "notes" )  -}}
+{{ $replies := (where (where .Site.RegularPages "Type" "==" "notes" ) ".Params.categories" "intersect" (slice "replies" "likes" "bookmarks") ) -}}
+{{ $items := $items | complement $replies | first 20 -}}
 {
 	"version": "https://jsonfeed.org/version/1",
 	"title": "{{ .Site.Title }} JSON Notes feed",
@@ -14,7 +17,7 @@
 		"url": "{{ .Site.BaseURL }}"
 	},
 	"items": [
-		{{- range $index, $post := first 20 (where .Site.RegularPages "Type" "==" "notes") -}}
+		{{- range $index, $post := $items  -}}
 		{{ if $index }}, {{ end }}
 		{
 			"id": "{{ $post.Permalink }}",

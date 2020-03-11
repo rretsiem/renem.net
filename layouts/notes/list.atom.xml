@@ -1,3 +1,6 @@
+{{ $items := (where .Site.RegularPages "Type" "==" "notes" )  -}}
+{{ $replies := (where (where .Site.RegularPages "Type" "==" "notes" ) ".Params.categories" "intersect" (slice "replies" "likes" "bookmarks") ) -}}
+{{ $items := $items | complement $replies | first 20 -}}
 {{ print "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>"| safeHTML }}
 {{ print "<!-- index.atom.xml -->"| safeHTML }}
 <feed xmlns="http://www.w3.org/2005/Atom">
@@ -12,7 +15,7 @@
     <email>{{.}}</email>{{end}}
   </author>{{end}}
   <generator>Hugo -- gohugo.io</generator>
-  {{- range first (sub .Site.Params.RSSLimit 0) (where .Site.RegularPages "Type" "==" "notes") }}
+  {{- range $items  -}}
   <entry>{{ $url := .Permalink }}{{ $uuid := sha1 .Permalink }}{{ $page := .}}
       {{- if .Title }}
     <title type="text">{{ .Title | plainify }}</title>
