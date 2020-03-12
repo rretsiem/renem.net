@@ -15,7 +15,7 @@
     <email>{{.}}</email>{{end}}
   </author>{{end}}
   <generator>Hugo -- gohugo.io</generator>
-  {{- range $items  -}}
+  {{- range $items -}}
   <entry>{{ $url := .Permalink }}{{ $uuid := sha1 .Permalink }}{{ $page := .}}
       {{- if .Title }}
     <title type="text">{{ .Title | plainify }}</title>
@@ -32,4 +32,6 @@
     <updated>{{ .Lastmod.Format $.Site.Params.ISO8601 | safeHTML }}</updated>
     {{ `<content type="html"><![CDATA[` | safeHTML }}{{ .Content }}]]></content>
   </entry>{{ end }}
+}
+}
 </feed>
