@@ -1,5 +1,5 @@
 {{ $items := (where .Site.RegularPages "Type" "==" "notes" )  -}}
-{{ $replies := (where (where .Site.RegularPages "Type" "==" "notes" ) ".Params.categories" "intersect" (slice "replies" "likes" "bookmarks") ) -}}
+{{ $replies := (where (where .Site.RegularPages "Type" "==" "notes" ) ".Params.categories" "intersect" (slice "replies" "likes" "bookmarks" "reposts") ) -}}
 {{ $items := $items | complement $replies | first 20 -}}
 {{ print "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>"| safeHTML }}
 {{ print "<!-- index.atom.xml -->"| safeHTML }}

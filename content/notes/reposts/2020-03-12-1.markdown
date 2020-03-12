@@ -19,7 +19,7 @@ mf-syndicate-to:
 - "https://twitter.com/rretsiem"
 cite: ""
 syndication:
--
+- https://twitter.com/rretsiem/status/1238133273584377858
 ---
 A thread…
 
