@@ -1,6 +1,6 @@
-{{ $cite := .Params.cite }}
-{{ $source := .Params.mfSource }}
-{{ with .Params.mfreplyto }}
+{{- $cite := .Params.cite -}}
+{{- $source := .Params.mfSource -}}
+{{- with .Params.mfreplyto -}}
 <div class="context">
 	{{- if eq $source "twitter" -}}
 			<span><a class="u-in-reply-to" rel="in-reply-to" href="{{ . }}">

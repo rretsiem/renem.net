@@ -124,9 +124,12 @@ sectionPagesMenu = "main"
   [privacy.twitter]
     disable = false
     enableDNT = true
-    simple = false
+    simple = true
   [privacy.vimeo]
     disable = false
   [privacy.youtube]
     disable = false
     privacyEnhanced = true
+[services]
+  [services.twitter]
+    disableInlineCSS = true
