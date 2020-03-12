@@ -1,8 +1,6 @@
-{{ $cssOpts := (dict "targetPath" "styles/bundle.css" "enableSourceMap" true ) }}
-{{ $main := resources.Get "/css/main.css" }}
-
-{{ $style := slice $main | resources.Concat "bundle.css" | toCSS $cssOpts | resources.PostCSS | resources.Minify | resources.Fingerprint }}
-
+{{- $cssOpts := (dict "targetPath" "styles/bundle.css" "enableSourceMap" true ) -}}
+{{- $main := resources.Get "/css/main.css" -}}
+{{- $style := slice $main | resources.Concat "bundle.css" | toCSS $cssOpts | resources.PostCSS | resources.Minify | resources.Fingerprint -}}
 <!DOCTYPE html>
 <html class="no-js" lang="de" prefix="og: http://ogp.me/ns#" xmlns:og="http://ogp.me/ns#">
     <head>

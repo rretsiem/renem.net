@@ -1,0 +1,26 @@
+---
+title: ""
+date: 2020-03-12T11:48:45+01:00
+slug: "2020-03-12-1"
+categories:
+- notes
+- replies
+draft: false
+tags:
+- replies
+images:
+-
+mfbookmark: ""
+mfbookmarkof: ""
+mfrepostof: ""
+mfreplyto: "https://www.jvt.me/mf2/2020/03/wwsya/"
+mflikeof: ""
+mf-syndicate-to:
+- "https://twitter.com/rretsiem"
+cite: ""
+syndication:
+-
+---
+
+I try to reduce my Twitter consumption more & more but still check daily. Most often I use Tweetbot on iOS or Twitteriffic/Mac to consume. That way I see no ads and also have my timeline like it should be.
+Currently I implement more Indieweb principles onto my own Hugo-static site and trying different approaches on how to answer to Tweets and Toots from my own site. However, I'm still not happy with these results because of formatting issues or strange looking Tweets/Toots on their sites.
