@@ -8,6 +8,7 @@ categories:
 draft: false
 tags:
 - replies
+- indieweb
 images:
 -
 mfbookmark: ""

@@ -1,0 +1,28 @@
+---
+title: ""
+date: 2020-03-12T16:42:09+01:00
+slug: "2020-03-12-1"
+categories:
+- notes
+- reposts
+draft: false
+tags:
+- reposts
+images:
+-
+mfbookmark: ""
+mfbookmarkof: ""
+mfrepostof: "https://twitter.com/the_real_bnell/status/1237165265604968448"
+mfreplyto: ""
+mflikeof: ""
+mf-syndicate-to:
+- "https://twitter.com/rretsiem"
+cite: ""
+syndication:
+-
+---
+A thread…
+
+RT [@the_real_bnell](https://twitter.com/the_real_bnell/status/1237165265604968448) 
+
+{{< tweet 1237165265604968448 >}}
