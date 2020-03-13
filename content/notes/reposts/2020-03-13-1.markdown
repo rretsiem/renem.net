@@ -1,0 +1,33 @@
+---
+title: ""
+date: 2020-03-13T13:27:42+01:00
+slug: "2020-03-13-2"
+categories:
+- notes
+- reposts
+draft: false
+tags:
+- work
+- reposts
+images:
+-
+mfbookmark: ""
+mfbookmarkof: ""
+mfrepostof: ""
+mfreplyto: ""
+mflikeof: ""
+mfSource: ""
+cite: ""
+syndication:
+- 
+---
+
+Sehr gut geschriebene Zusammenfassung von [@Leah@chaos.social](https://chaos.social/@leah) zum Thema ["Zeitplanung und Heimarbeit"](https://leah.is/posts/zeitplanung-und-heimarbeit/):
+
+>Ich hab einen Job, wie ihn heute noch nicht viele haben, einen von dem man meistens in Artikeln über Innovationen in der Arbeitswelt liest. Ich arbeite zu 100% von Zuhause aus und habe freie Hand über meine Arbeitszeiten (inkl. Vertrauensarbeitszeit). Genau genommen arbeite ich die meiste Zeit vom Schreibtisch in meinem Wohnzimmer aus. Völlig neu ist das Konzept, wie vieles was heute als “innovativ” verkauft wird, natürlich nicht, aber es ist in den letzten Jahrzehnten zu einer Seltenheit geworden. - [Zeitplanung und Heimarbeit](https://leah.is/posts/zeitplanung-und-heimarbeit/)
+
+>Eine verpflichtende 40 Stunden Woche in Heimarbeit funktioniert also nicht, zumindest nicht mit produktiver Arbeit. Eine 35 Stunden Woche ist da schon realistischer. Aber eigentlich funktioniert es so auch nicht, zumindest wenn wir uns nicht überarbeiten wollen. 
+
+Ich möchte noch anmerken, dass man sich in dem Zuge einmal von dem Konstrukt "Wochenarbeitszeit" verabschieden sollte und auch hier ein Umdenken notwendig ist, auch wenn das vermutlich zu viel verlangt ist – alles auf einmal.
+
+Besser in Aufgaben/Tasks etc. denken und messen als in Arbeitszeit.

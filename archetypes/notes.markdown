@@ -14,6 +14,7 @@ mfbookmarkof: ""
 mfrepostof: ""
 mfreplyto: ""
 mflikeof: ""
+mfSource: ""
 mf-syndicate-to:
 - "https://twitter.com/rretsiem"
 cite: ""

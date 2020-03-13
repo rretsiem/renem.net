@@ -6,8 +6,13 @@
   <svg class="icon"><use xlink:href="#bookmark" /><title>Bookmark of</title></svg>
     bookmark <a class="u-bookmark-of" href="{{ .Params.mfbookmarkof }}">{{ .Params.mfbookmarkof }}</a>
   {{- else if .Params.mfrepostof -}}
-  <svg class="icon"><use xlink:href="#repost" /><title>Repost of</title></svg>
-    &nbsp; <a class="u-repost-of" href="{{ .Params.mfrepostof }}">{{ .Params.mfrepostof }}</a>
+  <svg class="icon"><use xlink:href="#repost" /><title>Repost of</title></svg>&nbsp; <a class="u-repost-of" href="{{ .Params.mfrepostof }}">{{ .Params.mfrepostof }}</a>
+  {{ with .Params.cite }}
+    <blockquote class="h-cite u-quotation-of" cite="{{ . }}">
+      <a class="u-url" href="{{ $.Params.mfrepostof }}"></a>
+<p>{{ . }}</p>
+    </blockquote>
+    {{ end }}
   {{- else if .Params.mflikeof -}}
 	  <svg class="icon"><use xlink:href="#like" /><title>Liked</title></svg>
     	liked &nbsp;
