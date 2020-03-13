@@ -6,7 +6,7 @@
         </h2>
     </header>
     {{ end -}}
-    <section class="post-content post-text e-content p-name u-photo content-type-plain {{ if .Params.cite}}h-cite{{ end }}">
+    <section class="post-content post-text e-content p-name content-type-plain {{ if .Params.cite}}h-cite{{ end }}">
     {{ partial "indieweb/indieweb-reaction" . }}
         {{ if .Title -}}
           {{ .Summary -}}

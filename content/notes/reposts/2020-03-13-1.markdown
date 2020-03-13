@@ -19,7 +19,8 @@ mflikeof: ""
 mfSource: ""
 cite: ""
 syndication:
-- 
+- https://twitter.com/rretsiem/status/1238458813105295361
+- https://mastodon.social/@renem/103816004469359624
 ---
 
 Sehr gut geschriebene Zusammenfassung von [@Leah@chaos.social](https://chaos.social/@leah) zum Thema ["Zeitplanung und Heimarbeit"](https://leah.is/posts/zeitplanung-und-heimarbeit/):
