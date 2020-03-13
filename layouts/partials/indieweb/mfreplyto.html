@@ -2,37 +2,33 @@
 {{- $source := .Params.mfSource -}}
 {{- with .Params.mfreplyto -}}
 <div class="context reply-context">
+	<span>
 	{{- if eq $source "twitter" -}}
-			<span><a class="u-in-reply-to" rel="in-reply-to" href="{{ . }}">
-					<svg class="icon"><use xlink:href="#twitter" /><title>Reply to</title></svg>&nbsp;&nbsp;{{ . }}
-				</a>
+		<svg class="icon"><use xlink:href="#twitter" /><title>Reply to</title></svg>&nbsp;&nbsp;<a class="u-in-reply-to" rel="in-reply-to" href="{{ . }}">{{ . }}</a>
+		{{- $tweetId := replaceRE `https?:\/\/twitter.com\/[a-zA-Z0-9_]{1,20}\/status\/([0-9]*)` `$1` . -}}
+		{{- $urlPre := "https://publish.twitter.com/oembed" -}}
+		{{- $embedParams := "?cards=none&conversation=none&link_color=%23d40d0a&url=" -}}
+		{{- $tweetReply := . -}}
+		{{- $tweetJ := getJSON $urlPre $embedParams $tweetReply -}}
+			{{- if $tweetJ.html -}}
+			<span>
+				<blockquote>
+					{{- $tweetJ.html | safeHTML -}}
+				</blockquote>
 			</span>
-			{{- $tweetId := replaceRE `https?:\/\/twitter.com\/[a-zA-Z0-9_]{1,20}\/status\/([0-9]*)` `$1` . -}}
-			{{- $urlPre := "https://publish.twitter.com/oembed" -}}
-			{{- $embedParams := "?cards=none&conversation=none&link_color=%23d40d0a&url=" -}}
-			{{- $tweetReply := . -}}
-			{{- $tweetJ := getJSON $urlPre $embedParams $tweetReply -}}
-				{{- if $tweetJ.html -}}
-				<span>
-					<blockquote>
-						{{- $tweetJ.html | safeHTML -}}
-					</blockquote>
-				</span>
-				{{- end -}}
+			{{- end -}}
 	{{- else if eq $source "mastodon" -}}
-			{{ $.Scratch.Set "include_mastodon" true }}
-			<iframe src="{{ . }}/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="600" height="auto" allowfullscreen="allowfullscreen"></iframe>
-			<span><p><a class="u-in-reply-to" rel="in-reply-to" href="{{ . }}"><svg class="icon"><use xlink:href="#mastodon" /><title>Reply to</title></svg>&nbsp;&nbsp;{{ . }}</a></p></span>
+		{{ $.Scratch.Set "include_mastodon" true }}
+		<svg class="icon"><use xlink:href="#mastodon" /><title>Reply to</title></svg>&nbsp;&nbsp;<a class="u-in-reply-to" rel="in-reply-to" href="{{ . }}">{{ . }}</a>
+		<iframe src="{{ . }}/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="600" height="auto" allowfullscreen="allowfullscreen"></iframe>
 	{{- else -}}
-		<p><span><a class="u-in-reply-to" rel="in-reply-to" href="{{ . }}">
-      <svg class="icon"><use xlink:href="#reply" /><title>Reply to</title></svg>&nbsp;&nbsp;{{ . }}</a>
+      <svg class="icon"><use xlink:href="#reply" /><title>Reply to</title></svg>&nbsp;&nbsp;<a class="u-in-reply-to" rel="in-reply-to" href="{{ . }}">{{ . }}</a>
       	{{ with $cite }}
     	<blockquote class="h-cite u-like-of e-content" cite="{{ . }}">
-    		<p>{{ $cite }}</p>
+    		<p>{{ . }}</p>
     	</blockquote>
-    	</section>
 	    {{ end }}
-    </span></p>
+	</span>
 	{{- end -}}
 </div>
 {{- end -}}
