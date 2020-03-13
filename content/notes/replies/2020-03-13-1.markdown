@@ -1,0 +1,27 @@
+---
+title: ""
+date: 2020-03-13T11:51:41+01:00
+slug: "2020-03-13-1"
+categories:
+- notes
+- replies
+draft: false
+tags:
+- indieweb
+- replies
+images:
+-
+mfbookmark: ""
+mfbookmarkof: ""
+mfrepostof: ""
+mfreplyto: "https://boffosocko.com/2020/03/13/a-micropub-client-idea-liveblogging/"
+mflikeof: ""
+mf-syndicate-to:
+- "https://twitter.com/rretsiem"
+cite: "I’m a bit shocked that no one has done it before now, and I suspect that one of the pre-existing micropub clients out there could probably add the functionality as a one day project at an upcoming IndieWebCamp."
+syndication:
+-
+---
+
+Interesting idea! Will not be used by me and I don't know if it's to specific for only one or two people. But thanks to the [#indieweb](https://indieweb.org/Micropub) all the needed techniques are already there.
+Especially for static sites – like mine, which is Hugo powered – a constant rebuilding is time & resource intensive and could be a blocking point for such live updates.
