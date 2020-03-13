@@ -1,0 +1,28 @@
+---
+title: ""
+date: 2020-03-13T22:15:34+01:00
+slug: "2020-03-13-2"
+categories:
+- notes
+- replies
+draft: false
+tags:
+- replies
+images:
+-
+mfbookmark: ""
+mfbookmarkof: ""
+mfrepostof: ""
+mfreplyto: "https://twitter.com/Kachelmann/status/1238573484667809799"
+mflikeof: ""
+mfSource: ""
+mf-syndicate-to:
+- "https://twitter.com/rretsiem"
+cite: ""
+syndication:
+-
+---
+
+>"Dies müsse dort geschehen, wo es erforderlich ist."
+
+Das ist doch genau der Fehler… Dann ist es doch bereits zu spät! Einige haben das immer noch nicht verstanden :pensive:
