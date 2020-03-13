@@ -22,9 +22,9 @@
 		<svg class="icon"><use xlink:href="#mastodon" /><title>Reply to</title></svg>&nbsp;&nbsp;<a class="u-in-reply-to" rel="in-reply-to" href="{{ . }}">{{ . }}</a>
 		<iframe src="{{ . }}/embed" class="mastodon-embed" style="max-width: 100%; border: 0" width="600" height="auto" allowfullscreen="allowfullscreen"></iframe>
 	{{- else -}}
-      <svg class="icon"><use xlink:href="#reply" /><title>Reply to</title></svg>&nbsp;&nbsp;<a class="u-in-reply-to" rel="in-reply-to" href="{{ . }}">{{ . }}</a>
+      <svg class="icon"><use xlink:href="#reply" /><title>Reply to</title></svg>&nbsp;&nbsp;<a class="u-in-reply-to u-url" rel="in-reply-to" href="{{ . }}">{{ . }}</a>
       	{{ with $cite }}
-    	<blockquote class="h-cite u-like-of e-content" cite="{{ . }}">
+    	<blockquote class="h-cite u-like-of" cite="{{ . }}">
     		<p>{{ . }}</p>
     	</blockquote>
 	    {{ end }}
