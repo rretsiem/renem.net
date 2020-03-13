@@ -1,0 +1,28 @@
+---
+title: ""
+date: 2020-03-13T22:39:52+01:00
+slug: "2020-03-13-3"
+categories:
+- notes
+- replies
+draft: false
+tags:
+- replies
+images:
+-
+mfbookmark: ""
+mfbookmarkof: ""
+mfrepostof: ""
+mfreplyto: "https://twitter.com/loredo/status/1238580251086725124"
+mflikeof: ""
+mfSource: "twitter"
+mf-syndicate-to:
+- "https://twitter.com/rretsiem"
+cite: ""
+syndication:
+-
+---
+
+Hoffentlich ändert sich dadurch auch nachhaltig diese dumme Anwesenheits-Kultur für Meetings und die Einstellung "Homeoffice != produktiv"
+
+Mache das auch schon eine ganz lange Zeit und liebe es.
