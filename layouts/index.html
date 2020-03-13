@@ -4,7 +4,7 @@
 	{{ if .IsHome }}
 	<span class="p-name hidden">{{ .Site.Title }}</span>
 	{{ end }}
-	<div class="container">
+	<div class="container h-feed">
 	{{ range first 10 (where .Site.RegularPages "Type" "post") }}
 			{{ .Render "li" }}
 	{{ end }}

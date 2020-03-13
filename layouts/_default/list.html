@@ -3,11 +3,11 @@
 
 {{ partial "head.html" . }}
 {{ partial "header.html" . }}
-<main class="content h-feed" role="main">
+<main class="content" role="main">
 	{{ if .IsHome }}
 	<span class="p-name hidden">{{ .Site.Title }}</span>
 	{{ end }}
-	<div class="container">
+	<div class="container h-feed">
 	{{- range $paginator.Pages }}
 		{{ .Render "li" }}
 	{{ end -}}
