@@ -12,9 +12,7 @@
 		{{- $tweetJ := getJSON $urlPre $embedParams $tweetReply -}}
 			{{- if $tweetJ.html -}}
 			<span>
-				<blockquote>
 					{{- $tweetJ.html | safeHTML -}}
-				</blockquote>
 			</span>
 			{{- end -}}
 	{{- else if eq $source "mastodon" -}}

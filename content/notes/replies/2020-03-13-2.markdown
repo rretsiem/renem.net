@@ -15,7 +15,7 @@ mfbookmarkof: ""
 mfrepostof: ""
 mfreplyto: "https://twitter.com/Kachelmann/status/1238573484667809799"
 mflikeof: ""
-mfSource: ""
+mfSource: "twitter"
 mf-syndicate-to:
 - "https://twitter.com/rretsiem"
 cite: ""
