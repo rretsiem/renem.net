@@ -3,7 +3,7 @@
 {
     "@context" : "http://schema.org",
     "@type" : "WebSite",
-    "url": "{{ .Site.BaseURL }}",
+    "url": {{ .Site.BaseURL }},
     "author": {
         "@type": "Person",
         "name": "{{ .Site.Params.author }}"
@@ -31,13 +31,13 @@
     "description" : {{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }},
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "{{ .Permalink }}"
+        "@id": {{ .Permalink }}
     },
     {{ if .Params.images -}}
         {{- with .Params.images }}{{ range first 1 . }}
         "image": {
             "@type": "ImageObject",
-            "url": "{{ . | absURL}} }}",
+            "url": {{ . | absURL}} }},
             "width": 696,
             "height": 696
           },
@@ -49,7 +49,7 @@
       "name": {{ .Site.Params.author }},
       "logo": {
         "@type": "ImageObject",
-        "url": "{{ "/assets/renem_profile.png" | absURL }}",
+        "url": {{ "/assets/renem_profile.png" | absURL }},
         "width": 170,
         "height": 170
       }
@@ -61,11 +61,11 @@
     "accountablePerson" : "{{ .Site.Params.author }}",
     "copyrightHolder" : "{{ .Site.Params.author }}",
     "copyrightYear" : "{{ .Date.Format "2006" }}",
-    "datePublished": "{{ .Date.Format $.Site.Params.ISO8601 | safeHTML}}",
+    "datePublished": {{ .Date.Format $.Site.Params.ISO8601 | safeHTML}},
     {{ if not .Lastmod.IsZero -}}
-    "dateModified" : "{{ .Lastmod.Format $.Site.Params.ISO8601 | safeHTML}}",
+    "dateModified" : {{ .Lastmod.Format $.Site.Params.ISO8601 | safeHTML}},
     {{- end }}
-    "url" : "{{ .Permalink }}",
+    "url" : {{ .Permalink }},
     {{ with .Params.tags -}}
     "keywords": "{{ delimit . ", " }}",
     {{- end }}
@@ -83,8 +83,8 @@
         "@type" : "ImageObject",
         "author" : "{{ .Site.Params.author }}",
         "contentLocation" : "Augsburg, Germany",
-        "contentUrl" : "{{ "/assets/renem_profile.png" | absURL }}",
-        "thumbnailUrl" : "{{ "/assets/renem_profile.png" | absURL }}",
+        "contentUrl" : {{ "/assets/renem_profile.png" | absURL }},
+        "thumbnailUrl" : {{ "/assets/renem_profile.png" | absURL }},
         "datePublished" : "2011-08-20",
         "description" : "Photo ReneM",
         "name" : "René Meister Summer 2011"
@@ -93,7 +93,7 @@
     "nationality" : "Germany",
     "email" : "rene@renem.net",
     "gender" : "Male",
-    "url" : "{{ .Site.BaseURL }}",
+    "url" : {{ .Site.BaseURL }},
     "sameAs" : [ "http://twitter.com/rretsiem",
         "https://instagram.com/rene.meister/",
         "https://github.com/rretsiem"]
@@ -105,11 +105,11 @@
     "@type" : "AboutPage",
     "name" : "René Meister About Page",
     "author" : "{{ .Site.Params.author }}",
-    "datePublished": "{{ .Date.Format $.Site.Params.ISO8601 }}",
+    "datePublished": {{ .Date.Format $.Site.Params.ISO8601 }},
     {{ if not .Lastmod.IsZero -}}
-    "dateModified" : "{{ .Lastmod.Format $.Site.Params.ISO8601 | safeHTML}}",
+    "dateModified" : {{ .Lastmod.Format $.Site.Params.ISO8601 | safeHTML}},
     {{- end }}
-    "lastReviewed" : "{{ .Date.Format $.Site.Params.ISO8601 }}",
+    "lastReviewed" : {{ .Date.Format $.Site.Params.ISO8601 }},
     "reviewedBy" : "{{ .Site.Params.author }}",
     "description" : "{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }}",
     "inLanguage" : "de",
@@ -117,13 +117,13 @@
     "copyrightYear" : "{{ .Date.Format "2006" }}",
     "accountablePerson" : "{{ .Site.Params.author }}",
     "license" : "https://creativecommons.org/licenses/by-nc-sa/4.0/",
-    "url" : "{{ .Permalink }}",
+    "url" : {{ .Permalink }},
     "primaryImageOfPage" : {
         "@type" : "ImageObject",
         "author" : "{{ .Site.Params.author }}",
         "contentLocation" : "Augsburg, Germany",
-        "contentUrl" : "{{ "/assets/renem_profile.png" | absURL }}",
-        "thumbnailUrl" : "{{ "/assets/renem_profile.png" | absURL }}",
+        "contentUrl" : {{ "/assets/renem_profile.png" | absURL }},
+        "thumbnailUrl" : {{ "/assets/renem_profile.png" | absURL }},
         "datePublished" : "2011-08-20",
         "description" : "Photo ReneM",
         "name" : "René Meister Summer 2011"
