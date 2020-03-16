@@ -1,0 +1,29 @@
+---
+title: "Consider support for Bridgy publish to Pixelfed (Fediverse) instances"
+date: 2020-03-16T11:31:01+01:00
+slug: "2020-03-16-1"
+categories:
+- notes
+- github
+draft: false
+tags:
+- issues
+images:
+-
+mfbookmark: ""
+mfbookmarkof: ""
+mfrepostof: ""
+mfreplyto: "https://github.com/snarfed/bridgy/issues/"
+mflikeof: ""
+mfSource: "github"
+mfGhProjectName: "Brid.gy"
+cite: ""
+syndication:
+-
+---
+
+To publish images to [Pixelfed](https://pixelfed.org) (Fediverse), support for those instances would be a great addition. Since the [Pixelfed API](https://docs.pixelfed.org/technical-documentation/api-v1.html#authorization) is based on Mastodon V1 API, I hope that therefore not a complete new development is necessary. At least it sounds like a "low hanging fruit" :wink:
+
+A possible use case would be to publish photos posts to Pixelfed instances and also enabling Webmentions to retrieve reactions to those posts.
+
+If this is already possible with the "Mastodon" function, a hint on how to use it would be helpful.
