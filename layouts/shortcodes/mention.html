@@ -1,0 +1,21 @@
+<!-- mention -->
+<!-- mention user="@rretsiem" service="Mastodon" url="" -->
+{{- $username := .Get "user" -}}
+{{- $service := .Get "service" | lower -}}
+{{- $url := "" -}}
+
+{{- if eq $service "twitter" -}}
+	<!-- https://twitter.com/rretsiem -->
+	{{- $url = print "https://twitter.com/" $username -}}
+{{- else if eq $service "mastodon" -}}
+	<!-- https://mastodon.social/@renem -->
+	{{- $url = .Get "url" -}}
+	{{- $instance := urls.Parse $url -}}
+	{{- $service = $instance.Host -}}
+	{{- $username = print $username "@" $service -}}
+{{- else -}}
+	{{ $url = .Get "url" -}}
+{{- end -}}
+
+<a href="{{ $url }}" title="{{ $username }} on {{ $service | humanize }}">{{ $username }}</a>
+<!-- mention -->
