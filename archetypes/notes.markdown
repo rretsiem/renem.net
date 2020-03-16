@@ -15,6 +15,8 @@ mfrepostof: ""
 mfreplyto: ""
 mflikeof: ""
 mfSource: ""
+mfGhProjectUrl: ""
+mfGhProjectName: ""
 mf-syndicate-to:
 - "https://twitter.com/rretsiem"
 cite: ""

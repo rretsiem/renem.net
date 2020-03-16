@@ -1,5 +1,5 @@
 {{ $items := (where .Site.RegularPages "Type" "==" "notes" )  -}}
-{{ $replies := (where (where .Site.RegularPages "Type" "==" "notes" ) ".Params.categories" "intersect" (slice "replies" "likes" "bookmarks" "reposts") ) -}}
+{{ $replies := (where (where .Site.RegularPages "Type" "==" "notes" ) ".Params.categories" "intersect" (slice "replies" "likes" "bookmarks" "reposts" "github") ) -}}
 {{ $items := $items | complement $replies | first 20 -}}
 {
 	"version": "https://jsonfeed.org/version/1",

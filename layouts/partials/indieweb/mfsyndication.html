@@ -3,7 +3,7 @@
   {{ if ne . "" }}
   {{ $domain := replaceRE "^https?://([^/]+).*" "$1" . }}
    <a href="{{ . }}" class="metatag u-syndication" rel="syndication" title="This post was syndicated to {{ $domain }}">
-    {{- if in $domain "twitter.com" -}}
+   {{- if in $domain "twitter.com" -}}
        <svg class="icon"><use xlink:href="#twitter" /></svg>
    {{- else if in $domain "instagram.com" -}}
       <svg class="icon"><use xlink:href="#instagram" /></svg>
@@ -13,6 +13,8 @@
       <svg class="icon"><use xlink:href="#medium" /></svg>
    {{- else if in $domain "mastodon.social" -}}
       <svg class="icon"><use xlink:href="#mastodon" /></svg>
+   {{- else if in $domain "github.com" -}}
+      <svg class="icon"><use xlink:href="#github" /></svg>
    {{ else }}
       <svg class="icon"><use xlink:href="#link" /></svg>
     {{ end }}

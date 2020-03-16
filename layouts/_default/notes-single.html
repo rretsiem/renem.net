@@ -1,28 +1,30 @@
 <article class="{{ .Type }} h-entry">
-		<section class="post-excerpt p-summary hidden">
-				{{ if .Params.description }}
-					{{ .Params.description }}
-				{{ else }}
-					{{ .Summary }}
-				{{ end }}
-		</section>
-
+{{- if .Params.title -}}
+  <h2 id="post-header" class="p-post-title p-name">{{ .Title }}</h2>
+{{- end -}}
+	<section class="post-excerpt p-summary hidden">
+		{{ if .Params.description }}
+			{{ .Params.description }}
+		{{ else }}
+			{{ .Summary }}
+		{{ end }}
+	</section>
 {{ partial "indieweb/indieweb-reaction" . }}
     <section class="post-content e-content">
         {{ .Content }}
-				{{ if ne .Lastmod .Date}}
-				<p><em>
-					<span>Zuletzt aktualisiert:
-				  	<time class="dt-updated" datetime="{{ .Lastmod.Format $.Site.Params.ISO8601 }}">{{ .Lastmod.Format "January 2, 2006" }}</time>
-					</span></em>
-					</p>
-				{{ end }}
-				<!--		<span class="article-end">&amp;</span> -->
+		{{ if ne .Lastmod .Date}}
+			<p><em>
+				<span>Zuletzt aktualisiert:
+			  	<time class="dt-updated" datetime="{{ .Lastmod.Format $.Site.Params.ISO8601 }}">{{ .Lastmod.Format "January 2, 2006" }}</time>
+				</span></em>
+			</p>
+		{{ end }}
+		<!--		<span class="article-end">&amp;</span> -->
     </section>
     <footer class="post-footer">
         {{- partial "post/author" . -}}
-				{{- partial "post/share" . -}}
-				{{- partial "post/prev_next" . -}}
+		{{- partial "post/share" . -}}
+		{{- partial "post/prev_next" . -}}
     </footer>
 </article>
 
