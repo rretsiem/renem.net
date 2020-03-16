@@ -27,3 +27,5 @@ To publish images to [Pixelfed](https://pixelfed.org) (Fediverse), support for t
 A possible use case would be to publish photos posts to Pixelfed instances and also enabling Webmentions to retrieve reactions to those posts.
 
 If this is already possible with the "Mastodon" function, a hint on how to use it would be helpful.
+
+<!--more-->
