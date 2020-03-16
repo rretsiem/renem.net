@@ -1,0 +1,30 @@
+---
+title: ""
+date: 2020-03-16T21:37:50+01:00
+slug: "2020-03-16-1"
+categories:
+- notes
+- reposts
+draft: false
+tags:
+- reposts
+- schule
+images:
+-
+mfbookmark: ""
+mfbookmarkof: ""
+mfrepostof: "https://mastodon.social/web/statuses/103834190671914485"
+mfreplyto: ""
+mflikeof: ""
+mfSource: "mastodon"
+mfGhProjectUrl: ""
+mfGhProjectName: ""
+mf-syndicate-to:
+- "https://twitter.com/rretsiem"
+cite: ""
+syndication:
+-
+---
+
+> Neu im Blog: Schule geschlossen? Dezentraler Unterricht geht auch datenschutzfreundlich! https://digitalcourage.de/blog/2020/schule-geschlossen-dezentraler-unterricht-geht-auch-datenschutzfreundlich
+
