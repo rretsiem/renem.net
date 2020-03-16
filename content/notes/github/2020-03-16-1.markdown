@@ -19,7 +19,7 @@ mfSource: "github"
 mfGhProjectName: "Brid.gy"
 cite: ""
 syndication:
--
+- https://github.com/snarfed/bridgy/issues/927
 ---
 
 To publish images to [Pixelfed](https://pixelfed.org) (Fediverse), support for those instances would be a great addition. Since the [Pixelfed API](https://docs.pixelfed.org/technical-documentation/api-v1.html#authorization) is based on Mastodon V1 API, I hope that therefore not a complete new development is necessary. At least it sounds like a "low hanging fruit" :wink:
