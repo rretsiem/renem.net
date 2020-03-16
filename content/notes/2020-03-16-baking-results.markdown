@@ -22,7 +22,8 @@ mfGhProjectUrl: ""
 mfGhProjectName: ""
 cite: ""
 syndication:
--
+- https://mastodon.social/@renem/103834995828222497
+- https://twitter.com/rretsiem/status/1239674252460261379
 ---
 
 Selbstversorgung! 2 kleine Ciabattas gebacken und ein paar Schoko-Mandel-Plätzchen. :yum:
