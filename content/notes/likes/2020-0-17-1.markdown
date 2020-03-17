@@ -19,11 +19,11 @@ mflikeof: "https://www.albaberlin.de/news/details/reaktion-auf-coronavirus-alba-
 mfSource: ""
 mfGhProjectUrl: ""
 mfGhProjectName: ""
-mf-syndicate-to:
-- "https://twitter.com/rretsiem"
 cite: ""
 syndication:
--
+- https://microblog.renem.net/2020/03/17/klasse-aktion-von.html
+- https://twitter.com/rretsiem/status/1240028662335930368
+- https://mastodon.social/@renem/103840536786381701
 ---
 
 Klasse Aktion von [@albaberlin](https://twitter.com/albaberlin)
