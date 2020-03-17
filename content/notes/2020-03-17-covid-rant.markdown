@@ -21,7 +21,9 @@ mf-syndicate-to:
 - "https://twitter.com/rretsiem"
 cite: ""
 syndication:
--
+- https://twitter.com/rretsiem/status/1240020798712184833
+- https://mastodon.social/@renem/103840416453114805
+- https://fed.brid.gy
 ---
 
 Ich bin stinksauer! #covid19 #corona :angry:
