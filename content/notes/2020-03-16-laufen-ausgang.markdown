@@ -22,7 +22,8 @@ mf-syndicate-to:
 - "https://twitter.com/rretsiem"
 cite: ""
 syndication:
--
+- https://twitter.com/rretsiem/status/1239660544447176707
+- https://mastodon.social/@renem/103834784945247177
 ---
 
 :question: Mal eine Frage an die Läufer aus Österreich hier :austria: Heißt Ausgangssperre auch kein Laufen draußen mehr? Allein im Wald?!? :anguished:
