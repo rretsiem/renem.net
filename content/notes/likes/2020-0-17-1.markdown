@@ -1,0 +1,35 @@
+---
+title: ""
+date: 2020-03-17T22:21:13+01:00
+slug: "2020-0-17-1"
+categories:
+- notes
+- likes
+draft: false
+tags:
+- covid-19
+- likes
+images:
+-
+mfbookmark: ""
+mfbookmarkof: ""
+mfrepostof: ""
+mfreplyto: ""
+mflikeof: "https://www.albaberlin.de/news/details/reaktion-auf-coronavirus-alba-berlin-startet-taegliche-digitale-sportstunde-fuer-kinder-und-jugendlic/"
+mfSource: ""
+mfGhProjectUrl: ""
+mfGhProjectName: ""
+mf-syndicate-to:
+- "https://twitter.com/rretsiem"
+cite: ""
+syndication:
+-
+---
+
+Klasse Aktion von [@albaberlin](https://twitter.com/albaberlin)
+
+## Alba Berlin startet tägliche digitale Sportstunde für Kinder und Jugendliche
+
+> In der Schulwoche von Montag bis Freitag zeigt ALBA auf seinem Youtube-Kanal unter [www.youtube.com/albaberlin](http://www.youtube.com/albaberlin) täglich drei neue Sendungen von „ALBAs täglicher Sportstunde“. Der Sporttag beginnt um 9 Uhr mit 30 Minuten Programm für Kitakinder, um 10 Uhr läuft dann die 45-minütige Sportstunde für Grundschul-Kinder und um 11 Uhr der Sportunterricht für Oberschul-Kinder. Zum Ende der Sendewoche gibt es am Freitag Tipps und Aufgaben, mit denen die Kinder und ihre Eltern ins Wochenende geschickt werden.
+
+
