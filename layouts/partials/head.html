@@ -19,6 +19,9 @@
         {{- with .OutputFormats.Get "json" }}
         <link href="{{ .Permalink }}" rel="alternate" type="application/json" title="René JSON feed" />
         {{ end -}}
+        <!-- h-feed discovery -->
+        <link href="/notes" rel="feed"  title="René Notes MF-2 feed" />
+        <link href="/photos" rel="feed" title="René Photos MF-2 feed" />
         <!-- <link rel="hub" href="https://switchboard.p3k.io/"> -->
         <link rel="hub" href="https://renem.superfeedr.com/" />
         <link rel="self" href="{{ .Site.BaseURL }}" />
