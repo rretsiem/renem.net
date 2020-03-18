@@ -1,0 +1,19 @@
+---
+title: "Tomaten, Chili & Gurken gesät "
+date: 2020-03-18T21:51:14+01:00
+tags:
+- garten
+categories:
+- photo
+draft: false
+images:
+- /images/2020-03-18-ansaat-1.jpg
+syndication:
+-
+---
+
+{{< img src="/images/2020-03-18-ansaat-1.jpg" caption="Tomaten, Chili und Gurken in Ansaatpötten" >}}
+
+Gestern endlich die Samen für die ersten 20 Pflanzen im eigenen Garten eingebracht. Jetzt hoffen wir mal das sie alle keimen.
+
+<!--more-->
