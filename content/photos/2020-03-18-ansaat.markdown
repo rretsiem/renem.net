@@ -12,7 +12,7 @@ syndication:
 -
 ---
 
-{{< img src="/images/2020-03-18-ansaat-1.jpg" caption="Tomaten, Chili und Gurken in Ansaatpötten" >}}
+{{< img src="/images/2020-03-18-ansaat-1.jpg" alt="Tomaten, Chili und Gurken in Ansaatpötten" >}}
 
 Gestern endlich die Samen für die ersten 20 Pflanzen im eigenen Garten eingebracht. Jetzt hoffen wir mal das sie alle keimen.
 
