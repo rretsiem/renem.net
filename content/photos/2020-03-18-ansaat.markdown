@@ -9,7 +9,9 @@ draft: false
 images:
 - /images/2020-03-18-ansaat-1.jpg
 syndication:
--
+- https://twitter.com/rretsiem/status/1240386882556624899"
+- https://mastodon.social/@renem/103846137162408331
+- https://microblog.renem.net/2020/03/18/tomaten-chili-und.html
 ---
 
 {{< img src="/images/2020-03-18-ansaat-1.jpg" alt="Tomaten, Chili und Gurken in Ansaatpötten" >}}
