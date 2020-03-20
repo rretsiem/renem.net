@@ -1,0 +1,28 @@
+---
+title: ""
+date: 2020-03-20T11:58:13+01:00
+slug: "2020-03-20-1"
+categories:
+- notes
+- replies
+draft: false
+tags:
+- homeoffice
+images:
+-
+mfbookmark: ""
+mfbookmarkof: ""
+mfrepostof: ""
+mfreplyto: "https://hutaffe.blog/2020/03/20/best-day-yet.html"
+mflikeof: ""
+mfSource: ""
+mfGhProjectUrl: ""
+mfGhProjectName: ""
+cite: "I think I can make working from home for a longer period work, I don’t miss anything at the moment. "
+syndication:
+-
+---
+
+[@hutaffe](https://micro.blog/hutaffe) Genau so hier! Wobei ich ja sowieso schon seit 6-7 Jahren zu 95% im Homeoffice arbeite. Aber Familie (Frau & Kind) zu Hause, Gemeinsam frühstücken, Mittags zusammen essen ist auch jetzt neu für mich und schön :smile:
+Beim Thema Homeoffice kann ich weiterhin nicht verstehen wie man sowas nicht gut finden kann, bzw. da nicht arbeiten kann. Sicher eine Gewöhnungssache, aber mit etwas Disziplin geht das so gut und möchte das am besten nie wieder missen. Die 1-2 Stunden tägliches pendeln spare ich mir gern und habe mehr Zeit zu Hause.
+<!--more-->
