@@ -22,7 +22,7 @@ mf-syndicate-to:
 - "https://twitter.com/rretsiem"
 cite: ""
 syndication:
--
+- https://mastodon.social/@renem/103846266224003400
 ---
 
 [@crossgolf_rebel@chaos.social](https://chaos.social/@crossgolf_rebel) Das wurde denke ich so weit gefasst, damit keine Ausnahmen gemacht werden müssen. Ansonsten wären alle auf die Idee gekommen auch Ausnahmen zu beantragen und keiner hätte mehr den Überblick gehabt.
