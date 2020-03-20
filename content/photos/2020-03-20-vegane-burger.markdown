@@ -13,6 +13,7 @@ images:
 syndication:
 -
 ---
+Es gab Burger! Lecker war es!
 
 {{< img src="/images/2020-03-20-vegane-burger-1.jpg" alt="Buns – selber gebacken" >}}
 {{< img src="/images/2020-03-20-vegane-burger-2.jpg" alt="Vegane Patties –  selbst zubereitet" >}}
