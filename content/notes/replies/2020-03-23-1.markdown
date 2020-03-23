@@ -1,0 +1,27 @@
+---
+title: ""
+date: 2020-03-23T13:02:37+01:00
+slug: "2020-03-23-1"
+categories:
+- notes
+- replies
+draft: false
+tags:
+- replies
+- mac
+images:
+-
+mfbookmark: ""
+mfbookmarkof: ""
+mfrepostof: ""
+mfreplyto: "https://twitter.com/martinfeld/status/1242045953223176193"
+mflikeof: ""
+mfSource: "twitter"
+mfGhProjectUrl: ""
+mfGhProjectName: ""
+cite: ""
+syndication:
+-
+---
+
+[@martinfeld](https://twitter.com/martinfeld) Wenn du MindNode viel nutzt, so wie ich, dann würde ich sagen klares Ja!. Hast du noch eine Einmal-Lizenz von Mindnode 7, dann genügt die sicherlicher auch erstmal.
