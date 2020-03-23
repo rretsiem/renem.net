@@ -11,7 +11,9 @@ images:
 - /images/2020-03-20-vegane-burger-2.jpg
 - /images/2020-03-20-vegane-burger-3.jpg
 syndication:
--
+- https://twitter.com/rretsiem/status/1241106668714328072
+- https://mastodon.social/@renem/103857384239142745
+
 ---
 Es gab Burger! Lecker war es!
 

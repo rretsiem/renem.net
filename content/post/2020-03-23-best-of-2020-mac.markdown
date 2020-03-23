@@ -1,0 +1,33 @@
+---
+title: "Best of 2020 – Mac"
+date: 2020-03-23T09:19:33+01:00
+categories:
+- tech
+description: "Mit dem Beitrag hier, greife ich einmal die Idee von @happybuddha1975 auf und beschreibe meine Best of 2020 Mac apps im Moment."
+draft: false
+tags:
+- mac
+images:
+-
+mfbookmark: ""
+mfbookmarkof: ""
+mfrepostof: ""
+mfreplyto: ""
+mflikeof: ""
+syndication:
+-
+---
+
+Der [Jürgen](https://happybuddha1975.de) hat mit einem Beitrag zum Thema [Best of 2020](https://happybuddha1975.de/best-of-2020/) die Vorlage geliefert. Darauf möchte ich doch gerne einmal mit einem beliebtesten Mac Apps im Moment in 2020 antworten.
+
+- RSS-Feeds lese ich viel zu wenig am Mac, lieber am iPad oder iPhone und dort seit neuestem mit [NetNewsWire](https://ranchero.com/netnewswire/). Am Mac nutze ich am liebsten die direkte Webseite von [FeedBin](https://feedbin.com)
+- Zum schreiben der Texte wie hier in Markdown setze ich meist [Typora](https://typora.io/) als Editor, oder [Sublime Text](https://www.sublimetext.com/) mit der [Markdown Editing Erweiterung](https://github.com/SublimeText-Markdown/MarkdownEditing) ein.
+- Notizen schreibe ich mir in Apples eigener Notes Applikation auf. Sync zum iPhone und die Verwaltung ist ausreichend für mich.
+- Erinnerungen und tägliche Aufgaben plane ich alle mit [Todoist](https://todoist.com)
+- Kalender ist bei mir der Apple eigene Kalender. Eine Zeit lang habe ich Fantastical genutzt, bin aber wieder zur Hausmarke zurückgekehrt.
+- Twitter konsumiere ich meist am iPhone via Tweetbot, am Mac ganz selten, dann aber mit der Klasse [Twitteriffic](https://twitterrific.com/mac) app.
+- Mastodon ist auch bei mir ein Kanal. Dazu Mast2 am iPhone. Am Mac genügt mir die Webseite im Brower
+- Brainstorming für alle möglichen Themen läuft bei mir, wie bei Jürgen auch via [Mindnode Pro](https://mindnode.com/).
+
+Ich habe mich bei der Liste oben einmal an der von Jürgen orientiert. Sicherlich gibt es noch mehr Klasse Programme die ich regelmäßig nutze, aber irgendwo ist eine Begrenzung dazu ganz gut.
+
