@@ -10,8 +10,8 @@
           {{ with .Site.Params.flickr_name }}
             <a href="https://www.flickr.com/people/{{ . }}/" title="Flickr" rel="me noopener noreferrer" target="_blank"><span class="tooltip"><svg class="icon"><use xlink:href="#flickr" /><title>Flickr</title></svg></span></a>
           {{ end }}
-          {{ with .Site.Params.instagram }}
-            <a href="https://www.instagram.com/{{ . }}/" title="Instagram" rel="me noopener noreferrer" target="_blank"><span class="tooltip"><svg class="icon"><use xlink:href="#instagram" /><title>Instagram</title></svg></span></a>
+          {{ with .Site.Params.pixelfed }}
+            <a href="https://pixelfed.de/{{ . }}/" title="Pixelfed" rel="me noopener noreferrer" target="_blank"><span class="tooltip"><svg class="icon"><use xlink:href="#pixelfed" /><title>Pixelfed</title></svg></span></a>
           {{ end }}
           {{ with .Site.Params.facebook }}
             <a href="https://www.facebook.com/{{ . }}" title="Facebook" rel="me noopener noreferrer" target="_blank"><span class="tooltip"><svg class="icon"><use xlink:href="#facebook" /><title>Facebook</title></svg></span></a>
@@ -44,5 +44,5 @@
 
     <script type='text/javascript' charset="utf-8" src="/js/remove-no.js"></script>
     {{ if ($.Page.Scratch.Get "include_mastodon") "true" }}
-      <script src="https://mastodon.social/embed.js" async="async"></script>
+    <script src="https://mastodon.social/embed.js" async="async"></script>
     {{ end }}
