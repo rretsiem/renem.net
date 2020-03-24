@@ -1,0 +1,32 @@
+---
+title: "Repost of a Mastodon status does not show up"
+date: 2020-03-24T11:51:45+01:00
+slug: "2020-03-24-1"
+categories:
+- notes
+- github
+draft: false
+tags:
+- issues
+images:
+-
+mfbookmark: ""
+mfbookmarkof: ""
+mfrepostof: ""
+mfreplyto: "https://github.com/snarfed/bridgy-fed/issues"
+mflikeof: ""
+mfSource: "github"
+mfGhProjectName: "bridgy-fed"
+cite: ""
+syndication:
+-
+---
+
+Since posting to fed.brid.gy works fine, I tried to repost a status on Mastodon today from my site. I used [Telegraph](https://telegraph.p3k.io/) to send the request and got a "202" back, so everything seems fine.
+
+However the repost/reblog does not appear on my account [@renem.net@renem.net](https://fed.brid.gy/r/https://renem.net/) at Toots&Replies. Also the repost wasn't counted on the original status.
+Here [is the log](https://fed.brid.gy/log?key=https%3A%2F%2Frenem.net%2Fnotes%2Freposts%2F2020-03-24-1%2F+https%3A%2F%2Fsocial.tchncs.de%2F%40kuketzblog%2F103877135239066914&start_time=1585047242) from fed.brid.gy for this repost-of action.
+
+I don't know if this is the right channel to ask, or better via IRC, so I try it here first, but feel free to close this here and point me to the right "support channel". Thanks!
+
+<!--more-->
