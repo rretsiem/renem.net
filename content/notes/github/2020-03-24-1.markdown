@@ -19,7 +19,7 @@ mfSource: "github"
 mfGhProjectName: "bridgy-fed"
 cite: ""
 syndication:
--
+- https://github.com/snarfed/bridgy-fed/issues/64
 ---
 
 Since posting to fed.brid.gy works fine, I tried to repost a status on Mastodon today from my site. I used [Telegraph](https://telegraph.p3k.io/) to send the request and got a "202" back, so everything seems fine.

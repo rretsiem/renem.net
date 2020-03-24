@@ -99,11 +99,6 @@ sectionPagesMenu = "main"
         identifier = "notes"
         url = "/notes/"
 [[menu.main]]
-        name = "Microblog"
-        weight = 4
-        identifier = "microblog"
-        url = "/microblog/"
-[[menu.main]]
         name = "Archiv"
         weight = 5
         identifier = "archive"
