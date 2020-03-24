@@ -1,0 +1,30 @@
+---
+title: ""
+date: 2020-03-24T11:17:59+01:00
+slug: "2020-03-24-1"
+categories:
+- notes
+- reposts
+draft: false
+tags:
+- reposts
+- datenschutz
+images:
+-
+mfbookmark: ""
+mfbookmarkof: ""
+mfrepostof: "https://mastodon.social/web/statuses/103877135326975181"
+mfreplyto: ""
+mflikeof: ""
+mfSource: "mastodon"
+mfGhProjectUrl: ""
+mfGhProjectName: ""
+mf-syndicate-to:
+- "https://twitter.com/rretsiem"
+cite: ""
+syndication:
+-
+---
+
+> An jeder Ecke wird gerade Zoom für Videokonferenzen empfohlen. Wer die Datenschutzerklärung gelesen und verstanden hat, wird Zoom vermutlich nicht nutzen wollen. Absolut gruselig.
+> https://zoom.us/de-de/privacy.html - [Mike Kuketz via Mastodon](https://social.tchncs.de/@kuketzblog)
