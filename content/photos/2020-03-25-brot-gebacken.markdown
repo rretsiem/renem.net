@@ -10,8 +10,10 @@ images:
 - /images/2020-03-25-brot-gebacken-1.jpg
 - /images/2020-03-25-brot-gebacken-2.jpg
 syndication:
--
-
+- https://mastodon.social/@renem/103885400731492000
+- https://twitter.com/rretsiem/status/1242900086864203776
+- https://microblog.renem.net/2020/03/25/dunkles-bauernbrot-sauerteig.html
+- https://fed.brid.gy/r/https://renem.net/
 ---
 
 Heute wieder mit frischem (12 Tage) Sauerteig das erste Brot gebacken. 
