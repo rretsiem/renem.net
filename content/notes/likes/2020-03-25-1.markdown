@@ -1,0 +1,28 @@
+---
+title: ""
+date: 2020-03-25T20:56:25+01:00
+slug: "2020-03-25-1"
+categories:
+- notes
+- likes
+draft: false
+tags:
+- likes
+images:
+-
+mfbookmark: ""
+mfbookmarkof: ""
+mfrepostof: ""
+mfreplyto: ""
+mflikeof: "https://twitter.com/egghat/status/1242902245102010370"
+mfSource: "twitter"
+mfGhProjectUrl: ""
+mfGhProjectName: ""
+mf-syndicate-to:
+- "https://twitter.com/rretsiem"
+cite: ""
+syndication:
+-
+---
+
+>Das Absurdeste am Home Office Boom waren die Empfehlungen, was man jetzt alles machen könnte: Sprachen lernen, etc. pp. Also für mich kann ich sagen: Ich habe weniger Zeit als vorher. - [@egghat via Twitter](https://twitter.com/egghat/status/1242902245102010370)
