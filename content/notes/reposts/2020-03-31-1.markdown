@@ -4,17 +4,17 @@ date: 2020-03-31T09:21:08+02:00
 slug: "2020-03-31-1"
 categories:
 - notes
-- likes
+- reposts
 draft: false
 tags:
-- likes
+- reposts
 images:
 -
 mfbookmark: ""
 mfbookmarkof: ""
-mfrepostof: ""
+mfrepostof: "https://chaos.social/@frumble/103914034970167836"
 mfreplyto: ""
-mflikeof: "https://chaos.social/@frumble/103914034970167836"
+mflikeof: ""
 mfSource: "mastodon"
 mfGhProjectUrl: ""
 mfGhProjectName: ""
