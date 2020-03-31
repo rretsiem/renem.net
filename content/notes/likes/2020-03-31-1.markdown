@@ -1,0 +1,29 @@
+---
+title: ""
+date: 2020-03-31T09:21:08+02:00
+slug: "2020-03-31-1"
+categories:
+- notes
+- likes
+draft: false
+tags:
+- likes
+images:
+-
+mfbookmark: ""
+mfbookmarkof: ""
+mfrepostof: ""
+mfreplyto: ""
+mflikeof: "https://chaos.social/@frumble/103914034970167836"
+mfSource: "mastodon"
+mfGhProjectUrl: ""
+mfGhProjectName: ""
+mf-syndicate-to:
+- "https://twitter.com/rretsiem"
+cite: ""
+syndication:
+-
+---
+
+>Instagram ist der beste Beweis dafür, dass selten das beste Produkt gewinnt.
+Katastrophale Benutzungserfahrung, Werbung nach jedem Wisch, keine Weblinks in Posts erlaubt, lächerliche Bildauflösung, keine chronologische Timeline, außerdem alles voller Schleichwerbung, Werbeaufträge und generell alles verlogen. Und das ist heute das Hauptnetzwerk der jungen Leute, ich begreif es nicht. [Ich nutze das nicht.] - [Don Alfrumblo Pizza (MdB)](https://chaos.social/@frumble)
