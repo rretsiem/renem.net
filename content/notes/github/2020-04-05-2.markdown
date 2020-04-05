@@ -1,0 +1,27 @@
+---
+title: ""
+date: 2020-04-05T22:29:34+02:00
+slug: "2020-04-05-2"
+categories:
+- notes
+- github
+draft: false
+tags:
+- issues
+images:
+-
+mfbookmark: ""
+mfbookmarkof: ""
+mfrepostof: ""
+mfreplyto: "https://github.com/snarfed/bridgy-fed/issues/64#issuecomment-605541812"
+mflikeof: ""
+mfSource: ""
+mfGhProjectUrl: "https://github.com/snarfed/bridgy-fed/"
+mfGhProjectName: "bridgy-fed"
+cite: "sorry for the bad news. @rretsiem if you know the social.tchncs.de admin(s), feel free to ask them for any related server logs from around this time, 2020-03-24 10:46:23 UTC, they might be able to help!"
+syndication:
+-
+---
+
+
+Got an [answer to my question](https://social.tchncs.de/@milan/103940848640254938) for the logs from the admin ([@Milan](https://social.tchncs.de/@milan)) of the instance. But sadly he can't help here. So I think it will be as mysterios as it was.
