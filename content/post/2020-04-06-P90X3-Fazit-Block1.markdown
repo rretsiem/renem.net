@@ -15,7 +15,8 @@ mfrepostof: ""
 mfreplyto: ""
 mflikeof: ""
 syndication:
--
+- https://twitter.com/rretsiem/status/1247789552485273601
+- https://mastodon.social/@renem/103961803442819504
 ---
 
 Seit [Anfang März absolviere](https://renem.net/post/2020-03-02-p90x3-auf-gehts/) ich ja nun das – für mich Neue – P90X3 Programm. Nach der ersten Woche hatte ich bereits ein [kurzes Fazit](https://renem.net/post/2020-03-09-p90x3-fazit-woche1/) geschrieben, da sich seitdem ja so einiges in der Welt geändert hat, musste auch bei uns einiges umgestellt werden. So dass einfach weniger Zeit für den Blog hier blieb.
