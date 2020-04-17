@@ -1,0 +1,28 @@
+---
+title: ""
+date: 2020-04-17T21:58:23+02:00
+slug: "2020-04-17-1"
+categories:
+- notes
+- replies
+draft: false
+tags:
+- replies
+images:
+-
+mfbookmark: ""
+mfbookmarkof: ""
+mfrepostof: ""
+mfreplyto: "https://twitter.com/salehsmaeili/status/1251170952861356033"
+mflikeof: ""
+mfSource: ""
+mfGhProjectUrl: ""
+mfGhProjectName: ""
+mf-syndicate-to:
+- "https://twitter.com/rretsiem"
+cite: "Been wanting to try those after I tried Hoka One One... Road shoes?"
+syndication:
+-
+---
+
+It's not my first pair from Altra, but the first road shoe, yes. First try felt very comfortable (maybe to much for me) and loads of space for the foot. Will try them for a longer run on sunday.
