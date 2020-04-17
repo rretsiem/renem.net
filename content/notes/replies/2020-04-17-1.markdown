@@ -22,7 +22,7 @@ mf-syndicate-to:
 - "https://twitter.com/rretsiem"
 cite: "Been wanting to try those after I tried Hoka One One... Road shoes?"
 syndication:
--
+- https://twitter.com/rretsiem/status/1251243287119310849
 ---
 
 It's not my first pair from Altra, but the first road shoe, yes. First try felt very comfortable (maybe to much for me) and loads of space for the foot. Will try them for a longer run on sunday.

@@ -11,6 +11,7 @@ images:
 syndication:
 - https://twitter.com/rretsiem/status/1251150787650007051
 - https://mastodon.social/@renem/104014323789176665
+- https://microblog.renem.net/2020/04/17/neue-schuhe-zum.html
 ---
 
 Neue Schuhe zum Laufen! Tatsächlich das erste Mal online bestellt, aus Gründen.
