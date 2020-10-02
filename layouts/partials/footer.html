@@ -43,6 +43,6 @@
     {{- partialCached "scripts.html" . -}}
 
     <script type='text/javascript' charset="utf-8" src="/js/remove-no.js"></script>
-    {{ if ($.Page.Scratch.Get "include_mastodon") "true" }}
+    {{ if ($.Page.Scratch.Get "include_mastodon") }}
     <script src="https://mastodon.social/embed.js" async="async"></script>
     {{ end }}

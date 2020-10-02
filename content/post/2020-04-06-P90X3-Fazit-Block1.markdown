@@ -3,7 +3,7 @@ title: "P90X3 – Fazit Block1"
 date: 2020-04-08T09:22:42+02:00
 categories:
 - sport
-description: "EIne Zusammenfassung der Wochen 1-4 vom P90X3 Programm welches ich seit Anfang März absolviere."
+description: "Eine Zusammenfassung der Wochen 1-4 vom P90X3 Programm welches ich seit Anfang März absolviere."
 draft: false
 tags:
 - p90x
