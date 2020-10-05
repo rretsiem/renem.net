@@ -17,7 +17,8 @@ mfrepostof: ""
 mfreplyto: ""
 mflikeof: ""
 syndication:
--
+- https://twitter.com/rretsiem/status/1313020397944811520
+- https://mastodon.social/@renem/104981041778807061
 ---
 
 Da ich ebenfalls seit dem Update im September 2020 mit iOS 14 und watchOS7 Probleme mit den Trainingsdaten habe, schreibe ich hier mal meine Erkenntnisse zusammen.
