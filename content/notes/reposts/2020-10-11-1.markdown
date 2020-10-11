@@ -1,0 +1,30 @@
+---
+title: ""
+date: 2020-10-11T16:46:35+02:00
+slug: "2020-10-11-1"
+categories:
+- notes
+- reposts
+draft: false
+tags:
+- reposts
+images:
+-
+mfbookmark: ""
+mfbookmarkof: ""
+mfrepostof: "https://twitter.com/RainerRoever/status/1315025227785568264"
+mfreplyto: ""
+mflikeof: ""
+mfSource: "twitter"
+mfGhProjectUrl: ""
+mfGhProjectName: ""
+mf-syndicate-to:
+- "https://twitter.com/rretsiem"
+cite: ""
+syndication:
+-
+---
+
+Das ist so traurig…
+
+{{< tweet 1315025227785568264 >}}
