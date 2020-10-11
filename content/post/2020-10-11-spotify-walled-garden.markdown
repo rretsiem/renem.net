@@ -17,7 +17,8 @@ mfrepostof: ""
 mfreplyto: ""
 mflikeof: ""
 syndication:
--
+- https://twitter.com/rretsiem/status/1315222024160260096
+- https://fed.brid.gy/r/https://renem.net/post/2020-10-11-spotify-walled-garden/
 ---
 
 Ich schreibe hier ja mittlerweile sehr selten, allerdings habe ich heute das Bedürfnis verspürt über Spotify zu schreiben, da ich über [Songshift](https://songshift.com/blog/spotify_transfers) ein Update für iOS erhalten habe, bei dem folgender Satz stand:
