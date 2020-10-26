@@ -1,0 +1,37 @@
+---
+title: ""
+date: 2020-10-26T09:24:35+01:00
+slug: "2020-10-26-1"
+categories:
+- notes
+- reposts
+draft: false
+tags:
+- reposts
+images:
+-
+mfbookmark: ""
+mfbookmarkof: ""
+mfrepostof: "https://twitter.com/RunalyzeDE/status/1319618118491230208"
+mfreplyto: ""
+mflikeof: ""
+mfSource: "twitter"
+mfGhProjectUrl: ""
+mfGhProjectName: ""
+mf-syndicate-to:
+- "https://twitter.com/rretsiem"
+cite: ""
+syndication:
+-
+---
+
+Tolle Nachrichten, vielen Dank [@Runalyze](https://twitter.com/RunalyzeDE) & [@HealthFit](https://twitter.com/HealthToFit)
+
+{{< tweet 1319618118491230208 >}}
+
+
+
+
+
+
+
