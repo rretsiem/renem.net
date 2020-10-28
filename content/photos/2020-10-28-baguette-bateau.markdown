@@ -10,7 +10,8 @@ images:
 - /images/2020-10-28-baguette-bateau1.jpg
 - /images/2020-10-28-baguette-bateau2.jpg
 syndication:
--
+- https://twitter.com/rretsiem/status/1321560748775120897
+- https://mastodon.social/@renem/105114520106084806
 ---
 
 Hatte heute Lust auf ein [Bateau-Baguette](https://www.herrgruenkocht.de/das-bateau-baguette-von-herrn-gruen/) von Herrn Grün ([@HerrGruenkocht](https://twitter.com/HerrGruenkocht)). Normalerweise bin ich ja eher der Sauerteig-Fan und rümpfe die Nase wenn ich Hefe lese, aber das ging mit 5 Minuten Arbeitszeit + Gehzeit + Backzeit sehr schnell.
