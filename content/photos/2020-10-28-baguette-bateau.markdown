@@ -13,7 +13,7 @@ syndication:
 -
 ---
 
-Hatte heute Lust auf ein [Bateau-Baguette](https://www.herrgruenkocht.de/das-bateau-baguette-von-herrn-gruen/) von Herrn Grün. Normalerweise bin ich ja eher der Sauerteig-Fan und rümpfe die Nase wenn ich Hefe lese, aber das ging mit 5 Minuten Arbeitszeit + Gehzeit + Backzeit sehr schnell.
+Hatte heute Lust auf ein [Bateau-Baguette](https://www.herrgruenkocht.de/das-bateau-baguette-von-herrn-gruen/) von Herrn Grün ([@HerrGruenkocht](https://twitter.com/HerrGruenkocht)). Normalerweise bin ich ja eher der Sauerteig-Fan und rümpfe die Nase wenn ich Hefe lese, aber das ging mit 5 Minuten Arbeitszeit + Gehzeit + Backzeit sehr schnell.
 
 {{< img src="/images/2020-10-28-baguette-bateau1.jpg" alt="Noch ganz warm und frisch aus dem Ofen" >}}
 
