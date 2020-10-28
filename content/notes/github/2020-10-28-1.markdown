@@ -1,0 +1,46 @@
+---
+title: "Error 401 when trying to publish"
+date: 2020-10-28T22:46:58+01:00
+slug: "2020-10-28-1"
+categories:
+- notes
+- GitHub
+draft: false
+tags:
+- issues
+images:
+-
+mfbookmark: ""
+mfbookmarkof: ""
+mfrepostof: ""
+mfreplyto: "https://github.com/snarfed/bridgy-fed/issues"
+mflikeof: ""
+mfSource: "GitHub"
+mfGhProjectUrl: ""
+mfGhProjectName: "bridgy-fed"
+cite: ""
+syndication:
+-
+---
+
+Is there an issue with publishing posts to Mastodon (mastodon.social) instances? Since today (havent published to bridgy-fed for about 3 weeks) I get an HTTP 401 - not autorized error.
+
+`I 2020-10-28 21:25:22.029036 Verification failed for [renem.net](http://renem.net/)@[renem.net](http://renem.net/) https://fed.brid.gy/renem.net`
+`E 2020-10-28 21:25:22.029431 https://mastodon.social/inbox`
+`Traceback (most recent call last):`
+  `File "/srv/oauth_dropins/webutil/[util.py](http://util.py/)", line 1480, in call`
+    `resp.raise_for_status()`
+  `File "/env/lib/python3.7/site-packages/requests/[models.py](http://models.py/)", line 941, in raise_for_status`
+    `raise HTTPError(http_error_msg, response=self)`
+`[requests.exceptions.HTTPError](http://requests.exceptions.httperror/): 401 Client Error: Unauthorized for url: https://mastodon.social/inbox`
+`E 2020-10-28 21:25:22.107845 No targets or followers. Ignoring.`
+
+
+
+See the log here: https://fed.brid.gy/log?key=https%3A%2F%2Frenem.net%2Fphotos%2F2020-10-28-baguette-bateau%2F+https%3A%2F%2Fmastodon.social%2Finbox&start_time=1603920322
+
+Looking at the latest logs, it seems I'm not alone with this issue? Any tips/hints?
+
+
+
+<!--more-->
