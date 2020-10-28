@@ -23,7 +23,7 @@ syndication:
 -
 ---
 
-Is there an issue with publishing posts to Mastodon (mastodon.social) instances? Since today (havent published to bridgy-fed for about 3 weeks) I get an HTTP 401 - not autorized error.
+Is there an issue with publishing posts to Mastodon (mastodon.social) instances? Since today (havent published to bridgy-fed for about 3 weeks) I get an HTTP 401 - not authorized error.
 
 `I 2020-10-28 21:25:22.029036 Verification failed for [renem.net](http://renem.net/)@[renem.net](http://renem.net/) https://fed.brid.gy/renem.net`
 `E 2020-10-28 21:25:22.029431 https://mastodon.social/inbox`
