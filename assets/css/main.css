@@ -713,6 +713,7 @@ article .footnotes {
 .icon {
     height: 1rem;
     width: 1rem;
+    margin: 0.25rem;
 }
 
 .share a:hover, .f-1 a:hover {
