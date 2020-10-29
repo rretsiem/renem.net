@@ -6,7 +6,7 @@ categories:
 - notes
 draft: false
 tags:
--
+- issues
 images:
 -
 mfbookmark: ""
