@@ -1,0 +1,30 @@
+---
+title: ""
+date: 2020-10-29T09:22:01+01:00
+slug: "2020-10-29-1"
+categories:
+- notes
+draft: false
+tags:
+-
+images:
+-
+mfbookmark: ""
+mfbookmarkof: ""
+mfrepostof: ""
+mfreplyto: "https://github.com/snarfed/bridgy-fed/issues/70#issuecomment-718272394"
+mflikeof: ""
+mfSource: ""
+mfGhProjectUrl: "github"
+mfGhProjectName: "bridgy-fed"
+mf-syndicate-to:
+- "https://twitter.com/rretsiem"
+cite: ""
+syndication:
+-
+---
+
+Thanks for the heads up. Sorry that I opened it and didn't search for the issues first. From the title lookup on the issue list, it wasn't clear to me that it is the same issue.
+
+However, any glue why the _(Originally published… )_ link in the opening comment here, points to the Issue-Tracker on Github and not to my [issue-note on my blog](https://renem.net/notes/github/2020-10-28-1/)? The log on Brid.gy has both URLs in the list. Should i open a new issue for this on Brid.gy? 
+
