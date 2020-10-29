@@ -1,5 +1,5 @@
 {{- $cite := .Params.cite -}}
-{{- $source := .Params.mfSource -}}
+{{- $source := .Params.mfSource | lower -}}
 {{- with .Params.mfreplyto -}}
 <div class="context reply-context">
 	<span>
@@ -26,7 +26,7 @@
 		{{- end -}}
 		<svg class="icon"><use xlink:href="#github" /><title>{{ $ghType }}</title></svg>&nbsp;&nbspNew Github {{ $ghType }} on <a class="u-in-reply-to" rel="in-reply-to" href="{{ . }}">Github project "{{ $.Params.mfGhProjectName }}"</a>
 	{{- else -}}
-      <svg class="icon"><use xlink:href="#reply" /><title>Reply to</title></svg>&nbsp;&nbsp;<a class="u-in-reply-to u-url" rel="in-reply-to" href="{{ . }}">{{ . }}</a>
+      <svg class="icon"><use xlink:href="#reply" /><title>Reply to</title></svg>&nbsp;&nbsp;<a class="u-in-reply-to" rel="in-reply-to" href="{{ . }}">{{ . }}</a>
       	{{ with $cite }}
     	<blockquote class="h-cite u-like-of" cite="{{ . }}">
     		<p>{{ . }}</p>
