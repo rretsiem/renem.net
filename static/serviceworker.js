@@ -6,7 +6,7 @@
 // Version from 2018-03-12
 // https://gist.githubusercontent.com/adactio/3717b7da007a9363ddf21f584aae34af/raw/42ac5e289cef6a73db506aa46b2cd91c73beb4dd/minimal-serviceworker.js
 // see: https://adactio.com/journal/13540
-const cacheName = 'files';
+const cacheName = '20201029-files';
 
 addEventListener('fetch',  fetchEvent => {
   const request = fetchEvent.request;
@@ -14,22 +14,23 @@ addEventListener('fetch',  fetchEvent => {
     return;
   }
   fetchEvent.respondWith(async function() {
-    const responseFromFetch = fetch(request);
+    const fetchPromise = fetch(request);
     fetchEvent.waitUntil(async function() {
-      const responseCopy = (await responseFromFetch).clone();
+      const responseFromFetch = await fetchPromise;
+      const responseCopy = responseFromFetch.clone();
       const myCache = await caches.open(cacheName);
-      await myCache.put(request, responseCopy);
+      return myCache.put(request, responseCopy);
     }());
     if (request.headers.get('Accept').includes('text/html')) {
       try {
-        return await responseFromFetch;
+        return await fetchPromise;
       }
       catch(error) {
         return caches.match(request);
       }
     } else {
       const responseFromCache = await caches.match(request);
-      return responseFromCache || responseFromFetch;
+      return responseFromCache || fetchPromise;
     }
   }());
 });

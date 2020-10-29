@@ -1,1 +1,1 @@
-navigator.serviceWorker&&!navigator.serviceWorker.controller&&navigator.serviceWorker.register("/serviceworker.js",{updateViaCache:"none"});
+navigator.serviceWorker&&window.addEventListener("load",function(){navigator.serviceWorker.register("/serviceworker.js",{scope:"/"}),navigator.serviceWorker.controller});
