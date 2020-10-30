@@ -9,7 +9,7 @@
         <title>{{ .Title }} &middot; {{ .Site.Title }}</title>
         <link rel="canonical" href="{{ .Permalink }}">
         <!-- custom css here -->
-        <link rel="stylesheet" href="{{ $style.Permalink }}" integrity="{{ $secureStyle.Data.Integrity }}" type="text/css">
+        <link rel="stylesheet preload" as="style" href="{{ $style.Permalink }}" integrity="{{ $secureStyle.Data.Integrity }}" type="text/css">
         <!-- Site verification -->
         {{- if .IsHome }} {{ partial "site-verification" . }} {{ end -}}
         <!-- site feeds -->
