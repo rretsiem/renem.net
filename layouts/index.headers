@@ -5,12 +5,12 @@
 # preloading
 # /*
 # Link: <{{ $style.Permalink }}>; rel=preload; as=style
-/post/*.*
+# /post/*.*
 # Link: <{{ "js/webmention_io.js" | relURL }}>; rel=preload; as=script; nopush
-Link: <{{ "js/webmentions.min.js" | relURL }}>; rel=preload; as=script; nopush
-/notes/*.*
+# Link: <{{ "js/webmentions.min.js" | relURL }}>; rel=preload; as=script; nopush
+# /notes/*.*
 # Link: <{{ "js/webmention_io.js" | relURL }}>; rel=preload; as=script; nopush
-Link: <{{ "js/webmentions.min.js" | relURL }}>; rel=preload; as=script; nopush
-/photos/*.*
+# Link: <{{ "js/webmentions.min.js" | relURL }}>; rel=preload; as=script; nopush
+# /photos/*.*
 # Link: <{{ "js/webmention_io.js" | relURL }}>; rel=preload; as=script; nopush
-Link: <{{ "js/webmentions.min.js" | relURL }}>; rel=preload; as=script; nopush
+# Link: <{{ "js/webmentions.min.js" | relURL }}>; rel=preload; as=script; nopush
