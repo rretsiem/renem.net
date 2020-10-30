@@ -1,3 +1,4 @@
+{{- $nojs := resources.Get "js/remove-no.js" | resources.Minify | resources.Fingerprint -}}
     <footer id="site-footer">
         {{ partialCached "search.html" . }}
         <div class="container">
@@ -42,7 +43,8 @@
     </div>
     {{- partialCached "scripts.html" . -}}
 
-    <script type='text/javascript' charset="utf-8" src="/js/remove-no.js"></script>
+    <!--  Javascript detection -->
+    <script type='text/javascript' charset="utf-8" src="{{ $nojs.Permalink }}" integrity="{{ $nojs.Data.Integrity }}"></script>
     {{ if ($.Page.Scratch.Get "include_mastodon") }}
     <script src="https://mastodon.social/embed.js" async="async"></script>
     {{ end }}
