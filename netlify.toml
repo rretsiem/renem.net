@@ -19,7 +19,7 @@
   	Strict-Transport-Security = "max-age=15768000"
   	Cache-Control = "max-age=2628000, public"
 #    Content-Security-Policy = "default-src 'self' https:; script-src 'self' 'mastodon.social' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src *; frame-ancestors 'self'; object-src 'none';"
-    Content-Security-Policy = "default-src 'none'; script-src 'self' mastodon.social webmention.io; connect-src 'self'; img-src 'self' https:; style-src 'self';base-uri 'self';form-action 'self' webmention.io duckduckgo.com; frame-ancestors 'self'; frame-src 'self' https:; manifest-src 'self';"
+    Content-Security-Policy = "default-src 'none'; script-src 'self' mastodon.social webmention.io; connect-src 'self' https:; img-src 'self' https:; style-src 'self';base-uri 'self';form-action 'self' webmention.io duckduckgo.com; frame-ancestors 'self'; frame-src 'self' https:; manifest-src 'self';"
 #    Content-Security-Policy = "default-src 'self' https:; script-src 'self' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src *; frame-ancestors 'self';"
 #   X-Content-Security-Policy = "default-src 'self' https:; script-src 'self' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src *; frame-ancestors 'self';"
 #  	X-WebKit-CSP = "default-src 'self' https:; script-src 'self' 'unsafe-eval' https:; style-src 'self' 'unsafe-inline' https:; img-src *; frame-ancestors 'self';"
