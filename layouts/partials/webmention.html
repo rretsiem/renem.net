@@ -1,5 +1,5 @@
-{{ $webmentions := resources.Get "js/webmentions.js" | resources.Minify | resources.Fingerprint }}
-
+{{ $webmentions := resources.Get "js/webmentions.js" | resources.Minify }}
+{{ $webmentionsSecure := $webmentions | resources.Fingerprint }}
 <section id="commentContainer">
 <div class="webmention-container comments-area responses hidden" id="mentionContainer">
   <hr>
@@ -12,4 +12,4 @@
 <!--
 <script async type="text/javascript" charset="utf-8" src="{{ .Site.BaseURL }}js/webmentions.js" data-no-instant></script>
 -->
-<script async type="text/javascript" charset="utf-8" src="{{ $webmentions.Permalink }}" integrity="{{ $webmentions.Data.Integrity }}" data-no-instant></script>
+<script async type="text/javascript" charset="utf-8" src="{{ $webmentions.Permalink }}" integrity="{{ $webmentionsSecure.Data.Integrity }}" data-no-instant></script>

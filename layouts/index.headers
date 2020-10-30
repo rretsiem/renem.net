@@ -1,15 +1,16 @@
 {{- $cssOpts := (dict "targetPath" "styles/bundle.css" "enableSourceMap" true ) -}}
 {{- $main := resources.Get "/css/main.css" -}}
-{{- $style := slice $main | resources.Concat "bundle.css" | toCSS $cssOpts | resources.PostCSS | resources.Minify | resources.Fingerprint -}}
+{{- $style := slice $main | resources.Concat "bundle.css" | toCSS $cssOpts | resources.PostCSS | resources.Minify -}}
+{{ $secureStyle := $style | resources.Fingerprint "sha512" }}
 # preloading
-# /*
-# Link: <{{ $style.Permalink }}>; rel=preload; as=style
+/*
+Link: <{{ $style.Permalink }}>; rel=preload; as=style
 /post/*.*
-Link: <{{ "js/webmention_io.js" | relURL }}>; rel=preload; as=script; nopush
-Link: <{{ "js/webmentions.js" | relURL }}>; rel=preload; as=script; nopush
+# Link: <{{ "js/webmention_io.js" | relURL }}>; rel=preload; as=script; nopush
+Link: <{{ "js/webmentions.min.js" | relURL }}>; rel=preload; as=script; nopush
 /notes/*.*
-Link: <{{ "js/webmention_io.js" | relURL }}>; rel=preload; as=script; nopush
-Link: <{{ "js/webmentions.js" | relURL }}>; rel=preload; as=script; nopush
+# Link: <{{ "js/webmention_io.js" | relURL }}>; rel=preload; as=script; nopush
+Link: <{{ "js/webmentions.min.js" | relURL }}>; rel=preload; as=script; nopush
 /photos/*.*
-Link: <{{ "js/webmention_io.js" | relURL }}>; rel=preload; as=script; nopush
-Link: <{{ "js/webmentions.js" | relURL }}>; rel=preload; as=script; nopush
+# Link: <{{ "js/webmention_io.js" | relURL }}>; rel=preload; as=script; nopush
+Link: <{{ "js/webmentions.min.js" | relURL }}>; rel=preload; as=script; nopush

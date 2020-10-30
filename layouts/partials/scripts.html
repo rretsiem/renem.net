@@ -1,9 +1,12 @@
-{{- $indieconfig := resources.Get "js/indieconfig.js" | resources.Minify | resources.Fingerprint -}}
-{{- $webaction := resources.Get "js/webaction.js" | resources.Minify | resources.Fingerprint -}}
-{{ $swreg := resources.Get "js/service-worker-registration.js" | resources.Minify | resources.Fingerprint -}}
+{{- $indieconfig := resources.Get "js/indieconfig.js" | resources.Minify -}}
+{{- $webaction := resources.Get "js/webaction.js" | resources.Minify -}}
+{{ $swreg := resources.Get "js/service-worker-registration.js" | resources.Minify -}}
+{{- $indieconfigSecure := $indieconfig | resources.Fingerprint "sha512" -}}
+{{- $webactionSecure := $webaction | resources.Fingerprint "sha512" -}}
+{{ $swregSecure :=  $swreg | resources.Fingerprint "sha512" -}}
 <!--  Indieweb actions -->
-<script async type='text/javascript' charset="utf-8" src="{{ $indieconfig.Permalink }}" integrity="{{ $indieconfig.Data.Integrity }}"></script>
-<script async type='text/javascript' charset="utf-8" src="{{ $webaction.Permalink }}" integrity="{{ $webaction.Data.Integrity }}"></script>
+<script async type='text/javascript' charset="utf-8" src="{{ $indieconfig.Permalink }}" integrity="{{ $indieconfigSecure.Data.Integrity }}"></script>
+<script async type='text/javascript' charset="utf-8" src="{{ $webaction.Permalink }}" integrity="{{ $webactionSecure.Data.Integrity }}"></script>
 <!-- helpers -->
 <!-- <script async type='text/javascript' charset="utf-8" src="/js/helpers.js"></script> -->
-<script async type='text/javascript' charset="utf-8" src="{{ $swreg.Permalink }}" integrity="{{ $swreg.Data.Integrity }}"></script>
+<script async type='text/javascript' charset="utf-8" src="{{ $swreg.Permalink }}" integrity="{{ $swregSecure.Data.Integrity }}"></script>
