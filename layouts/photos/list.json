@@ -1,0 +1,34 @@
+{{ $items := (where .Site.RegularPages "Type" "==" "photos" ) | first 20 -}}
+{
+	"version": "https://jsonfeed.org/version/1",
+	"title": "{{ .Site.Title }} JSON Notes feed",
+	"home_page_url": "{{ .Site.BaseURL }}",
+	"user_comment": "This feed includes the latest photos of my site. To add this feed to your reader, copy the following URL — {{ .Site.BaseURL }}photos/index.json — and add it your reader.",
+	{{- if isset .Site.Params "description" }}
+	"description": "{{ .Site.Params.description }}",
+	{{ end -}}
+	"hubs": [{{ dict "type" "WebSub" "url" .Site.Params.webSub | jsonify }}],
+	"feed_url": "{{ .Site.BaseURL }}photos/index.json",
+	"favicon": "{{ .Site.BaseURL }}apple-touch-icon.png",
+	"author": {
+		"name": "{{ index .Site.Params "author" }}",
+		"url": "{{ .Site.BaseURL }}"
+	},
+	"items": [
+		{{- range $index, $post := $items  -}}
+		{{ if $index }}, {{ end }}
+		{
+			"id": "{{ $post.Permalink }}",
+			{{- if .Title }}
+			"title": "{{ $post.Title | htmlEscape }}",
+			{{ end }}
+			"url": "{{ $post.Permalink }}",
+			"summary": {{ $post.Summary | chomp | htmlEscape | jsonify }},
+			"content_html": {{ $post.Content | chomp | jsonify}},
+			"date_published": "{{ .Date.Format $.Site.Params.ISO8601 }}",
+			"tags": [ {{ range $i, $e := $post.Params.tags }}{{ if $i }}, {{ end }}{{ $e | jsonify }}{{ end }} ]
+		}
+		{{- end -}}
+	]
+
+}

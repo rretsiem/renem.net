@@ -9,7 +9,8 @@ draft: false
 images:
 - /images/2020-10-30-sonnenuntergang.jpg
 syndication:
--
+- https://twitter.com/rretsiem/status/1322268643678322688
+- https://mastodon.social/@renem/105125555546717984
 ---
 
 {{< img src="/images/2020-10-30-sonnenuntergang.jpg" alt="Sonnenuntergang mit Blick auf Augsburg" >}}
