@@ -7,7 +7,7 @@
             </header>
             <div id="blog-archives" class="category">
               {{ .Content }}
-							{{ range (where .Site.RegularPages "Type" "!=" "page").GroupByDate "2006" }}
+							{{ range (where .Site.RegularPages "Type" "=" "post").GroupByDate "2006" }}
 							<h3>{{ .Key }}</h3>
 							<ul id="list">
       					{{ range .Pages }}

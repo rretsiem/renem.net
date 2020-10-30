@@ -1,4 +1,4 @@
-const CACHE_VERSION = 20201030-1;
+const CACHE_VERSION = 20201030-2;
 
 const BASE_CACHE_FILES = [
     '/styles/bundle.min.css',
