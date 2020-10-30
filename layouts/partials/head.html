@@ -2,6 +2,10 @@
 {{- $main := resources.Get "/css/main.css" -}}
 {{- $style := slice $main | resources.Concat "bundle.css" | toCSS $cssOpts | resources.PostCSS | resources.Minify -}}
 {{ $secureStyle := $style | resources.Fingerprint "sha512" }}
+{{- $nojs := resources.Get "js/remove-no.js" | resources.Minify -}}
+{{- $nojsSecure := $nojs | resources.Fingerprint "sha512" -}}
+{{ $webmentions := resources.Get "js/webmentions.js" | resources.Minify }}
+{{ $webmentionsSecure := $webmentions | resources.Fingerprint }}
 <!DOCTYPE html>
 <html class="no-js" lang="de" prefix="og: http://ogp.me/ns#" xmlns:og="http://ogp.me/ns#">
     <head>
@@ -57,6 +61,9 @@
         <!-- DNS prefetching in the header for external sources -->
         <link rel="dns-prefetch" href="https://webmention.io">
         <link rel="dns-prefetch" href="https://micro.blog">
+        <!-- preloading -->
+        <link rel="preload" href="{{ $nojs.Permalink }}" integrity="{{ $nojsSecure.Data.Integrity }}"as="script">
+        <link rel="preload" href="{{ $webmentions.Permalink }}" integrity="{{ $webmentionsSecure.Data.Integrity }}"as="script">
         <!-- Aperture.p3k.io Microsub feed hub -->
         <link rel="microsub" href="https://aperture.p3k.io/microsub/48">
     </head>
