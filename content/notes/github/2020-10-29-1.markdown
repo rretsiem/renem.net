@@ -4,6 +4,7 @@ date: 2020-10-29T09:22:01+01:00
 slug: "2020-10-29-1"
 categories:
 - notes
+- github
 draft: false
 tags:
 - issues
