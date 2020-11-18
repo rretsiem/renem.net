@@ -1,4 +1,4 @@
-<article class="{{ .Type }} h-entry">
+<article translate="yes" class="{{ .Type }} h-entry">
 	<header class="post-header">
 		{{- partial "post/post-header" . -}}
   </header>
@@ -26,7 +26,7 @@
     <!-- fed.brid.gy integration -->
     <a href="https://fed.brid.gy/"></a>
     <!-- fed.brid.gy integration -->
-    <footer class="post-footer">
+    <footer translate="no" class="post-footer">
         {{- partial "post/author" . -}}
 				{{- partial "post/share" . -}}
 				{{- partial "post/prev_next" . -}}

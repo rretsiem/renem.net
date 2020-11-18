@@ -1,7 +1,7 @@
 {{- $nojs := resources.Get "js/remove-no.js" | resources.Minify -}}
 {{- $nojsSecure := $nojs | resources.Fingerprint "sha512" -}}
 
-    <footer id="site-footer">
+    <footer translate="no" id="site-footer">
         {{ partialCached "search.html" . }}
         <div class="container">
           {{ with .Site.Params.microblog_name }}
