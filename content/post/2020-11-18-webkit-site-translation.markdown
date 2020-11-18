@@ -17,7 +17,8 @@ mfrepostof: ""
 mfreplyto: ""
 mflikeof: ""
 syndication:
--
+- https://twitter.com/rretsiem/status/1329163448899547138
+- https://mastodon.social/users/renem/statuses/105233272175592803
 ---
 
 Ich bin für die technischen Details die vielleicht meinen Blog betreffen könnten und interessant klingen zu schnell begeistern. Als ich die neuen [Webkit-Features](https://webkit.org/blog/11340/new-webkit-features-in-safari-14/) vom Webkit-Team in Apples Safari 14 diese Woche gesehen und gelesen habe, war wieder so ein Moment um das gleich auszuprobieren.
