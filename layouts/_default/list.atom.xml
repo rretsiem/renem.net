@@ -1,7 +1,15 @@
-{{ print "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\" ?>"| safeHTML }}
-{{ print "<!-- index.atom.xml -->"| safeHTML }}
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>{{ .Site.Title }} Blog</title>
+{{ printf `<?xml version="1.0" encoding="utf-8"?>` | safeHTML }} {{/* ref: https://validator.w3.org/feed/docs/atom.html */}}
+<feed xmlns="http://www.w3.org/2005/Atom"{{ with site.LanguageCode }} xml:lang="{{ . }}"{{ end }}>
+{{- $title := site.Title -}}
+    {{- with .Title -}}
+        {{- if (not (eq . site.Title)) -}}
+            {{- $title = printf `%s %s %s` . (i18n "feed_title_on" | default "on") site.Title -}}
+        {{- end -}}
+    {{- end -}}
+    {{- if .IsTranslated -}}
+        {{ $title = printf "%s (%s)" $title (index site.Data.i18n.languages .Lang) }}
+    {{- end -}}
+  {{ printf `<title type="html"><![CDATA[%s]]></title>` $title | safeHTML }}
   <link href="{{ .Permalink }}index.xml" rel="self" type="application/atom+xml"/>
   <link rel="hub" href="https://renem.superfeedr.com/" />
   <link href="{{ .Permalink }}"/>{{ if not .Date.IsZero }}
@@ -11,22 +19,38 @@
     <name>{{.}}</name>{{ with $.Site.Author.email }}
     <email>{{.}}</email>{{end}}
   </author>{{end}}
-  <generator>Hugo -- gohugo.io</generator>
+  <generator uri="https://gohugo.io/" version="{{ hugo.Version }}">Hugo</generator>
   {{- range first (sub .Site.Params.RSSLimit 0) (where .Site.RegularPages "Type" "==" "post") }}
   <entry>{{ $url := .Permalink }}{{ $uuid := sha1 .Permalink }}{{ $page := .}}
       {{- if .Title }}
-    <title type="text">{{ .Title | plainify }}</title>
+     {{ printf `<title type="html"><![CDATA[%s]]></title>` .Title | safeHTML }}
       {{- end }}
-    <category term="{{$page.Section}}" />
-    <link href="{{ .Permalink }}"/>
+    {{ with site.Taxonomies }}
+      {{ range $taxo,$_ := . }} <!-- Defaults taxos: "tags", "categories" -->
+        {{ with $page.Param $taxo }}
+          {{ $taxo_list := . }} <!-- $taxo_list will be the tags/categories list -->
+          {{ with site.GetPage (printf "/%s" $taxo) }}
+            {{ $taxonomy_page := . }}
+            {{ range $taxo_list }} <!-- Below, assuming pretty URLs -->
+              <category scheme="{{ printf "%s%s" $taxonomy_page.Permalink (. | urlize) }}" term="{{ (. | urlize) }}" label="{{ humanize . }}" />
+            {{ end }}
+          {{ end }}
+        {{ end }}
+                {{ end }}
+    {{ end }}
+    <link href="{{ .Permalink }}?utm_source=atom_feed" rel="alternate" type="text/html" />
+    {{- range first 5 (site.RegularPages.Related .) }}
+                <link href="{{ .Permalink }}?utm_source=atom_feed" rel="related" type="text/html" title="{{ .Title }}" />
+            {{- end }}
     <id>urn:uuid:{{substr $uuid 0 8}}-{{substr $uuid 8 4}}-5{{substr $uuid 13 3}}-{{substr $uuid 16 1}}9{{substr $uuid 17 2}}-{{substr $uuid 21 12}}</id>
     {{- with .Site.Params.Author }}
     <author>
       <name>{{.}}</name>
     </author>
     {{- end}}
-    <published>{{ .Date.Format $.Site.Params.ISO8601 | safeHTML }}</published>
     <updated>{{ .Lastmod.Format $.Site.Params.ISO8601 | safeHTML }}</updated>
-    {{ `<content type="html"><![CDATA[` | safeHTML }}{{ .Content }}]]></content>
+    {{ $description1 := .Description | default "" }}
+            {{ $description := (cond (eq "" $description1) "" (printf "<blockquote>%s</blockquote>" ($description1 | markdownify))) }}
+            {{ printf `<content type="html"><![CDATA[%s%s]]></content>` $description .Content | safeHTML }}
   </entry>{{ end }}
 </feed>

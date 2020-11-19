@@ -37,6 +37,8 @@ disableKinds = ["RSS"]
   home = [ "HTML", "ATOM", "JSON", "REDIR", "HEADERS"]
   page = [ "HTML"]
   section = ["HTML", "ATOM", "JSON"]
+  taxonomy = ["HTML", "ATOM", "JSON"] # default = ["HTML", "RSS"]
+  term = ["HTML", "ATOM", "JSON"] # default = ["HTML", "RSS"]
 [outputFormats]
   [outputFormats.REDIR]
    mediatype = "text/netlify"
@@ -49,7 +51,7 @@ disableKinds = ["RSS"]
     isPlainText = false
     isHTML = false
     noUgly = true
-    Rel = "alternate"
+    rel = "alternate"
     notAlternative = true
   [outputFormats.HEADERS]
     mediatype = "text/netlify"
