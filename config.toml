@@ -7,6 +7,7 @@ MetaDataFormat = "yaml"
 disableAliases = true
 enableEmoji = true
 defaultMarkdownHandler = "goldmark"
+ignoreErrors = ["error-remote-getjson"]
 [markup]
   [markup.goldmark]
     [markup.goldmark.extensions]
