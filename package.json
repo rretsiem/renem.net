@@ -23,7 +23,7 @@
     "gulp-size": "^3.0.0",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-svg-sprite": "^1.5.0",
-    "luxon": "^1.17.1",
+    "luxon": "^2.5.2",
     "microformat-node": "^2.0.1",
     "netlify-cli": "^2.11.23",
     "netlify-lambda": "^1.5.0",
